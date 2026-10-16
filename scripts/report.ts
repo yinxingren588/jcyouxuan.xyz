@@ -51,6 +51,12 @@ ${(lh.results??[]).map((r:any)=>`| ${r.route} | ${r.scores.performance} | ${r.sc
 
 本地 Chrome 移动模拟。首页与比较页为本轮单次结果；Windows 教程在一次 TBT 波动后使用两个独立浏览器会话复查，三次性能分数为 88、100、100，表内取中位数，全部样本见 docs/qa/lighthouse-guide-repeats.json。原始单次报告保留，不代表生产环境或真实用户 Web Vitals。
 
+## 浪网价格档位展示修正（2026-10-16）
+
+原页面选取 120 元 / 800GB 高档作为首个参考档，容易误认为入门价。本次补入 30 元 / 150GB 入门档和 70 元 / 400GB 进阶档，默认展示入门档，详情保留 120 元 / 800GB、200 元 / 2000GB。卡片、表格和比较工具显示档位名称。价格仍为第三方参考，70 元档的 400GB / 450GB 来源冲突保留说明。
+
+本次构建、11 项逻辑测试、99 页 SEO、4,278 项链接检查及 8 项针对性浏览器检查通过，见 docs/qa/wavenet-correction.log 与 docs/qa/wavenet-correction.json。此次未重复 Lighthouse 测量，上表保留前一版本的测量记录。
+
 ## 尚未完成的外部事项
 
 正式域名 DNS / HTTPS、Cloudflare Pages 正式部署、Bing 账户验证、真实 IndexNow 提交和搜索收录均未在本期完成。源码具备静态部署结构，不宣称已经正式上线。

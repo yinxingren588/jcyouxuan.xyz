@@ -1,6 +1,6 @@
 ---
 import {airports,price,traffic,missing} from '../data/airports';
-const comparison=airports.map(a=>({slug:a.slug,name:a.name,values:[price(a.plans[0]),traffic(a.plans[0]),a.focus,a.coupon??'未提供；折扣和有效期待核实',a.protocols.join('、')||missing,a.deviceLimit||missing,a.aiSupport.join('、')||missing,a.streamingSupport.join('、')||missing,a.advantages.join('；'),a.disadvantages.join('；')]}));
+const comparison=airports.map(a=>({slug:a.slug,name:a.name,values:[`${a.plans[0]?.name??'待核实'}：${price(a.plans[0])}`,traffic(a.plans[0]),a.focus,a.coupon??'未提供；折扣和有效期待核实',a.protocols.join('、')||missing,a.deviceLimit||missing,a.aiSupport.join('、')||missing,a.streamingSupport.join('、')||missing,a.advantages.join('；'),a.disadvantages.join('；')]}));
 ---
 <div id="comparison" data-brands={JSON.stringify(comparison)}><div class="compare-options">{airports.map(a=><label class="compare-choice"><input type="checkbox" value={a.slug} name="compare-brand"/> {a.name}</label>)}</div><p class="muted more-space" aria-live="polite" id="compare-status">选择 2–4 家品牌开始比较。</p><div id="compare-empty" class="empty">还没有足够的候选。先勾选两家，再逐项查看差异。</div><div id="compare-output" class="table-scroll" tabindex="0" role="region" aria-label="已选品牌比较，可横向滚动" hidden><table class="compare-table"><thead id="compare-head"></thead><tbody id="compare-body"></tbody></table></div><noscript><p>互动筛选需要 JavaScript。下方静态资料表和所有品牌详情仍可直接阅读。</p></noscript></div>
 <script>

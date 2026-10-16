@@ -1,0 +1,13 @@
+{
+  "status": "PASS",
+  "checks": {
+    "homePrice": true,
+    "tierLabel": true,
+    "tablePrice": true,
+    "detailPlans": true,
+    "detailEntry": true,
+    "sourced": true,
+    "compareEntry": true,
+    "mobileLayout": true
+  }
+}

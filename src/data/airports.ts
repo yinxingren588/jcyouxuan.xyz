@@ -287,15 +287,37 @@ export const airports:Airport[] = [
     "name": "浪网 WaveNet",
     "order": 6,
     "kind": "proxy",
-    "description": "800GB 与 2000GB，大流量预算参照",
-    "recommendation": "浪网 WaveNet 本页聚焦公开资料中相对一致的 800GB 与 2000GB 档。对已知月消耗超过数百 GB 的人，200 元换取 2000GB 的结构有助于评估容量扩展成本；这只说明套餐形态，不代表传输速度。",
-    "whyChoose": "浪网 WaveNet 本页聚焦公开资料中相对一致的 800GB 与 2000GB 档。对已知月消耗超过数百 GB 的人，200 元换取 2000GB 的结构有助于评估容量扩展成本；这只说明套餐形态，不代表传输速度。",
-    "focus": "800GB 与 2000GB，大流量预算参照",
+    "description": "150GB 入门，按需扩展到 2000GB",
+    "recommendation": "浪网 WaveNet 的公开参考月付从 30 元、150GB 入门档开始，另有 70 元、400GB，120 元、800GB 和 200 元、2000GB 档。它适合希望先用小档建立消耗记录、再按需求扩容的人；800GB 与 2000GB 属于较高容量选择，不是入门门槛。选择理由在于容量档位覆盖范围，不代表本站已经验证速度或当前结算价格。",
+    "whyChoose": "浪网 WaveNet 的公开参考月付从 30 元、150GB 入门档开始，另有 70 元、400GB，120 元、800GB 和 200 元、2000GB 档。它适合希望先用小档建立消耗记录、再按需求扩容的人；800GB 与 2000GB 属于较高容量选择，不是入门门槛。选择理由在于容量档位覆盖范围，不代表本站已经验证速度或当前结算价格。",
+    "focus": "150GB 入门，按需扩展到 2000GB",
     "affiliateUrl": "https://varnexa.wavenetaff.com/#/?code=oU77JXen",
     "plans": [
       {
+        "id": "entry-month",
+        "name": "入门档（月付）",
+        "price": 30,
+        "currency": "CNY",
+        "period": "month",
+        "trafficGB": 150,
+        "trafficUnit": "GB",
+        "verified": false,
+        "notes": "多份第三方公开资料列出的入门档；当前结算价、容量与是否在售仍待到站核实。"
+      },
+      {
+        "id": "advanced-month",
+        "name": "进阶档（月付）",
+        "price": 70,
+        "currency": "CNY",
+        "period": "month",
+        "trafficGB": 400,
+        "trafficUnit": "GB",
+        "verified": false,
+        "notes": "多数本期来源写 400GB，另有来源写 450GB；按 400GB 作参考，实际额度需核对当前套餐。"
+      },
+      {
         "id": "month-1",
-        "name": "月付参考档 1",
+        "name": "高端档（月付）",
         "price": 120,
         "currency": "CNY",
         "period": "month",
@@ -306,7 +328,7 @@ export const airports:Airport[] = [
       },
       {
         "id": "month-2",
-        "name": "月付参考档 2",
+        "name": "商业档（月付）",
         "price": 200,
         "currency": "CNY",
         "period": "month",
@@ -321,20 +343,22 @@ export const airports:Airport[] = [
     "aiSupport": [],
     "streamingSupport": [],
     "advantages": [
-      "800GB 与 2000GB 参考档可供高消耗需求分别核算",
-      "从 800GB 到 2000GB，容量增幅大于标价增幅"
+      "150GB、400GB、800GB、2000GB 四档参考容量覆盖从入门到高消耗的需求",
+      "可先以 30 元参考月付评估用量，再决定是否需要较高容量档"
     ],
     "disadvantages": [
-      "70 元中档被不同来源写成 400GB 或 450GB，因此这里不引用该档；表中也不是这家品牌的最低起价。"
+      "70 元进阶档在不同来源中有 400GB 或 450GB 两种描述，本页按较保守的 400GB 作参考；所有标价均未通过当前结算页复核。"
     ],
     "suitableFor": [
-      "800GB 与 2000GB，大流量预算参照"
+      "150GB 入门，按需扩展到 2000GB"
     ],
     "sources": [
-      "https://jichangshice.com.cn/airports/wavenet/"
+      "https://jichangshice.com.cn/airports/wavenet/",
+      "https://www.jichangpk.com/providers/langwang/",
+      "https://jichangbay.biz/airports/wavenet/"
     ],
-    "sourceNotes": "70 元中档被不同来源写成 400GB 或 450GB，因此这里不引用该档；表中也不是这家品牌的最低起价。",
-    "purchaseCheck": "先检查月度用量是否真的需要大包，再核对倍率、剩余流量到期处理与 2000GB 的统计单位。",
+    "sourceNotes": "70 元进阶档在不同来源中有 400GB 或 450GB 两种描述，本页按较保守的 400GB 作参考；所有标价均未通过当前结算页复核。",
+    "purchaseCheck": "先核对入门档当前是否为 30 元、150GB，再确认 70 元档的实际容量、节点倍率和重置日。120 元对应 800GB 高端档，不能将它视为入门价格。",
     "lastVerified": "2026-10-16",
     "testStatus": "unverified",
     "color": "#70c8ed"
