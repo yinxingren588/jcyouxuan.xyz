@@ -1,0 +1,6 @@
+{
+  "status": "PASS",
+  "checks": 58,
+  "errors": [],
+  "scope": "Read actual HTML served by the existing local preview for all 58 brand pages; no production domain request."
+}

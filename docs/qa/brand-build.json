@@ -6,13 +6,13 @@
     "npm run build"
   ],
   "astroDiagnostics": {
-    "files": 57,
+    "files": 58,
     "errors": 0,
     "warnings": 0,
     "hints": 0
   },
   "builtPages": 263,
   "indexablePages": 260,
-  "scope": "Final local build and diagnostics; the final check removes an unused test import. Not production deployment or Bing indexing.",
-  "record": "brand-optimization-final-pipeline.log"
+  "scope": "Brand-specific TDK final local build and diagnostics. Not production deployment or Bing indexing.",
+  "record": "brand-tdk-pipeline.log"
 }

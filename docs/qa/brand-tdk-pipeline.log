@@ -1,0 +1,409 @@
+> jcyouxuan@1.0.0 qa
+> npm run check && npm run build && npm run test && npm run audit:seo && npm run check:links && npm run validate:content && npm run audit:blog && npm run audit:keyword && npm run audit:evidence && npm run audit:brand-tdk
+
+
+> jcyouxuan@1.0.0 check
+> astro check
+
+21:03:14 [content] Syncing content
+21:03:14 [content] Synced content
+21:03:14 [types] Generated 1.29s
+21:03:14 [check] Getting diagnostics for Astro files in C:\Users\user\Documents\Codex\2026-10-16\files-pasted-by-the-user-antigravity\outputs\jcyouxuan...
+Result (58 files):
+- 0 errors
+- 0 warnings
+- 0 hints
+
+
+> jcyouxuan@1.0.0 build
+> tsx scripts/sync-article-index.ts && astro build && tsx scripts/build-manifest.ts
+
+Article index: 160 entries, blog catalog: 150.
+21:03:30 [content] Syncing content
+21:03:30 [content] Synced content
+21:03:30 [types] Generated 1.05s
+21:03:30 [build] output: "static"
+21:03:30 [build] mode: "static"
+21:03:30 [build] directory: C:\Users\user\Documents\Codex\2026-10-16\files-pasted-by-the-user-antigravity\outputs\jcyouxuan\dist\
+21:03:30 [build] Collecting build info...
+21:03:30 [build] ✓ Completed in 1.10s.
+21:03:31 [build] Building static entrypoints...
+21:03:32 [vite] ✓ built in 1.13s
+21:03:32 [vite] ✓ built in 59ms
+21:03:32 [build] Rearranging server assets...
+
+ generating static routes
+21:03:32   ├─ /search.json (+14ms)
+21:03:32   ├─ /index.html (+20ms)
+21:03:32   ├─ /recommend/index.html (+7ms)
+21:03:32   ├─ /recommend/budget/index.html (+5ms)
+21:03:32   ├─ /recommend/premium/index.html (+55ms)
+21:03:32   ├─ /recommend/beginner/index.html (+5ms)
+21:03:32   ├─ /recommend/stable/index.html (+4ms)
+21:03:32   ├─ /recommend/ai/index.html (+4ms)
+21:03:32   ├─ /recommend/streaming/index.html (+4ms)
+21:03:32   ├─ /ranking/index.html (+4ms)
+21:03:32   ├─ /ranking/overall/index.html (+10ms)
+21:03:32   ├─ /ranking/value/index.html (+3ms)
+21:03:32   ├─ /ranking/budget/index.html (+5ms)
+21:03:32   ├─ /ranking/stable/index.html (+4ms)
+21:03:32   ├─ /ranking/traffic/index.html (+5ms)
+21:03:32   ├─ /airport/index.html (+7ms)
+21:03:32   ├─ /review/index.html (+6ms)
+21:03:32   ├─ /airport/twilight/index.html (+5ms)
+21:03:32   ├─ /review/twilight/index.html (+4ms)
+21:03:32   ├─ /airport/invisible/index.html (+6ms)
+21:03:32   ├─ /review/invisible/index.html (+5ms)
+21:03:32   ├─ /airport/lingdong/index.html (+4ms)
+21:03:32   ├─ /review/lingdong/index.html (+3ms)
+21:03:32   ├─ /airport/laddercloud/index.html (+4ms)
+21:03:32   ├─ /review/laddercloud/index.html (+4ms)
+21:03:32   ├─ /airport/flyv/index.html (+4ms)
+21:03:32   ├─ /review/flyv/index.html (+3ms)
+21:03:32   ├─ /airport/wavenet/index.html (+4ms)
+21:03:32   ├─ /review/wavenet/index.html (+6ms)
+21:03:32   ├─ /airport/flycat/index.html (+4ms)
+21:03:32   ├─ /review/flycat/index.html (+4ms)
+21:03:32   ├─ /airport/dalaocloud/index.html (+3ms)
+21:03:32   ├─ /review/dalaocloud/index.html (+6ms)
+21:03:32   ├─ /airport/breezenet/index.html (+4ms)
+21:03:32   ├─ /review/breezenet/index.html (+4ms)
+21:03:32   ├─ /airport/stardream/index.html (+3ms)
+21:03:32   ├─ /review/stardream/index.html (+5ms)
+21:03:32   ├─ /airport/lightspeed/index.html (+4ms)
+21:03:32   ├─ /review/lightspeed/index.html (+4ms)
+21:03:32   ├─ /airport/v2yun/index.html (+3ms)
+21:03:32   ├─ /review/v2yun/index.html (+7ms)
+21:03:32   ├─ /airport/u1s1/index.html (+4ms)
+21:03:32   ├─ /review/u1s1/index.html (+3ms)
+21:03:32   ├─ /airport/jilian/index.html (+3ms)
+21:03:32   ├─ /review/jilian/index.html (+5ms)
+21:03:32   ├─ /airport/globalcloud/index.html (+4ms)
+21:03:32   ├─ /review/globalcloud/index.html (+3ms)
+21:03:32   ├─ /airport/lightyear/index.html (+3ms)
+21:03:32   ├─ /review/lightyear/index.html (+3ms)
+21:03:32   ├─ /airport/sogoyun/index.html (+5ms)
+21:03:32   ├─ /review/sogoyun/index.html (+3ms)
+21:03:32   ├─ /airport/yuzhou/index.html (+3ms)
+21:03:32   ├─ /review/yuzhou/index.html (+3ms)
+21:03:32   ├─ /airport/2mao/index.html (+3ms)
+21:03:32   ├─ /review/2mao/index.html (+7ms)
+21:03:32   ├─ /airport/1fly/index.html (+4ms)
+21:03:32   ├─ /review/1fly/index.html (+4ms)
+21:03:32   ├─ /airport/edgenova/index.html (+7ms)
+21:03:32   ├─ /review/edgenova/index.html (+5ms)
+21:03:32   ├─ /airport/kosing/index.html (+3ms)
+21:03:32   ├─ /review/kosing/index.html (+3ms)
+21:03:32   ├─ /airport/sujie/index.html (+5ms)
+21:03:32   ├─ /review/sujie/index.html (+6ms)
+21:03:32   ├─ /airport/kuaili/index.html (+4ms)
+21:03:32   ├─ /review/kuaili/index.html (+3ms)
+21:03:32   ├─ /airport/firefly/index.html (+8ms)
+21:03:32   ├─ /review/firefly/index.html (+4ms)
+21:03:32   ├─ /airport/civet/index.html (+4ms)
+21:03:32   ├─ /review/civet/index.html (+6ms)
+21:03:32   ├─ /airport/flashleap/index.html (+4ms)
+21:03:32   ├─ /review/flashleap/index.html (+3ms)
+21:03:32   ├─ /airport/worryfree/index.html (+3ms)
+21:03:32   ├─ /review/worryfree/index.html (+4ms)
+21:03:32   ├─ /airport/kuajie/index.html (+7ms)
+21:03:32   ├─ /review/kuajie/index.html (+3ms)
+21:03:32   ├─ /compare/index.html (+6ms)
+21:03:32   ├─ /guides/index.html (+5ms)
+21:03:32   ├─ /blog/index.html (+7ms)
+21:03:32   ├─ /glossary/index.html (+5ms)
+21:03:32   ├─ /about/index.html (+5ms)
+21:03:32   ├─ /contact/index.html (+5ms)
+21:03:32   ├─ /editorial-policy/index.html (+4ms)
+21:03:32   ├─ /privacy-policy/index.html (+4ms)
+21:03:32   ├─ /disclaimer/index.html (+5ms)
+21:03:32   ├─ /404/index.html (+5ms)
+21:03:32   ├─ /blog/page/2/index.html (+5ms)
+21:03:32   ├─ /blog/page/3/index.html (+4ms)
+21:03:32   ├─ /blog/page/4/index.html (+5ms)
+21:03:32   ├─ /blog/page/5/index.html (+7ms)
+21:03:32   ├─ /blog/page/6/index.html (+4ms)
+21:03:32   ├─ /blog/page/7/index.html (+6ms)
+21:03:32   ├─ /blog/page/8/index.html (+5ms)
+21:03:32   ├─ /blog/page/9/index.html (+7ms)
+21:03:32   ├─ /blog/page/10/index.html (+6ms)
+21:03:32   ├─ /blog/category/choice/index.html (+5ms)
+21:03:32   ├─ /blog/category/budget/index.html (+4ms)
+21:03:32   ├─ /blog/category/clients/index.html (+5ms)
+21:03:32   ├─ /blog/category/routing/index.html (+7ms)
+21:03:32   ├─ /blog/category/troubleshooting/index.html (+5ms)
+21:03:32   ├─ /blog/category/measurement/index.html (+5ms)
+21:03:32   ├─ /blog/category/privacy/index.html (+6ms)
+21:03:32   ├─ /blog/category/streaming/index.html (+5ms)
+21:03:32   ├─ /blog/category/ai/index.html (+4ms)
+21:03:32   ├─ /blog/category/workflow/index.html (+4ms)
+21:03:32   ├─ /blog/ai-access/index.html (+7ms)
+21:03:32   ├─ /blog/ai-data-review/index.html (+4ms)
+21:03:32   ├─ /blog/ai-error-classification/index.html (+3ms)
+21:03:32   ├─ /blog/ai-file-upload-checklist/index.html (+4ms)
+21:03:32   ├─ /blog/ai-key-safety/index.html (+7ms)
+21:03:33   ├─ /blog/ai-latency-stages/index.html (+4ms)
+21:03:33   ├─ /blog/ai-long-task-recovery/index.html (+3ms)
+21:03:33   ├─ /blog/ai-rate-limit-retries/index.html (+3ms)
+21:03:33   ├─ /blog/ai-stream-interruption/index.html (+5ms)
+21:03:33   ├─ /blog/ai-support-evidence/index.html (+4ms)
+21:03:33   ├─ /guides/android/index.html (+3ms)
+21:03:33   ├─ /blog/budget-capacity-buffer/index.html (+3ms)
+21:03:33   ├─ /blog/budget-cloud-sync/index.html (+3ms)
+21:03:33   ├─ /blog/budget-coupon-check/index.html (+4ms)
+21:03:33   ├─ /blog/budget-double-metering/index.html (+4ms)
+21:03:33   ├─ /blog/budget-gb-gib/index.html (+3ms)
+21:03:33   ├─ /blog/budget-household-total/index.html (+3ms)
+21:03:33   ├─ /blog/budget-monthly-annual/index.html (+3ms)
+21:03:33   ├─ /blog/budget-multiplier-mix/index.html (+4ms)
+21:03:33   ├─ /blog/budget-one-time/index.html (+4ms)
+21:03:33   ├─ /blog/budget-reset-date/index.html (+3ms)
+21:03:33   ├─ /blog/budget-unlimited-fair-use/index.html (+3ms)
+21:03:33   ├─ /blog/budget-unused-quota/index.html (+3ms)
+21:03:33   ├─ /blog/budget-upgrade-timing/index.html (+3ms)
+21:03:33   ├─ /blog/budget-wavenet-tiers/index.html (+5ms)
+21:03:33   ├─ /blog/choice-affiliate-evidence/index.html (+3ms)
+21:03:33   ├─ /blog/choice-device-concurrency/index.html (+3ms)
+21:03:33   ├─ /blog/choice-device-matrix/index.html (+3ms)
+21:03:33   ├─ /blog/choice-first-month/index.html (+3ms)
+21:03:33   ├─ /blog/choice-lines-evidence/index.html (+6ms)
+21:03:33   ├─ /blog/choice-node-count/index.html (+3ms)
+21:03:33   ├─ /blog/choice-provider-vs-client/index.html (+3ms)
+21:03:33   ├─ /blog/choice-refund-terms/index.html (+3ms)
+21:03:33   ├─ /blog/choice-regions-task/index.html (+3ms)
+21:03:33   ├─ /blog/choice-source-conflict/index.html (+6ms)
+21:03:33   ├─ /blog/choice-subscription-compatibility/index.html (+4ms)
+21:03:33   ├─ /blog/choice-support-questions/index.html (+4ms)
+21:03:33   ├─ /blog/choice-switch-provider/index.html (+3ms)
+21:03:33   ├─ /blog/choice-trial-log/index.html (+5ms)
+21:03:33   ├─ /blog/choose-a-service/index.html (+4ms)
+21:03:33   ├─ /blog/client-android-always-on/index.html (+3ms)
+21:03:33   ├─ /blog/client-android-app-scope/index.html (+3ms)
+21:03:33   ├─ /blog/client-android-vpn-permission/index.html (+3ms)
+21:03:33   ├─ /blog/client-architecture-package/index.html (+4ms)
+21:03:33   ├─ /blog/client-backup-restore/index.html (+4ms)
+21:03:33   ├─ /blog/client-download-verification/index.html (+3ms)
+21:03:33   ├─ /blog/client-ios-configuration-profiles/index.html (+3ms)
+21:03:33   ├─ /blog/client-local-remote-profile/index.html (+3ms)
+21:03:33   ├─ /blog/client-mac-login-items/index.html (+4ms)
+21:03:33   ├─ /blog/client-one-click-import/index.html (+4ms)
+21:03:33   ├─ /blog/client-retire-cleanup/index.html (+3ms)
+21:03:33   ├─ /blog/client-service-permissions/index.html (+3ms)
+21:03:33   ├─ /blog/client-subscription-first-import/index.html (+3ms)
+21:03:33   ├─ /blog/client-subscription-reset/index.html (+4ms)
+21:03:33   ├─ /blog/client-subscription-update/index.html (+5ms)
+21:03:33   ├─ /blog/client-system-proxy-check/index.html (+3ms)
+21:03:33   ├─ /blog/client-system-proxy-or-tun/index.html (+3ms)
+21:03:33   ├─ /blog/client-upgrade-rollback/index.html (+3ms)
+21:03:33   ├─ /blog/client-webview-runtime/index.html (+4ms)
+21:03:33   ├─ /blog/client-windows-startup/index.html (+4ms)
+21:03:33   ├─ /blog/diagnose-cache-state/index.html (+3ms)
+21:03:33   ├─ /blog/diagnose-captive-portal/index.html (+3ms)
+21:03:33   ├─ /blog/diagnose-config-regression/index.html (+3ms)
+21:03:33   ├─ /blog/diagnose-connection-timeout/index.html (+5ms)
+21:03:33   ├─ /blog/diagnose-dns-failure/index.html (+4ms)
+21:03:33   ├─ /blog/diagnose-gateway-errors/index.html (+3ms)
+21:03:33   ├─ /blog/diagnose-ipv6-difference/index.html (+3ms)
+21:03:33   ├─ /blog/diagnose-lan-access/index.html (+3ms)
+21:03:33   ├─ /blog/diagnose-local-port/index.html (+5ms)
+21:03:33   ├─ /blog/diagnose-log-redaction/index.html (+4ms)
+21:03:33   ├─ /blog/diagnose-mtu-stall/index.html (+3ms)
+21:03:33   ├─ /blog/diagnose-network-switch/index.html (+3ms)
+21:03:33   ├─ /blog/diagnose-proxy-restoration/index.html (+3ms)
+21:03:33   ├─ /blog/diagnose-rate-limit/index.html (+4ms)
+21:03:33   ├─ /blog/diagnose-sleep-resume/index.html (+4ms)
+21:03:33   ├─ /blog/diagnose-subscription-forbidden/index.html (+3ms)
+21:03:33   ├─ /blog/diagnose-support-ticket/index.html (+3ms)
+21:03:33   ├─ /blog/diagnose-tls-clock/index.html (+3ms)
+21:03:33   ├─ /blog/diagnose-udp-symptoms/index.html (+5ms)
+21:03:33   ├─ /blog/diagnose-web-app-difference/index.html (+3ms)
+21:03:33   ├─ /glossary/dns/index.html (+3ms)
+21:03:33   ├─ /guides/ios/index.html (+3ms)
+21:03:33   ├─ /glossary/latency-bandwidth/index.html (+3ms)
+21:03:33   ├─ /guides/macos/index.html (+4ms)
+21:03:33   ├─ /blog/media-adaptive-quality/index.html (+9ms)
+21:03:33   ├─ /blog/media-casting-local-network/index.html (+5ms)
+21:03:33   ├─ /blog/media-data-budget/index.html (+5ms)
+21:03:33   ├─ /blog/media-debug-info/index.html (+4ms)
+21:03:33   ├─ /blog/media-device-compatibility/index.html (+3ms)
+21:03:33   ├─ /blog/media-hdr-hdmi/index.html (+3ms)
+21:03:33   ├─ /blog/media-live-delay/index.html (+3ms)
+21:03:33   ├─ /blog/media-offline-downloads/index.html (+4ms)
+21:03:33   ├─ /blog/media-stutter-or-buffer/index.html (+4ms)
+21:03:33   ├─ /blog/observe-ab-comparison/index.html (+5ms)
+21:03:33   ├─ /blog/observe-capture-limits/index.html (+3ms)
+21:03:33   ├─ /blog/observe-cold-warm-cache/index.html (+5ms)
+21:03:33   ├─ /blog/observe-control-variables/index.html (+5ms)
+21:03:33   ├─ /blog/observe-dns-duration/index.html (+4ms)
+21:03:33   ├─ /blog/observe-jitter-variation/index.html (+3ms)
+21:03:33   ├─ /blog/observe-latency-throughput/index.html (+4ms)
+21:03:33   ├─ /blog/observe-median-tail/index.html (+6ms)
+21:03:33   ├─ /blog/observe-network-waterfall/index.html (+4ms)
+21:03:33   ├─ /blog/observe-packet-loss/index.html (+4ms)
+21:03:33   ├─ /blog/observe-peak-hours/index.html (+3ms)
+21:03:33   ├─ /blog/observe-report-template/index.html (+5ms)
+21:03:33   ├─ /blog/observe-sample-confidence/index.html (+5ms)
+21:03:33   ├─ /blog/observe-single-multi-stream/index.html (+4ms)
+21:03:33   ├─ /blog/observe-task-success/index.html (+3ms)
+21:03:33   ├─ /blog/observe-test-traffic-cost/index.html (+6ms)
+21:03:33   ├─ /blog/observe-traceroute-limits/index.html (+4ms)
+21:03:33   ├─ /blog/observe-upload-direction/index.html (+4ms)
+21:03:33   ├─ /blog/observe-wifi-wired-control/index.html (+3ms)
+21:03:33   ├─ /blog/plan-cost/index.html (+4ms)
+21:03:33   ├─ /blog/privacy-browser-permissions/index.html (+4ms)
+21:03:33   ├─ /blog/privacy-certificate-warning/index.html (+3ms)
+21:03:33   ├─ /blog/privacy-device-sessions/index.html (+3ms)
+21:03:33   ├─ /blog/privacy-incognito-boundary/index.html (+3ms)
+21:03:33   ├─ /blog/privacy-log-redaction/index.html (+6ms)
+21:03:33   ├─ /blog/privacy-public-wifi/index.html (+4ms)
+21:03:33   ├─ /blog/privacy-site-data/index.html (+4ms)
+21:03:33   ├─ /blog/privacy-subscription-secrets/index.html (+4ms)
+21:03:33   ├─ /blog/privacy-third-party-access/index.html (+6ms)
+21:03:33   ├─ /blog/privacy-two-factor-recovery/index.html (+3ms)
+21:03:33   ├─ /blog/routing-change-review/index.html (+3ms)
+21:03:33   ├─ /blog/routing-dns-policy/index.html (+3ms)
+21:03:33   ├─ /blog/routing-dns-resolution-map/index.html (+4ms)
+21:03:33   ├─ /blog/routing-domain-matching/index.html (+4ms)
+21:03:33   ├─ /blog/routing-fake-ip-boundaries/index.html (+4ms)
+21:03:33   ├─ /blog/routing-fallback-policy/index.html (+3ms)
+21:03:33   ├─ /blog/routing-group-reference-graph/index.html (+3ms)
+21:03:33   ├─ /blog/routing-hosts-maintenance/index.html (+9ms)
+21:03:33   ├─ /blog/routing-ipv6-scope/index.html (+5ms)
+21:03:33   ├─ /blog/routing-load-balance-boundaries/index.html (+4ms)
+21:03:33   ├─ /blog/routing-local-network-exclusions/index.html (+7ms)
+21:03:33   ├─ /blog/routing-manual-group/index.html (+5ms)
+21:03:33   ├─ /blog/routing-network-port-rules/index.html (+4ms)
+21:03:33   ├─ /blog/routing-process-scope/index.html (+3ms)
+21:03:33   ├─ /blog/routing-proxy-provider-design/index.html (+5ms)
+21:03:33   ├─ /blog/routing-rule-order/index.html (+3ms)
+21:03:33   ├─ /blog/routing-rule-set-formats/index.html (+5ms)
+21:03:33   ├─ /blog/routing-rule-set-updates/index.html (+5ms)
+21:03:33   ├─ /blog/routing-sniffer-scope/index.html (+4ms)
+21:03:33   ├─ /blog/routing-url-test-policy/index.html (+3ms)
+21:03:33   ├─ /blog/stability-evidence/index.html (+3ms)
+21:03:33   ├─ /blog/streaming-checklist/index.html (+4ms)
+21:03:33   ├─ /glossary/traffic-multiplier/index.html (+3ms)
+21:03:33   ├─ /guides/troubleshooting/index.html (+17ms)
+21:03:33   ├─ /glossary/vpn-vs-proxy/index.html (+4ms)
+21:03:33   ├─ /guides/windows/index.html (+3ms)
+21:03:33   ├─ /glossary/wireguard/index.html (+3ms)
+21:03:33   ├─ /blog/work-backup-connection/index.html (+5ms)
+21:03:33   ├─ /blog/work-cloud-sync/index.html (+7ms)
+21:03:33   ├─ /blog/work-container-download/index.html (+4ms)
+21:03:33   ├─ /blog/work-corporate-access/index.html (+5ms)
+21:03:33   ├─ /blog/work-download-resume/index.html (+3ms)
+21:03:33   ├─ /blog/work-git-lfs/index.html (+3ms)
+21:03:33   ├─ /blog/work-github-https-ssh/index.html (+3ms)
+21:03:33   ├─ /blog/work-incident-handoff/index.html (+3ms)
+21:03:33   ├─ /blog/work-meeting-downloads/index.html (+3ms)
+21:03:33   ├─ /blog/work-package-registry/index.html (+5ms)
+21:03:33 ✓ Completed in 1.30s.
+
+21:03:33 [build] ✓ Completed in 2.59s.
+21:03:33 [@astrojs/sitemap] `sitemap-index.xml` created at `dist`
+21:03:33 [build] 263 page(s) built in 3.86s
+21:03:33 [build] Complete!
+Manifest: 260 indexable pages; Cloudflare 404.html created.
+
+> jcyouxuan@1.0.0 test
+> tsx --test scripts/ranking.test.ts scripts/indexnow.test.ts
+
+✔ 拒绝异站、查询参数和不安全 URL (1.5197ms)
+✔ 增量包含新增、修改、删除，不重提未改变页面 (1.0764ms)
+✔ 429 与 5xx 重试，202 是接受通知而非收录 (0.3598ms)
+✔ 永久错误不重试，网络错误最多三次 (0.5067ms)
+✔ 流量倍率按实际可用流量折算 (1.0892ms)
+✔ 不使用未核验或无限流量生成成本 (1.8252ms)
+✔ 年付、一次性与免费不混入付费月度性价比榜 (0.4013ms)
+✔ 当前目录没有免费档，不能沿用旧免费榜 (0.4224ms)
+✔ 未核实倍率不能推算实际流量成本 (0.2198ms)
+✔ 29 品牌名称、顺序、原始推广地址和 11 个优惠码准确对应 (1.7325ms)
+✔ 推荐理由、优点、核对项逐家不同且不冒充已实测 (0.9832ms)
+ℹ tests 11
+ℹ suites 0
+ℹ pass 11
+ℹ fail 0
+ℹ cancelled 0
+ℹ skipped 0
+ℹ todo 0
+ℹ duration_ms 244.693
+
+> jcyouxuan@1.0.0 audit:seo
+> tsx scripts/audit-seo.ts
+
+seo {"status":"PASS","checks":263,"errors":[]}
+
+> jcyouxuan@1.0.0 check:links
+> tsx scripts/check-links.ts
+
+links {"status":"PASS","checks":15412,"errors":[]}
+
+> jcyouxuan@1.0.0 validate:content
+> tsx scripts/validate-content.ts
+
+content {"status":"PASS","checks":452,"errors":[]}
+
+> jcyouxuan@1.0.0 audit:blog
+> tsx scripts/audit-blog.ts
+
+{
+  "status": "PASS",
+  "articles": 150,
+  "categoryCounts": {
+    "choice": 15,
+    "budget": 15,
+    "clients": 20,
+    "routing": 20,
+    "troubleshooting": 20,
+    "measurement": 20,
+    "privacy": 10,
+    "streaming": 10,
+    "ai": 10,
+    "workflow": 10
+  },
+  "bodyCharacters": 161483,
+  "chineseCharacters": 113279,
+  "shortestChinese": 544,
+  "longestChinese": 951,
+  "sources": 138,
+  "duplicateLongParagraphs": 0,
+  "similarPairs": [],
+  "errors": [],
+  "scope": "结构、来源对应、重复段落、五字符片段相似度、构建及搜索收录检查；不能单独证明编辑质量或外部产品当前状态"
+}
+
+> jcyouxuan@1.0.0 audit:keyword
+> tsx scripts/audit-keyword-focus.ts
+
+{
+  "status": "PASS",
+  "checks": 29,
+  "primaryKeyword": "机场推荐",
+  "primaryURL": "https://jcyouxuan.xyz/",
+  "title": "机场推荐：29 家机场套餐对比与选择指南 · 机场优选",
+  "description": "机场推荐与套餐选择指南，整理29个品牌的参考价格、流量额度、推荐理由和11个优惠码，支持按预算与使用场景选购、品牌对比，并标明资料来源和待核实条件。",
+  "h1": "机场推荐：看清套餐，按需选择。",
+  "contextualHomeLinkPages": 104,
+  "contextualHomeSources": [
+    "/airport/1fly/",
+    "/airport/2mao/",
+    "/airport/breezenet/",
+    "/airport/civet/",
+    "/airport/dalaocloud/",
+    "/airport/edgenova/",
+    "/airport/firefly/",
+    "/airport/flashleap/"
+  ],
+  "errors": [],
+  "scope": "静态HTML主题、首页索引资格、导航与上下文内链、场景意图、真实目录Schema及搜索同步；不代表Bing已抓取、收录或排名"
+}
+
+> jcyouxuan@1.0.0 audit:evidence
+> tsx scripts/audit-brand-evidence.ts
+
+brand-evidence {"status":"PASS","checks":524,"errors":[]}
+
+> jcyouxuan@1.0.0 audit:brand-tdk
+> tsx scripts/audit-brand-tdk.ts
+
+{"status":"PASS","brands":29,"pages":58,"checks":410,"errors":[]}

@@ -2,7 +2,11 @@
 
 交付与整理日期：2026-10-16。
 
-## 本次品牌资料复核
+## 本次品牌页TDK
+
+29家品牌的详情与购买分析共58页，每页Title、Description、Keywords包含自己的完整品牌名。详情摘要补齐原先遗漏的品牌名，58页配置独立关键词；H1与分享信息同步，无其他品牌名串用。专项410项检查通过，本地HTTP实际返回的58页逐一核对通过。完整清单见brand-tdk.csv和brand-tdk-report.md。
+
+## 已完成的品牌资料复核
 
 29家均有专属核对记录，合计73条观察，61个不同来源URL，不等于独立原始证据数量。29品牌详情与29购买分析共58页增加入口、归属、来源事实、冲突、优惠及购买问题。品牌卡、套餐行和对比工具标明参考与未确认状态，提供可下载的29家核对表。
 
@@ -62,7 +66,7 @@
 |---|---|---|
 | Astro模板与类型 | PASS | qa/brand-build.json |
 | 最终静态构建 | PASS | qa/brand-build.json |
-| 原有逻辑与品牌清单 | 11项通过 | qa/brand-optimization-final-pipeline.log |
+| 原有逻辑与品牌清单 | 11项通过 | qa/brand-tdk-pipeline.log |
 | seo | PASS | qa/seo.json |
 | links | PASS | qa/links.json |
 | content | PASS | qa/content.json |
@@ -74,6 +78,8 @@
 | keyword-focus-browser | PASS | qa/keyword-focus-browser.json |
 | brand-evidence | PASS | qa/brand-evidence.json |
 | brand-evidence-browser | PASS | qa/brand-evidence-browser.json |
+| brand-tdk | PASS | qa/brand-tdk.json |
+| brand-tdk-preview | PASS | qa/brand-tdk-preview.json |
 | lighthouse | PASS | qa/lighthouse.json |
 
 博客交互53项、全站基础浏览器284项、原有推荐/排行/对比交互49项；SEO检查263页，站内链接15412项。真实结果与适用范围以各JSON记录为准。

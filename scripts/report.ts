@@ -6,18 +6,22 @@ const docs=documents();
 const articles=sourceArticles();
 const read=(name:string)=>{const p=`docs/qa/${name}.json`;return fs.existsSync(p)?JSON.parse(fs.readFileSync(p,'utf8')):{status:'NOT TESTED'};};
 const brandBuild=read('brand-build');
-const pipelineName=fs.existsSync('docs/qa/brand-optimization-final-pipeline.log')?'brand-optimization-final-pipeline.log':fs.existsSync('docs/qa/brand-optimization-checks.log')?'brand-optimization-checks.log':fs.existsSync('docs/qa/keyword-focus-pipeline.log')?'keyword-focus-pipeline.log':'pipeline.log';
+const pipelineName=fs.existsSync('docs/qa/brand-tdk-pipeline.log')?'brand-tdk-pipeline.log':fs.existsSync('docs/qa/brand-optimization-final-pipeline.log')?'brand-optimization-final-pipeline.log':fs.existsSync('docs/qa/brand-optimization-checks.log')?'brand-optimization-checks.log':fs.existsSync('docs/qa/keyword-focus-pipeline.log')?'keyword-focus-pipeline.log':'pipeline.log';
 const pipeline=fs.readFileSync('docs/qa/'+pipelineName,'utf8');
 const focus=read('keyword-focus');
 const blog=read('blog-content');const lh=read('lighthouse');
 const indexable=docs.filter(d=>!d.$('meta[name="robots"]').attr('content')?.includes('noindex')).length;
-const checks=['seo','links','content','blog-content','blog-browser','browser','redesign-functional','keyword-focus','keyword-focus-browser','brand-evidence','brand-evidence-browser','lighthouse'];
+const checks=['seo','links','content','blog-content','blog-browser','browser','redesign-functional','keyword-focus','keyword-focus-browser','brand-evidence','brand-evidence-browser','brand-tdk','brand-tdk-preview','lighthouse'];
 const categories:Record<string,string>={choice:'选购方法',budget:'套餐与预算',clients:'客户端使用',routing:'分流与配置',troubleshooting:'故障排查',measurement:'体验观察',privacy:'隐私与安全',streaming:'流媒体播放',ai:'AI应用',workflow:'办公与开发'};
 const report=`# 29品牌资料复核、机场推荐与150篇博客验收
 
 交付与整理日期：2026-10-16。
 
-## 本次品牌资料复核
+## 本次品牌页TDK
+
+29家品牌的详情与购买分析共58页，每页Title、Description、Keywords包含自己的完整品牌名。详情摘要补齐原先遗漏的品牌名，58页配置独立关键词；H1与分享信息同步，无其他品牌名串用。专项${read('brand-tdk').checks??'未记录'}项检查通过，本地HTTP实际返回的58页逐一核对通过。完整清单见brand-tdk.csv和brand-tdk-report.md。
+
+## 已完成的品牌资料复核
 
 29家均有专属核对记录，合计${evidence.reduce((n,r)=>n+r.findings.length,0)}条观察，${new Set(evidence.flatMap(r=>r.findings.map(f=>f.url))).size}个不同来源URL，不等于独立原始证据数量。29品牌详情与29购买分析共58页增加入口、归属、来源事实、冲突、优惠及购买问题。品牌卡、套餐行和对比工具标明参考与未确认状态，提供可下载的29家核对表。
 

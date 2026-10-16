@@ -6,6 +6,7 @@ export interface Page {
   path: string;
   title: string;
   description: string;
+  keywords?: string[];
   type: string;
   key?: string;
   noindex?: boolean;
@@ -100,7 +101,8 @@ export const pages: Page[] = [
     {
       path: `airport/${a.slug}`,
       title: `${a.name} 套餐与选购指南`,
-      description: `${brandEditorial[a.slug].deck} 查看套餐解读、适合人群、优势与局限、指定优惠码及公开来源。`,
+      description: `${a.name}套餐资料：${brandEditorial[a.slug].deck} 查看适合人群、推荐依据、资料冲突${a.coupon?'与指定优惠码条件':'与购买前核对项'}。`,
+      keywords: [a.name, `${a.name}套餐`, `${a.name}价格`, `${a.name}${a.coupon?'优惠码':'选购'}`],
       type: "brand",
       key: a.slug,
       parent: "airport",
@@ -108,7 +110,8 @@ export const pages: Page[] = [
     {
       path: `review/${a.slug}`,
       title: `${a.name} 值得选吗？预算与需求取舍`,
-      description: `为什么选择 ${a.name}？围绕“${a.focus}”分析费用和容量取舍，保留资料冲突及购买前核对项。`,
+      description: `为什么选择${a.name}？围绕“${a.focus}”分析费用和容量取舍，说明适合人群、资料冲突与购买前核对项。`,
+      keywords: [a.name, `${a.name}推荐理由`, `${a.name}适合人群`, `${a.name}套餐对比`],
       type: "review",
       key: a.slug,
       parent: "review",

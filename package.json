@@ -15,7 +15,7 @@
     "check:links": "tsx scripts/check-links.ts",
     "validate:content": "tsx scripts/validate-content.ts",
     "test": "tsx --test scripts/ranking.test.ts scripts/indexnow.test.ts",
-    "qa": "npm run check && npm run build && npm run test && npm run audit:seo && npm run check:links && npm run validate:content && npm run audit:blog && npm run audit:keyword && npm run audit:evidence",
+    "qa": "npm run check && npm run build && npm run test && npm run audit:seo && npm run check:links && npm run validate:content && npm run audit:blog && npm run audit:keyword && npm run audit:evidence && npm run audit:brand-tdk",
     "indexnow": "tsx scripts/indexnow.ts",
     "report": "tsx scripts/report.ts",
     "qa:browser": "tsx scripts/browser-qa.ts",
@@ -26,7 +26,8 @@
     "audit:tdk": "tsx scripts/audit-tdk.ts",
     "audit:keyword": "tsx scripts/audit-keyword-focus.ts",
     "audit:evidence": "tsx scripts/audit-brand-evidence.ts",
-    "qa:evidence": "tsx scripts/brand-evidence-browser-qa.ts"
+    "qa:evidence": "tsx scripts/brand-evidence-browser-qa.ts",
+    "audit:brand-tdk": "tsx scripts/audit-brand-tdk.ts"
   },
   "dependencies": {
     "@astrojs/sitemap": "3.7.4",

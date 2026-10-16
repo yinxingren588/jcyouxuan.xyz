@@ -62,3 +62,7 @@ Cloudflare Pages 构建命令 `npm run build`，输出目录 `dist`。构建不�
 `npm run audit:evidence`检查29家覆盖、指定码、当前报价证据、58页可读内容及来源属性，已加入完整QA。`public/brand-verification.csv`为读者可下载核对表，和`docs/brand-verification.csv`保持一致。报告见`docs/brand-optimization-report.md`。
 
 按站长最新指示，本轮不操作Cloudflare，不部署域名、不修改DNS、不进行Bing账户验证或实际IndexNow提交；交付范围为本地网站与现有GitHub源码。
+
+## 品牌页独立TDK
+
+29品牌各有详情与购买分析，共58个独立页面。每页Title、Description与Keywords均包含本品牌名，关键词数组只使用本品牌及对应页面意图；H1、分享标题/描述和独立Canonical同步核对。`npm run audit:brand-tdk`已加入完整QA，结果为`docs/qa/brand-tdk.json`，逐页清单为`docs/brand-tdk.csv`。本地HTTP预览核对记录为`docs/qa/brand-tdk-preview.json`。
