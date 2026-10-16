@@ -1,5 +1,7 @@
 # GitHub 与 Cloudflare Pages 部署
 
+当前范围（2026-10-16）：站长明确“不需要上cloudflare”。本轮只同步GitHub并提供本地预览，以下Cloudflare步骤仅为未来部署参考，不执行、不暗示已部署。
+
 ## 仓库与构建
 
 远程：<https://github.com/yinxingren588/jcyouxuan.xyz>。使用 `main` 作为生产分支，不强制覆盖远程历史。依赖精确版本由 package-lock.json 固定。

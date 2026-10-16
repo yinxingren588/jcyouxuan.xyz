@@ -1,21 +1,31 @@
 import fs from 'node:fs';
 import {documents} from './lib';
 import {sourceArticles} from './article-source';
+import evidence from '../src/data/brand-evidence.json';
 const docs=documents();
 const articles=sourceArticles();
 const read=(name:string)=>{const p=`docs/qa/${name}.json`;return fs.existsSync(p)?JSON.parse(fs.readFileSync(p,'utf8')):{status:'NOT TESTED'};};
-const pipelineName=fs.existsSync('docs/qa/keyword-focus-pipeline.log')?'keyword-focus-pipeline.log':'pipeline.log';
+const brandBuild=read('brand-build');
+const pipelineName=fs.existsSync('docs/qa/brand-optimization-final-pipeline.log')?'brand-optimization-final-pipeline.log':fs.existsSync('docs/qa/brand-optimization-checks.log')?'brand-optimization-checks.log':fs.existsSync('docs/qa/keyword-focus-pipeline.log')?'keyword-focus-pipeline.log':'pipeline.log';
 const pipeline=fs.readFileSync('docs/qa/'+pipelineName,'utf8');
 const focus=read('keyword-focus');
 const blog=read('blog-content');const lh=read('lighthouse');
 const indexable=docs.filter(d=>!d.$('meta[name="robots"]').attr('content')?.includes('noindex')).length;
-const checks=['seo','links','content','blog-content','blog-browser','browser','redesign-functional','keyword-focus','keyword-focus-browser','lighthouse'];
+const checks=['seo','links','content','blog-content','blog-browser','browser','redesign-functional','keyword-focus','keyword-focus-browser','brand-evidence','brand-evidence-browser','lighthouse'];
 const categories:Record<string,string>={choice:'选购方法',budget:'套餐与预算',clients:'客户端使用',routing:'分流与配置',troubleshooting:'故障排查',measurement:'体验观察',privacy:'隐私与安全',streaming:'流媒体播放',ai:'AI应用',workflow:'办公与开发'};
-const report=`# 机场推荐主词优化与150篇博客验收
+const report=`# 29品牌资料复核、机场推荐与150篇博客验收
 
 交付与整理日期：2026-10-16。
 
-## 本次主词优化
+## 本次品牌资料复核
+
+29家均有专属核对记录，合计${evidence.reduce((n,r)=>n+r.findings.length,0)}条观察，${new Set(evidence.flatMap(r=>r.findings.map(f=>f.url))).size}个不同来源URL，不等于独立原始证据数量。29品牌详情与29购买分析共58页增加入口、归属、来源事实、冲突、优惠及购买问题。品牌卡、套餐行和对比工具标明参考与未确认状态，提供可下载的29家核对表。
+
+浪网入门仍为30元150GB参考；微风历史条款截止已过；飞猫通用订阅与码有效性、光速云/宇宙云/EdgeNova额度版本分别说明。当前官方报价确认数为0，没有登录下单、付款或网络实测；参考套餐继续保持未核验。
+
+本轮按站长明确指示不操作Cloudflare，仅交付本地及GitHub。详情见brand-optimization-report.md、brand-verification.csv及research目录。
+
+## 已保留的主词布局
 
 首页主攻“机场推荐”，标题、描述、H1与首屏说明统一。品牌、选购场景与方法文章各有不同搜索意图；导航的“机场推荐”指向首页。
 
@@ -56,8 +66,8 @@ ${Object.entries(categories).map(([key,name])=>`| ${name} | ${blog.categoryCount
 
 | 项目 | 结果 | 记录 |
 |---|---|---|
-| Astro模板与类型 | ${pipeline.includes('0 errors')?'PASS':'NOT TESTED'} | qa/${pipelineName} |
-| 最终静态构建 | ${pipeline.includes('[build] Complete!')?'PASS':'NOT TESTED'} | qa/${pipelineName} |
+| Astro模板与类型 | ${brandBuild.status==='PASS'?'PASS':pipeline.includes('0 errors')?'PASS':'NOT TESTED'} | qa/brand-build.json |
+| 最终静态构建 | ${brandBuild.status==='PASS'?'PASS':pipeline.includes('[build] Complete!')?'PASS':'NOT TESTED'} | qa/brand-build.json |
 | 原有逻辑与品牌清单 | ${pipeline.match(/(?:# |ℹ )pass (\d+)/)?.[1]??'未记录'}项通过 | qa/${pipelineName} |
 ${checks.map(name=>`| ${name} | ${read(name).status} | qa/${name}.json |`).join('\n')}
 
@@ -71,7 +81,7 @@ ${checks.map(name=>`| ${name} | ${read(name).status} | qa/${name}.json |`).join(
 |---|---:|---:|---:|---:|
 ${(lh.results??[]).map((r:any)=>`| ${r.route} | ${r.scores.performance} | ${r.scores.accessibility} | ${r.scores['best-practices']} | ${r.scores.seo} |`).join('\n')}
 
-本地Chrome移动端模拟，包含博客栏目和正文。分数受环境影响，不代表生产环境或真实用户Web Vitals；完整原始记录见qa/lighthouse-*.json。
+本地Chrome移动端模拟，七条路由包含博客栏目、正文及浪网和飞猫品牌页。分数受环境影响，不代表生产环境或真实用户Web Vitals；完整原始记录见qa/lighthouse-*.json。
 
 ## 事实边界与外部状态
 

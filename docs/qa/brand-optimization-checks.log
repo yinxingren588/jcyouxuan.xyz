@@ -1,0 +1,204 @@
+
+> jcyouxuan@1.0.0 test
+> tsx --test scripts/ranking.test.ts scripts/indexnow.test.ts
+
+✔ 拒绝异站、查询参数和不安全 URL (1.5214ms)
+✔ 增量包含新增、修改、删除，不重提未改变页面 (0.9626ms)
+✔ 429 与 5xx 重试，202 是接受通知而非收录 (0.3861ms)
+✔ 永久错误不重试，网络错误最多三次 (1.2868ms)
+✔ 流量倍率按实际可用流量折算 (1.3304ms)
+✔ 不使用未核验或无限流量生成成本 (0.1909ms)
+✔ 年付、一次性与免费不混入付费月度性价比榜 (0.1851ms)
+✔ 当前目录没有免费档，不能沿用旧免费榜 (0.1923ms)
+✔ 未核实倍率不能推算实际流量成本 (0.1475ms)
+✔ 29 品牌名称、顺序、原始推广地址和 11 个优惠码准确对应 (1.0668ms)
+✔ 推荐理由、优点、核对项逐家不同且不冒充已实测 (0.4038ms)
+ℹ tests 11
+ℹ suites 0
+ℹ pass 11
+ℹ fail 0
+ℹ cancelled 0
+ℹ skipped 0
+ℹ todo 0
+ℹ duration_ms 531.9784
+
+> jcyouxuan@1.0.0 audit:seo
+> tsx scripts/audit-seo.ts
+
+seo {"status":"PASS","checks":263,"errors":[]}
+
+> jcyouxuan@1.0.0 check:links
+> tsx scripts/check-links.ts
+
+links {"status":"PASS","checks":15412,"errors":[]}
+
+> jcyouxuan@1.0.0 validate:content
+> tsx scripts/validate-content.ts
+
+content {"status":"PASS","checks":452,"errors":[]}
+
+> jcyouxuan@1.0.0 audit:blog
+> tsx scripts/audit-blog.ts
+
+{
+  "status": "PASS",
+  "articles": 150,
+  "categoryCounts": {
+    "choice": 15,
+    "budget": 15,
+    "clients": 20,
+    "routing": 20,
+    "troubleshooting": 20,
+    "measurement": 20,
+    "privacy": 10,
+    "streaming": 10,
+    "ai": 10,
+    "workflow": 10
+  },
+  "bodyCharacters": 161483,
+  "chineseCharacters": 113279,
+  "shortestChinese": 544,
+  "longestChinese": 951,
+  "sources": 138,
+  "duplicateLongParagraphs": 0,
+  "similarPairs": [],
+  "errors": [],
+  "scope": "结构、来源对应、重复段落、五字符片段相似度、构建及搜索收录检查；不能单独证明编辑质量或外部产品当前状态"
+}
+
+> jcyouxuan@1.0.0 audit:keyword
+> tsx scripts/audit-keyword-focus.ts
+
+{
+  "status": "PASS",
+  "checks": 29,
+  "primaryKeyword": "机场推荐",
+  "primaryURL": "https://jcyouxuan.xyz/",
+  "title": "机场推荐：29 家机场套餐对比与选择指南 · 机场优选",
+  "description": "机场推荐与套餐选择指南，整理29个品牌的参考价格、流量额度、推荐理由和11个优惠码，支持按预算与使用场景选购、品牌对比，并标明资料来源和待核实条件。",
+  "h1": "机场推荐：看清套餐，按需选择。",
+  "contextualHomeLinkPages": 104,
+  "contextualHomeSources": [
+    "/airport/1fly/",
+    "/airport/2mao/",
+    "/airport/breezenet/",
+    "/airport/civet/",
+    "/airport/dalaocloud/",
+    "/airport/edgenova/",
+    "/airport/firefly/",
+    "/airport/flashleap/"
+  ],
+  "errors": [],
+  "scope": "静态HTML主题、首页索引资格、导航与上下文内链、场景意图、真实目录Schema及搜索同步；不代表Bing已抓取、收录或排名"
+}
+
+> jcyouxuan@1.0.0 audit:evidence
+> tsx scripts/audit-brand-evidence.ts
+
+brand-evidence {"status":"PASS","checks":524,"errors":[]}
+
+> jcyouxuan@1.0.0 audit:tdk
+> tsx scripts/audit-tdk.ts
+
+{
+  "status": "AUDITED",
+  "scope": "本地最终构建HTML，非正式域名抓取或Bing关键词表现报告",
+  "keyword": "机场推荐",
+  "pages": 263,
+  "indexable": 260,
+  "missingTitles": 0,
+  "missingDescriptions": 0,
+  "duplicateTitles": [],
+  "duplicateDescriptions": [],
+  "abnormalMetaCounts": [],
+  "withKeywords": 0,
+  "coverage": {
+    "title": 3,
+    "description": 3,
+    "h1": 3,
+    "h2": 1,
+    "main": 103
+  },
+  "home": {
+    "url": "/",
+    "title": "机场推荐：29 家机场套餐对比与选择指南 · 机场优选",
+    "description": "机场推荐与套餐选择指南，整理29个品牌的参考价格、流量额度、推荐理由和11个优惠码，支持按预算与使用场景选购、品牌对比，并标明资料来源和待核实条件。",
+    "keywords": "",
+    "h1": "机场推荐：看清套餐，按需选择。",
+    "indexable": true,
+    "canonical": "https://jcyouxuan.xyz/",
+    "ogTitleMatches": true,
+    "ogDescriptionMatches": true,
+    "twitterTitleMatches": true,
+    "twitterDescriptionMatches": true,
+    "titleCharacters": 27,
+    "descriptionCharacters": 74,
+    "titleVisualUnits": 48,
+    "exactInTitle": true,
+    "exactInDescription": true,
+    "exactInKeywords": false,
+    "exactInH1": true,
+    "exactInH2": true,
+    "exactInMain": true,
+    "exactInIntro": true,
+    "titleCount": 1,
+    "descriptionCount": 1,
+    "keywordsCount": 0,
+    "h1Count": 1
+  },
+  "primaryCandidates": [
+    {
+      "url": "/",
+      "title": "机场推荐：29 家机场套餐对比与选择指南 · 机场优选"
+    },
+    {
+      "url": "/recommend/beginner/",
+      "title": "新手机场推荐：客户端、设备与短期选购 · 机场优选"
+    },
+    {
+      "url": "/recommend/budget/",
+      "title": "低预算机场推荐：月付预算与流量选择 · 机场优选"
+    }
+  ],
+  "coreAnchorTargets": [
+    {
+      "url": "/",
+      "count": 367,
+      "sourcePages": 262,
+      "examples": [
+        {
+          "source": "/404/",
+          "anchor": "机场推荐首页"
+        },
+        {
+          "source": "/about/",
+          "anchor": "机场推荐首页"
+        },
+        {
+          "source": "/airport/1fly/",
+          "anchor": "机场推荐首页"
+        }
+      ]
+    }
+  ],
+  "longTitleReview": [
+    {
+      "url": "/blog/work-corporate-access/",
+      "title": "公司资源能登录却不能访问：身份授权与企业网络策略怎么配合检查 · 机场优选",
+      "visualUnits": 71
+    },
+    {
+      "url": "/blog/work-github-https-ssh/",
+      "title": "GitHub 网页能打开却无法拉代码：HTTPS、SSH 和账户权限分别检查 · 机场优选",
+      "visualUnits": 71
+    }
+  ],
+  "lengthNotice": "70个宽度单位仅用于编辑抽查，汉字按2、常见拉丁字符按1粗估；不是Bing固定字符或像素上限",
+  "notes": [
+    "不把公共导航重复的关键词统计成正文主攻词。main已排除脚本、导航、面包屑、侧栏及来源列表，但保留正文内链。",
+    "候选页面拥有相同词不等于实际关键词内耗；需结合查询、落地页和表现数据判断。",
+    "缺少meta keywords不按错误处理；不将其作为能否排名的判断依据。"
+  ],
+  "socialMetaMismatches": [],
+  "canonicalMismatches": []
+}

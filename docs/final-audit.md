@@ -1,8 +1,16 @@
-# 机场推荐主词优化与150篇博客验收
+# 29品牌资料复核、机场推荐与150篇博客验收
 
 交付与整理日期：2026-10-16。
 
-## 本次主词优化
+## 本次品牌资料复核
+
+29家均有专属核对记录，合计73条观察，61个不同来源URL，不等于独立原始证据数量。29品牌详情与29购买分析共58页增加入口、归属、来源事实、冲突、优惠及购买问题。品牌卡、套餐行和对比工具标明参考与未确认状态，提供可下载的29家核对表。
+
+浪网入门仍为30元150GB参考；微风历史条款截止已过；飞猫通用订阅与码有效性、光速云/宇宙云/EdgeNova额度版本分别说明。当前官方报价确认数为0，没有登录下单、付款或网络实测；参考套餐继续保持未核验。
+
+本轮按站长明确指示不操作Cloudflare，仅交付本地及GitHub。详情见brand-optimization-report.md、brand-verification.csv及research目录。
+
+## 已保留的主词布局
 
 首页主攻“机场推荐”，标题、描述、H1与首屏说明统一。品牌、选购场景与方法文章各有不同搜索意图；导航的“机场推荐”指向首页。
 
@@ -19,7 +27,7 @@
 
 博客总计 **150篇**：重写并保留原有5篇地址，新增145篇。另有原有教程5篇、百科5篇，不计入博客150篇；品牌资料与购买分析也单独计算。
 
-正文共约113189个汉字（按汉字字符统计，不包括英文、链接等），161307个正文字符。引用137个来源URL；同一文档的不同URL形式不等于独立文献。文章目录和来源见 blog-catalog.csv 与四份 blog-research-*.md。
+正文共约113279个汉字（按汉字字符统计，不包括英文、链接等），161483个正文字符。引用138个来源URL；同一文档的不同URL形式不等于独立文献。文章目录和来源见 blog-catalog.csv 与四份 blog-research-*.md。
 
 | 主题 | 篇数 |
 |---|---:|
@@ -52,9 +60,9 @@
 
 | 项目 | 结果 | 记录 |
 |---|---|---|
-| Astro模板与类型 | PASS | qa/keyword-focus-pipeline.log |
-| 最终静态构建 | PASS | qa/keyword-focus-pipeline.log |
-| 原有逻辑与品牌清单 | 11项通过 | qa/keyword-focus-pipeline.log |
+| Astro模板与类型 | PASS | qa/brand-build.json |
+| 最终静态构建 | PASS | qa/brand-build.json |
+| 原有逻辑与品牌清单 | 11项通过 | qa/brand-optimization-final-pipeline.log |
 | seo | PASS | qa/seo.json |
 | links | PASS | qa/links.json |
 | content | PASS | qa/content.json |
@@ -64,9 +72,11 @@
 | redesign-functional | PASS | qa/redesign-functional.json |
 | keyword-focus | PASS | qa/keyword-focus.json |
 | keyword-focus-browser | PASS | qa/keyword-focus-browser.json |
+| brand-evidence | PASS | qa/brand-evidence.json |
+| brand-evidence-browser | PASS | qa/brand-evidence-browser.json |
 | lighthouse | PASS | qa/lighthouse.json |
 
-博客交互53项、全站基础浏览器284项、原有推荐/排行/对比交互49项；SEO检查263页，站内链接15251项。真实结果与适用范围以各JSON记录为准。
+博客交互53项、全站基础浏览器284项、原有推荐/排行/对比交互49项；SEO检查263页，站内链接15412项。真实结果与适用范围以各JSON记录为准。
 
 全站生成263个HTML页面（含404，不重复计平台404.html别名），260个允许索引。主内容均为静态HTML；筛选和计算依赖JavaScript。
 
@@ -74,13 +84,15 @@
 
 | 路由 | 性能 | 无障碍 | 最佳实践 | SEO |
 |---|---:|---:|---:|---:|
-| / | 99 | 100 | 100 | 100 |
+| / | 100 | 100 | 100 | 100 |
 | /compare/ | 100 | 100 | 100 | 100 |
 | /guides/windows/ | 100 | 100 | 100 | 100 |
-| /blog/ | 100 | 100 | 100 | 100 |
+| /blog/ | 99 | 100 | 100 | 100 |
 | /blog/budget-monthly-annual/ | 100 | 100 | 100 | 100 |
+| /airport/wavenet/ | 100 | 100 | 100 | 100 |
+| /airport/flycat/ | 100 | 100 | 100 | 100 |
 
-本地Chrome移动端模拟，包含博客栏目和正文。分数受环境影响，不代表生产环境或真实用户Web Vitals；完整原始记录见qa/lighthouse-*.json。
+本地Chrome移动端模拟，七条路由包含博客栏目、正文及浪网和飞猫品牌页。分数受环境影响，不代表生产环境或真实用户Web Vitals；完整原始记录见qa/lighthouse-*.json。
 
 ## 事实边界与外部状态
 

@@ -22,7 +22,7 @@ export const airports:Airport[] = [
         "trafficGB": 120,
         "trafficUnit": "GB",
         "verified": false,
-        "notes": "第三方公开资料参考；未登录结算页核价，是否在售需确认。"
+        "notes": "第三方历史参考；当前在售、额度及结算均未确认。40元标准档240GB与300GB版本并存；选择较小值只能减少夸大，不能使其成为已验证价格。"
       },
       {
         "id": "month-2",
@@ -33,7 +33,7 @@ export const airports:Airport[] = [
         "trafficGB": 240,
         "trafficUnit": "GB",
         "verified": false,
-        "notes": "第三方公开资料参考；未登录结算页核价，是否在售需确认。"
+        "notes": "第三方历史参考；当前在售、额度及结算均未确认。40元标准档240GB与300GB版本并存；选择较小值只能减少夸大，不能使其成为已验证价格。"
       }
     ],
     "protocols": [],
@@ -45,7 +45,7 @@ export const airports:Airport[] = [
       "相邻两档价格与容量同比增长，升级预算容易预估"
     ],
     "disadvantages": [
-      "40 元档有其他页面写成 300GB；本页采用较保守的 240GB 参考值，不据此承诺实际到账额度。"
+      "40元标准档240GB与300GB版本并存；选择较小值只能减少夸大，不能使其成为已验证价格。 40 元档有其他页面写成 300GB；本页采用较保守的 240GB 参考值，不据此承诺实际到账额度。"
     ],
     "suitableFor": [
       "120GB 起步，按用量稳步升级"
@@ -53,8 +53,8 @@ export const airports:Airport[] = [
     "sources": [
       "https://tizilab.cc/paihang/twilight/"
     ],
-    "sourceNotes": "40 元档有其他页面写成 300GB；本页采用较保守的 240GB 参考值，不据此承诺实际到账额度。",
-    "purchaseCheck": "在结算页重点核对 40 元档究竟是 240GB 还是 300GB，以及流量重置日。",
+    "sourceNotes": "40元标准档240GB与300GB版本并存；选择较小值只能减少夸大，不能使其成为已验证价格。 40 元档有其他页面写成 300GB；本页采用较保守的 240GB 参考值，不据此承诺实际到账额度。",
+    "purchaseCheck": "20元120GB与40元240GB是否仍在售？是否按30天或自然月重置？ 40元档实际到账是240GB还是300GB？ 是否支持所用客户端，设备数、倍率、退款窗口分别是什么？",
     "lastVerified": "2026-10-16",
     "testStatus": "unverified",
     "color": "#9b87ff"
@@ -81,7 +81,7 @@ export const airports:Airport[] = [
         "trafficGB": 144,
         "trafficUnit": "GB",
         "verified": false,
-        "notes": "第三方公开资料参考；未登录结算页核价，是否在售需确认。"
+        "notes": "第三方历史参考；当前在售、额度及结算均未确认。24元档144GB、120GB及100GB的不同公开版本；当前144GB仍须原入口核对。"
       }
     ],
     "protocols": [],
@@ -90,10 +90,10 @@ export const airports:Airport[] = [
     "streamingSupport": [],
     "advantages": [
       "144GB 月包为介于常见小包之间的需求提供预算参照",
-      "提供指定优惠码 yxr888，可在结账时单独验证适用条件"
+      "仅收录周期明确的月包作预算参照，避免把109元年包额度混作每月144GB"
     ],
     "disadvantages": [
-      "来源还收录年付与一次性方案，但各周期流量口径不能混用；本页只把明确标为月度的 144GB 纳入表格。"
+      "24元档144GB、120GB及100GB的不同公开版本；当前144GB仍须原入口核对。 来源还收录年付与一次性方案，但各周期流量口径不能混用；本页只把明确标为月度的 144GB 纳入表格。"
     ],
     "suitableFor": [
       "144GB 月包，优先核对精确额度"
@@ -101,8 +101,8 @@ export const airports:Airport[] = [
     "sources": [
       "https://jichang168.com/airports/invisible/"
     ],
-    "sourceNotes": "来源还收录年付与一次性方案，但各周期流量口径不能混用；本页只把明确标为月度的 144GB 纳入表格。",
-    "purchaseCheck": "确认后台实际月额度为 144GB，输入 yxr888 后查看订单总额是否变化，不从码名猜折扣。",
+    "sourceNotes": "24元档144GB、120GB及100GB的不同公开版本；当前144GB仍须原入口核对。 来源还收录年付与一次性方案，但各周期流量口径不能混用；本页只把明确标为月度的 144GB 纳入表格。",
+    "purchaseCheck": "白银纪元当前是否24元/144GB？ 109元年付80GB究竟每月还是全年总量？ 当前能否发放通用订阅，还是必须官方客户端？ yxr888适用哪些套餐、周期、新购或续费？优惠后订单金额是多少？ 一次性包设备上限和退款时限分别是多少？",
     "lastVerified": "2026-10-16",
     "testStatus": "unverified",
     "color": "#73d9d2"
@@ -128,7 +128,7 @@ export const airports:Airport[] = [
         "trafficGB": 100,
         "trafficUnit": "GB",
         "verified": false,
-        "notes": "第三方公开资料参考；未登录结算页核价，是否在售需确认。"
+        "notes": "第三方历史参考；当前在售、额度及结算均未确认。"
       },
       {
         "id": "month-2",
@@ -139,7 +139,7 @@ export const airports:Airport[] = [
         "trafficGB": 300,
         "trafficUnit": "GB",
         "verified": false,
-        "notes": "第三方公开资料参考；未登录结算页核价，是否在售需确认。"
+        "notes": "第三方历史参考；当前在售、额度及结算均未确认。"
       }
     ],
     "protocols": [],
@@ -151,7 +151,7 @@ export const airports:Airport[] = [
       "中档容量增长快于标价增长，适合接近小档上限时重新核算"
     ],
     "disadvantages": [
-      "公开页面对协议和年付流量重置的表述不一致；本页不据此承诺 VLESS、Trojan 或年付月额度。"
+      "年付99元70GB/年、70GB未明周期、79GB/30天并存。 公开页面对协议和年付流量重置的表述不一致；本页不据此承诺 VLESS、Trojan 或年付月额度。"
     ],
     "suitableFor": [
       "从 100GB 到 300GB 的容量跃迁"
@@ -159,8 +159,8 @@ export const airports:Airport[] = [
     "sources": [
       "https://towernav.com/airports/lingdong/"
     ],
-    "sourceNotes": "公开页面对协议和年付流量重置的表述不一致；本页不据此承诺 VLESS、Trojan 或年付月额度。",
-    "purchaseCheck": "先确认账户支持的客户端，再核对 300GB 是否每个账单月重置；不要直接把年付小包当作月付替代。",
+    "sourceNotes": "年付99元70GB/年、70GB未明周期、79GB/30天并存。 公开页面对协议和年付流量重置的表述不一致；本页不据此承诺 VLESS、Trojan 或年付月额度。",
+    "purchaseCheck": "20元100GB和50元300GB是否仍在售，周期是否30天？ 客户端格式、节点倍率与设备并发限制是什么？ 年付小包明确的流量周期是什么？ 退款适用期限、已用流量门槛与手续费能否提供条款？",
     "lastVerified": "2026-10-16",
     "testStatus": "unverified",
     "color": "#82b5ff"
@@ -186,7 +186,7 @@ export const airports:Airport[] = [
         "trafficGB": 125,
         "trafficUnit": "GB",
         "verified": false,
-        "notes": "第三方公开资料参考；未登录结算页核价，是否在售需确认。"
+        "notes": "第三方历史参考；当前在售、额度及结算均未确认。"
       },
       {
         "id": "month-2",
@@ -197,7 +197,7 @@ export const airports:Airport[] = [
         "trafficGB": 350,
         "trafficUnit": "GB",
         "verified": false,
-        "notes": "第三方公开资料参考；未登录结算页核价，是否在售需确认。"
+        "notes": "第三方历史参考；当前在售、额度及结算均未确认。"
       }
     ],
     "protocols": [],
@@ -209,7 +209,7 @@ export const airports:Airport[] = [
       "350GB 中档可用于评估多任务叠加后的月度容量"
     ],
     "disadvantages": [
-      "89 元年付小包等资料没有清晰统一的重置说明；未将这些金额折算成可直接购买的月付价格。"
+      "89元年包60GB重置周期未明确，不能折算为可直接购买的月付档。 89 元年付小包等资料没有清晰统一的重置说明；未将这些金额折算成可直接购买的月付价格。"
     ],
     "suitableFor": [
       "125GB 与 350GB，留出增长空间"
@@ -217,8 +217,8 @@ export const airports:Airport[] = [
     "sources": [
       "https://jichangnode.wiki/blog/laddercloud-monthly-research/"
     ],
-    "sourceNotes": "89 元年付小包等资料没有清晰统一的重置说明；未将这些金额折算成可直接购买的月付价格。",
-    "purchaseCheck": "你提供的链接没有 code 参数，本站保留原样；到站后确认归属、125GB 档价格及当期账单规则。",
+    "sourceNotes": "89元年包60GB重置周期未明确，不能折算为可直接购买的月付档。 89 元年付小包等资料没有清晰统一的重置说明；未将这些金额折算成可直接购买的月付价格。",
+    "purchaseCheck": "25元125GB与60元350GB当前是否在售？ 89元年包60GB是全年还是按月补发？ 初阶与中阶在节点、倍率和并发上是否不同？ 续费是否延长到期时间、是否立即重置？退款条件是什么？",
     "lastVerified": "2026-10-16",
     "testStatus": "unverified",
     "color": "#d5aa73"
@@ -244,7 +244,7 @@ export const airports:Airport[] = [
         "trafficGB": 150,
         "trafficUnit": "GB",
         "verified": false,
-        "notes": "第三方公开资料参考；未登录结算页核价，是否在售需确认。"
+        "notes": "第三方历史参考；当前在售、额度及结算均未确认。"
       },
       {
         "id": "month-2",
@@ -255,7 +255,7 @@ export const airports:Airport[] = [
         "trafficGB": 380,
         "trafficUnit": "GB",
         "verified": false,
-        "notes": "第三方公开资料参考；未登录结算页核价，是否在售需确认。"
+        "notes": "第三方历史参考；当前在售、额度及结算均未确认。"
       }
     ],
     "protocols": [],
@@ -267,7 +267,7 @@ export const airports:Airport[] = [
       "25 元小档与 50 元中档便于比较额外 230GB 的边际支出"
     ],
     "disadvantages": [
-      "飞V与 Firefly 是本目录中的两个独立品牌；不能因名称相近就共用优惠码或沿用对方线路结论。"
+      "99元年付65GB的每月/总量口径未统一。 飞V与 Firefly 是本目录中的两个独立品牌；不能因名称相近就共用优惠码或沿用对方线路结论。"
     ],
     "suitableFor": [
       "380GB 中档，适合中等偏高用量"
@@ -275,8 +275,8 @@ export const airports:Airport[] = [
     "sources": [
       "https://jichangshice.com.cn/airports/flyv/"
     ],
-    "sourceNotes": "飞V与 Firefly 是本目录中的两个独立品牌；不能因名称相近就共用优惠码或沿用对方线路结论。",
-    "purchaseCheck": "确认访问的是飞V面板；重点核对 380GB 档是否仍在售，不要误用 Firefly 的优惠码。",
+    "sourceNotes": "99元年付65GB的每月/总量口径未统一。 飞V与 Firefly 是本目录中的两个独立品牌；不能因名称相近就共用优惠码或沿用对方线路结论。",
+    "purchaseCheck": "50元380GB是否仍为月付，和25元150GB档节点权益有何不同？ 65GB年包重置周期是什么？ 一次性包剩余额度有效期、长期不登录处理办法是什么？ 当前支持哪些客户端和付款方式，退款条件是什么？",
     "lastVerified": "2026-10-16",
     "testStatus": "unverified",
     "color": "#ed94c4"
@@ -302,7 +302,7 @@ export const airports:Airport[] = [
         "trafficGB": 150,
         "trafficUnit": "GB",
         "verified": false,
-        "notes": "多份第三方公开资料列出的入门档；当前结算价、容量与是否在售仍待到站核实。"
+        "notes": "第三方历史参考；当前在售、额度及结算均未确认。已有资料记录70元档400GB与450GB两种版本；本轮找到400GB支持，仍不能确认原入口当前值。"
       },
       {
         "id": "advanced-month",
@@ -313,7 +313,7 @@ export const airports:Airport[] = [
         "trafficGB": 400,
         "trafficUnit": "GB",
         "verified": false,
-        "notes": "多数本期来源写 400GB，另有来源写 450GB；按 400GB 作参考，实际额度需核对当前套餐。"
+        "notes": "第三方历史参考；当前在售、额度及结算均未确认。已有资料记录70元档400GB与450GB两种版本；本轮找到400GB支持，仍不能确认原入口当前值。"
       },
       {
         "id": "month-1",
@@ -324,7 +324,7 @@ export const airports:Airport[] = [
         "trafficGB": 800,
         "trafficUnit": "GB",
         "verified": false,
-        "notes": "第三方公开资料参考；未登录结算页核价，是否在售需确认。"
+        "notes": "第三方历史参考；当前在售、额度及结算均未确认。已有资料记录70元档400GB与450GB两种版本；本轮找到400GB支持，仍不能确认原入口当前值。"
       },
       {
         "id": "month-2",
@@ -335,7 +335,7 @@ export const airports:Airport[] = [
         "trafficGB": 2000,
         "trafficUnit": "GB",
         "verified": false,
-        "notes": "第三方公开资料参考；未登录结算页核价，是否在售需确认。"
+        "notes": "同名公开页标为2TB；表中2000GB仅按十进制换算。该页与原推广入口归属未确认，当前在售与到账口径待核对。"
       }
     ],
     "protocols": [],
@@ -347,7 +347,7 @@ export const airports:Airport[] = [
       "可先以 30 元参考月付评估用量，再决定是否需要较高容量档"
     ],
     "disadvantages": [
-      "70 元进阶档在不同来源中有 400GB 或 450GB 两种描述，本页按较保守的 400GB 作参考；所有标价均未通过当前结算页复核。"
+      "已有资料记录70元档400GB与450GB两种版本；本轮找到400GB支持，仍不能确认原入口当前值。 70 元进阶档在不同来源中有 400GB 或 450GB 两种描述，本页按较保守的 400GB 作参考；所有标价均未通过当前结算页复核。 商业档来源写2TB，2000GB为十进制换算展示，不表示实测到账。"
     ],
     "suitableFor": [
       "150GB 入门，按需扩展到 2000GB"
@@ -357,8 +357,8 @@ export const airports:Airport[] = [
       "https://www.jichangpk.com/providers/langwang/",
       "https://jichangbay.biz/airports/wavenet/"
     ],
-    "sourceNotes": "70 元进阶档在不同来源中有 400GB 或 450GB 两种描述，本页按较保守的 400GB 作参考；所有标价均未通过当前结算页复核。",
-    "purchaseCheck": "先核对入门档当前是否为 30 元、150GB，再确认 70 元档的实际容量、节点倍率和重置日。120 元对应 800GB 高端档，不能将它视为入门价格。",
+    "sourceNotes": "已有资料记录70元档400GB与450GB两种版本；本轮找到400GB支持，仍不能确认原入口当前值。 70 元进阶档在不同来源中有 400GB 或 450GB 两种描述，本页按较保守的 400GB 作参考；所有标价均未通过当前结算页复核。 商业档来源写2TB，2000GB为十进制换算展示，不表示实测到账。",
+    "purchaseCheck": "原入口的入门当前是否30元/月150GB？ 70元进阶究竟400GB还是450GB？ 120元800GB是高端档而非起步档吗？ 所有节点是否同倍率、商业档2TB单位和重置日是什么？ wavenet.my是否运营方自有，当前设备并发与退款条款在哪里？",
     "lastVerified": "2026-10-16",
     "testStatus": "unverified",
     "color": "#70c8ed"
@@ -385,7 +385,7 @@ export const airports:Airport[] = [
         "trafficGB": 150,
         "trafficUnit": "GB",
         "verified": false,
-        "notes": "第三方公开资料参考；未登录结算页核价，是否在售需确认。"
+        "notes": "第三方历史参考；当前在售、额度及结算均未确认。"
       },
       {
         "id": "month-2",
@@ -396,7 +396,7 @@ export const airports:Airport[] = [
         "trafficGB": 300,
         "trafficUnit": "GB",
         "verified": false,
-        "notes": "第三方公开资料参考；未登录结算页核价，是否在售需确认。"
+        "notes": "第三方历史参考；当前在售、额度及结算均未确认。"
       }
     ],
     "protocols": [],
@@ -408,7 +408,7 @@ export const airports:Airport[] = [
       "小档与中档的费用差额明确，便于按真实使用量升级"
     ],
     "disadvantages": [
-      "网络资料对 flycat888 的适用周期存在差异；本页没有写入折扣比例，也不保证月付订单能使用。"
+      "通用订阅是否暂停，以及flycat888是否当前有效，均有相互矛盾的第三方描述。先确认客户端和优惠条件，再参考150GB与300GB月包预算。"
     ],
     "suitableFor": [
       "150GB 到 300GB，控制翻倍用量的增支"
@@ -416,8 +416,8 @@ export const airports:Airport[] = [
     "sources": [
       "https://haiwaijichang.com/brands/feimao/"
     ],
-    "sourceNotes": "网络资料对 flycat888 的适用周期存在差异；本页没有写入折扣比例，也不保证月付订单能使用。",
-    "purchaseCheck": "先用月付页核对 150GB 与 300GB，再填入 flycat888；以订单提示确认是否限新用户或限长周期。",
+    "sourceNotes": "通用订阅是否暂停，以及flycat888是否当前有效，均有相互矛盾的第三方描述。先确认客户端和优惠条件，再参考150GB与300GB月包预算。",
+    "purchaseCheck": "目前能否生成Clash/Mihomo/Shadowrocket通用订阅，还是仅官方客户端？ flycat888是否有效，是否限新用户、季付及以上、是否排除学生版？ 150GB月档与84元年包的周期和重置日是什么？ 设备并发、付款手续费、退款条件及安装包官方来源是什么？",
     "lastVerified": "2026-10-16",
     "testStatus": "unverified",
     "color": "#9b87ff"
@@ -443,7 +443,7 @@ export const airports:Airport[] = [
         "trafficGB": 100,
         "trafficUnit": "GB",
         "verified": false,
-        "notes": "第三方公开资料参考；未登录结算页核价，是否在售需确认。"
+        "notes": "第三方历史参考；当前在售、额度及结算均未确认。福利版卡片100GB、说明120GB；其他来源23元130GB，可能是不同档位或版本，不能拼出19.99元130GB。"
       },
       {
         "id": "month-2",
@@ -454,7 +454,7 @@ export const airports:Airport[] = [
         "trafficGB": 300,
         "trafficUnit": "GB",
         "verified": false,
-        "notes": "第三方公开资料参考；未登录结算页核价，是否在售需确认。"
+        "notes": "第三方历史参考；当前在售、额度及结算均未确认。福利版卡片100GB、说明120GB；其他来源23元130GB，可能是不同档位或版本，不能拼出19.99元130GB。"
       }
     ],
     "protocols": [],
@@ -466,7 +466,7 @@ export const airports:Airport[] = [
       "300GB 档提供与小档分开的中等容量预算选择"
     ],
     "disadvantages": [
-      "第三方记录的小档卡片为 100GB、说明文字为 120GB，本页按较小值展示；这仍不是本站核验到账的结果。"
+      "福利版卡片100GB、说明120GB；其他来源23元130GB，可能是不同档位或版本，不能拼出19.99元130GB。 第三方记录的小档卡片为 100GB、说明文字为 120GB，本页按较小值展示；这仍不是本站核验到账的结果。"
     ],
     "suitableFor": [
       "小数标价与额度冲突，先看结算明细"
@@ -474,8 +474,8 @@ export const airports:Airport[] = [
     "sources": [
       "https://jichangshice.com.cn/airports/dalaoyun/"
     ],
-    "sourceNotes": "第三方记录的小档卡片为 100GB、说明文字为 120GB，本页按较小值展示；这仍不是本站核验到账的结果。",
-    "purchaseCheck": "要求以当前结算页和后台额度解释 100GB/120GB 差异，并确认“30 天”与自然月的重置区别。",
+    "sourceNotes": "福利版卡片100GB、说明120GB；其他来源23元130GB，可能是不同档位或版本，不能拼出19.99元130GB。 第三方记录的小档卡片为 100GB、说明文字为 120GB，本页按较小值展示；这仍不是本站核验到账的结果。",
+    "purchaseCheck": "福利版19.99元是否仍在售、到账100GB还是120GB？ 23元130GB是旧版还是另一个套餐？ 流量按30天重置还是按自然月，升级和续费如何处理？ 倍率、设备并发、退款窗口及付款手续费是什么？",
     "lastVerified": "2026-10-16",
     "testStatus": "unverified",
     "color": "#73d9d2"
@@ -502,7 +502,7 @@ export const airports:Airport[] = [
         "trafficGB": 200,
         "trafficUnit": "GB",
         "verified": false,
-        "notes": "第三方公开资料参考；未登录结算页核价，是否在售需确认。"
+        "notes": "第三方历史参考；当前在售、额度及结算均未确认。"
       },
       {
         "id": "month-2",
@@ -513,7 +513,7 @@ export const airports:Airport[] = [
         "trafficGB": 500,
         "trafficUnit": "GB",
         "verified": false,
-        "notes": "第三方公开资料参考；未登录结算页核价，是否在售需确认。"
+        "notes": "第三方历史参考；当前在售、额度及结算均未确认。"
       }
     ],
     "protocols": [],
@@ -525,7 +525,7 @@ export const airports:Airport[] = [
       "500GB 参考中档把容量扩展与每月支出直接对应"
     ],
     "disadvantages": [
-      "不同页面有旧价格与不同优惠说法；weifeng90 中的数字不等于折扣承诺，不能直接写为九折或七折。"
+      "weifeng90历史第三方条款截止2026-08-31，未取得延期证据；较新介绍仍宣传七折，不能据此认定当前有效。年包100GB重置周期也需确认。"
     ],
     "suitableFor": [
       "200GB 起步，避免频繁跨档"
@@ -533,8 +533,8 @@ export const airports:Airport[] = [
     "sources": [
       "https://jichangyyds.net/brands/weifengwangluo/"
     ],
-    "sourceNotes": "不同页面有旧价格与不同优惠说法；weifeng90 中的数字不等于折扣承诺，不能直接写为九折或七折。",
-    "purchaseCheck": "原始推广入口没有 code 参数，本站不会补造；结账输入 weifeng90 后核对实付金额及续费是否同价。",
+    "sourceNotes": "weifeng90历史第三方条款截止2026-08-31，未取得延期证据；较新介绍仍宣传七折，不能据此认定当前有效。年包100GB重置周期也需确认。",
+    "purchaseCheck": "27元200GB和57元500GB是否是当前未折扣价格？ weifeng90是否延长，是否与页面已展示折后价重复计算？ 137元年包100GB每月还是全年总量？ 如何到达当前用户中心，是否提供通用订阅、设备限制及退款条款？",
     "lastVerified": "2026-10-16",
     "testStatus": "unverified",
     "color": "#82b5ff"
@@ -561,7 +561,7 @@ export const airports:Airport[] = [
         "trafficGB": 150,
         "trafficUnit": "GB",
         "verified": false,
-        "notes": "第三方公开资料参考；未登录结算页核价，是否在售需确认。"
+        "notes": "第三方历史参考；当前在售、额度及结算均未确认。"
       },
       {
         "id": "month-2",
@@ -572,7 +572,7 @@ export const airports:Airport[] = [
         "trafficGB": 500,
         "trafficUnit": "GB",
         "verified": false,
-        "notes": "第三方公开资料参考；未登录结算页核价，是否在售需确认。"
+        "notes": "第三方历史参考；当前在售、额度及结算均未确认。"
       }
     ],
     "protocols": [],
@@ -584,7 +584,7 @@ export const airports:Airport[] = [
       "公开资料另列一次性包，可作为低频使用者进一步核对的方向"
     ],
     "disadvantages": [
-      "一次性包的总流量与月付的月额度不是同一口径；本页不把一次购买的容量重复算进每月预算。"
+      "成立2020年等运营年限为资料自述，未取得持续运营档案证明，不应作为确定优势。 一次性包的总流量与月付的月额度不是同一口径；本页不把一次购买的容量重复算进每月预算。"
     ],
     "suitableFor": [
       "150GB 日常档与 500GB 扩容档"
@@ -592,8 +592,8 @@ export const airports:Airport[] = [
     "sources": [
       "https://tizidream.com/shops/xingdaomeng/"
     ],
-    "sourceNotes": "一次性包的总流量与月付的月额度不是同一口径；本页不把一次购买的容量重复算进每月预算。",
-    "purchaseCheck": "核对 nmw888 在所选档位是否生效；若改选一次性包，确认有效期、服务终止条款和用完后的处理。",
+    "sourceNotes": "成立2020年等运营年限为资料自述，未取得持续运营档案证明，不应作为确定优势。 一次性包的总流量与月付的月额度不是同一口径；本页不把一次购买的容量重复算进每月预算。",
+    "purchaseCheck": "25元150GB和70元500GB是否仍在售？ nmw888限首单还是仅新账号，适用哪些周期和套餐？ 通用订阅是否必须联系客服、当前可导入哪些客户端？ 年付60GB是否按月重置；设备并发、倍率和退款条款是什么？",
     "lastVerified": "2026-10-16",
     "testStatus": "unverified",
     "color": "#d5aa73"
@@ -604,10 +604,10 @@ export const airports:Airport[] = [
     "name": "光速云 LightSpeed",
     "order": 11,
     "kind": "proxy",
-    "description": "138GB 与 220GB，细分百 GB 档位",
-    "recommendation": "光速云可供想在百 GB 级别细分预算的人考虑：本期参考资料列出 23 元、138GB 和 34 元、220GB。额外 11 元对应 82GB 标称容量，适合需求略高于小档、又不需要 500GB 大包的人逐项核算。",
-    "whyChoose": "光速云可供想在百 GB 级别细分预算的人考虑：本期参考资料列出 23 元、138GB 和 34 元、220GB。额外 11 元对应 82GB 标称容量，适合需求略高于小档、又不需要 500GB 大包的人逐项核算。",
-    "focus": "138GB 与 220GB，细分百 GB 档位",
+    "description": "先核对容量版本，再做精细升级",
+    "recommendation": "光速云可作为百GB附近需求的预算候选，但先要解决容量版本问题。原参考记录为23元138GB、34元220GB，另一资料写148G与238G；两版不能拼接使用。只有确认当前月额度后，才适合比较额外11元能否满足自己的新增需求，不能从“光速”名称推断速度。",
+    "whyChoose": "光速云可作为百GB附近需求的预算候选，但先要解决容量版本问题。原参考记录为23元138GB、34元220GB，另一资料写148G与238G；两版不能拼接使用。只有确认当前月额度后，才适合比较额外11元能否满足自己的新增需求，不能从“光速”名称推断速度。",
+    "focus": "先核对容量版本，再做精细升级",
     "affiliateUrl": "https://mdlky.gsyaff.com/#/?code=6tRWbtgK",
     "coupon": "jichangcha09",
     "plans": [
@@ -620,7 +620,7 @@ export const airports:Airport[] = [
         "trafficGB": 138,
         "trafficUnit": "GB",
         "verified": false,
-        "notes": "第三方公开资料参考；未登录结算页核价，是否在售需确认。"
+        "notes": "第三方历史参考；当前在售、额度及结算均未确认。23元档出现138GB与148G；34元档出现220GB与238G。G是否等于后台GB亦待确认。"
       },
       {
         "id": "month-2",
@@ -631,7 +631,7 @@ export const airports:Airport[] = [
         "trafficGB": 220,
         "trafficUnit": "GB",
         "verified": false,
-        "notes": "第三方公开资料参考；未登录结算页核价，是否在售需确认。"
+        "notes": "第三方历史参考；当前在售、额度及结算均未确认。23元档出现138GB与148G；34元档出现220GB与238G。G是否等于后台GB亦待确认。"
       }
     ],
     "protocols": [],
@@ -639,11 +639,11 @@ export const airports:Airport[] = [
     "aiSupport": [],
     "streamingSupport": [],
     "advantages": [
-      "138GB 与 220GB 参考容量有助于减少过量购买",
-      "相邻档增加 11 元，便于给不规律的额外用量定预算"
+      "23元与34元两档参考费用差额较小，便于给百GB附近需求设置增支上限",
+      "同时保留138/220GB与148/238G版本线索，便于在购买前核对实际到账口径"
     ],
     "disadvantages": [
-      "部分旧资料写 17 元、110GB，不能把不同版本的起价与新容量拼成一个套餐；本页参考值需到站复核。"
+      "23元档出现138GB与148G；34元档出现220GB与238G。G是否等于后台GB亦待确认。 部分旧资料写 17 元、110GB，不能把不同版本的起价与新容量拼成一个套餐；本页参考值需到站复核。"
     ],
     "suitableFor": [
       "138GB 与 220GB，细分百 GB 档位"
@@ -651,8 +651,8 @@ export const airports:Airport[] = [
     "sources": [
       "https://jichangdan.com/"
     ],
-    "sourceNotes": "部分旧资料写 17 元、110GB，不能把不同版本的起价与新容量拼成一个套餐；本页参考值需到站复核。",
-    "purchaseCheck": "在当前面板核对是否仍有 23 元、138GB；优惠码 jichangcha09 的折扣和有效期只认结账提示。",
+    "sourceNotes": "23元档出现138GB与148G；34元档出现220GB与238G。G是否等于后台GB亦待确认。 部分旧资料写 17 元、110GB，不能把不同版本的起价与新容量拼成一个套餐；本页参考值需到站复核。",
+    "purchaseCheck": "当前23元套餐实际到账138GB还是148G，34元档是220GB还是238G？流量重置间隔是自然月还是30天？ jichangcha09当前是否适用所选套餐、续费与活动包，优惠后实付多少？ 当前是否提供通用订阅，哪些系统必须使用自研客户端？退款限制以哪版条款为准？",
     "lastVerified": "2026-10-16",
     "testStatus": "unverified",
     "color": "#ed94c4"
@@ -679,7 +679,7 @@ export const airports:Airport[] = [
         "trafficGB": 150,
         "trafficUnit": "GB",
         "verified": false,
-        "notes": "第三方公开资料参考；未登录结算页核价，是否在售需确认。"
+        "notes": "第三方历史参考；当前在售、额度及结算均未确认。"
       },
       {
         "id": "month-2",
@@ -690,7 +690,7 @@ export const airports:Airport[] = [
         "trafficGB": 500,
         "trafficUnit": "GB",
         "verified": false,
-        "notes": "第三方公开资料参考；未登录结算页核价，是否在售需确认。"
+        "notes": "第三方历史参考；当前在售、额度及结算均未确认。"
       }
     ],
     "protocols": [],
@@ -702,7 +702,7 @@ export const airports:Airport[] = [
       "500GB 参考档为从轻量转向较高消耗提供独立选择"
     ],
     "disadvantages": [
-      "14.9 元、100GB 在部分来源中带活动属性；活动是否结束、是否限新用户尚未确认，未纳入表格。"
+      "119.9元高档出现1000GB与1.4TB容量版本；不得用其推断当前整套价目已确认。 14.9 元、100GB 在部分来源中带活动属性；活动是否结束、是否限新用户尚未确认，未纳入表格。"
     ],
     "suitableFor": [
       "常规档与活动档分开看"
@@ -710,8 +710,8 @@ export const airports:Airport[] = [
     "sources": [
       "https://tuijianjichang.wiki/review/weituyun"
     ],
-    "sourceNotes": "14.9 元、100GB 在部分来源中带活动属性；活动是否结束、是否限新用户尚未确认，未纳入表格。",
-    "purchaseCheck": "确认名称为唯兔云或 V2云并核对 rabbit；若出现活动卡片，同时保存活动周期、续费价和适用账号条件。",
+    "sourceNotes": "119.9元高档出现1000GB与1.4TB容量版本；不得用其推断当前整套价目已确认。 14.9 元、100GB 在部分来源中带活动属性；活动是否结束、是否限新用户尚未确认，未纳入表格。",
+    "purchaseCheck": "19.9元150GB、59.9元500GB是否仍为当前可下单月付？14.9元档是活动还是常驻，续费价格是否变化？ rabbit适用哪些周期与用户，是否与年付价叠加？ 各档是否提供所需通用订阅，设备并发、流量倍率与退款规则如何约定？",
     "lastVerified": "2026-10-16",
     "testStatus": "unverified",
     "color": "#70c8ed"
@@ -738,7 +738,7 @@ export const airports:Airport[] = [
         "trafficGB": 120,
         "trafficUnit": "GB",
         "verified": false,
-        "notes": "第三方公开资料参考；未登录结算页核价，是否在售需确认。"
+        "notes": "第三方历史参考；当前在售、额度及结算均未确认。"
       },
       {
         "id": "month-2",
@@ -749,7 +749,7 @@ export const airports:Airport[] = [
         "trafficGB": 300,
         "trafficUnit": "GB",
         "verified": false,
-        "notes": "第三方公开资料参考；未登录结算页核价，是否在售需确认。"
+        "notes": "第三方历史参考；当前在售、额度及结算均未确认。"
       }
     ],
     "protocols": [],
@@ -761,7 +761,7 @@ export const airports:Airport[] = [
       "20 元参考小档与 40 元中档便于设置两级预算"
     ],
     "disadvantages": [
-      "旧页面提及的一次性套餐可能已下架；本页没有沿用历史一次性包，也不把旧优惠条件当作现行规则。"
+      "旧不限时套餐与后续第三方目录不一致；不恢复旧580元包。 旧页面提及的一次性套餐可能已下架；本页没有沿用历史一次性包，也不把旧优惠条件当作现行规则。"
     ],
     "suitableFor": [
       "预算翻倍，标称容量增加 1.5 倍"
@@ -769,8 +769,8 @@ export const airports:Airport[] = [
     "sources": [
       "https://jichang168.com/airports/u1s1/"
     ],
-    "sourceNotes": "旧页面提及的一次性套餐可能已下架；本页没有沿用历史一次性包，也不把旧优惠条件当作现行规则。",
-    "purchaseCheck": "优惠码必须按你提供的大小写 U1S1 输入；核对订单周期，并询问历史一次性包是否仍可购买。",
+    "sourceNotes": "旧不限时套餐与后续第三方目录不一致；不恢复旧580元包。 旧页面提及的一次性套餐可能已下架；本页没有沿用历史一次性包，也不把旧优惠条件当作现行规则。",
+    "purchaseCheck": "20元120GB与40元300GB是否仍在售，96元年付是否每月60GB重置？ U1S1是否仅限新账户，96元年付及续费是否排除，订单实付多少？ 现行通用订阅领取或刷新是否有限制，设备并发和退款政策如何规定？",
     "lastVerified": "2026-10-16",
     "testStatus": "unverified",
     "color": "#9b87ff"
@@ -796,7 +796,7 @@ export const airports:Airport[] = [
       "将同名服务关联作为购买前单独核对项，减少套用他家套餐的误判"
     ],
     "disadvantages": [
-      "历史评测中的 hyperlink 品牌、协议和线路不能直接移植到当前入口；套餐、设备限制和性能均待该入口内确认。"
+      "jiliancloud.org、jtjkxt.com等同名页面出现不同价格，不能仅凭中文名称合并身份。 历史评测中的 hyperlink 品牌、协议和线路不能直接移植到当前入口；套餐、设备限制和性能均待该入口内确认。"
     ],
     "suitableFor": [
       "先确认同名服务，再谈套餐价值"
@@ -804,8 +804,8 @@ export const airports:Airport[] = [
     "sources": [
       "https://kerrynotes.com/hyperlink-review/"
     ],
-    "sourceNotes": "历史评测中的 hyperlink 品牌、协议和线路不能直接移植到当前入口；套餐、设备限制和性能均待该入口内确认。",
-    "purchaseCheck": "向当前面板客服核对是否与 hyperlink 为同一服务，并索取当期套餐说明；关联未确认前不按旧价付款。",
+    "sourceNotes": "jiliancloud.org、jtjkxt.com等同名页面出现不同价格，不能仅凭中文名称合并身份。 历史评测中的 hyperlink 品牌、协议和线路不能直接移植到当前入口；套餐、设备限制和性能均待该入口内确认。",
+    "purchaseCheck": "当前服务由谁运营，是否与hyperlink有关，有无官方迁移公告及可核对的完整套餐页？ 当前月付金额、额度、单位、重置日及设备限制分别是什么？ 当前退款条款和通用订阅支持是什么，能否在购买前阅读？",
     "lastVerified": "2026-10-16",
     "testStatus": "unverified",
     "color": "#73d9d2"
@@ -832,7 +832,7 @@ export const airports:Airport[] = [
         "trafficGB": 120,
         "trafficUnit": "GB",
         "verified": false,
-        "notes": "第三方公开资料参考；未登录结算页核价，是否在售需确认。"
+        "notes": "第三方历史参考；当前在售、额度及结算均未确认。"
       },
       {
         "id": "month-2",
@@ -843,7 +843,7 @@ export const airports:Airport[] = [
         "trafficGB": 700,
         "trafficUnit": "GB",
         "verified": false,
-        "notes": "第三方公开资料参考；未登录结算页核价，是否在售需确认。"
+        "notes": "第三方历史参考；当前在售、额度及结算均未确认。"
       }
     ],
     "protocols": [],
@@ -855,7 +855,7 @@ export const airports:Airport[] = [
       "700GB 参考档为持续较高用量提供容量参照"
     ],
     "disadvantages": [
-      "“全球”是品牌名称，不构成节点覆盖全球的证据；本页未验证地区数量、线路和目标应用可用性。"
+      "公开介绍可能混用BGP、IEPL、专线等称谓；未验证线路归属，不写为已确认优势。 “全球”是品牌名称，不构成节点覆盖全球的证据；本页未验证地区数量、线路和目标应用可用性。"
     ],
     "suitableFor": [
       "120GB 与 700GB，区分两种使用强度"
@@ -863,8 +863,8 @@ export const airports:Airport[] = [
     "sources": [
       "https://jcnotes.com/airports/qqy/"
     ],
-    "sourceNotes": "“全球”是品牌名称，不构成节点覆盖全球的证据；本页未验证地区数量、线路和目标应用可用性。",
-    "purchaseCheck": "核对 qq88 的适用档位、付款周期与续费规则，并查看 700GB 是否存在节点倍率或每日限额。",
+    "sourceNotes": "公开介绍可能混用BGP、IEPL、专线等称谓；未验证线路归属，不写为已确认优势。 “全球”是品牌名称，不构成节点覆盖全球的证据；本页未验证地区数量、线路和目标应用可用性。",
+    "purchaseCheck": "20元120GB和100元700GB是否仍在售，容量是每月重置还是其他周期？ 700GB档是否有节点倍率、每天用量或并发限制？ qq88当前实付折扣、适用周期和截止日期是什么？",
     "lastVerified": "2026-10-16",
     "testStatus": "unverified",
     "color": "#82b5ff"
@@ -890,7 +890,7 @@ export const airports:Airport[] = [
         "trafficGB": 110,
         "trafficUnit": "GB",
         "verified": false,
-        "notes": "第三方公开资料参考；未登录结算页核价，是否在售需确认。"
+        "notes": "第三方历史参考；当前在售、额度及结算均未确认。"
       },
       {
         "id": "month-2",
@@ -901,7 +901,7 @@ export const airports:Airport[] = [
         "trafficGB": 220,
         "trafficUnit": "GB",
         "verified": false,
-        "notes": "第三方公开资料参考；未登录结算页核价，是否在售需确认。"
+        "notes": "第三方历史参考；当前在售、额度及结算均未确认。"
       }
     ],
     "protocols": [],
@@ -913,7 +913,7 @@ export const airports:Airport[] = [
       "220GB 档参考费用低于两份 110GB 小档之和"
     ],
     "disadvantages": [
-      "上述比较只按标称容量和未折扣价格计算，不含倍率、重置费或其他账户限制，不能视为实测可用流量成本。"
+      "机场探仍给出导入订阅步骤，而另一第三方报告通用订阅已关闭，客户端可用性存在重要冲突。 上述比较只按标称容量和未折扣价格计算，不含倍率、重置费或其他账户限制，不能视为实测可用流量成本。"
     ],
     "suitableFor": [
       "110GB 翻倍，比较升级差额"
@@ -921,8 +921,8 @@ export const airports:Airport[] = [
     "sources": [
       "https://jichangtan.com/airports/guangnianti/"
     ],
-    "sourceNotes": "上述比较只按标称容量和未折扣价格计算，不含倍率、重置费或其他账户限制，不能视为实测可用流量成本。",
-    "purchaseCheck": "确认 18 元和 34 元分别为可按月付款的完整金额，并核对两档是否具有相同线路权限。",
+    "sourceNotes": "机场探仍给出导入订阅步骤，而另一第三方报告通用订阅已关闭，客户端可用性存在重要冲突。 上述比较只按标称容量和未折扣价格计算，不含倍率、重置费或其他账户限制，不能视为实测可用流量成本。",
+    "purchaseCheck": "当前是否仍关闭通用订阅？所需系统是否必须安装自研客户端，已有Clash或Shadowrocket是否可用？ 18元110GB和34元220GB月付是否仍可下单，重置日、倍率和升级余额如何计算？ 89元年付小包当前是否在售，是否每月50GB以及退款限制是什么？",
     "lastVerified": "2026-10-16",
     "testStatus": "unverified",
     "color": "#d5aa73"
@@ -948,7 +948,7 @@ export const airports:Airport[] = [
         "trafficGB": 120,
         "trafficUnit": "GiB",
         "verified": false,
-        "notes": "第三方公开资料参考；未登录结算页核价，是否在售需确认。"
+        "notes": "第三方历史参考；当前在售、额度及结算均未确认。"
       },
       {
         "id": "month-2",
@@ -959,7 +959,7 @@ export const airports:Airport[] = [
         "trafficGB": 250,
         "trafficUnit": "GiB",
         "verified": false,
-        "notes": "第三方公开资料参考；未登录结算页核价，是否在售需确认。"
+        "notes": "第三方历史参考；当前在售、额度及结算均未确认。"
       }
     ],
     "protocols": [],
@@ -971,7 +971,7 @@ export const airports:Airport[] = [
       "250GiB 档提供相对 120GiB 档的进阶预算选择"
     ],
     "disadvantages": [
-      "相关介绍站的运营归属未确认，报价仅作同名公开资料参考；没有把介绍站标记为品牌官方站。"
+      "介绍站归属未核实，不能把其自述的线路、速度上限、设备和可用性目标当当前官方保证。 相关介绍站的运营归属未确认，报价仅作同名公开资料参考；没有把介绍站标记为品牌官方站。"
     ],
     "suitableFor": [
       "先核对 GiB 单位，再比较容量"
@@ -979,8 +979,8 @@ export const airports:Airport[] = [
     "sources": [
       "https://sogocloud.org/"
     ],
-    "sourceNotes": "相关介绍站的运营归属未确认，报价仅作同名公开资料参考；没有把介绍站标记为品牌官方站。",
-    "purchaseCheck": "到当前入口确认容量到底使用 GB 还是 GiB，核对客户端流量统计和后台扣量是否使用相同单位。",
+    "sourceNotes": "介绍站归属未核实，不能把其自述的线路、速度上限、设备和可用性目标当当前官方保证。 相关介绍站的运营归属未确认，报价仅作同名公开资料参考；没有把介绍站标记为品牌官方站。",
+    "purchaseCheck": "当前120与250档的计费单位确为GiB吗，客户端统计和后台扣量是否同一单位？ 25元与45元是否仍为可单月支付的当前价，设备并发、倍率和限速是否分档？ sogocloud.org与给定sogoyunaff.cc是否为同一服务，可否提供官方对应关系与退款条款？",
     "lastVerified": "2026-10-16",
     "testStatus": "unverified",
     "color": "#ed94c4"
@@ -992,8 +992,8 @@ export const airports:Airport[] = [
     "order": 18,
     "kind": "proxy",
     "description": "等比例容量，优先避免闲置",
-    "recommendation": "宇宙云参考 25 元、120GB 与 50 元、240GB 两档的标价和容量同步翻倍。若当前用量不超过小档，高档没有仅凭规模就更划算的依据；选择它时可以把重点放在购买刚好够用的容量，控制每月闲置。",
-    "whyChoose": "宇宙云参考 25 元、120GB 与 50 元、240GB 两档的标价和容量同步翻倍。若当前用量不超过小档，高档没有仅凭规模就更划算的依据；选择它时可以把重点放在购买刚好够用的容量，控制每月闲置。",
+    "recommendation": "宇宙云的原参考版本为25元120GB、50元240GB，两档价格和容量同步翻倍，可用于说明按需买够的预算思路。不过新查资料出现160GB与300GB版本，因此等比例结论只针对原引用方案。选择前应先确认现行容量，避免把不同版本拼成一个看似更划算的套餐。",
+    "whyChoose": "宇宙云的原参考版本为25元120GB、50元240GB，两档价格和容量同步翻倍，可用于说明按需买够的预算思路。不过新查资料出现160GB与300GB版本，因此等比例结论只针对原引用方案。选择前应先确认现行容量，避免把不同版本拼成一个看似更划算的套餐。",
     "focus": "等比例容量，优先避免闲置",
     "affiliateUrl": "https://wzjc.yuzoucloud.cc/#/?code=wL7YStBa",
     "plans": [
@@ -1006,7 +1006,7 @@ export const airports:Airport[] = [
         "trafficGB": 120,
         "trafficUnit": "GB",
         "verified": false,
-        "notes": "第三方公开资料参考；未登录结算页核价，是否在售需确认。"
+        "notes": "第三方历史参考；当前在售、额度及结算均未确认。25元容量120GB与160GB；50元容量240GB与300GB，均未取得当前官方裁定。"
       },
       {
         "id": "month-2",
@@ -1017,7 +1017,7 @@ export const airports:Airport[] = [
         "trafficGB": 240,
         "trafficUnit": "GB",
         "verified": false,
-        "notes": "第三方公开资料参考；未登录结算页核价，是否在售需确认。"
+        "notes": "第三方历史参考；当前在售、额度及结算均未确认。25元容量120GB与160GB；50元容量240GB与300GB，均未取得当前官方裁定。"
       }
     ],
     "protocols": [],
@@ -1029,7 +1029,7 @@ export const airports:Airport[] = [
       "两档之间容易根据实际月用量决定，减少追逐大包的冲动"
     ],
     "disadvantages": [
-      "网上更低起价和其他容量版本并存；本页没有把旧小包作为当前保证，也没有核实不同时期线路是否相同。"
+      "25元容量120GB与160GB；50元容量240GB与300GB，均未取得当前官方裁定。 网上更低起价和其他容量版本并存；本页没有把旧小包作为当前保证，也没有核实不同时期线路是否相同。"
     ],
     "suitableFor": [
       "等比例容量，优先避免闲置"
@@ -1037,8 +1037,8 @@ export const airports:Airport[] = [
     "sources": [
       "https://tizimy.org/tuijian/yuzhou/"
     ],
-    "sourceNotes": "网上更低起价和其他容量版本并存；本页没有把旧小包作为当前保证，也没有核实不同时期线路是否相同。",
-    "purchaseCheck": "先核对当前 120GB 与 240GB 价格，再检查升级是否按差价补款、剩余流量是否随升级作废。",
+    "sourceNotes": "25元容量120GB与160GB；50元容量240GB与300GB，均未取得当前官方裁定。 网上更低起价和其他容量版本并存；本页没有把旧小包作为当前保证，也没有核实不同时期线路是否相同。",
+    "purchaseCheck": "当前25元档是120还是160GB，50元档是240还是300GB？最终订单和到账容量分别显示多少？ 12.5元50GB小包仍可购买吗，是否活动、新用户或续费限制？ 升级按补差还是整单重购，剩余流量和有效期如何处理，是否支持所需客户端？",
     "lastVerified": "2026-10-16",
     "testStatus": "unverified",
     "color": "#70c8ed"
@@ -1064,7 +1064,7 @@ export const airports:Airport[] = [
         "trafficGB": 130,
         "trafficUnit": "GB",
         "verified": false,
-        "notes": "第三方公开资料参考；未登录结算页核价，是否在售需确认。"
+        "notes": "第三方历史参考；当前在售、额度及结算均未确认。100/200GB旧版与130/230GB后续版并存，需当前订单确认。"
       },
       {
         "id": "month-2",
@@ -1075,7 +1075,7 @@ export const airports:Airport[] = [
         "trafficGB": 230,
         "trafficUnit": "GB",
         "verified": false,
-        "notes": "第三方公开资料参考；未登录结算页核价，是否在售需确认。"
+        "notes": "第三方历史参考；当前在售、额度及结算均未确认。100/200GB旧版与130/230GB后续版并存，需当前订单确认。"
       }
     ],
     "protocols": [],
@@ -1087,7 +1087,7 @@ export const airports:Airport[] = [
       "明确展示升级增加的 100GB，便于避免不必要的支出"
     ],
     "disadvantages": [
-      "旧页面可能保留更小额度；本站采用本次来源的 130GB/230GB 版本，最终仍需核对当前卡片。"
+      "100/200GB旧版与130/230GB后续版并存，需当前订单确认。 旧页面可能保留更小额度；本站采用本次来源的 130GB/230GB 版本，最终仍需核对当前卡片。"
     ],
     "suitableFor": [
       "130GB 小档，关注升级边际容量"
@@ -1095,8 +1095,8 @@ export const airports:Airport[] = [
     "sources": [
       "https://fishnetwork.blog/providers/ermaoyun/"
     ],
-    "sourceNotes": "旧页面可能保留更小额度；本站采用本次来源的 130GB/230GB 版本，最终仍需核对当前卡片。",
-    "purchaseCheck": "重点确认 130GB 是否为现行小档，并检查第二档容量是否已调整；不要仅凭价格翻倍预期流量也翻倍。",
+    "sourceNotes": "100/200GB旧版与130/230GB后续版并存，需当前订单确认。 旧页面可能保留更小额度；本站采用本次来源的 130GB/230GB 版本，最终仍需核对当前卡片。",
+    "purchaseCheck": "当前白猫和橘猫是否仍为20元130GB、40元230GB，额度是否月重置？ 当前帮助中心是否明确提供通用订阅，所需客户端和系统版本是否支持？ 设备并发、退款、超额补流量和升级保留额度分别是什么规则？",
     "lastVerified": "2026-10-16",
     "testStatus": "unverified",
     "color": "#9b87ff"
@@ -1122,7 +1122,7 @@ export const airports:Airport[] = [
         "trafficGB": 150,
         "trafficUnit": "GB",
         "verified": false,
-        "notes": "第三方公开资料参考；未登录结算页核价，是否在售需确认。"
+        "notes": "第三方历史参考；当前在售、额度及结算均未确认。"
       },
       {
         "id": "month-2",
@@ -1133,7 +1133,7 @@ export const airports:Airport[] = [
         "trafficGB": 350,
         "trafficUnit": "GB",
         "verified": false,
-        "notes": "第三方公开资料参考；未登录结算页核价，是否在售需确认。"
+        "notes": "第三方历史参考；当前在售、额度及结算均未确认。"
       }
     ],
     "protocols": [],
@@ -1145,7 +1145,7 @@ export const airports:Airport[] = [
       "套餐容量跨度适合从轻量使用逐步增长到中等用量"
     ],
     "disadvantages": [
-      "有来源提及停止向部分第三方客户端发放订阅，其他页面说法不同；本页不保证 Clash 或其他客户端兼容。"
+      "页面存在较早通用订阅介绍与后续停发订阅限制；不能承诺现行第三方客户端兼容。 有来源提及停止向部分第三方客户端发放订阅，其他页面说法不同；本页不保证 Clash 或其他客户端兼容。"
     ],
     "suitableFor": [
       "350GB 中档与客户端兼容核对"
@@ -1153,8 +1153,8 @@ export const airports:Airport[] = [
     "sources": [
       "https://www.jichangpk.com/providers/yifanyun/"
     ],
-    "sourceNotes": "有来源提及停止向部分第三方客户端发放订阅，其他页面说法不同；本页不保证 Clash 或其他客户端兼容。",
-    "purchaseCheck": "先向客服核对你的操作系统与现有客户端是否受支持，取得明确答复后再选择 150GB 或 350GB 档。",
+    "sourceNotes": "页面存在较早通用订阅介绍与后续停发订阅限制；不能承诺现行第三方客户端兼容。 有来源提及停止向部分第三方客户端发放订阅，其他页面说法不同；本页不保证 Clash 或其他客户端兼容。",
+    "purchaseCheck": "现在是否恢复通用订阅？若仍只支持自研客户端，所用系统版本是否有可安装版本？ 20元150GB与35元350GB是否仍为当前月付，升级是否按差价、是否保留已用和剩余额度？ 使用指定客户端不满足需求时是否允许退款，当前限制是否在付款前完整展示？",
     "lastVerified": "2026-10-16",
     "testStatus": "unverified",
     "color": "#73d9d2"
@@ -1165,10 +1165,10 @@ export const airports:Airport[] = [
     "name": "边缘节点 EdgeNova",
     "order": 21,
     "kind": "proxy",
-    "description": "72GB 小档，匹配低用量需求",
-    "recommendation": "边缘节点 EdgeNova 的参考小档是 15 元、72GB，适合已经知道自己不需要百 GB 月包的人。25 元、120GB 档提供扩展空间；两档标称容量与价格同比例变化，因此优先买够用的一档更有助于控制闲置。",
-    "whyChoose": "边缘节点 EdgeNova 的参考小档是 15 元、72GB，适合已经知道自己不需要百 GB 月包的人。25 元、120GB 档提供扩展空间；两档标称容量与价格同比例变化，因此优先买够用的一档更有助于控制闲置。",
-    "focus": "72GB 小档，匹配低用量需求",
+    "description": "低用量体验档，先核对额度与续费",
+    "recommendation": "边缘节点EdgeNova可作为低用量月付候选，但15元体验档容量有55GB与72GB两种公开版本。原参考还列25元120GB；如果小包足以覆盖需求，可先核对体验档是否限首购、能否按同价续费，再考虑扩容。推荐依据是短周期控制投入的思路，不能把未确认的72GB当作确定权益。",
+    "whyChoose": "边缘节点EdgeNova可作为低用量月付候选，但15元体验档容量有55GB与72GB两种公开版本。原参考还列25元120GB；如果小包足以覆盖需求，可先核对体验档是否限首购、能否按同价续费，再考虑扩容。推荐依据是短周期控制投入的思路，不能把未确认的72GB当作确定权益。",
+    "focus": "低用量体验档，先核对额度与续费",
     "affiliateUrl": "https://work.edgenovaaff.cc/#/?code=z81zCfw1",
     "plans": [
       {
@@ -1180,7 +1180,7 @@ export const airports:Airport[] = [
         "trafficGB": 72,
         "trafficUnit": "GB",
         "verified": false,
-        "notes": "第三方公开资料参考；未登录结算页核价，是否在售需确认。"
+        "notes": "第三方历史参考；当前在售、额度及结算均未确认。15 元体验档分别出现 55 GB 与 72 GB；当前在售额度、首购限制和可续费性未确认。"
       },
       {
         "id": "month-2",
@@ -1191,7 +1191,7 @@ export const airports:Airport[] = [
         "trafficGB": 120,
         "trafficUnit": "GB",
         "verified": false,
-        "notes": "第三方公开资料参考；未登录结算页核价，是否在售需确认。"
+        "notes": "第三方历史参考；当前在售、额度及结算均未确认。15 元体验档分别出现 55 GB 与 72 GB；当前在售额度、首购限制和可续费性未确认。"
       }
     ],
     "protocols": [],
@@ -1199,11 +1199,11 @@ export const airports:Airport[] = [
     "aiSupport": [],
     "streamingSupport": [],
     "advantages": [
-      "72GB 参考小档可用于低用量且希望按月控制预算的需求",
-      "120GB 档保留按需扩容选择，无需先购买长周期"
+      "15元参考体验档为低频使用者提供较小首次支出的候选，须先确认额度版本",
+      "25元120GB有独立参考记录，可在小档不足时再核对扩容，而非先选长周期"
     ],
     "disadvantages": [
-      "资料中的小档可能属于体验档，是否限首购或续费需核对；未将体验价承诺为长期月费。"
+      "15 元体验档分别出现 55 GB 与 72 GB；当前在售额度、首购限制和可续费性未确认。 资料中的小档可能属于体验档，是否限首购或续费需核对；未将体验价承诺为长期月费。"
     ],
     "suitableFor": [
       "72GB 小档，匹配低用量需求"
@@ -1211,8 +1211,8 @@ export const airports:Airport[] = [
     "sources": [
       "https://jichangtan.com/airports/edgenova/"
     ],
-    "sourceNotes": "资料中的小档可能属于体验档，是否限首购或续费需核对；未将体验价承诺为长期月费。",
-    "purchaseCheck": "确认 72GB 档能否连续续费、是否限新账户，以及到期后剩余流量和套餐权限如何处理。",
+    "sourceNotes": "15 元体验档分别出现 55 GB 与 72 GB；当前在售额度、首购限制和可续费性未确认。 资料中的小档可能属于体验档，是否限首购或续费需核对；未将体验价承诺为长期月费。",
+    "purchaseCheck": "15 元档实际是 55 GB 还是 72 GB，是否仅首次购买？ 体验档是否可原价续费，额度何时重置？ 是否支持现用客户端及并发设备，退款窗口、用量扣费和申请方式是什么？",
     "lastVerified": "2026-10-16",
     "testStatus": "unverified",
     "color": "#82b5ff"
@@ -1238,7 +1238,7 @@ export const airports:Airport[] = [
         "trafficGB": 150,
         "trafficUnit": "GB",
         "verified": false,
-        "notes": "第三方公开资料参考；未登录结算页核价，是否在售需确认。"
+        "notes": "第三方历史参考；当前在售、额度及结算均未确认。不能把 25 元/150GB 写成已确认全站最低门槛：第三方另列 15 元/60GB、9 元/45GB，可能是不同时间或套餐。"
       },
       {
         "id": "month-2",
@@ -1249,7 +1249,7 @@ export const airports:Airport[] = [
         "trafficGB": 300,
         "trafficUnit": "GB",
         "verified": false,
-        "notes": "第三方公开资料参考；未登录结算页核价，是否在售需确认。"
+        "notes": "第三方历史参考；当前在售、额度及结算均未确认。不能把 25 元/150GB 写成已确认全站最低门槛：第三方另列 15 元/60GB、9 元/45GB，可能是不同时间或套餐。"
       }
     ],
     "protocols": [],
@@ -1261,7 +1261,7 @@ export const airports:Airport[] = [
       "相邻档价格和容量同步翻倍，费用增长容易预测"
     ],
     "disadvantages": [
-      "早期资料出现 120GB 入门额度，也有订阅方式调整记录；本页保留 150GB 参考值，同时明确它未经当前结算页复核。"
+      "不能把 25 元/150GB 写成已确认全站最低门槛：第三方另列 15 元/60GB、9 元/45GB，可能是不同时间或套餐。 早期资料出现 120GB 入门额度，也有订阅方式调整记录；本页保留 150GB 参考值，同时明确它未经当前结算页复核。"
     ],
     "suitableFor": [
       "150GB 与 300GB，先核对订阅方式"
@@ -1269,8 +1269,8 @@ export const airports:Airport[] = [
     "sources": [
       "https://vpsknow.com/reviews/airports/kexinyun-airport-review/"
     ],
-    "sourceNotes": "早期资料出现 120GB 入门额度，也有订阅方式调整记录；本页保留 150GB 参考值，同时明确它未经当前结算页复核。",
-    "purchaseCheck": "核对当前入门额度是 120GB 还是 150GB，并确认能否向你使用的客户端提供有效订阅。",
+    "sourceNotes": "不能把 25 元/150GB 写成已确认全站最低门槛：第三方另列 15 元/60GB、9 元/45GB，可能是不同时间或套餐。 早期资料出现 120GB 入门额度，也有订阅方式调整记录；本页保留 150GB 参考值，同时明确它未经当前结算页复核。",
+    "purchaseCheck": "当前是否在售 15 元/60GB 等小包？25 元/150GB 是否仍是常规档？ 能否获取通用订阅，目标系统客户端最低版本及设备并发限制是什么？ 取消套餐、退款时限、已使用流量及手续费怎样计算？",
     "lastVerified": "2026-10-16",
     "testStatus": "unverified",
     "color": "#d5aa73"
@@ -1296,7 +1296,7 @@ export const airports:Airport[] = [
         "trafficGB": 120,
         "trafficUnit": "GB",
         "verified": false,
-        "notes": "第三方公开资料参考；未登录结算页核价，是否在售需确认。"
+        "notes": "第三方历史参考；当前在售、额度及结算均未确认。25 元档存在 120GB 与 150GB 两个公开版本。"
       },
       {
         "id": "month-2",
@@ -1307,7 +1307,7 @@ export const airports:Airport[] = [
         "trafficGB": 250,
         "trafficUnit": "GB",
         "verified": false,
-        "notes": "第三方公开资料参考；未登录结算页核价，是否在售需确认。"
+        "notes": "第三方历史参考；当前在售、额度及结算均未确认。25 元档存在 120GB 与 150GB 两个公开版本。"
       }
     ],
     "protocols": [],
@@ -1319,7 +1319,7 @@ export const airports:Airport[] = [
       "120GB 小档便于在需求尚不确定时先建立消耗记录"
     ],
     "disadvantages": [
-      "历史资料中的试用和客户端支持未在当前入口核实；本页不提供免费试用保证，也不承诺节点数量。"
+      "25 元档存在 120GB 与 150GB 两个公开版本。 历史资料中的试用和客户端支持未在当前入口核实；本页不提供免费试用保证，也不承诺节点数量。"
     ],
     "suitableFor": [
       "250GB 中档，给波动用量留余量"
@@ -1327,8 +1327,8 @@ export const airports:Airport[] = [
     "sources": [
       "https://jichangwhite.cc/plans/sujie/"
     ],
-    "sourceNotes": "历史资料中的试用和客户端支持未在当前入口核实；本页不提供免费试用保证，也不承诺节点数量。",
-    "purchaseCheck": "核对 250GB 是否每账期重置、是否允许重置包，并先确认当前支持的系统与连接方式。",
+    "sourceNotes": "25 元档存在 120GB 与 150GB 两个公开版本。 历史资料中的试用和客户端支持未在当前入口核实；本页不提供免费试用保证，也不承诺节点数量。",
+    "purchaseCheck": "25 元档当前流量是 120GB 还是 150GB，有没有更小的可续费月包？ 是否必须用专用客户端，是否支持自己已有的客户端？ 重置包是否改变到期日，设备限制、试用条件及退款条款是什么？",
     "lastVerified": "2026-10-16",
     "testStatus": "unverified",
     "color": "#ed94c4"
@@ -1354,7 +1354,7 @@ export const airports:Airport[] = [
         "trafficGB": 50,
         "trafficUnit": "GB",
         "verified": false,
-        "notes": "第三方公开资料参考；未登录结算页核价，是否在售需确认。"
+        "notes": "第三方历史参考；当前在售、额度及结算均未确认。入门月包有 15 元/50GB 与 25 元/150GB 两种第三方口径，不能承诺现售最低价。"
       },
       {
         "id": "month-2",
@@ -1365,7 +1365,7 @@ export const airports:Airport[] = [
         "trafficGB": 250,
         "trafficUnit": "GB",
         "verified": false,
-        "notes": "第三方公开资料参考；未登录结算页核价，是否在售需确认。"
+        "notes": "第三方历史参考；当前在售、额度及结算均未确认。入门月包有 15 元/50GB 与 25 元/150GB 两种第三方口径，不能承诺现售最低价。"
       }
     ],
     "protocols": [],
@@ -1377,7 +1377,7 @@ export const airports:Airport[] = [
       "250GB 参考档的容量增长快于标价增长，适合跨过轻量阶段后重新评估"
     ],
     "disadvantages": [
-      "这里展示两个选定档位，中间可能还有其他套餐；不能把跨度理解为必须一次升级到 250GB。"
+      "入门月包有 15 元/50GB 与 25 元/150GB 两种第三方口径，不能承诺现售最低价。 这里展示两个选定档位，中间可能还有其他套餐；不能把跨度理解为必须一次升级到 250GB。"
     ],
     "suitableFor": [
       "50GB 轻量档与 250GB 跨档选择"
@@ -1385,8 +1385,8 @@ export const airports:Airport[] = [
     "sources": [
       "https://jichangtan.com/airports/kuaili/"
     ],
-    "sourceNotes": "这里展示两个选定档位，中间可能还有其他套餐；不能把跨度理解为必须一次升级到 250GB。",
-    "purchaseCheck": "先查询是否仍有 100GB 等中间档，再按真实用量选择；核对 50GB 小档与 250GB 档的权限是否相同。",
+    "sourceNotes": "入门月包有 15 元/50GB 与 25 元/150GB 两种第三方口径，不能承诺现售最低价。 这里展示两个选定档位，中间可能还有其他套餐；不能把跨度理解为必须一次升级到 250GB。",
+    "purchaseCheck": "15 元/50GB、22 元/100GB、35 元/250GB 是否均可购买与续费？ 各档节点权限、设备数和客户端支持是否相同？ 流量重置日、补充包费用、退款时限和已用流量处理是什么？",
     "lastVerified": "2026-10-16",
     "testStatus": "unverified",
     "color": "#70c8ed"
@@ -1413,7 +1413,7 @@ export const airports:Airport[] = [
         "trafficGB": 150,
         "trafficUnit": "GB",
         "verified": false,
-        "notes": "第三方公开资料参考；未登录结算页核价，是否在售需确认。"
+        "notes": "第三方历史参考；当前在售、额度及结算均未确认。"
       },
       {
         "id": "month-2",
@@ -1424,7 +1424,7 @@ export const airports:Airport[] = [
         "trafficGB": 300,
         "trafficUnit": "GB",
         "verified": false,
-        "notes": "第三方公开资料参考；未登录结算页核价，是否在售需确认。"
+        "notes": "第三方历史参考；当前在售、额度及结算均未确认。"
       }
     ],
     "protocols": [],
@@ -1436,7 +1436,7 @@ export const airports:Airport[] = [
       "150GB 与 300GB 月包可用于持续使用者的容量安排"
     ],
     "disadvantages": [
-      "一次性包不表示服务永久经营，也不表示每月补发 100GB；相关套餐当前是否在售尚未通过结算页确认。"
+      "年付 60GB 的重置口径需在官方页确认；第三方表格只写流量列，不能自行扩展为每月或全年。 一次性包不表示服务永久经营，也不表示每月补发 100GB；相关套餐当前是否在售尚未通过结算页确认。"
     ],
     "suitableFor": [
       "月付之外，核对低频一次性包"
@@ -1444,8 +1444,8 @@ export const airports:Airport[] = [
     "sources": [
       "https://jichangtan.com/airports/firefly/"
     ],
-    "sourceNotes": "一次性包不表示服务永久经营，也不表示每月补发 100GB；相关套餐当前是否在售尚未通过结算页确认。",
-    "purchaseCheck": "优惠码为 firefly；如选择一次性包，核对到期规则、总量、重置条件，避免把一次性总量误认成月额度。",
+    "sourceNotes": "年付 60GB 的重置口径需在官方页确认；第三方表格只写流量列，不能自行扩展为每月或全年。 一次性包不表示服务永久经营，也不表示每月补发 100GB；相关套餐当前是否在售尚未通过结算页确认。",
+    "purchaseCheck": "firefly 是否限首单、排除年付小包或一次性包，能否和周期折扣叠加？ 100 元一次性包的总额度、有效期、停服处理及补充规则是什么？ 是否支持目标客户端，设备并发与退款规则是什么？",
     "lastVerified": "2026-10-16",
     "testStatus": "unverified",
     "color": "#9b87ff"
@@ -1471,7 +1471,7 @@ export const airports:Airport[] = [
         "trafficGB": 150,
         "trafficUnit": "GB",
         "verified": false,
-        "notes": "第三方公开资料参考；未登录结算页核价，是否在售需确认。"
+        "notes": "第三方历史参考；当前在售、额度及结算均未确认。同为 150GB 的公开月价出现 19 元和25 元。"
       },
       {
         "id": "month-2",
@@ -1482,7 +1482,7 @@ export const airports:Airport[] = [
         "trafficGB": 300,
         "trafficUnit": "GB",
         "verified": false,
-        "notes": "第三方公开资料参考；未登录结算页核价，是否在售需确认。"
+        "notes": "第三方历史参考；当前在售、额度及结算均未确认。同为 150GB 的公开月价出现 19 元和25 元。"
       }
     ],
     "protocols": [],
@@ -1494,7 +1494,7 @@ export const airports:Airport[] = [
       "公开资料分别列出月付、季付和年付，提供周期比较线索"
     ],
     "disadvantages": [
-      "不同来源对协议、设备数和第三方客户端支持相互矛盾；这些字段全部保留为尚未核实，不拼接成一套确定配置。"
+      "同为 150GB 的公开月价出现 19 元和25 元。 不同来源对协议、设备数和第三方客户端支持相互矛盾；这些字段全部保留为尚未核实，不拼接成一套确定配置。"
     ],
     "suitableFor": [
       "Small 与 Big，关注周期总支出"
@@ -1502,8 +1502,8 @@ export const airports:Airport[] = [
     "sources": [
       "https://jichangshice.com.cn/airports/lingmao/"
     ],
-    "sourceNotes": "不同来源对协议、设备数和第三方客户端支持相互矛盾；这些字段全部保留为尚未核实，不拼接成一套确定配置。",
-    "purchaseCheck": "先确认当前 Small/Big 额度，再询问长周期是否按月重置；没有提供该品牌优惠码，本站不会补入网上其他码。",
+    "sourceNotes": "同为 150GB 的公开月价出现 19 元和25 元。 不同来源对协议、设备数和第三方客户端支持相互矛盾；这些字段全部保留为尚未核实，不拼接成一套确定配置。",
+    "purchaseCheck": "Small 当前是否25 元/150GB？Big 实际到账300GB还是其他额度？ 季付与年付的流量是否每月重置，预付后能否退未使用余额？ 当前协议、设备并发和第三方客户端限制是什么？",
     "lastVerified": "2026-10-16",
     "testStatus": "unverified",
     "color": "#73d9d2"
@@ -1530,7 +1530,7 @@ export const airports:Airport[] = [
         "trafficGB": 150,
         "trafficUnit": "GB",
         "verified": false,
-        "notes": "第三方公开资料参考；未登录结算页核价，是否在售需确认。"
+        "notes": "第三方历史参考；当前在售、额度及结算均未确认。"
       },
       {
         "id": "month-2",
@@ -1541,7 +1541,7 @@ export const airports:Airport[] = [
         "trafficGB": 300,
         "trafficUnit": "GB",
         "verified": false,
-        "notes": "第三方公开资料参考；未登录结算页核价，是否在售需确认。"
+        "notes": "第三方历史参考；当前在售、额度及结算均未确认。"
       }
     ],
     "protocols": [],
@@ -1553,7 +1553,7 @@ export const airports:Airport[] = [
       "容量翻倍的升级增支低于另一份 150GB 小档价格"
     ],
     "disadvantages": [
-      "年付总价在不同页面有差异，本页只收录一致性较高的月付两档，不据此推算全年价格。"
+      "Warp 是按月重置还是一次性总量无法确认。 年付总价在不同页面有差异，本页只收录一致性较高的月付两档，不据此推算全年价格。"
     ],
     "suitableFor": [
       "150GB 与 300GB，比较可预期增支"
@@ -1561,8 +1561,8 @@ export const airports:Airport[] = [
     "sources": [
       "https://www.clashwiki.blog/brands/flashleap/"
     ],
-    "sourceNotes": "年付总价在不同页面有差异，本页只收录一致性较高的月付两档，不据此推算全年价格。",
-    "purchaseCheck": "输入 shanyue 后核对实际总价，确认是否限首单；不要将低标价直接解释为游戏低延迟或长期稳定。",
+    "sourceNotes": "Warp 是按月重置还是一次性总量无法确认。 年付总价在不同页面有差异，本页只收录一致性较高的月付两档，不据此推算全年价格。",
+    "purchaseCheck": "shanyue 是否仅新用户首次订单、哪些档位可用及截止日期？ Warp 是否月付，年付小包究竟每月给多少流量？ 设备并发、目标客户端、退款窗口与使用流量扣款怎样规定？",
     "lastVerified": "2026-10-16",
     "testStatus": "unverified",
     "color": "#82b5ff"
@@ -1589,7 +1589,7 @@ export const airports:Airport[] = [
         "trafficGB": 100,
         "trafficUnit": "GB",
         "verified": false,
-        "notes": "第三方公开资料参考；未登录结算页核价，是否在售需确认。"
+        "notes": "第三方历史参考；当前在售、额度及结算均未确认。"
       },
       {
         "id": "month-2",
@@ -1600,7 +1600,7 @@ export const airports:Airport[] = [
         "trafficGB": 200,
         "trafficUnit": "GB",
         "verified": false,
-        "notes": "第三方公开资料参考；未登录结算页核价，是否在售需确认。"
+        "notes": "第三方历史参考；当前在售、额度及结算均未确认。"
       }
     ],
     "protocols": [],
@@ -1612,7 +1612,7 @@ export const airports:Airport[] = [
       "200GB 参考档的升级差额为 14 元，可与补充流量费用比较"
     ],
     "disadvantages": [
-      "网络资料对 wuyou666 的优惠比例和客户端兼容存在冲突，不能把任意一种说法当作已经验证。"
+      "优惠幅度与条件有6.8折、新人折扣未给幅度等口径，不能写死。 网络资料对 wuyou666 的优惠比例和客户端兼容存在冲突，不能把任意一种说法当作已经验证。"
     ],
     "suitableFor": [
       "100GB 到 200GB，增加 14 元的容量选择"
@@ -1620,8 +1620,8 @@ export const airports:Airport[] = [
     "sources": [
       "https://www.jichangnode.wiki/brands/worryfree/"
     ],
-    "sourceNotes": "网络资料对 wuyou666 的优惠比例和客户端兼容存在冲突，不能把任意一种说法当作已经验证。",
-    "purchaseCheck": "先问清 100GB 用完后的处理和补充包价格，再验证 wuyou666；如需通用订阅，付款前确认是否提供。",
+    "sourceNotes": "优惠幅度与条件有6.8折、新人折扣未给幅度等口径，不能写死。 网络资料对 wuyou666 的优惠比例和客户端兼容存在冲突，不能把任意一种说法当作已经验证。",
+    "purchaseCheck": "wuyou666 实际减免多少、是否限首次订单、是否排除79 元年付？ 能否直接用第三方客户端，还是须申请专用订阅？ 100GB用完后补充包多少钱，是否有退款、续费或转档限制？",
     "lastVerified": "2026-10-16",
     "testStatus": "unverified",
     "color": "#d5aa73"
@@ -1647,7 +1647,7 @@ export const airports:Airport[] = [
         "trafficGB": 120,
         "trafficUnit": "GB",
         "verified": false,
-        "notes": "第三方公开资料参考；未登录结算页核价，是否在售需确认。"
+        "notes": "第三方历史参考；当前在售、额度及结算均未确认。"
       },
       {
         "id": "month-2",
@@ -1658,7 +1658,7 @@ export const airports:Airport[] = [
         "trafficGB": 330,
         "trafficUnit": "GB",
         "verified": false,
-        "notes": "第三方公开资料参考；未登录结算页核价，是否在售需确认。"
+        "notes": "第三方历史参考；当前在售、额度及结算均未确认。"
       }
     ],
     "protocols": [],
@@ -1670,7 +1670,7 @@ export const airports:Airport[] = [
       "40 元参考月费便于为三百 GB 左右需求设置预算"
     ],
     "disadvantages": [
-      "来源对线路名称和第三方订阅方式有不同描述；未核实这些宣传，也未采纳网上另一个优惠码或券后价。"
+      "第三方对专线名称、订阅发放方式及年包重置口径描述不同；没有当前官方证据可裁定。 来源对线路名称和第三方订阅方式有不同描述；未核实这些宣传，也未采纳网上另一个优惠码或券后价。"
     ],
     "suitableFor": [
       "330GB 中档，扩容与续费一起核对"
@@ -1678,8 +1678,8 @@ export const airports:Airport[] = [
     "sources": [
       "https://www.clashmetahub.net/reviews/kuajie/"
     ],
-    "sourceNotes": "来源对线路名称和第三方订阅方式有不同描述；未核实这些宣传，也未采纳网上另一个优惠码或券后价。",
-    "purchaseCheck": "本次没有提供跨界云优惠码，本站仅保留原始推广链接；确认 330GB 当前标价与续费金额后再下单。",
+    "sourceNotes": "第三方对专线名称、订阅发放方式及年包重置口径描述不同；没有当前官方证据可裁定。 来源对线路名称和第三方订阅方式有不同描述；未核实这些宣传，也未采纳网上另一个优惠码或券后价。",
+    "purchaseCheck": "20 元120GB和40 元330GB是否仍在售，续费价格是否相同？ 是否支持通用订阅、是否需人工发放，有无设备与地域限制？ 年付60GB是每月重置还是总额度，退款期限和余额退还规则是什么？",
     "lastVerified": "2026-10-16",
     "testStatus": "unverified",
     "color": "#ed94c4"

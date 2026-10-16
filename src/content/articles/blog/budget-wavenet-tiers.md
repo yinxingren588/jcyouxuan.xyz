@@ -9,7 +9,7 @@ draft: false
 tags: ["浪网", "档位", "价格核对"]
 category: "budget"
 order: 164
-sources: ["https://jichangshice.com.cn/airports/wavenet/", "https://www.jichangpk.com/providers/langwang/", "https://jichangbay.biz/airports/wavenet/"]
+sources: ["https://jichangshice.com.cn/airports/wavenet/", "https://www.jichangpk.com/providers/langwang/", "https://jichangbay.biz/airports/wavenet/", "https://wavenet.my/index.php"]
 ---
 
 同一个品牌出现 30 元和 120 元，不一定是价格写错，也可能是在介绍不同档位。本站已把浪网首页展示更正为入门档参考，避免用高容量档误导读者。本文只解释已经收录的第三方资料，未登录或付款复核当前在售与结算条件。
@@ -21,9 +21,11 @@ sources: ["https://jichangshice.com.cn/airports/wavenet/", "https://www.jichangp
 | 入门档 | 30 元 | 150GB | 未核对当前结算 |
 | 进阶档 | 70 元 | 400GB | 另有来源写 450GB |
 | 高端档 | 120 元 | 800GB | 不应作为入门门槛 |
-| 商业档 | 200 元 | 2000GB | 是否在售仍需确认 |
+| 商业档 | 200 元 | 2TB（按十进制为2000GB） | 来源单位与当前在售均需确认 |
 
 表格来自本站此前收录的[资料甲](https://jichangshice.com.cn/airports/wavenet/)、[资料乙](https://www.jichangpk.com/providers/langwang/)和[资料丙](https://jichangbay.biz/airports/wavenet/)。它们属于第三方公开参考；本次未取得当前结算确认，也不能用多个历史页面相互引用替代正式核价。
+
+本轮还读取到[同名公开页面](https://wavenet.my/index.php)的30元150GB、70元400GB、120元800GB和200元2TB记录；该页与站长指定推广入口的归属未证明，因此只记为外部线索，不升级为官方核价。2TB按十进制换算为2000GB，并不表示后台统计或实测到账采用相同口径。
 
 ## 为什么 70 元档不写成一个确定值
 

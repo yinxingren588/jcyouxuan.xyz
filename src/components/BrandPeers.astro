@@ -1,6 +1,6 @@
 ---
 import {price,traffic,type Airport} from '../data/airports';
-import {nearbyBrands,brandEditorial} from '../data/brand-editorial';
+import {nearbyBrands,brandEditorial,peerTradeoff} from '../data/brand-editorial';
 const {airport:a}=Astro.props as {airport:Airport};const peers=nearbyBrands(a);
 ---
-{peers.length?<><div class="peer-grid">{peers.map(b=><a class="peer-card" href={`/compare/?brands=${a.slug},${b.slug}`}><span class="tag">交叉核对</span><h3>{a.name} <span>与</span> {b.name}</h3><p>{brandEditorial[b.slug].positioning}</p><small>{b.name}：{price(b.plans[0])} · {traffic(b.plans[0])}</small><strong>打开两家对比 →</strong></a>)}</div><p class="muted">按已收录小档的参考价格接近程度选取，GiB 与 GB 分开；这不是性能推荐。无法列价的品牌提供其他目录入口作核对。</p></>:<div class="editor-note"><strong>先统一单位，再选比较对象</strong><p>本期没有其他同为 GiB 口径的可配对方案，因此不自动列出同单位候选。你仍可打开对比工具查看价格与限制，但不能把 GB 与 GiB 的数字直接视为同样容量。</p><a class="button secondary" href={`/compare/?brands=${a.slug}`}>自行选择比较对象 →</a></div>}
+{peers.length?<><div class="peer-grid">{peers.map(b=><a class="peer-card" href={`/compare/?brands=${a.slug},${b.slug}`}><span class="tag">交叉核对</span><h3>{a.name} <span>与</span> {b.name}</h3><p>{brandEditorial[b.slug].positioning}</p><p class="peer-tradeoff">{peerTradeoff(a,b)}</p><small>{b.name}：{price(b.plans[0])} · {traffic(b.plans[0])}</small><strong>打开两家对比 →</strong></a>)}</div><p class="muted">按已收录小档的参考价格接近程度选取，GiB 与 GB 分开；这不是性能推荐。无法列价的品牌提供其他目录入口作核对。</p></>:<div class="editor-note"><strong>先统一单位，再选比较对象</strong><p>本期没有其他同为 GiB 口径的可配对方案，因此不自动列出同单位候选。你仍可打开对比工具查看价格与限制，但不能把 GB 与 GiB 的数字直接视为同样容量。</p><a class="button secondary" href={`/compare/?brands=${a.slug}`}>自行选择比较对象 →</a></div>}

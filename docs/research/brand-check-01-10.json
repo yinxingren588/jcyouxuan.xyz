@@ -1,0 +1,158 @@
+[
+  {
+    "slug": "twilight",
+    "name": "暮光网络",
+    "entryUrl": "https://varnexa.twilightaff.com/#/?code=3qqonTlH",
+    "checkedAt": "2026-10-16",
+    "entryStatus": "web.open未取得正文，返回工具不可访问；不能由此判断所有用户均不可访问。",
+    "identity": "原入口按用户提供保留。同名资料页将暮光网络与暮光加速合并，但本轮未从原入口确认运营归属。",
+    "findings": [
+      {"topic":"价格与容量","text":"搜索可见的梯子实验室记录以2026-08-09为资料日期，列20元/月120GB、40元/月240GB。属于第三方历史价目，不是本轮官网核价。","url":"https://tizilab.cc/paihang/twilight/","kind":"third-party","supportsCurrentOffer":false},
+      {"topic":"价格版本差异","text":"机场测试列相同两档，同时说明40元档曾出现240GB与300GB两种写法。不要将更大容量当作已确认权益。","url":"https://jichangshice.com.cn/airports/muguang/","kind":"third-party","supportsCurrentOffer":false}
+    ],
+    "conflicts": ["40元标准档240GB与300GB版本并存；选择较小值只能减少夸大，不能使其成为已验证价格。", "线路、协议、设备数与退款窗口均未取得原入口当前条款。"],
+    "coupon": {"code":null,"status":"用户未提供；本轮不增补网络其他优惠码。","terms":"不承诺任何折扣。"},
+    "purchaseQuestions": ["20元120GB与40元240GB是否仍在售？是否按30天或自然月重置？", "40元档实际到账是240GB还是300GB？", "是否支持所用客户端，设备数、倍率、退款窗口分别是什么？"]
+  },
+  {
+    "slug": "invisible",
+    "name": "隐形人",
+    "entryUrl": "https://varnexa.invisibleaff.com/#/?code=JF4seZUy",
+    "checkedAt": "2026-10-16",
+    "entryStatus": "web.open原入口未取得正文，返回工具不可访问。",
+    "identity": "原入口按用户提供保留。同名自称官网yxr.homes可读，但未确认与用户原入口同属运营方，不能仅靠页面自称判为官方。",
+    "findings": [
+      {"topic":"月付与年付口径","text":"机场168可读页列24元/月144GB；109元年付80GB写为按年重置，并将一次性160GB小包列为限1台设备。该页资料核验日期2026-08-03。","url":"https://jichang168.com/airports/invisible/","kind":"third-party","supportsCurrentOffer":false},
+      {"topic":"优惠与重置冲突","text":"机场指南2026-09-12页称yxr888为新客首单8折，并把109元年付80GB写成每月额度，与机场168的按年口径不同。","url":"https://jclist.net/airports/yinxingren","kind":"third-party","supportsCurrentOffer":false},
+      {"topic":"客户端信息不可靠","text":"Clash机场指南同页一面称仅支持自研客户端，一面又给出Clash与小火箭订阅导入建议，且入门额度写100GB。不能取其中一段当确定条款。","url":"https://clashjichang.blog/brands/yinxingren/","kind":"third-party","supportsCurrentOffer":false}
+    ],
+    "conflicts": ["24元档144GB、120GB及100GB的不同公开版本；当前144GB仍须原入口核对。", "109元年包80GB有按年与按月两种说法，不应参与月容量筛选。", "通用订阅支持存在自相矛盾资料。"],
+    "coupon": {"code":"yxr888","status":"保留用户指定码；本轮未取得当前结算验证。","terms":"第三方称新客首单8折，另有四款常规套餐全部周期的说法；适用套餐、续费与截止日期未确认。"},
+    "purchaseQuestions": ["白银纪元当前是否24元/144GB？", "109元年付80GB究竟每月还是全年总量？", "当前能否发放通用订阅，还是必须官方客户端？", "yxr888适用哪些套餐、周期、新购或续费？优惠后订单金额是多少？", "一次性包设备上限和退款时限分别是多少？"]
+  },
+  {
+    "slug": "lingdong",
+    "name": "灵动云",
+    "entryUrl": "https://varnexa.lingdongaff.com/#/?code=QcRK6OPG",
+    "checkedAt": "2026-10-16",
+    "entryStatus": "web.open原入口未取得正文，返回工具不可访问。",
+    "identity": "原入口按用户提供保留；不同同名介绍页的协议和套餐有版本差异，未确认其当前用户中心归属。",
+    "findings": [
+      {"topic":"参考月付与限制","text":"TowerNav可读页列20元100GB、50元300GB月付；年付小包99元70GB/年。该站自报2026年7月测试，不能当成本轮测试。其退款支持描述缺完整退款条件。","url":"https://towernav.com/airports/lingdong/","kind":"third-party","supportsCurrentOffer":false},
+      {"topic":"年包与定制版本","text":"另一资料页列相同两个常规月档，但将99元年付写成79GB/30天，并列620元定制档，和其他资料70GB/年、680元版本不一致。","url":"https://tuijianjichang.blog/airport/lingdong/","kind":"third-party","supportsCurrentOffer":false}
+    ],
+    "conflicts": ["年付99元70GB/年、70GB未明周期、79GB/30天并存。", "协议有VLESS、Trojan等不同描述；不能从线路宣传推断支持所有客户端。", "私人定制620元与680元版本并存，不应合成一个当前档位。"],
+    "coupon": {"code":null,"status":"用户未提供；本轮不增补网络其他优惠码。","terms":"不承诺任何折扣。"},
+    "purchaseQuestions": ["20元100GB和50元300GB是否仍在售，周期是否30天？", "客户端格式、节点倍率与设备并发限制是什么？", "年付小包明确的流量周期是什么？", "退款适用期限、已用流量门槛与手续费能否提供条款？"]
+  },
+  {
+    "slug": "laddercloud",
+    "name": "梯子云 LadderCloud",
+    "entryUrl": "https://varnexa.ladderaff.com/#/?",
+    "checkedAt": "2026-10-16",
+    "entryStatus": "web.open原入口未取得正文，返回工具不可访问。",
+    "identity": "保留用户原链接，无新增邀请码。第三方同名目录未与本轮可读的用户中心建立归属链。",
+    "findings": [
+      {"topic":"套餐参考","text":"机场node搜索结果可见25元/月125GB、60元/月350GB；89元年付60GB明确标重置待核实，并自述未取得品牌入口公开套餐表。","url":"https://www.jichangnode.wiki/blog/laddercloud-monthly-research/","kind":"third-party","supportsCurrentOffer":false},
+      {"topic":"条款缺口","text":"梯子岛搜索摘要明确其档案不覆盖退款条件与续费价格，提示需要阅读官网条款；不能从该页给出可退款承诺。","url":"https://tizidao.com/jichang/laddercloud/","kind":"third-party","supportsCurrentOffer":false}
+    ],
+    "conflicts": ["89元年包60GB重置周期未明确，不能折算为可直接购买的月付档。", "本轮未取得线路、设备并发、退款及续费当前条款。"],
+    "coupon": {"code":null,"status":"用户未提供；本轮不增补网络其他优惠码。","terms":"不承诺任何折扣。"},
+    "purchaseQuestions": ["25元125GB与60元350GB当前是否在售？", "89元年包60GB是全年还是按月补发？", "初阶与中阶在节点、倍率和并发上是否不同？", "续费是否延长到期时间、是否立即重置？退款条件是什么？"]
+  },
+  {
+    "slug": "flyv",
+    "name": "飞V",
+    "entryUrl": "https://varnexa.flyvaff.com/#/?code=UoU2Izm5",
+    "checkedAt": "2026-10-16",
+    "entryStatus": "web.open原入口未取得正文，返回工具不可访问；已有机场测试来源正文亦未读到。",
+    "identity": "飞V与本目录Firefly为不同用户指定品牌，不共用优惠码或性能资料。",
+    "findings": [
+      {"topic":"月付参考","text":"梯子去哪买的2026-08-09价目列25元/月150GB、50元/月380GB、110元/月800GB；99元年付65GB的重置周期未确认。该页没有自测飞V网络。","url":"https://tizimy.org/tuijian/flyv/","kind":"third-party","supportsCurrentOffer":false},
+      {"topic":"年包及协议差异","text":"另一资料页常规月付两档相同，但把年付65GB写为每30天，且称IPLC/BGP，与其他资料IEPL说法不同。","url":"https://tuijianjichang.blog/airport/flyv/","kind":"third-party","supportsCurrentOffer":false}
+    ],
+    "conflicts": ["99元年付65GB的每月/总量口径未统一。", "线路类型IEPL与IPLC/BGP并存，不能据此保证晚高峰或设备兼容。", "一次性流量包有效期未从原入口取得；永久有效不能理解为服务永续。"],
+    "coupon": {"code":null,"status":"用户未提供；本轮不增补网络其他优惠码。","terms":"不承诺任何折扣。"},
+    "purchaseQuestions": ["50元380GB是否仍为月付，和25元150GB档节点权益有何不同？", "65GB年包重置周期是什么？", "一次性包剩余额度有效期、长期不登录处理办法是什么？", "当前支持哪些客户端和付款方式，退款条件是什么？"]
+  },
+  {
+    "slug": "wavenet",
+    "name": "浪网 WaveNet",
+    "entryUrl": "https://varnexa.wavenetaff.com/#/?code=oU77JXen",
+    "checkedAt": "2026-10-16",
+    "entryStatus": "web.open原入口未取得正文；三个现有参考源直接打开也未取得正文，其中机场PK可通过搜索摘要读取价目。",
+    "identity": "wavenet.my/index.php自称官网且公开列套餐，但本轮未找到它与用户原推广入口的归属证明。按未确认归属的公开页面处理，不标official-public，不替换用户链接。",
+    "findings": [
+      {"topic":"价格分档","text":"机场PK搜索结果列入门30元/月150GB、进阶70元/月400GB，页面自报2026-09-27核对。120元不是这里的入门价。","url":"https://www.jichangpk.com/providers/langwang/","kind":"third-party","supportsCurrentOffer":false},
+      {"topic":"同名自称官网价目","text":"可读页面列30元/月150GB、70元/月400GB、120元/月800GB、200元/月2TB，另有640元/月500GB定制线路。尚未证明与用户入口同属运营方。","url":"https://wavenet.my/index.php","kind":"third-party","supportsCurrentOffer":false},
+      {"topic":"宣传与缺失条款","text":"同名页称全节点1倍、多平台客户端及流媒体AI支持，未取得可执行的退款窗口、设备并发上限和当前结算条款；不能将宣传当成独立性能证据。","url":"https://wavenet.my/index.php","kind":"third-party","supportsCurrentOffer":false}
+    ],
+    "conflicts": ["已有资料记录70元档400GB与450GB两种版本；本轮找到400GB支持，仍不能确认原入口当前值。", "同名wavenet.my的归属未证明，不应因为页面写官网便升级证据等级。", "商业档来源写2TB，应保留原单位；2000GB仅为十进制换算，不表示实测到账。"],
+    "coupon": {"code":null,"status":"用户未提供；本轮不增补同名页面出现的网络其他优惠码。","terms":"不承诺任何折扣。"},
+    "purchaseQuestions": ["原入口的入门当前是否30元/月150GB？", "70元进阶究竟400GB还是450GB？", "120元800GB是高端档而非起步档吗？", "所有节点是否同倍率、商业档2TB单位和重置日是什么？", "wavenet.my是否运营方自有，当前设备并发与退款条款在哪里？"]
+  },
+  {
+    "slug": "flycat",
+    "name": "飞猫云",
+    "entryUrl": "https://flycat1.flycatvipaff.cc/#/?code=Os3T3OxW",
+    "checkedAt": "2026-10-16",
+    "entryStatus": "web.open报告原入口重定向至https://sk99.fei9sjf.xyz/，目标页工具不可访问；直接再打开目标也未取得正文。",
+    "identity": "第三方明确提及用户相同flycat1.flycatvipaff.cc为飞猫入口；这可减少同音品牌混淆，但不能独立确认当前运营主体或线路归属。",
+    "findings": [
+      {"topic":"参考套餐与码","text":"海外机场列25元/月150GB、45元/月300GB和84元年付50GB/月；称flycat888为8折、学生版不适用。此为第三方声称核价。","url":"https://haiwaijichang.com/brands/feimao/","kind":"third-party","supportsCurrentOffer":false},
+      {"topic":"优惠周期冲突","text":"机场中文网资料页标2026-07-12，限定flycat888为新用户季付以上8折，与海外机场所列月付可用范围不同。","url":"https://jichangtuijiancn.co/airports/feimaoyun/","kind":"third-party","supportsCurrentOffer":false},
+      {"topic":"客户端及码的较新冲突","text":"第三方2026-10-01文章称当前无有效优惠码，并转述5月15日起暂停通用订阅、需官方客户端。与仍宣传通用订阅和优惠码的页面不同，须原入口确认。","url":"https://jichangtuijian1.com/pianyijichang/flycat","kind":"third-party","supportsCurrentOffer":false},
+      {"topic":"条款缺失","text":"同一10月1日文章称后台未列退款规则；不能把未列规则推断成确定不退款，也不能承诺可退款。其节点与套餐线路描述也有不一致。","url":"https://jichangtuijian1.com/pianyijichang/flycat","kind":"third-party","supportsCurrentOffer":false}
+    ],
+    "conflicts": ["flycat888：新客季付以上、月付亦可和当前无有效码三种说法。", "当前第三方订阅是否暂停存在矛盾，这是购买前关键问题。", "线路IEPL/IPLC、协议AnyTLS/VLESS等第三方描述未统一。", "运营年份2023与2025不同，不应将成立年作为已证实优势。"],
+    "coupon": {"code":"flycat888","status":"保留用户指定码；当前有效性存在公开冲突，本轮未验证。","terms":"第三方有新用户季付以上8折、学生版除外、月付亦可、当前不可用等不同说法。不要展示确定折扣或券后价。"},
+    "purchaseQuestions": ["目前能否生成Clash/Mihomo/Shadowrocket通用订阅，还是仅官方客户端？", "flycat888是否有效，是否限新用户、季付及以上、是否排除学生版？", "150GB月档与84元年包的周期和重置日是什么？", "设备并发、付款手续费、退款条件及安装包官方来源是什么？"]
+  },
+  {
+    "slug": "dalaocloud",
+    "name": "大佬云",
+    "entryUrl": "https://vip.dalaocloud.com/#/?code=Cp2sfYZg",
+    "checkedAt": "2026-10-16",
+    "entryStatus": "web.open原入口及dalaocloud.com均未取得正文；现有机场测试源直接打开不可读，但搜索摘要可见。",
+    "identity": "保留用户原入口；同名资料有不同起步套餐，不能认定较新的第三方标题就是当前原入口价。",
+    "findings": [
+      {"topic":"当前来源的历史快照","text":"机场测试搜索可见其自称2026-10-15结算快照：福利版19.99元100GB/30天（正文120GB），进阶25元150GB，基础43元300GB。没有本轮独立结算验证。","url":"https://jichangshice.com.cn/airports/dalaoyun/","kind":"third-party","supportsCurrentOffer":false},
+      {"topic":"其他版本","text":"Muyoo的2026-09-26同名文章摘要写23元/月130GB起，且指向dalaocloud.com；与福利版19.99元版本不是可直接合并的一条套餐。","url":"https://muyoo.org/","kind":"third-party","supportsCurrentOffer":false}
+    ],
+    "conflicts": ["福利版卡片100GB、说明120GB；其他来源23元130GB，可能是不同档位或版本，不能拼出19.99元130GB。", "30天重置与自然月不同，页面标价不等于每个自然月统一重置。", "设备、退款、线路和支付条款未取得原入口当前依据。"],
+    "coupon": {"code":null,"status":"用户未提供；本轮不增补网络其他优惠码。","terms":"不承诺任何折扣。"},
+    "purchaseQuestions": ["福利版19.99元是否仍在售、到账100GB还是120GB？", "23元130GB是旧版还是另一个套餐？", "流量按30天重置还是按自然月，升级和续费如何处理？", "倍率、设备并发、退款窗口及付款手续费是什么？"]
+  },
+  {
+    "slug": "breezenet",
+    "name": "微风网络 Breezenet",
+    "entryUrl": "https://edp01.breezenetaff.com/#/?",
+    "checkedAt": "2026-10-16",
+    "entryStatus": "web.open原入口能读取线路检测页，显示检测目标共0个，未取得套餐、目标用户中心或优惠正文。仅说明本工具读取结果，不证明所有浏览器都无目标。",
+    "identity": "原入口按用户提供保留，不补邀请码。线路检测页不能证明套餐权益或当前运营主体。",
+    "findings": [
+      {"topic":"入口正文","text":"用户给定入口当前可提取正文只有线路检测界面，没有公开套餐、优惠或条款信息。","url":"https://edp01.breezenetaff.com/#/?","kind":"official-public","supportsCurrentOffer":false},
+      {"topic":"历史价格与已过截止条款","text":"现有第三方源列27元/月200GB、57元/月500GB；优惠weifeng90称七折，有效期至2026-08-31。该截止已早于检查日期，不能宣称活动仍有效。","url":"https://jichangyyds.net/brands/weifengwangluo/","kind":"third-party","supportsCurrentOffer":false},
+      {"topic":"较新优惠宣传","text":"机场观察站2026-10-06文章继续称weifeng90七折、新购续费升级均可，但未由本轮原入口验证延期条款。","url":"https://jcspot.com/airports/breeze","kind":"third-party","supportsCurrentOffer":false}
+    ],
+    "conflicts": ["现有源明确截至2026-08-31，较新介绍站仍宣传七折；只能标历史条款截止已过、当前是否延长待核实。", "不能从weifeng90的数字推断九折；也不能仅凭第三方七折文字认定订单折扣。", "137元年包100GB在不同资料中重置说明不一，本轮不加入月容量比较。"],
+    "coupon": {"code":"weifeng90","status":"保留用户指定码；已收录历史条款的截止日期已过，当前是否延续待核实。","terms":"历史第三方条款称新购/续费/升级七折，截止2026-08-31；较新第三方仍宣传但本轮未证实延期，不承诺折扣。"},
+    "purchaseQuestions": ["27元200GB和57元500GB是否是当前未折扣价格？", "weifeng90是否延长，是否与页面已展示折后价重复计算？", "137元年包100GB每月还是全年总量？", "如何到达当前用户中心，是否提供通用订阅、设备限制及退款条款？"]
+  },
+  {
+    "slug": "stardream",
+    "name": "星岛梦 StarDream",
+    "entryUrl": "https://kfccbb.xingdaomeng.com/#/?code=JTRIWFim",
+    "checkedAt": "2026-10-16",
+    "entryStatus": "web.open原入口未取得正文，返回工具不可访问。",
+    "identity": "原入口按用户提供保留；第三方资料页列同名品牌，但运营年限和线路报告不能代替原入口条款核验。",
+    "findings": [
+      {"topic":"价格与优惠线索","text":"梯子梦可读价目列25元/月150GB、50元/月300GB、70元/月500GB、130元/月1TB；96元年包60GB/月。优惠nmw888被描述为新号九折。","url":"https://tizidream.com/shops/xingdaomeng/","kind":"third-party","supportsCurrentOffer":false},
+      {"topic":"客户端与测试证据边界","text":"该资料页说通用订阅需联系客服，并将2026-07-18测速明确归为厂商自测、珠海联通9Gbps下午环境；不能宣传为本站晚高峰实测。","url":"https://tizidream.com/shops/xingdaomeng/","kind":"third-party","supportsCurrentOffer":false},
+      {"topic":"较新优惠线索","text":"2026-10-07第三方文章仍列nmw888九折和25元150GB月档，但不是本轮从原入口取得的结算证据。","url":"https://jichangjiedian.pro/blog/xingdaomeng/","kind":"third-party","supportsCurrentOffer":false}
+    ],
+    "conflicts": ["成立2020年等运营年限为资料自述，未取得持续运营档案证明，不应作为确定优势。", "厂商下午测试不能当独立晚高峰测试。", "通用订阅是否需客服、年包是否每月重置及退款窗口均需当前入口确认。"],
+    "coupon": {"code":"nmw888","status":"保留用户指定码；存在新人九折第三方线索，本轮未验证当前有效性。","terms":"新人限定、周期范围、是否排除年包/定制/买断、截止时间均待结算条款确认；不展示确定券后价。"},
+    "purchaseQuestions": ["25元150GB和70元500GB是否仍在售？", "nmw888限首单还是仅新账号，适用哪些周期和套餐？", "通用订阅是否必须联系客服、当前可导入哪些客户端？", "年付60GB是否按月重置；设备并发、倍率和退款条款是什么？"]
+  }
+]

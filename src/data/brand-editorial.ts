@@ -48,7 +48,7 @@ export const brandEditorial:Record<string,BrandEditorial>={
     "deck": "150GB 与 300GB 的月包，适合经常接近小档上限的人计算升级差额。",
     "audience": "月用量经常超过 150GB、希望控制在四十多元参考月费内的人。",
     "avoid": "准备因为优惠码名称或年付摊销价而直接购买最长周期的人。",
-    "decision": "从 25 元升到 45 元，每月增支 20 元；先把这个差额与实际超额使用频率对照，再考虑更长付款周期。"
+    "decision": "先确认当前还能否领取所需通用订阅，再核对flycat888是否有效。25元150GB与45元300GB仅作预算参考，客户端不匹配时容量差额没有意义。"
   },
   "dalaocloud": {
     "positioning": "小档额度先澄清，再谈预算价值",
@@ -62,7 +62,7 @@ export const brandEditorial:Record<string,BrandEditorial>={
     "deck": "200GB 与 500GB 两档适合已知百 GB 小包不足、且希望按月安排预算的人。",
     "audience": "日常消耗已超过常见 100GB 小包，并需要为集中下载留出扩容选项的人。",
     "avoid": "月用量很低却为了较大流量购买更多额度，或把 weifeng90 直接理解成固定折扣的人。",
-    "decision": "先看 200GB 是否足够。500GB 档增加 30 元参考月费，只有持续较高的用量才值得保留这个月度支出。"
+    "decision": "先确认200GB是否足够，再核对500GB档增支。weifeng90已知历史条款截至2026-08-31，不把未证实延期的七折写入预算。"
   },
   "stardream": {
     "positioning": "把日常月份与集中下载月份分开规划",
@@ -72,11 +72,11 @@ export const brandEditorial:Record<string,BrandEditorial>={
     "decision": "不要只比较 25 元和 70 元。先询问能否按差价升级、何时生效、剩余流量如何处理，再决定高消耗月份的方案。"
   },
   "lightspeed": {
-    "positioning": "在百 GB 档之间做精细升级",
-    "deck": "138GB 与 220GB 两档为不需要大包、但偶尔超过小档的人提供更细的预算参照。",
+    "positioning": "先核对容量版本，再控制升级预算",
+    "deck": "参考月费为23元与34元，但容量存在138/148G、220/238G差异，先统一版本再比较。",
     "audience": "月用量略超百 GB、不希望直接购买 500GB 大包的人。",
     "avoid": "用旧版 17 元价格搭配新版容量，或把“光速”名称当作速度证明的人。",
-    "decision": "额外 11 元对应 82GB 标称容量。需要先确认这两个档位仍属于同一时期、同一种付款周期。"
+    "decision": "先确认当前两档额度。原138GB到220GB增加82GB，另一版本148G到238G增加90G；不能跨版本计算扩容收益。"
   },
   "v2yun": {
     "positioning": "以常规月付建立预算，活动价另核对",
@@ -122,10 +122,10 @@ export const brandEditorial:Record<string,BrandEditorial>={
   },
   "yuzhou": {
     "positioning": "等比例月包，优先买够用的容量",
-    "deck": "120GB 与 240GB 的价格和容量同步增长，重点在于避免为闲置额度增加预算。",
+    "deck": "原参考120GB/240GB与另一160GB/300GB版本不同；先确认当前额度，再判断是否值得增加月费。",
     "audience": "用量大致可预测，且偏好按月决定是否继续投入的人。",
     "avoid": "默认认为容量翻倍就会降低标称单价，或仅凭低月均价准备长期预付的人。",
-    "decision": "在本页的两档中，容量和费用同比增长。小档够用时没有仅凭容量规模就升级的必要。"
+    "decision": "原120GB/240GB版本费用与容量同比增长；另一版本并非相同比例。以当前套餐页为准，不把跨版本数字拼成升级收益。"
   },
   "2mao": {
     "positioning": "先用好小档，再看升级的边际容量",
@@ -142,11 +142,11 @@ export const brandEditorial:Record<string,BrandEditorial>={
     "decision": "先问清自己的系统能否使用，再看增加 15 元、获得额外 200GB 标称容量的中档是否合适。"
   },
   "edgenova": {
-    "positioning": "72GB 小档覆盖低用量预算",
-    "deck": "小容量月包适合已经明确不需要百 GB 额度的人，是否可持续续费应先确认。",
+    "positioning": "低用量体验档，先澄清额度与续费",
+    "deck": "15元档有55GB与72GB两种记录；能否覆盖需求，要以当前面板额度和首购条件为前提。",
     "audience": "低频访问、月消耗较少，并希望用月付控制第一次支出的人。",
     "avoid": "需要把体验价当成长期续费价，或日常消耗已经明显超过 72GB 的人。",
-    "decision": "72GB 与 120GB 两档的费用、容量同比增长。优先核对小档是否限新账户，再根据真实用量决定。"
+    "decision": "先问清体验档实际额度与续费价格。72GB到120GB的同比例比较只适用于原参考版本，不能套到55GB版本。"
   },
   "kosing": {
     "positioning": "容量之外，优先核对订阅获取方式",
@@ -167,7 +167,7 @@ export const brandEditorial:Record<string,BrandEditorial>={
     "deck": "50GB 与 250GB 面向不同用量；较大容量的预算结构只有在实际使用时才有价值。",
     "audience": "需求已经从低频访问增长到持续使用，想重新核对容量档位的人。",
     "avoid": "用量长期低于 50GB，却为较低标称单位费用直接购买 250GB 的人。",
-    "decision": "本页不是完整价目表。先查询是否有 100GB 等中间档，再决定跨到 250GB 是否有必要。"
+    "decision": "资料另列22元100GB中间档，应连同15元50GB和35元250GB向当前面板核对；本页精选两档不代表只有两种选择。"
   },
   "firefly": {
     "positioning": "月付常用与低频备用分开评估",
@@ -208,3 +208,12 @@ export const brandEditorial:Record<string,BrandEditorial>={
 export function planTradeoff(a:Airport){const [p,q]=a.plans;if(!p)return '当前入口与同名历史服务的关联未确认，暂不引用历史报价；需要从当前面板重新核对套餐。';if(!q)return `本页仅收录 ${p.price} 元、${p.trafficGB} ${p.trafficUnit??'GB'} 的月付参考档，不能据此判断完整套餐范围或最高容量。`;const extra=Math.round((q.price-p.price)*100)/100;const capacity=(q.trafficGB??0)-(p.trafficGB??0);return `从本页第一档升到第二档，参考月费增加 ${extra} 元，标称容量增加 ${capacity} ${q.trafficUnit??'GB'}。应把这笔固定增支与每月实际新增需求对照，不能只根据大包的容量数字决定。`;}
 export function matchingPlan(a:Airport,need:number):Plan|undefined{return a.plans.filter(p=>p.period==='month'&&p.trafficGB!==undefined&&p.trafficGB>=need).sort((p,q)=>p.price-q.price)[0]}
 export function nearbyBrands(a:Airport){const p=a.plans[0];if(!p)return airports.filter(b=>['twilight','lightyear'].includes(b.slug));return airports.filter(b=>b.slug!==a.slug&&b.plans[0]?.trafficUnit===p.trafficUnit).sort((b,c)=>Math.abs(b.plans[0].price-p.price)-Math.abs(c.plans[0].price-p.price)||b.order-c.order).slice(0,2)}
+export function peerTradeoff(a:Airport,b:Airport):string {
+ const p=a.plans[0],q=b.plans[0];
+ if(!p||!q)return '当前资料不足以比较两家的预算差异；先分别确认服务归属与当期价目表。';
+ if(p.currency!==q.currency||p.period!==q.period||p.trafficUnit!==q.trafficUnit||p.trafficGB===undefined||q.trafficGB===undefined)return '币种、周期或容量口径尚未统一，先核对条件再比较差额。';
+ const delta=Math.round((q.price-p.price)*100)/100,capacity=q.trafficGB-p.trafficGB;
+ const money=delta===0?'参考月费相同':delta>0?`参考月费多 ${delta} 元`:`参考月费少 ${-delta} 元`;
+ const quota=capacity===0?'标称容量相同':capacity>0?`标称容量多 ${capacity} ${p.trafficUnit??'GB'}`:`标称容量少 ${-capacity} ${p.trafficUnit??'GB'}`;
+ return `按两家已收录首档比较，${b.name}相对${a.name}：${money}，${quota}。这是参考档位的算术差异；套餐权限、倍率与当前在售条件需要分别确认。`;
+}

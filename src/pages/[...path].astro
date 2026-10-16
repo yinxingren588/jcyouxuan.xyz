@@ -37,7 +37,7 @@ if(page.type==='ranking'&&page.key==='overall')schema.push({'@context':'https://
 {page.type==='topic'&&<ScenarioPage kind={page.key!}/> }
 {page.type==='rankings'&&<RankingHub/>}
 {page.type==='ranking'&&<Ranking kind={page.key!}/>}
-{page.type==='brands'&&<div class="page-body"><div class="notice">29 个指定品牌 · 11 个指定优惠码 · 按站长提供顺序展示。每家单独说明推荐理由、参考来源和局限，当前无本站网络实测。</div><div class="grid three">{airports.map(a=><BrandCard airport={a}/>)}</div></div>}
+{page.type==='brands'&&<div class="page-body"><div class="notice">29 个指定品牌 · 11 个指定优惠码 · 按站长提供顺序展示。每家单独说明推荐理由、参考来源和局限，当前无本站网络实测。<a class="text-link" href="/brand-verification.csv" download>下载29品牌套餐核对表 ↓</a></div><div class="grid three">{airports.map(a=><BrandCard airport={a}/>)}</div></div>}
 {page.type==='reviews'&&<div class="page-body"><div class="notice">本栏目逐家分析费用、容量与适用条件。价格引用第三方公开资料，未通过当前结算复核；本站含推广关系，推荐依据不等于网络实测。</div><div class="grid three">{airports.map(a=><a class="article-card" href={`/review/${a.slug}/`}><span class="tag">资料分析 · 非实测</span><h2 style="font-size:22px">{a.name}</h2><p>{a.description}</p><time datetime="2026-10-16">整理 2026-10-16</time></a>)}</div></div>}
 {page.type==='brand'&&airport&&<BrandDetail airport={airport}/>}
 {page.type==='review'&&airport&&<BrandAnalysis airport={airport}/>}

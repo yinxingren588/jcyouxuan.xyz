@@ -1,0 +1,124 @@
+[
+  {
+    "slug": "edgenova",
+    "checkedAt": "2026-10-16",
+    "entryStatus": {"url":"https://work.edgenovaaff.cc/#/?code=z81zCfw1","status":"tool-inaccessible","detail":"web open 报告此域名不可访问；没有读到官方页面正文。工具失败不等于服务停止。"},
+    "identity": "两个已读取第三方页面均把 EdgeNova 链接到 work.edgenovaaff.cc，与用户原始推广入口主机一致；官方运营主体及当前套餐未直接核实。",
+    "findings": [
+      {"topic":"参考月付","text":"机场探的资料基准为 2026-08-09：限时月付 15 元/72 GB，标准月付 25 元/120 GB；体验条件未说明。属于第三方历史记录。","url":"https://jichangtan.com/airports/edgenova/","kind":"third-party","supportsCurrentOffer":false},
+      {"topic":"冲突版本","text":"SSclash 的 2026-07-03 版本把 15 元体验月包记为 55 GB，标准档仍是 25 元/120 GB。不能以较大数字作为当前保证。","url":"https://ssclashv2.cc/providers/edgenova/","kind":"third-party","supportsCurrentOffer":false}
+    ],
+    "conflicts": ["15 元体验档分别出现 55 GB 与 72 GB；当前在售额度、首购限制和可续费性未确认。","来源对专线与中转的描述不一致，不能据此编写稳定性或速度优势。"],
+    "coupon": {"code":null,"status":"not-provided","terms":"用户未提供该品牌优惠码，不采纳第三方页面中的其他码。"},
+    "purchaseQuestions": ["15 元档实际是 55 GB 还是 72 GB，是否仅首次购买？","体验档是否可原价续费，额度何时重置？","是否支持现用客户端及并发设备，退款窗口、用量扣费和申请方式是什么？"]
+  },
+  {
+    "slug": "kosing",
+    "checkedAt": "2026-10-16",
+    "entryStatus": {"url":"https://work.kosingaff.com/#/?code=BNsA58Es","status":"tool-inaccessible","detail":"web open 未能访问原始推广域名，未取得当前官方公开价目。"},
+    "identity": "用户指定可信云入口保留。第三方使用可信云、kexinyun、kexin 等称谓；已读 VPSKnow 页面主入口经过中转，不能仅凭同名断言其所有记录对应同一当前入口。",
+    "findings": [
+      {"topic":"参考套餐及原始日期","text":"VPSKnow 在 2026-10-08 更新评测，但明确套餐截图仍来自 2026-06-29：15 元/月 60GB、25 元/月 150GB、50 元/月 300GB，年付小包 96 元/年、60GB/月。新文章日期不等于新核价。","url":"https://vpsknow.com/reviews/airports/kexinyun-airport-review/","kind":"third-party","supportsCurrentOffer":false},
+      {"topic":"订阅方式","text":"该评测记录目前以专用客户端使用，未确认通用订阅；退款及多日稳定性仍待复查。其性能测试属于对方记录，不是本站实测。","url":"https://vpsknow.com/reviews/airports/kexinyun-airport-review/","kind":"third-party","supportsCurrentOffer":false},
+      {"topic":"价格冲突线索","text":"搜索结果所读第三方优惠总表显示 9 元/45GB 的月档，与其他参考资料不同，未取得对应当前官方证据。","url":"https://jichangshice.com.cn/coupons/","kind":"third-party","supportsCurrentOffer":false}
+    ],
+    "conflicts": ["不能把 25 元/150GB 写成已确认全站最低门槛：第三方另列 15 元/60GB、9 元/45GB，可能是不同时间或套餐。","专用客户端与第三方订阅支持说法分歧；未确认退款规则。"],
+    "coupon": {"code":null,"status":"not-provided","terms":"保留没有用户指定优惠码的状态；不加入第三方码。"},
+    "purchaseQuestions": ["当前是否在售 15 元/60GB 等小包？25 元/150GB 是否仍是常规档？","能否获取通用订阅，目标系统客户端最低版本及设备并发限制是什么？","取消套餐、退款时限、已使用流量及手续费怎样计算？"]
+  },
+  {
+    "slug": "sujie",
+    "checkedAt": "2026-10-16",
+    "entryStatus": {"url":"https://work.speedworldaff.cc/#/?code=wSjLCpIf","status":"tool-inaccessible","detail":"原始入口 web open 不可访问；既有 jichangwhite.cc 来源本轮打开也失败。"},
+    "identity": "已读取 tizimy.org 的速界页直链 work.speedworldaff.cc，构成用户入口的第三方对应线索。另发现 sujieyun.homes 自称速界并指向另一个 speedworldaff.cc 子域，但未取得用户入口回链证明，不认作官方。",
+    "findings": [
+      {"topic":"参考套餐","text":"梯子去哪买页资料基准 2026-08-09：极速版 25 元/月、120GB/月；超速版 50 元/月、250GB/月；年付体验包 90 元/年、50GB/月。均是第三方历史资料。","url":"https://tizimy.org/tuijian/sujie/","kind":"third-party","supportsCurrentOffer":false},
+      {"topic":"同名宣传页边界","text":"sujieyun.homes 显示同样的 25 元/120GB 与 50 元/250GB；页面宣传 IEPL、低延迟和流媒体能力，只有指向同一推广主域的出站链接，身份未获得官方反向确认，不将其宣传作为性能证据。","url":"https://sujieyun.homes/","kind":"third-party","supportsCurrentOffer":false},
+      {"topic":"其他规格口径","text":"搜索所读 jichangtj.co 的按预算页把速界列为 25 元/150GB，与 120GB 版本不同。","url":"https://jichangtj.co/recommend/by-price","kind":"third-party","supportsCurrentOffer":false}
+    ],
+    "conflicts": ["25 元档存在 120GB 与 150GB 两个公开版本。","年包折算 7.5 元/月不能写为可逐月购买价格；首购试用、通用订阅均未取得当前官方依据。"],
+    "coupon": {"code":null,"status":"not-provided","terms":"不添加网上出现的 SJ888 或 sujie888，用户没有指定此品牌优惠码。"},
+    "purchaseQuestions": ["25 元档当前流量是 120GB 还是 150GB，有没有更小的可续费月包？","是否必须用专用客户端，是否支持自己已有的客户端？","重置包是否改变到期日，设备限制、试用条件及退款条款是什么？"]
+  },
+  {
+    "slug": "kuaili",
+    "checkedAt": "2026-10-16",
+    "entryStatus": {"url":"https://work.kuailicloud.cc/#/?code=gVGJa0Mp","status":"tool-inaccessible","detail":"原始推广入口 web open 失败，没有登录或注册。"},
+    "identity": "机场探已读页面的快狸入口指向 work.kuailicloud.cc，与用户入口主机一致；仍未核实运营主体或当前价目。",
+    "findings": [
+      {"topic":"参考月档","text":"机场探 2026-08-09 资料列 15 元/月 50GB、22 元/月 100GB、35 元/月 250GB。原网站只展示两个精选档，不能称它们是完整套餐。","url":"https://jichangtan.com/airports/kuaili/","kind":"third-party","supportsCurrentOffer":false},
+      {"topic":"不同版本","text":"搜索所读 jichangtj.co 的按预算页使用 25 元/月 150GB 的快狸入门口径。尚无当前官方证据说明套餐是否改版或为不同档。","url":"https://jichangtj.co/recommend/by-price","kind":"third-party","supportsCurrentOffer":false}
+    ],
+    "conflicts": ["入门月包有 15 元/50GB 与 25 元/150GB 两种第三方口径，不能承诺现售最低价。","设备、专线、协议与客户端不能由目标人群或品牌名称推导。"],
+    "coupon": {"code":null,"status":"not-provided","terms":"不收录第三方其他优惠码，保留用户原始推广链接。"},
+    "purchaseQuestions": ["15 元/50GB、22 元/100GB、35 元/250GB 是否均可购买与续费？","各档节点权限、设备数和客户端支持是否相同？","流量重置日、补充包费用、退款时限和已用流量处理是什么？"]
+  },
+  {
+    "slug": "firefly",
+    "checkedAt": "2026-10-16",
+    "entryStatus": {"url":"https://vip02.fireflyaff.com/#/?code=Fes6j9rn","status":"tool-inaccessible","detail":"原始官方推广入口在 web 工具内不可访问，未取到当前官方报价和优惠条款。"},
+    "identity": "机场探将飞为（Firefly）链接到 vip02.fireflyaff.com，与用户入口主机一致。保留用户名称 Firefly机场，不把同名软件或其他域名当同一运营方。",
+    "findings": [
+      {"topic":"参考套餐","text":"机场探标记 2026-08-08 的资料：Lite 25 元/月 150GB，Plus 45 元/月 300GB；另列 96 元年付 60GB 和 100 元一次性 100GB。不把一次性总量写成每月补发。","url":"https://jichangtan.com/airports/firefly/","kind":"third-party","supportsCurrentOffer":false},
+      {"topic":"优惠条件线索","text":"同一第三方记录 firefly 为新用户优惠，但起止日期、适用套餐和叠加条件未明确，本轮没有官方当前条款或结算验证。","url":"https://jichangtan.com/airports/firefly/","kind":"third-party","supportsCurrentOffer":false}
+    ],
+    "conflicts": ["年付 60GB 的重置口径需在官方页确认；第三方表格只写流量列，不能自行扩展为每月或全年。","客户端、设备及退款无当前官方公开凭据，不引用对方未证实的同系关系。"],
+    "coupon": {"code":"firefly","status":"unconfirmed-current","terms":"原样保留用户给定码。第三方提及新客折扣，但当前幅度、有效期、适用套餐及是否可叠加未确认。"},
+    "purchaseQuestions": ["firefly 是否限首单、排除年付小包或一次性包，能否和周期折扣叠加？","100 元一次性包的总额度、有效期、停服处理及补充规则是什么？","是否支持目标客户端，设备并发与退款规则是什么？"]
+  },
+  {
+    "slug": "civet",
+    "checkedAt": "2026-10-16",
+    "entryStatus": {"url":"https://vip02.civetaff.com/#/?code=kZlRw46w","status":"tool-inaccessible","detail":"原始入口不能通过 web open 访问；既有 jichangshice 详情页仅取得搜索摘录，直接打开失败。"},
+    "identity": "AI机场已读灵猫页面指向 edp01.civetaff.com，属于相同推广主域但不同子域的对应线索。civetnet.vip 自称灵猫，未取得原始入口回链或运营方关系证明，按身份未证实页面处理。",
+    "findings": [
+      {"topic":"参考月包","text":"jichangshice 详情搜索结果完整展示 Small 25 元/月 150GB、Big 45 元/月 300GB，并提及 19 元/150GB 的公开评测版本；直接页面读取失败，因此证据级别为搜索摘录。","url":"https://jichangshice.com.cn/airports/lingmao/","kind":"third-party","supportsCurrentOffer":false},
+      {"topic":"流量文字冲突","text":"AI机场记录灵猫 Big 截图主字段为 300GB、详情行却写 45G/每月。其退款字段也明确尚未核验。本站未取得官方截图原件确认，作为待问问题而非事实定论。","url":"https://ai-jichang.com/airport/lingmao","kind":"third-party","supportsCurrentOffer":false},
+      {"topic":"身份未证实宣传页","text":"civetnet.vip 显示 25 元/150GB 与 45 元/300GB 并建议官方自研客户端，与另一第三方所述仅通用订阅、无自研客户端不一致；不能当当前官方证明。","url":"https://civetnet.vip/index.php","kind":"third-party","supportsCurrentOffer":false}
+    ],
+    "conflicts": ["同为 150GB 的公开月价出现 19 元和25 元。","Big 额度存在第三方报告的 300GB 与45G 文字冲突，需服务商澄清。","协议 SS/VLESS、3 台/不限设备、通用订阅/自研客户端等说法不同，不能拼接为确定配置。"],
+    "coupon": {"code":null,"status":"not-provided","terms":"用户没有给灵猫优惠码；不加入网上的 lingmao 或 lmao888。"},
+    "purchaseQuestions": ["Small 当前是否25 元/150GB？Big 实际到账300GB还是其他额度？","季付与年付的流量是否每月重置，预付后能否退未使用余额？","当前协议、设备并发和第三方客户端限制是什么？"]
+  },
+  {
+    "slug": "flashleap",
+    "checkedAt": "2026-10-16",
+    "entryStatus": {"url":"https://vip02.flashleapaff.com/#/?code=FkCGEeaC","status":"tool-inaccessible","detail":"原始推广入口不可由 web open 读取；既有 clashwiki 来源本轮打开为 Cache miss。"},
+    "identity": "好用机场已读页以闪跃名称指向 wep01.flashleapaff.com，与用户入口同主域不同子域。没有官方主体或后台身份佐证，不扩大为认证结论。",
+    "findings": [
+      {"topic":"参考月包","text":"好用机场标注 2026-10-04 的资料列 Flicker 24 元/月150GB、Leap 44 元/月300GB、Teleport 84 元/月600GB、Warp 134 元/月1TB。属于第三方转述。","url":"https://haoyongjichang.com/review/shanyue/","kind":"third-party","supportsCurrentOffer":false},
+      {"topic":"优惠线索","text":"机场之家写 shanyue 为新用户优惠；没有给出可靠起止日期。页面另有自己的其他码，本项目不采纳。","url":"https://jichanghome.com/airport/shanyue","kind":"third-party","supportsCurrentOffer":false},
+      {"topic":"周期冲突","text":"clashhubs 把 Warp 134 元约1.02TB 写成一次性包，与其他来源的月包不同；年付小包也有 5GB/月、60GB/年、60GB/月相互混杂的文字。","url":"https://clashhubs.co/reviews/shanyue/","kind":"third-party","supportsCurrentOffer":false}
+    ],
+    "conflicts": ["Warp 是按月重置还是一次性总量无法确认。","96 元年付容量口径不一致，不能录成已确认月额度。","用户优惠码有效期、设备数量和退款均未取得当前官方证据。"],
+    "coupon": {"code":"shanyue","status":"unconfirmed-current","terms":"保留用户原码；不承诺第三方宣传的8折、长期有效或叠加优惠。"},
+    "purchaseQuestions": ["shanyue 是否仅新用户首次订单、哪些档位可用及截止日期？","Warp 是否月付，年付小包究竟每月给多少流量？","设备并发、目标客户端、退款窗口与使用流量扣款怎样规定？"]
+  },
+  {
+    "slug": "worryfree",
+    "checkedAt": "2026-10-16",
+    "entryStatus": {"url":"https://wep01.worryfreeaff.com/#/?code=56A0RTpU","status":"tool-inaccessible","detail":"原始推广入口不可访问；旧 jichangnode 来源本轮 Cache miss；wuyoulink.homes/start.sh 仅搜索结果可读，直接打开失败。"},
+    "identity": "用户原始无忧链接入口保留。第三方无忧/WorryFree称谓与套餐相近，只能提供线索，不能证明其他宣传域名归属同一当前运营方。",
+    "findings": [
+      {"topic":"参考月包","text":"梯子翻当前读到的表格列舒心19 元/月100GB、省心33 元/月200GB、随心77 元/月500GB、忘忧117 元/月1TB；日期为2026-09-22。","url":"https://tizifan.com/jichang/wuyou/","kind":"third-party","supportsCurrentOffer":false},
+      {"topic":"来源内部错误","text":"该页把79 元年付折算6.58 元展示在最低月付处，FAQ又称纯月付最低117 元，和其表格19 元矛盾。其6.8折说法不能视为已验证优惠。","url":"https://tizifan.com/jichang/wuyou/","kind":"third-party","supportsCurrentOffer":false},
+      {"topic":"客户端冲突线索","text":"搜索所读 wuyoulink.homes 自称暂不支持第三方客户端，和梯子翻所述通用订阅不同；该域名身份未通过原始入口确认。搜索摘录提到新客码排除79 元年付，仍不是本站当前官方验证。","url":"https://wuyoulink.homes/start.sh","kind":"third-party","supportsCurrentOffer":false}
+    ],
+    "conflicts": ["优惠幅度与条件有6.8折、新人折扣未给幅度等口径，不能写死。","通用订阅与只能自研客户端的描述矛盾。","部分来源把年付折算称月付，不能拿6.58元作为每次可支付金额。"],
+    "coupon": {"code":"wuyou666","status":"unconfirmed-current","terms":"保留原始码；折扣、有效期、首单限制和79 元年付排除条件仍需当前官方确认。"},
+    "purchaseQuestions": ["wuyou666 实际减免多少、是否限首次订单、是否排除79 元年付？","能否直接用第三方客户端，还是须申请专用订阅？","100GB用完后补充包多少钱，是否有退款、续费或转档限制？"]
+  },
+  {
+    "slug": "kuajie",
+    "checkedAt": "2026-10-16",
+    "entryStatus": {"url":"https://vip02.kuajieaff.com/#/?code=VfWeYwHM","status":"tool-inaccessible","detail":"原始推广入口 web open 不可访问，未取得官方价目和退款/设备条款。"},
+    "identity": "保留用户指定的跨界云名称和入口。第三方页面把跨界/跨界云混用，当前运营主体和原始链接归属未直接核实。",
+    "findings": [
+      {"topic":"参考套餐","text":"clashmetahub 所述资料日期为2026-08-05：轻云20 元/月120GB、跃云40 元/月330GB、凌云90 元/月830GB、无界130 元/月1800GB；另列96 元年付60GB档。它自己注明没有长期实测。","url":"https://www.clashmetahub.net/reviews/kuajie/","kind":"third-party","supportsCurrentOffer":false},
+      {"topic":"优惠与订阅边界","text":"同页宣传另一个优惠码及通用订阅，但用户没有给该品牌优惠码；不采纳券后价，也不把客户端兼容宣传当作本轮已核实结果。","url":"https://www.clashmetahub.net/reviews/kuajie/","kind":"third-party","supportsCurrentOffer":false}
+    ],
+    "conflicts": ["第三方对专线名称、订阅发放方式及年包重置口径描述不同；没有当前官方证据可裁定。","来源存在0.046与0.0578元/GB等不一致计算，本站不沿用其成本排名。"],
+    "coupon": {"code":null,"status":"not-provided","terms":"用户没有提供跨界云优惠码；不加入网上其他码，原始推广URL保持不变。"},
+    "purchaseQuestions": ["20 元120GB和40 元330GB是否仍在售，续费价格是否相同？","是否支持通用订阅、是否需人工发放，有无设备与地域限制？","年付60GB是每月重置还是总额度，退款期限和余额退还规则是什么？"]
+  }
+]
