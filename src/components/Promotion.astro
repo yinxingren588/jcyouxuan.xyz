@@ -1,0 +1,11 @@
+---
+import type {Airport} from '../data/airports';
+const {airport:a,compact=false}=Astro.props as {airport:Airport;compact?:boolean};
+---
+<div class:list={['promotion',{'promotion-compact':compact}]} data-promotion={a.slug}>
+{a.coupon&&<div class="coupon-row"><span>优惠码</span><code>{a.coupon}</code><button type="button" class="coupon-copy" data-code={a.coupon} aria-label={`复制 ${a.name} 优惠码 ${a.coupon}`}>复制</button><span class="coupon-feedback" aria-live="polite"></span></div>}
+<a class="button promo-link" href={a.affiliateUrl} target="_blank" rel="sponsored nofollow noopener noreferrer">{compact?'查看当前套餐':'前往 '+a.name+' 查看当前套餐'} <span aria-hidden="true">↗</span></a>
+<small>{a.coupon?'站长提供的优惠码；折扣、适用套餐及有效期以结账提示为准。':'本页未提供优惠码；请核对当前标价与活动条件。'} 推广入口，含商业关系。</small></div>
+<script>
+document.querySelectorAll<HTMLButtonElement>('.coupon-copy').forEach(button=>button.addEventListener('click',async()=>{const code=button.dataset.code!;const feedback=button.parentElement!.querySelector<HTMLElement>('.coupon-feedback')!;try{await navigator.clipboard.writeText(code);feedback.textContent='已复制'}catch{feedback.textContent='请选中优惠码手动复制'}}));
+</script>

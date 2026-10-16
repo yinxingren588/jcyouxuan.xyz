@@ -7,7 +7,7 @@ published: 2026-10-16
 updated: 2026-10-16
 draft: false
 tags: ["选择方法","预算","证据"]
-sources: ["https://protonvpn.com/free-vpn","https://mullvad.net/en/pricing"]
+sources: ["https://help.openai.com/en/articles/7947663-chatgpt-supported-countries"]
 ---
 
 某个出口能建立网络连接，不等于 AI 服务一定允许该账户使用。先核查目标平台的官方地区与账户政策，再判断客户端和网络问题。

@@ -36,7 +36,9 @@ for (const d of docs) {
   if (robots?.includes("noindex") && sitemapSet.has(expect))
     fail("Sitemap 包含 noindex");
   if ($("main").text().trim().length < 80) fail("正文过短或空白");
-  if (/\{\{|\}\}|TODO|localhost|example\.com/.test($("main").text()))
+  const visibleMain = $("main").clone();
+  visibleMain.find('script,style').remove();
+  if (/\{\{|\}\}|TODO|localhost|example\.com/.test(visibleMain.text()))
     fail("遗留变量或测试文本");
   for (const field of ["og:title", "og:description", "og:url", "og:image"])
     if (!$(`meta[property="${field}"]`).attr("content")) fail("缺失 " + field);

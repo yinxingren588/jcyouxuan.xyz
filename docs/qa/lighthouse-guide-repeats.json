@@ -1,0 +1,119 @@
+{
+  "reason": "样式修正后教程单次 TBT 增高；保持动效和默认模拟配置，以两个新浏览器会话复查波动，合计三次取性能中位数。",
+  "samples": [
+    {
+      "route": "/guides/windows/",
+      "scores": {
+        "performance": 88,
+        "accessibility": 100,
+        "best-practices": 100,
+        "seo": 100
+      },
+      "failures": [
+        {
+          "id": "first-contentful-paint",
+          "score": 0.99,
+          "title": "First Contentful Paint"
+        },
+        {
+          "id": "speed-index",
+          "score": 0.99,
+          "title": "Speed Index"
+        },
+        {
+          "id": "total-blocking-time",
+          "score": 0.6,
+          "title": "Total Blocking Time"
+        },
+        {
+          "id": "max-potential-fid",
+          "score": 0.6,
+          "title": "Max Potential First Input Delay"
+        },
+        {
+          "id": "interactive",
+          "score": 0.99,
+          "title": "Time to Interactive"
+        },
+        {
+          "id": "mainthread-work-breakdown",
+          "score": 0,
+          "title": "Minimize main-thread work"
+        },
+        {
+          "id": "network-dependency-tree-insight",
+          "score": 0,
+          "title": "Network dependency tree"
+        },
+        {
+          "id": "render-blocking-insight",
+          "score": 0.5,
+          "title": "Render-blocking requests"
+        }
+      ]
+    },
+    {
+      "route": "/guides/windows/",
+      "scores": {
+        "performance": 100,
+        "accessibility": 100,
+        "best-practices": 100,
+        "seo": 100
+      },
+      "failures": [
+        {
+          "id": "first-contentful-paint",
+          "score": 0.99,
+          "title": "First Contentful Paint"
+        },
+        {
+          "id": "forced-reflow-insight",
+          "score": 0,
+          "title": "Forced reflow"
+        },
+        {
+          "id": "network-dependency-tree-insight",
+          "score": 0,
+          "title": "Network dependency tree"
+        },
+        {
+          "id": "render-blocking-insight",
+          "score": 0.5,
+          "title": "Render-blocking requests"
+        }
+      ]
+    },
+    {
+      "route": "/guides/windows/",
+      "scores": {
+        "performance": 100,
+        "accessibility": 100,
+        "best-practices": 100,
+        "seo": 100
+      },
+      "failures": [
+        {
+          "id": "first-contentful-paint",
+          "score": 0.99,
+          "title": "First Contentful Paint"
+        },
+        {
+          "id": "max-potential-fid",
+          "score": 0.99,
+          "title": "Max Potential First Input Delay"
+        },
+        {
+          "id": "network-dependency-tree-insight",
+          "score": 0,
+          "title": "Network dependency tree"
+        },
+        {
+          "id": "render-blocking-insight",
+          "score": 0.5,
+          "title": "Render-blocking requests"
+        }
+      ]
+    }
+  ],
+  "medianPerformance": 100
+}

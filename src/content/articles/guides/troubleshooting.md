@@ -7,7 +7,7 @@ published: 2026-10-16
 updated: 2026-10-16
 draft: false
 tags: ["排查","客户端"]
-sources: ["https://protonvpn.com/support/protonvpn-setup-guide","https://protonvpn.com/support/download-protonvpn"]
+sources: ["https://www.clashverge.dev/", "https://wiki.metacubex.one/startup/client/"]
 ---
 
 连接失败时，先确认基础网络，再检查账户与客户端，最后定位协议和规则。每次只改变一个条件，才能知道哪一步真正有效。

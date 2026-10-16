@@ -7,7 +7,7 @@ published: 2026-10-16
 updated: 2026-10-16
 draft: false
 tags: ["基础知识"]
-sources: ["https://mullvad.net/en/pricing"]
+sources: ["https://wiki.metacubex.one/config/", "https://www.clashverge.dev/"]
 ---
 
 流量倍率表示使用一定实际流量时，套餐额度按多少倍扣除。假设规则明确为 2 倍，实际使用 1GB 就会消耗 2GB 额度；具体规则以服务商说明为准。

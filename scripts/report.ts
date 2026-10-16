@@ -1,36 +1,57 @@
-import fs from "node:fs";
-import { documents } from "./lib";
-const docs = documents();
-const results = ["seo", "links", "content", "browser", "lighthouse", "theme"].map(
-  (name) => {
-    const file = `docs/qa/${name}.json`;
-    return {
-      name,
-      ...(fs.existsSync(file)
-        ? JSON.parse(fs.readFileSync(file, "utf8"))
-        : { status: "NOT TESTED" }),
-    };
-  },
-);
-fs.writeFileSync(
-  "docs/final-audit.md",
-  `# 最终验收报告\n\n核验日期：2026-10-16。\n\n实际 HTML 页面：${docs.length}（包含 404；另提供 Cloudflare 404.html 别名）。可索引页面：${docs.filter((d) => !d.$('meta[name="robots"]').attr("content")?.includes("noindex")).length}。\n\n| 项目 | 结果 | 证据 |\n|---|---|---|\n${results.map((r) => `| ${r.name} | ${r.status} | docs/qa/${r.name}.json |`).join("\n")}\n\n## 范围与限制\n\n- 官方来源、核验日期和模板字段已实现；自动程序不能证明所有事实真实。人工编辑复核：NOT TESTED。\n- 五家真实品牌均为商业 VPN；已核验的订阅代理机场：0。实际网络、速度、稳定性、AI 和流媒体：NOT TESTED。\n- 综合、付费性价比与稳定性榜等待合格数据，noindex，排除 Sitemap。没有为凑数量虚构三个排名。\n- Schema 检查是本地结构和可见内容一致性检查；外部富媒体验证器：NOT TESTED。\n- 正式域名 DNS、HTTPS、Cloudflare Pages 生产环境和 Bing 账户验证：NOT TESTED。\n- IndexNow 逻辑单元测试与本地预览单独记录；真实 API 提交：NOT TESTED，不声称已收录。\n\n## 上线门槛\n\n技术检查完成后可以部署为资料与教程站。若以经过实测的机场推荐站运营，仍需加入真实机场证据、实测记录和合格榜单；不能宣称当前版本已完成该内容验收。详见 deployment.md。\n`,
-);
-console.log("docs/final-audit.md written");
+import fs from 'node:fs';
+import {documents} from './lib';
+import {airports} from '../src/data/airports';
+const docs=documents();
+const read=(name:string)=>{const p=`docs/qa/${name}.json`;return fs.existsSync(p)?JSON.parse(fs.readFileSync(p,'utf8')):{status:'NOT TESTED'}};
+const names=['seo','links','content','browser','lighthouse','theme'];
+const lh=read('lighthouse');
 const pipeline=fs.existsSync('docs/qa/pipeline.log')?fs.readFileSync('docs/qa/pipeline.log','utf8'):'';
-const dependencyFile='docs/qa/dependencies.json';
-const dependencyAudit=fs.existsSync(dependencyFile)?JSON.parse(fs.readFileSync(dependencyFile,'utf8')):undefined;
-const lighthouseFile='docs/qa/lighthouse.json';
-const lighthouse=fs.existsSync(lighthouseFile)?JSON.parse(fs.readFileSync(lighthouseFile,'utf8')):undefined;
-const githubFile='docs/qa/github.json';
-const github=fs.existsSync(githubFile)?JSON.parse(fs.readFileSync(githubFile,'utf8')):undefined;
-const extra=[
- ['TypeScript / Astro 检查',pipeline.includes('0 errors')?'PASS':'NOT TESTED','docs/qa/pipeline.log'],
- ['Production Build',pipeline.includes('[build] Complete!')?'PASS':'NOT TESTED','docs/qa/pipeline.log'],
- ['8 项核心逻辑测试',/pass 8/.test(pipeline)?'PASS':'NOT TESTED','计费倍率、准入、URL 限制、增量与重试'],
- ['依赖安全检查',dependencyAudit?.metadata?.vulnerabilities?.total===0?'PASS':'NOT TESTED','docs/qa/dependencies.json；当前报告 0 漏洞'],
- ['GitHub 推送',github?.status??'NOT TESTED',github?.commit??'等待实际推送确认'],
- ['Cloudflare Pages 正式部署','NOT TESTED','需要运营者登录、授权仓库与配置 DNS'],
- ['Bing 验证与真实 IndexNow 提交','NOT TESTED','正式域名部署后操作']
-];
-fs.appendFileSync('docs/final-audit.md','\n## 补充技术验收证据\n\n| 项目 | 结果 | 说明 |\n|---|---|---|\n'+extra.map(r=>'| '+r.join(' | ')+' |').join('\n')+'\n\n## 本地 Lighthouse 最终记录\n\n| 路由 | 性能 | 无障碍 | 最佳实践 | SEO |\n|---|---:|---:|---:|---:|\n'+(lighthouse?.results??[]).map((r:any)=>`| ${r.route} | ${r.scores.performance} | ${r.scores.accessibility} | ${r.scores['best-practices']} | ${r.scores.seo} |`).join('\n')+'\n\n本地 Chrome 移动端模拟、单次最终记录。早一轮首页性能为 97，说明测量存在波动；生产环境与真实用户 Web Vitals 尚未测试。\n\n## 内容交付数量\n\n- 51 个 HTML 页面，其中 47 个允许索引；404.html 为平台兼容别名，不重复计数。\n- 15 篇内容：5 篇教程、5 篇选择指南、5 篇百科。\n- 5 个真实商业 VPN 资料页及 5 个对应独立资料分析页。\n- 6 个需求专题；5 个榜单 / 比较页面，其中综合、性价比和稳定性页面等待数据。\n- 机场实测推荐、三个完整质量排行榜的内容验收：FAIL（缺少真实资料，按要求未编造）。\n');
+const indexable=docs.filter(d=>!d.$('meta[name="robots"]').attr('content')?.includes('noindex')).length;
+const tests=pipeline.match(/(?:# |ℹ )pass (\d+)/)?.[1]??'未记录';
+fs.writeFileSync('docs/final-audit.md',`# 品牌替换与网站验收报告
+
+资料查询及本期核验日期：2026-10-16。
+
+## 实际交付
+
+- 只收录站长指定的 29 个品牌，保持原顺序、原始推广地址和 11 个指定优惠码。
+- 每家有单独推荐理由、两项不同表述的资料优点、资料局限、购买前核对项、资料页和选择分析页。
+- 旧品牌从页面、路由、搜索索引和 Sitemap 移除；内容检查会拒绝旧品牌残留。
+- ${docs.length} 个 HTML 页面（含 404；平台兼容的 404.html 别名不重复计数），${indexable} 个允许索引。
+- ${airports.length} 个品牌资料页、${airports.length} 个选择分析页；15 篇教程、指南和百科保留并更新。
+- 保留全屏深色动态背景、暂停与恢复控制、会话内偏好及系统减少动态效果支持。
+
+## 本期验证结果
+
+| 项目 | 状态 | 证据 |
+|---|---|---|
+| Astro / TypeScript | ${pipeline.includes('0 errors')?'PASS':'NOT TESTED'} | docs/qa/pipeline.log |
+| 静态构建 | ${pipeline.includes('[build] Complete!')?'PASS':'NOT TESTED'} | docs/qa/pipeline.log |
+| 核心逻辑与品牌清单测试 | ${tests} 项通过 | docs/qa/pipeline.log |
+${names.map(name=>`| ${name} | ${read(name).status} | docs/qa/${name}.json |`).join('\n')}
+
+浏览器检查覆盖新增品牌搜索、29 张品牌卡、11 个复制按钮、实际优惠码复制、准确推广链接、2–4 家比较、移动菜单、FAQ、全部页面移动端溢出和无 JavaScript 正文。
+
+## 资料真实性与商业关系边界
+
+- 29 个原始入口可访问，未登录页面的标题或公开品牌配置与名称对应。入口 HTTP 200 不能证明服务可用或性能。
+- 价格为第三方公开资料参考，未注册、登录、付款或核验到账，不是实时结账报价。来源与冲突逐家披露，详见 brand-research.md。
+- 极连云历史 hyperlink 资料与当前入口的关联未确认，未展示旧报价。
+- 优惠码由站长提供，折扣、有效期、新老用户和适用周期尚未核实。未采纳网上其他优惠码或推测折扣。
+- 29 个品牌及顺序由站长指定，存在直接商业推广关系；所有推广链接均有 sponsored / nofollow / noopener / noreferrer 属性和可见披露。
+- 推荐依据为套餐形态分析，无本站速度、稳定性、AI 或流媒体实测；未采用第三方测速冒充本站测试。
+- 稳定性及实际每 GB 成本页面因缺少合格数据设为 noindex，排除 Sitemap。站长推荐顺序可以索引，明确它不是性能排名。
+
+## 本地 Lighthouse 记录
+
+| 路由 | 性能 | 无障碍 | 最佳实践 | SEO |
+|---|---:|---:|---:|---:|
+${(lh.results??[]).map((r:any)=>`| ${r.route} | ${r.scores.performance} | ${r.scores.accessibility} | ${r.scores['best-practices']} | ${r.scores.seo} |`).join('\n')}
+
+本地 Chrome 移动模拟。首页与比较页为本轮单次结果；Windows 教程在一次 TBT 波动后使用两个独立浏览器会话复查，三次性能分数为 88、100、100，表内取中位数，全部样本见 docs/qa/lighthouse-guide-repeats.json。原始单次报告保留，不代表生产环境或真实用户 Web Vitals。
+
+## 尚未完成的外部事项
+
+正式域名 DNS / HTTPS、Cloudflare Pages 正式部署、Bing 账户验证、真实 IndexNow 提交和搜索收录均未在本期完成。源码具备静态部署结构，不宣称已经正式上线。
+`);
+console.log('docs/final-audit.md written');

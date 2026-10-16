@@ -10,7 +10,6 @@ export default defineConfig({
       filter: (url) =>
         ![
           "/404/",
-          "/ranking/overall/",
           "/ranking/stable/",
           "/ranking/value/",
         ].some((p) => new URL(url).pathname === p),

@@ -7,7 +7,7 @@ published: 2026-10-16
 updated: 2026-10-16
 draft: false
 tags: ["选择方法","预算","证据"]
-sources: ["https://protonvpn.com/free-vpn","https://mullvad.net/en/pricing"]
+sources: ["https://help.netflix.com/en/node/114701"]
 ---
 
 能打开流媒体首页，不等于能播放指定内容。需要同时考虑平台地区政策、片库、账户套餐、设备和持续播放表现。

@@ -5,7 +5,7 @@
     {
       "route": "/",
       "scores": {
-        "performance": 100,
+        "performance": 99,
         "accessibility": 100,
         "best-practices": 100,
         "seo": 100
@@ -13,22 +13,17 @@
       "failures": [
         {
           "id": "first-contentful-paint",
-          "score": 0.98,
+          "score": 0.96,
           "title": "First Contentful Paint"
         },
         {
           "id": "speed-index",
-          "score": 0.99,
+          "score": 0.96,
           "title": "Speed Index"
         },
         {
-          "id": "max-potential-fid",
-          "score": 0.93,
-          "title": "Max Potential First Input Delay"
-        },
-        {
           "id": "mainthread-work-breakdown",
-          "score": 0,
+          "score": 0.5,
           "title": "Minimize main-thread work"
         },
         {
@@ -53,9 +48,19 @@
       },
       "failures": [
         {
+          "id": "first-contentful-paint",
+          "score": 0.99,
+          "title": "First Contentful Paint"
+        },
+        {
           "id": "speed-index",
           "score": 0.99,
           "title": "Speed Index"
+        },
+        {
+          "id": "forced-reflow-insight",
+          "score": 0,
+          "title": "Forced reflow"
         },
         {
           "id": "network-dependency-tree-insight",
@@ -79,6 +84,16 @@
       },
       "failures": [
         {
+          "id": "first-contentful-paint",
+          "score": 0.99,
+          "title": "First Contentful Paint"
+        },
+        {
+          "id": "forced-reflow-insight",
+          "score": 0,
+          "title": "Forced reflow"
+        },
+        {
           "id": "network-dependency-tree-insight",
           "score": 0,
           "title": "Network dependency tree"
@@ -88,7 +103,8 @@
           "score": 0.5,
           "title": "Render-blocking requests"
         }
-      ]
+      ],
+      "measurement": "三次性能分数中位数；完整分数及波动见 lighthouse-guide-repeats.json"
     }
   ]
 }

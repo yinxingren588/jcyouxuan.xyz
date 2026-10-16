@@ -7,7 +7,7 @@ published: 2026-10-16
 updated: 2026-10-16
 draft: false
 tags: ["选择方法","预算","证据"]
-sources: ["https://protonvpn.com/free-vpn","https://mullvad.net/en/pricing"]
+sources: ["https://wiki.metacubex.one/config/", "https://www.clashverge.dev/"]
 ---
 
 先把价格和流量放在相同计费周期，再计算每 GB 成本。这个数字只能说明计费性价比，不能说明速度、隐私或稳定性。

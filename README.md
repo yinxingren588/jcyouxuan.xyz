@@ -25,10 +25,10 @@ Cloudflare Pages 构建命令 `npm run build`，输出目录 `dist`。构建不�
 - `docs/keyword-map.csv`：搜索意图映射，不含虚构搜索量。
 - `docs/final-audit.md`：实际验收范围与证据。
 
-当前五个品牌均为商业 VPN，不能描述为五家已实测机场。综合、稳定性与付费每 GB 榜暂无合格数据，页面 noindex，不进入 Sitemap。新增品牌前请阅读 `docs/content-operations.md`。
+当前仅收录站长指定的 29 个品牌，按指定顺序展示；29 个原始推广入口和 11 个指定优惠码有一致性检查。套餐来自带引用的第三方资料，未登录结算核价；极连云同名关联未确认，暂未列价。实际流量成本与稳定性页面 noindex，不进入 Sitemap。新增品牌前请阅读 `docs/content-operations.md`。
 
 ## 部署与搜索引擎
 
 见 `docs/deployment.md`、`docs/bing-webmaster.md`、`docs/indexnow.md`。IndexNow 不绑定在构建流程内，部署后按变化显式运行。
 
-当前无联盟链接、无用户系统、无外部分析脚本。搜索、比较与菜单使用少量客户端 JavaScript，主要正文、表格与内链均在构建时输出 HTML。
+本站含商业推广链接，29 个品牌及顺序由站长指定。推广属性和可见披露已实现，优惠码折扣及有效期未核实。当前无用户系统、无外部分析脚本。搜索、比较与菜单使用少量客户端 JavaScript，主要正文、表格与内链均在构建时输出 HTML。

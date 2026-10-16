@@ -7,7 +7,7 @@ published: 2026-10-16
 updated: 2026-10-16
 draft: false
 tags: ["选择方法","预算","证据"]
-sources: ["https://protonvpn.com/free-vpn","https://mullvad.net/en/pricing"]
+sources: ["https://wiki.metacubex.one/config/", "https://www.clashverge.dev/"]
 ---
 
 稳定性需要多时段、同条件的重复观察，不能用一次测速或单个延迟数字代替。本站目前没有这样的长期记录，因此不发布稳定性名次。

@@ -36,12 +36,11 @@ export const pages: Page[] = [
   },
   {
     path: "ranking/overall",
-    title: "综合排行榜：等待可复现的测试证据",
+    title: "机场推荐顺序：29 品牌选择依据",
     description:
-      "公开综合榜的准入门槛与评判规则，尚无合格实测数据，不发布推测名次。",
+      "按站长指定顺序展示 29 个品牌，分别说明推荐理由、套餐参考与推广关系，不以性能评分排序。",
     type: "ranking",
     key: "overall",
-    noindex: true,
     parent: "ranking",
   },
   {
@@ -56,9 +55,9 @@ export const pages: Page[] = [
   },
   {
     path: "ranking/budget",
-    title: "低预算方案：先从免费体验开始",
+    title: "月付预算：29 品牌参考方案比较",
     description:
-      "比较三家商业 VPN 的免费基础方案与额度条件；同为零费用，不按质量分出高低。",
+      "按原目录顺序比较选定月付参考档，核对容量与支付周期，不将历史起价作为当前报价。",
     type: "ranking",
     key: "budget",
     parent: "ranking",
@@ -74,10 +73,10 @@ export const pages: Page[] = [
     parent: "ranking",
   },
   {
-    path: "ranking/free-quota",
-    title: "免费方案流量额度比较",
+    path: "ranking/traffic",
+    title: "月度流量档位：按容量需求选择",
     description:
-      "按官方公布的免费基础流量额度比较 Proton VPN、Windscribe 与 TunnelBear，条件升级单独说明。",
+      "逐家查看月度容量、扩容取舍和核查项目；套餐为第三方公开资料参考，当前结算待确认。",
     type: "ranking",
     key: "quota",
     parent: "ranking",
@@ -86,21 +85,21 @@ export const pages: Page[] = [
     path: "airport",
     title: "品牌资料库：公开事实与核验记录",
     description:
-      "五家真实商业 VPN 的统一资料库，标注套餐周期、限制与官方来源，代理订阅机场资料待补充。",
+      "只收录站长指定的 29 个品牌，按指定顺序展示套餐参考、独立推荐依据、优惠码与推广入口。",
     type: "brands",
   },
   {
     path: "review",
-    title: "独立资料评析：事实、判断与待测项",
+    title: "品牌选择分析：为什么选择与如何取舍",
     description:
-      "把官方资料与编辑分析分开阅读。当前未完成网络实测，这里不提供虚构测速或解锁结论。",
+      "29 家品牌分别分析预算、流量和资料局限；推广关系公开，不以推测的速度或解锁能力作保证。",
     type: "reviews",
   },
   ...airports.flatMap((a) => [
     {
       path: `airport/${a.slug}`,
       title: `${a.name} 资料：套餐与公开来源`,
-      description: `整理 ${a.name} 的已核验套餐、使用限制、适合人群与官方来源；网络、AI 和流媒体表现尚未实测。`,
+      description: `${a.name}：${a.focus}。查看套餐参考、推荐原因、指定推广入口、优惠条件核查项和公开来源。`,
       type: "brand",
       key: a.slug,
       parent: "airport",
@@ -108,7 +107,7 @@ export const pages: Page[] = [
     {
       path: `review/${a.slug}`,
       title: `${a.name} 资料分析：适合谁与购买前核对项`,
-      description: `基于公开资料分析 ${a.name} 的方案取舍与局限，明确哪些属于官方事实、编辑判断及尚未测试项目。`,
+      description: `为什么选择 ${a.name}？围绕“${a.focus}”分析费用和容量取舍，保留资料冲突及购买前核对项。`,
       type: "review",
       key: a.slug,
       parent: "review",
@@ -125,7 +124,7 @@ export const pages: Page[] = [
     path: "guides",
     title: "使用教程：从第一次连接开始",
     description:
-      "Windows、Android、iOS、macOS 的官方客户端使用指南与通用排查清单。",
+      "Windows、Android、iOS、macOS 的客户端选择、授权、订阅核对和通用排查清单。",
     type: "guides",
   },
   {

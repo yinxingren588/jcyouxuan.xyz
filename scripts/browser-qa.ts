@@ -34,6 +34,23 @@ try {
   await page.keyboard.press("Escape");
   await page.locator("#search-dialog").waitFor({ state: "hidden" });
   check(!(await page.locator("#search-dialog").isVisible()), "Escape 关闭搜索");
+  await page.getByRole("button", { name: "搜索站内内容" }).click();
+  await page.locator("#site-search").fill("跨界云");
+  await page.waitForFunction(() => document.querySelector('#search-results')!.textContent!.includes('跨界云'));
+  check((await page.locator('#search-results').innerText()).includes('跨界云'), '新增品牌可以搜索');
+  await page.keyboard.press('Escape');
+  await page.goto('http://127.0.0.1:4321/airport/');
+  check(await page.locator('.brand-card').count()===29,'品牌库仅有指定 29 家');
+  const slugs=await page.locator('.brand-card').evaluateAll(els=>els.map(el=>(el as HTMLElement).dataset.brand));
+  check(slugs[0]==='twilight'&&slugs[28]==='kuajie','首尾顺序与指定清单一致');
+  check(await page.locator('.coupon-copy').count()===11,'11 个优惠码均有复制按钮');
+  await page.context().grantPermissions(['clipboard-read','clipboard-write']);
+  await page.goto('http://127.0.0.1:4321/airport/invisible/');
+  await page.getByRole('button',{name:'复制 隐形人 优惠码 yxr888',exact:true}).click();
+  check(await page.evaluate(()=>navigator.clipboard.readText())==='yxr888','复制得到准确优惠码');
+  check((await page.locator('.coupon-feedback').innerText())==='已复制','复制成功反馈');
+  check(await page.locator('a[rel~="sponsored"]').first().getAttribute('href')==='https://varnexa.invisibleaff.com/#/?code=JF4seZUy','品牌详情保留完整推广地址');
+  await page.screenshot({path:'docs/qa/brand-desktop.png',fullPage:true});
   await page.goto("http://127.0.0.1:4321/compare/");
   for (const box of (
     await page.locator('input[name="compare-brand"]').all()
@@ -50,7 +67,7 @@ try {
     await page.locator('input[name="compare-brand"]').nth(4).isDisabled(),
     "限制最多四家",
   );
-  await page.getByRole("button", { name: "移除 Proton VPN" }).click();
+  await page.getByRole("button", { name: "移除 暮光网络" }).click();
   check(
     await page.locator('input[name="compare-brand"]').nth(4).isEnabled(),
     "移除后恢复添加",
@@ -86,8 +103,8 @@ try {
   const plain = await nojs.newPage();
   for (const url of [
     "/",
-    "/airport/proton-vpn/",
-    "/ranking/free-quota/",
+    "/airport/twilight/",
+    "/ranking/traffic/",
     "/guides/windows/",
     "/compare/",
   ]) {
