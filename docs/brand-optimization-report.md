@@ -48,3 +48,7 @@
 - 150篇博客数量、来源、独立标题与重复长段落检查通过。正文113,279个汉字，138个来源URL；没有把字数或URL数量当作专业性证明。
 - 最新品牌浏览器58项再次通过。完整记录见qa/brand-optimization-final-pipeline.log及对应JSON。
 - GitHub同步完成后，具体提交与源码树记录在qa/github.json；该记录与本地验收分别核对，不代表部署或收录。
+
+## GitHub同步核对
+
+网站内容已同步[现有仓库](https://github.com/yinxingren588/jcyouxuan.xyz)，内容提交为 `dbbe1b437cda2f5a6f10ad87ffcdef9579732bff`，源码树为 `b317c7c1f8babbd5736e1285ed2d864b6a2f1812`。已实际拉取确认本地与远程源码树相同；此同步证明记录于后续文档提交中，不改变已验收网站内容。

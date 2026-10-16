@@ -2,9 +2,9 @@
   "status": "PASS",
   "repository": "https://github.com/yinxingren588/jcyouxuan.xyz",
   "branch": "main",
-  "commit": "91ff355dd8c20dd56cd3f92588ffd1f7e3b856ba",
-  "tree": "fae89f163c33247bf5b55219289c1bc0e65c4201",
+  "commit": "dbbe1b437cda2f5a6f10ad87ffcdef9579732bff",
+  "tree": "b317c7c1f8babbd5736e1285ed2d864b6a2f1812",
   "verified": "2026-10-16",
-  "method": "Authorized GitHub connector; source equality verified through Git fetch",
-  "scope": "Homepage targets 机场推荐 across Title, Description, H1, introduction and navigation; differentiated topic intent; 104 contextual homepage return pages. 29 keyword checks, 9 viewport/flow checks, 284 site browser checks and 49 retained feature checks passed. 263-page SEO, 15251 internal-link checks and 150 blog articles verified. GitHub source stage only; no production deployment, Bing account verification or actual IndexNow submission. Proof recorded in a follow-up documentation commit."
+  "method": "Authorized GitHub connector; fetched remote and verified exact source-tree equality before aligning the local pointer.",
+  "scope": "29 brand records, 73 observations and 61 source URLs; 58 dossiers/analyses with specific source conflicts, coupon terms and questions; 29-row downloadable worksheet. 11 original codes and all original affiliate URLs retained. 57-file diagnostics clean; 263-page SEO, 15412 internal links, 452 content checks, 150 blog audit, 29 keyword checks, 524 evidence checks, 58 brand browser checks, 49 retained feature checks and 284 site browser checks passed. Seven-route local mobile performance 99-100; other categories 100. GitHub/local delivery only: user explicitly declined Cloudflare. No DNS, deployment, Bing account verification or actual IndexNow notification. Proof retained in a following documentation commit."
 }
