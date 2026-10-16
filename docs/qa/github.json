@@ -2,9 +2,9 @@
   "status": "PASS",
   "repository": "https://github.com/yinxingren588/jcyouxuan.xyz",
   "branch": "main",
-  "commit": "dbbe1b437cda2f5a6f10ad87ffcdef9579732bff",
-  "tree": "b317c7c1f8babbd5736e1285ed2d864b6a2f1812",
+  "commit": "a978bdde11757869b8a9a44e68132b73196550a2",
+  "tree": "048984f8ef478e88e06a93137958923c152fa822",
   "verified": "2026-10-16",
   "method": "Authorized GitHub connector; fetched remote and verified exact source-tree equality before aligning the local pointer.",
-  "scope": "29 brand records, 73 observations and 61 source URLs; 58 dossiers/analyses with specific source conflicts, coupon terms and questions; 29-row downloadable worksheet. 11 original codes and all original affiliate URLs retained. 57-file diagnostics clean; 263-page SEO, 15412 internal links, 452 content checks, 150 blog audit, 29 keyword checks, 524 evidence checks, 58 brand browser checks, 49 retained feature checks and 284 site browser checks passed. Seven-route local mobile performance 99-100; other categories 100. GitHub/local delivery only: user explicitly declined Cloudflare. No DNS, deployment, Bing account verification or actual IndexNow notification. Proof retained in a following documentation commit."
+  "scope": "29 brands, 58 detail/analysis pages with independent Title, Description and Keywords containing their own exact brand names. Brand H1, social tags and Canonical aligned; no cross-brand names; 410 targeted checks and 58 actual local HTTP checks passed. Full QA passed: 58-file diagnostics clean, 263 static pages, 260 indexable URLs, 15412 links, 150 blog articles, 11 brand/logic tests, 29 homepage keyword checks and 524 evidence checks. GitHub source equality verified by fetch. Existing affiliate URLs and coupon codes retained; no Cloudflare or production changes, no actual Bing/IndexNow submission. Proof retained in a following documentation commit."
 }
