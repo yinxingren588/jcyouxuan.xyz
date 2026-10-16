@@ -28,6 +28,7 @@ fs.writeFileSync('docs/final-audit.md',`# 品牌替换与网站验收报告
 | Astro / TypeScript | ${pipeline.includes('0 errors')?'PASS':'NOT TESTED'} | docs/qa/pipeline.log |
 | 静态构建 | ${pipeline.includes('[build] Complete!')?'PASS':'NOT TESTED'} | docs/qa/pipeline.log |
 | 核心逻辑与品牌清单测试 | ${tests} 项通过 | docs/qa/pipeline.log |
+| GitHub 源码同步 | ${read('github').status} | docs/qa/github.json，品牌更新提交 ${read('github').commit} |
 ${names.map(name=>`| ${name} | ${read(name).status} | docs/qa/${name}.json |`).join('\n')}
 
 浏览器检查覆盖新增品牌搜索、29 张品牌卡、11 个复制按钮、实际优惠码复制、准确推广链接、2–4 家比较、移动菜单、FAQ、全部页面移动端溢出和无 JavaScript 正文。

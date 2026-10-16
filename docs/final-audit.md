@@ -18,6 +18,7 @@
 | Astro / TypeScript | PASS | docs/qa/pipeline.log |
 | 静态构建 | PASS | docs/qa/pipeline.log |
 | 核心逻辑与品牌清单测试 | 11 项通过 | docs/qa/pipeline.log |
+| GitHub 源码同步 | PASS | docs/qa/github.json，品牌更新提交 8842ca127403e231461385cd8a4801f02c81346f |
 | seo | PASS | docs/qa/seo.json |
 | links | PASS | docs/qa/links.json |
 | content | PASS | docs/qa/content.json |

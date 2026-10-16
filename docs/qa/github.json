@@ -2,7 +2,8 @@
   "status": "PASS",
   "repository": "https://github.com/yinxingren588/jcyouxuan.xyz",
   "branch": "main",
-  "commit": "f7711b921607c69290cead307d1abcbb7812fae2",
+  "commit": "8842ca127403e231461385cd8a4801f02c81346f",
+  "tree": "d621e951acbf005c44bc95d9914a2db8140b3ff6",
   "method": "Authorized GitHub connector; source tree verified equal through Git fetch",
-  "scope": "Complete source and QA evidence uploaded; actual IndexNow key excluded from public source"
+  "scope": "29 specified brands, 29 original affiliate URLs, 11 coupons, unique recommendations, research citations and current QA evidence uploaded; source tree equals local Git snapshot. Actual IndexNow key excluded from public source. This proof file is recorded in a follow-up documentation commit."
 }
