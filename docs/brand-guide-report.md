@@ -50,3 +50,11 @@
 - 品牌对比：http://127.0.0.1:4321/compare/?brands=wavenet,breezenet
 
 GitHub同步核对见docs/qa/github.json。源码与静态包在工作区outputs目录更新。沿用站长要求，不操作Cloudflare、DNS、Bing账户或真实IndexNow通知。
+
+## GitHub同步核实
+
+已通过授权的GitHub连接同步main，并重新拉取核对源码树完全一致。
+
+- 内容提交：917709db354691b68c61b8cd17ca17f98eedd816
+- 内容树：9aac2ef603666e78b494660ee439e15222b4297e
+- 本同步凭据在随后文档提交中记录。
