@@ -1,0 +1,58 @@
+---
+// Decorative geometry remains outside the document's accessible content.
+---
+<div class="ambient-background" aria-hidden="true">
+  <div class="ambient-lights"></div>
+  <div class="ambient-dots"></div>
+  <svg class="ambient-mesh" viewBox="0 0 1600 1100" fill="none" preserveAspectRatio="xMidYMid slice" focusable="false">
+    <defs>
+      <linearGradient id="mesh-ink" x1="120" y1="80" x2="1450" y2="1050" gradientUnits="userSpaceOnUse">
+        <stop stop-color="#517ee4" stop-opacity=".15"/>
+        <stop offset=".46" stop-color="#4bb6dd" stop-opacity=".46"/>
+        <stop offset="1" stop-color="#8b74ed" stop-opacity=".2"/>
+      </linearGradient>
+      <linearGradient id="mesh-trace" x1="300" y1="900" x2="1350" y2="170" gradientUnits="userSpaceOnUse">
+        <stop stop-color="#3a81ef" stop-opacity="0"/>
+        <stop offset=".5" stop-color="#80ecff" stop-opacity=".8"/>
+        <stop offset="1" stop-color="#a298ff" stop-opacity="0"/>
+      </linearGradient>
+    </defs>
+    <g class="mesh-lattice" stroke="url(#mesh-ink)" stroke-width=".8">
+      <path d="M-180 330C210 20 360 30 680 340S1110 870 1780 540"/>
+      <path d="M-180 390C210 80 360 90 680 400S1110 930 1780 600"/>
+      <path d="M-180 450C210 140 360 150 680 460S1110 990 1780 660"/>
+      <path d="M-180 510C210 200 360 210 680 520S1110 1050 1780 720"/>
+      <path d="M-180 570C210 260 360 270 680 580S1110 1110 1780 780"/>
+      <path d="M-180 630C210 320 360 330 680 640S1110 1170 1780 840"/>
+      <path d="M-180 690C210 380 360 390 680 700S1110 1230 1780 900"/>
+      <path d="M-180 750C210 440 360 450 680 760S1110 1290 1780 960"/>
+      <path d="M-180 810C210 500 360 510 680 820S1110 1350 1780 1020"/>
+      <path d="M-180 870C210 560 360 570 680 880S1110 1410 1780 1080"/>
+      <path d="M-180 930C210 620 360 630 680 940S1110 1470 1780 1140"/>
+      <path d="M-180 990C210 680 360 690 680 1000S1110 1530 1780 1200"/>
+      <path d="M120-120C-100 220 60 740 310 1230"/>
+      <path d="M250-120C20 220 180 740 430 1230"/>
+      <path d="M380-120C140 220 300 740 550 1230"/>
+      <path d="M510-120C260 220 420 740 670 1230"/>
+      <path d="M640-120C380 220 540 740 790 1230"/>
+      <path d="M770-120C500 220 660 740 910 1230"/>
+      <path d="M900-120C620 220 780 740 1030 1230"/>
+      <path d="M1030-120C740 220 900 740 1150 1230"/>
+      <path d="M1160-120C860 220 1020 740 1270 1230"/>
+      <path d="M1290-120C980 220 1140 740 1390 1230"/>
+      <path d="M1420-120C1100 220 1260 740 1510 1230"/>
+      <path d="M1550-120C1220 220 1380 740 1630 1230"/>
+      <path d="M1680-120C1340 220 1500 740 1750 1230"/>
+    </g>
+    <g class="mesh-traces" stroke="url(#mesh-trace)" stroke-width="1.5" stroke-linecap="round">
+      <path class="mesh-trace-one" d="M-180 510C210 200 360 210 680 520S1110 1050 1780 720"/>
+      <path class="mesh-trace-two" d="M1160-120C860 220 1020 740 1270 1230"/>
+    </g>
+    <g class="mesh-stars" fill="#9fe4ff">
+      <circle cx="304" cy="251" r="2"/><circle cx="725" cy="570" r="2.5"/>
+      <circle cx="1030" cy="790" r="2"/><circle cx="1250" cy="303" r="1.5"/>
+      <circle cx="121" cy="693" r="1.5"/><circle cx="1415" cy="737" r="2"/>
+    </g>
+  </svg>
+  <div class="ambient-vignette"></div>
+</div>

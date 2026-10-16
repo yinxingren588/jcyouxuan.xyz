@@ -22,9 +22,14 @@
           "title": "Speed Index"
         },
         {
-          "id": "label-content-name-mismatch",
+          "id": "max-potential-fid",
+          "score": 0.93,
+          "title": "Max Potential First Input Delay"
+        },
+        {
+          "id": "mainthread-work-breakdown",
           "score": 0,
-          "title": "Elements with visible text labels do not have matching accessible names."
+          "title": "Minimize main-thread work"
         },
         {
           "id": "network-dependency-tree-insight",
@@ -48,9 +53,9 @@
       },
       "failures": [
         {
-          "id": "label-content-name-mismatch",
-          "score": 0,
-          "title": "Elements with visible text labels do not have matching accessible names."
+          "id": "speed-index",
+          "score": 0.99,
+          "title": "Speed Index"
         },
         {
           "id": "network-dependency-tree-insight",
@@ -73,11 +78,6 @@
         "seo": 100
       },
       "failures": [
-        {
-          "id": "label-content-name-mismatch",
-          "score": 0,
-          "title": "Elements with visible text labels do not have matching accessible names."
-        },
         {
           "id": "network-dependency-tree-insight",
           "score": 0,

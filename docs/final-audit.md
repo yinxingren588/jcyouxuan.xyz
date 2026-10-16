@@ -11,6 +11,7 @@
 | content | PASS | docs/qa/content.json |
 | browser | PASS | docs/qa/browser.json |
 | lighthouse | PASS | docs/qa/lighthouse.json |
+| theme | PASS | docs/qa/theme.json |
 
 ## 范围与限制
 

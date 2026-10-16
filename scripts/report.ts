@@ -1,7 +1,7 @@
 import fs from "node:fs";
 import { documents } from "./lib";
 const docs = documents();
-const results = ["seo", "links", "content", "browser", "lighthouse"].map(
+const results = ["seo", "links", "content", "browser", "lighthouse", "theme"].map(
   (name) => {
     const file = `docs/qa/${name}.json`;
     return {

@@ -1,0 +1,12 @@
+{
+  "status": "PASS",
+  "checks": {
+    "backgroundMoves": true,
+    "pauseWorks": true,
+    "pausePersists": true,
+    "mobileHeaderSingleRow": true,
+    "mobileNoOverflow": true,
+    "reducedMotionRespected": true,
+    "quietControlHonest": true
+  }
+}
