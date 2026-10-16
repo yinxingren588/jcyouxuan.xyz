@@ -2,8 +2,9 @@
   "status": "PASS",
   "repository": "https://github.com/yinxingren588/jcyouxuan.xyz",
   "branch": "main",
-  "commit": "0d428d0a4aaa4a8633045d52dc618da93b4e5065",
-  "tree": "69f374c3f992ea3a3f554a59188b05154ea09573",
-  "method": "Authorized GitHub connector; source tree verified equal through Git fetch",
-  "scope": "Professional redesign of recommendation, ranking and comparison flows; visible detail buttons; 29 editorial dossiers and decision pages. 49 feature checks, 120 browser checks and final static audits passed. Website source tree verified equal to local snapshot; this proof is recorded in a follow-up documentation commit."
+  "commit": "310694aaa99094643699782927d0d19effd3827b",
+  "tree": "98dd4c12f5ba164bc245afc2dd38ece6edea2b57",
+  "verified": "2026-10-16",
+  "method": "Authorized GitHub connector; source tree equality verified through Git fetch",
+  "scope": "150 blog articles (145 new, 5 rewritten), ten topics, static archives, local search and article reading improvements; 53 blog checks, 284 site browser checks, 49 retained feature checks, 263-page SEO and final content/link audits passed. Website source tree matches the local committed snapshot; this proof is recorded in a follow-up documentation commit."
 }
