@@ -1,13 +1,14 @@
 import { getCollection } from "astro:content";
 import { pages } from "../data/pages";
+import {homeSeo} from "../data/seo";
 export async function GET() {
   const articles = await getCollection("articles", (a) => !a.data.draft);
   return new Response(
     JSON.stringify([
       {
-        title: "机场推荐与 VPN 选择指南",
+        title: homeSeo.title,
         url: "/",
-        description: "从需求开始选择连接服务",
+        description: homeSeo.description,
       },
       ...pages
         .filter((p) => !p.noindex)

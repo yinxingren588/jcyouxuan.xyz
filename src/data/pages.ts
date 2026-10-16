@@ -1,7 +1,7 @@
 import { topics } from "./site";
 import { airports } from "./airports";
 import {brandEditorial} from "./brand-editorial";
-import {scenarios} from "./selection";
+import {topicSeo} from "./seo";
 export interface Page {
   path: string;
   title: string;
@@ -14,16 +14,16 @@ export interface Page {
 export const pages: Page[] = [
   {
     path: "recommend",
-    title: "机场推荐：按预算与使用场景选择",
+    title: "机场选购指南：按预算、设备与场景筛选",
     description:
-      "六个使用专题，结合已收录月付参考档筛选候选，说明预算、容量、设备和任务条件，保留品牌来源与资料局限。",
+      "按预算、设备与使用场景筛选机场服务，提供低预算、新手、专线选购、晚高峰、AI和流媒体六个专题，说明候选条件与待核实事项。",
     type: "recommend",
   },
   ...topics.map((t) => ({
     path: `recommend/${t.slug}`,
-    title: `${scenarios[t.slug].title}：机场选择指南`,
+    title: topicSeo[t.slug].title,
     description:
-      scenarios[t.slug].subtitle + " 按明确的参考预算与容量条件列出核对名单，逐项解释选择步骤和资料边界。",
+      topicSeo[t.slug].description,
     type: "topic",
     key: t.slug,
     parent: "recommend",
@@ -37,7 +37,7 @@ export const pages: Page[] = [
   },
   {
     path: "ranking/overall",
-    title: "机场推荐顺序：29 品牌选择依据",
+    title: "29 家机场品牌推荐目录：站长顺序与选择依据",
     description:
       "按站长指定顺序展示 29 个品牌，分别说明推荐理由、套餐参考与推广关系，不以性能评分排序。",
     type: "ranking",

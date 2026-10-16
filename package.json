@@ -15,14 +15,16 @@
     "check:links": "tsx scripts/check-links.ts",
     "validate:content": "tsx scripts/validate-content.ts",
     "test": "tsx --test scripts/ranking.test.ts scripts/indexnow.test.ts",
-    "qa": "npm run check && npm run build && npm run test && npm run audit:seo && npm run check:links && npm run validate:content && npm run audit:blog",
+    "qa": "npm run check && npm run build && npm run test && npm run audit:seo && npm run check:links && npm run validate:content && npm run audit:blog && npm run audit:keyword",
     "indexnow": "tsx scripts/indexnow.ts",
     "report": "tsx scripts/report.ts",
     "qa:browser": "tsx scripts/browser-qa.ts",
     "qa:lighthouse": "tsx scripts/lighthouse.ts",
     "qa:features": "node scripts/features-qa.mjs",
     "audit:blog": "tsx scripts/audit-blog.ts",
-    "qa:blog": "tsx scripts/blog-browser-qa.ts"
+    "qa:blog": "tsx scripts/blog-browser-qa.ts",
+    "audit:tdk": "tsx scripts/audit-tdk.ts",
+    "audit:keyword": "tsx scripts/audit-keyword-focus.ts"
   },
   "dependencies": {
     "@astrojs/sitemap": "3.7.4",

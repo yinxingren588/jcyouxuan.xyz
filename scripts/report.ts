@@ -4,14 +4,29 @@ import {sourceArticles} from './article-source';
 const docs=documents();
 const articles=sourceArticles();
 const read=(name:string)=>{const p=`docs/qa/${name}.json`;return fs.existsSync(p)?JSON.parse(fs.readFileSync(p,'utf8')):{status:'NOT TESTED'};};
-const pipeline=fs.readFileSync('docs/qa/pipeline.log','utf8');
+const pipelineName=fs.existsSync('docs/qa/keyword-focus-pipeline.log')?'keyword-focus-pipeline.log':'pipeline.log';
+const pipeline=fs.readFileSync('docs/qa/'+pipelineName,'utf8');
+const focus=read('keyword-focus');
 const blog=read('blog-content');const lh=read('lighthouse');
 const indexable=docs.filter(d=>!d.$('meta[name="robots"]').attr('content')?.includes('noindex')).length;
-const checks=['seo','links','content','blog-content','blog-browser','browser','redesign-functional','lighthouse'];
+const checks=['seo','links','content','blog-content','blog-browser','browser','redesign-functional','keyword-focus','keyword-focus-browser','lighthouse'];
 const categories:Record<string,string>={choice:'选购方法',budget:'套餐与预算',clients:'客户端使用',routing:'分流与配置',troubleshooting:'故障排查',measurement:'体验观察',privacy:'隐私与安全',streaming:'流媒体播放',ai:'AI应用',workflow:'办公与开发'};
-const report=`# 博客资讯150篇交付验收
+const report=`# 机场推荐主词优化与150篇博客验收
 
 交付与整理日期：2026-10-16。
+
+## 本次主词优化
+
+首页主攻“机场推荐”，标题、描述、H1与首屏说明统一。品牌、选购场景与方法文章各有不同搜索意图；导航的“机场推荐”指向首页。
+
+- Title：${focus.title??'未记录'}
+- Description：${focus.description??'未记录'}
+- H1：${focus.h1??'未记录'}
+- ${focus.contextualHomeLinkPages??'未记录'}个相关页面含返回推荐总览的上下文入口；未将所有技术文章改为同一主词标题。
+- 首页品牌目录结构化数据与页面中实际29家品牌顺序对应，不添加虚构评分。
+- 本次按要求先同步GitHub；IndexNow仅完成260个URL的本地预览，未向尚未部署的域名发送索引通知。
+
+具体分工与核查见keyword-focus-report.md，逐页TDK见tdk-audit.csv。
 
 ## 交付结果
 
@@ -41,9 +56,9 @@ ${Object.entries(categories).map(([key,name])=>`| ${name} | ${blog.categoryCount
 
 | 项目 | 结果 | 记录 |
 |---|---|---|
-| Astro模板与类型 | ${pipeline.includes('0 errors')?'PASS':'NOT TESTED'} | qa/pipeline.log |
-| 最终静态构建 | ${pipeline.includes('[build] Complete!')?'PASS':'NOT TESTED'} | qa/pipeline.log |
-| 原有逻辑与品牌清单 | ${pipeline.match(/(?:# |ℹ )pass (\d+)/)?.[1]??'未记录'}项通过 | qa/pipeline.log |
+| Astro模板与类型 | ${pipeline.includes('0 errors')?'PASS':'NOT TESTED'} | qa/${pipelineName} |
+| 最终静态构建 | ${pipeline.includes('[build] Complete!')?'PASS':'NOT TESTED'} | qa/${pipelineName} |
+| 原有逻辑与品牌清单 | ${pipeline.match(/(?:# |ℹ )pass (\d+)/)?.[1]??'未记录'}项通过 | qa/${pipelineName} |
 ${checks.map(name=>`| ${name} | ${read(name).status} | qa/${name}.json |`).join('\n')}
 
 博客交互${read('blog-browser').checks??'未记录'}项、全站基础浏览器${read('browser').checks??'未记录'}项、原有推荐/排行/对比交互${read('redesign-functional').count??'未记录'}项；SEO检查${read('seo').checks??'未记录'}页，站内链接${read('links').checks??'未记录'}项。真实结果与适用范围以各JSON记录为准。

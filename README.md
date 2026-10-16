@@ -44,3 +44,11 @@ Cloudflare Pages 构建命令 `npm run build`，输出目录 `dist`。构建不�
 见 `docs/deployment.md`、`docs/bing-webmaster.md`、`docs/indexnow.md`。IndexNow 不绑定在构建流程内，部署后按变化显式运行。
 
 本站含商业推广链接，29 个品牌及顺序由站长指定。推广属性和可见披露已实现，优惠码折扣及有效期未核实。当前无用户系统、无外部分析脚本。搜索、比较与菜单使用少量客户端 JavaScript，主要正文、表格与内链均在构建时输出 HTML。
+
+## 机场推荐主词布局
+
+首页是“机场推荐”的主入口，`src/data/seo.ts`统一维护首页Title/Description/H1和六个具体场景的搜索意图。场景中心、站长品牌目录、选购方法文章分别承接不同需求；导航、正文返回入口和站内搜索同步使用当前标题。
+
+`npm run audit:keyword`核对主词页与上下文内链，已加入`npm run qa`。`npm run audit:tdk`导出全站逐页TDK与覆盖统计；`docs/keyword-focus-report.md`记录本次改动与边界。关键词出现次数不代表Bing排名。
+
+本阶段按站长要求先同步现有GitHub仓库。正式域名部署并可抓取后，再完成Bing站点验证、Sitemap提交和真实IndexNow通知；`docs/qa/keyword-focus-indexnow-dry-run.json`仅为本地预览。

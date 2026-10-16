@@ -13,23 +13,13 @@
       "failures": [
         {
           "id": "first-contentful-paint",
-          "score": 0.98,
+          "score": 0.97,
           "title": "First Contentful Paint"
         },
         {
           "id": "speed-index",
           "score": 0.96,
           "title": "Speed Index"
-        },
-        {
-          "id": "mainthread-work-breakdown",
-          "score": 0.5,
-          "title": "Minimize main-thread work"
-        },
-        {
-          "id": "forced-reflow-insight",
-          "score": 0,
-          "title": "Forced reflow"
         },
         {
           "id": "network-dependency-tree-insight",
@@ -54,13 +44,13 @@
       "failures": [
         {
           "id": "first-contentful-paint",
-          "score": 0.99,
+          "score": 0.98,
           "title": "First Contentful Paint"
         },
         {
-          "id": "speed-index",
-          "score": 0.98,
-          "title": "Speed Index"
+          "id": "mainthread-work-breakdown",
+          "score": 0.5,
+          "title": "Minimize main-thread work"
         },
         {
           "id": "network-dependency-tree-insight",
@@ -83,11 +73,6 @@
         "seo": 100
       },
       "failures": [
-        {
-          "id": "first-contentful-paint",
-          "score": 0.99,
-          "title": "First Contentful Paint"
-        },
         {
           "id": "speed-index",
           "score": 0.99,
@@ -120,14 +105,9 @@
           "title": "First Contentful Paint"
         },
         {
-          "id": "max-potential-fid",
-          "score": 0.96,
-          "title": "Max Potential First Input Delay"
-        },
-        {
-          "id": "mainthread-work-breakdown",
-          "score": 0,
-          "title": "Minimize main-thread work"
+          "id": "speed-index",
+          "score": 0.98,
+          "title": "Speed Index"
         },
         {
           "id": "network-dependency-tree-insight",
@@ -150,6 +130,11 @@
         "seo": 100
       },
       "failures": [
+        {
+          "id": "first-contentful-paint",
+          "score": 0.99,
+          "title": "First Contentful Paint"
+        },
         {
           "id": "network-dependency-tree-insight",
           "score": 0,

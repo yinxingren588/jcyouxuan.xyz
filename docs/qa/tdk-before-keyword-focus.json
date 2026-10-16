@@ -1,0 +1,133 @@
+{
+  "status": "AUDITED",
+  "scope": "本地最终构建HTML，非正式域名抓取或Bing关键词表现报告",
+  "keyword": "机场推荐",
+  "pages": 263,
+  "indexable": 260,
+  "missingTitles": 0,
+  "missingDescriptions": 0,
+  "duplicateTitles": [],
+  "duplicateDescriptions": [],
+  "abnormalMetaCounts": [],
+  "withKeywords": 0,
+  "coverage": {
+    "title": 4,
+    "description": 0,
+    "h1": 4,
+    "h2": 1,
+    "main": 16
+  },
+  "home": {
+    "url": "/",
+    "title": "机场推荐与 VPN 选择指南：29 品牌套餐与推荐理由 · 机场优选",
+    "description": "按站长指定顺序整理 29 个机场品牌的套餐参考、独立推荐依据、指定优惠码与推广入口，标注资料来源和核查边界。",
+    "keywords": "",
+    "h1": "机场推荐与 VPN，找到适合你的连接方式。",
+    "indexable": true,
+    "canonical": "https://jcyouxuan.xyz/",
+    "ogTitleMatches": true,
+    "ogDescriptionMatches": true,
+    "twitterTitleMatches": true,
+    "twitterDescriptionMatches": true,
+    "titleCharacters": 34,
+    "descriptionCharacters": 54,
+    "titleVisualUnits": 57,
+    "exactInTitle": true,
+    "exactInDescription": false,
+    "exactInKeywords": false,
+    "exactInH1": true,
+    "exactInH2": true,
+    "exactInMain": true,
+    "exactInIntro": false,
+    "titleCount": 1,
+    "descriptionCount": 1,
+    "keywordsCount": 0,
+    "h1Count": 1
+  },
+  "primaryCandidates": [
+    {
+      "url": "/blog/choose-a-service/",
+      "title": "机场推荐怎么看：从需求到试用的选择清单 · 机场优选",
+      "description": "把任务、设备、预算和可验证证据放进同一张清单，逐步建立适合自己的候选范围。",
+      "h1": "机场推荐怎么看：从需求到试用的选择清单"
+    },
+    {
+      "url": "/",
+      "title": "机场推荐与 VPN 选择指南：29 品牌套餐与推荐理由 · 机场优选",
+      "description": "按站长指定顺序整理 29 个机场品牌的套餐参考、独立推荐依据、指定优惠码与推广入口，标注资料来源和核查边界。",
+      "h1": "机场推荐与 VPN，找到适合你的连接方式。"
+    },
+    {
+      "url": "/ranking/overall/",
+      "title": "机场推荐顺序：29 品牌选择依据 · 机场优选",
+      "description": "按站长指定顺序展示 29 个品牌，分别说明推荐理由、套餐参考与推广关系，不以性能评分排序。",
+      "h1": "机场推荐顺序：29 品牌选择依据"
+    },
+    {
+      "url": "/recommend/",
+      "title": "机场推荐：按预算与使用场景选择 · 机场优选",
+      "description": "六个使用专题，结合已收录月付参考档筛选候选，说明预算、容量、设备和任务条件，保留品牌来源与资料局限。",
+      "h1": "机场推荐：按预算与使用场景选择"
+    }
+  ],
+  "coreAnchorTargets": [
+    {
+      "url": "/blog/choose-a-service/",
+      "count": 14,
+      "sourcePages": 13,
+      "examples": [
+        {
+          "source": "/blog/category/choice/",
+          "anchor": "选购方法机场推荐怎么看：从需求到试用的选择清单把任务、设备、预算和可验证证据放进同一张清单，逐步建立适合自己的候选范围。约 3 分钟 · 资料与方法阅读全文 ↗"
+        },
+        {
+          "source": "/blog/choice-affiliate-evidence/",
+          "anchor": "机场推荐怎么看：从需求到试用的选择清单"
+        },
+        {
+          "source": "/blog/choice-device-matrix/",
+          "anchor": "机场推荐怎么看：从需求到试用的选择清单"
+        }
+      ]
+    },
+    {
+      "url": "/recommend/",
+      "count": 6,
+      "sourcePages": 6,
+      "examples": [
+        {
+          "source": "/recommend/ai/",
+          "anchor": "机场推荐：按预算与使用场景选择"
+        },
+        {
+          "source": "/recommend/beginner/",
+          "anchor": "机场推荐：按预算与使用场景选择"
+        },
+        {
+          "source": "/recommend/budget/",
+          "anchor": "机场推荐：按预算与使用场景选择"
+        }
+      ]
+    }
+  ],
+  "longTitleReview": [
+    {
+      "url": "/blog/work-corporate-access/",
+      "title": "公司资源能登录却不能访问：身份授权与企业网络策略怎么配合检查 · 机场优选",
+      "visualUnits": 71
+    },
+    {
+      "url": "/blog/work-github-https-ssh/",
+      "title": "GitHub 网页能打开却无法拉代码：HTTPS、SSH 和账户权限分别检查 · 机场优选",
+      "visualUnits": 71
+    }
+  ],
+  "lengthNotice": "70个宽度单位仅用于编辑抽查，汉字按2、常见拉丁字符按1粗估；不是Bing固定字符或像素上限",
+  "notes": [
+    "不把公共导航重复的关键词统计成正文主攻词。main已排除脚本、导航、面包屑、侧栏及来源列表，但保留正文内链。",
+    "候选页面拥有相同词不等于实际关键词内耗；需结合查询、落地页和表现数据判断。",
+    "缺少meta keywords不按错误处理；不将其作为能否排名的判断依据。"
+  ],
+  "socialMetaMismatches": [],
+  "canonicalMismatches": []
+}

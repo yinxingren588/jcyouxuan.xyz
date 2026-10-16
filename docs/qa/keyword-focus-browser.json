@@ -1,0 +1,39 @@
+{
+  "status": "PASS",
+  "checks": [
+    {
+      "width": 320,
+      "noHorizontalOverflow": true
+    },
+    {
+      "width": 390,
+      "noHorizontalOverflow": true
+    },
+    {
+      "width": 768,
+      "noHorizontalOverflow": true
+    },
+    {
+      "width": 900,
+      "noHorizontalOverflow": true
+    },
+    {
+      "width": 1100,
+      "noHorizontalOverflow": true
+    },
+    {
+      "width": 1440,
+      "noHorizontalOverflow": true
+    },
+    {
+      "brandReturnToHome": true
+    },
+    {
+      "budgetArticleReturn": true
+    },
+    {
+      "nojsPrimaryHeading": true
+    }
+  ],
+  "errors": []
+}

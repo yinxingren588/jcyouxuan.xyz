@@ -1,12 +1,25 @@
-# 博客资讯150篇交付验收
+# 机场推荐主词优化与150篇博客验收
 
 交付与整理日期：2026-10-16。
+
+## 本次主词优化
+
+首页主攻“机场推荐”，标题、描述、H1与首屏说明统一。品牌、选购场景与方法文章各有不同搜索意图；导航的“机场推荐”指向首页。
+
+- Title：机场推荐：29 家机场套餐对比与选择指南 · 机场优选
+- Description：机场推荐与套餐选择指南，整理29个品牌的参考价格、流量额度、推荐理由和11个优惠码，支持按预算与使用场景选购、品牌对比，并标明资料来源和待核实条件。
+- H1：机场推荐：看清套餐，按需选择。
+- 104个相关页面含返回推荐总览的上下文入口；未将所有技术文章改为同一主词标题。
+- 首页品牌目录结构化数据与页面中实际29家品牌顺序对应，不添加虚构评分。
+- 本次按要求先同步GitHub；IndexNow仅完成260个URL的本地预览，未向尚未部署的域名发送索引通知。
+
+具体分工与核查见keyword-focus-report.md，逐页TDK见tdk-audit.csv。
 
 ## 交付结果
 
 博客总计 **150篇**：重写并保留原有5篇地址，新增145篇。另有原有教程5篇、百科5篇，不计入博客150篇；品牌资料与购买分析也单独计算。
 
-正文共约113185个汉字（按汉字字符统计，不包括英文、链接等），161298个正文字符。引用137个来源URL；同一文档的不同URL形式不等于独立文献。文章目录和来源见 blog-catalog.csv 与四份 blog-research-*.md。
+正文共约113189个汉字（按汉字字符统计，不包括英文、链接等），161307个正文字符。引用137个来源URL；同一文档的不同URL形式不等于独立文献。文章目录和来源见 blog-catalog.csv 与四份 blog-research-*.md。
 
 | 主题 | 篇数 |
 |---|---:|
@@ -39,9 +52,9 @@
 
 | 项目 | 结果 | 记录 |
 |---|---|---|
-| Astro模板与类型 | PASS | qa/pipeline.log |
-| 最终静态构建 | PASS | qa/pipeline.log |
-| 原有逻辑与品牌清单 | 11项通过 | qa/pipeline.log |
+| Astro模板与类型 | PASS | qa/keyword-focus-pipeline.log |
+| 最终静态构建 | PASS | qa/keyword-focus-pipeline.log |
+| 原有逻辑与品牌清单 | 11项通过 | qa/keyword-focus-pipeline.log |
 | seo | PASS | qa/seo.json |
 | links | PASS | qa/links.json |
 | content | PASS | qa/content.json |
@@ -49,9 +62,11 @@
 | blog-browser | PASS | qa/blog-browser.json |
 | browser | PASS | qa/browser.json |
 | redesign-functional | PASS | qa/redesign-functional.json |
+| keyword-focus | PASS | qa/keyword-focus.json |
+| keyword-focus-browser | PASS | qa/keyword-focus-browser.json |
 | lighthouse | PASS | qa/lighthouse.json |
 
-博客交互53项、全站基础浏览器284项、原有推荐/排行/对比交互49项；SEO检查263页，站内链接14883项。真实结果与适用范围以各JSON记录为准。
+博客交互53项、全站基础浏览器284项、原有推荐/排行/对比交互49项；SEO检查263页，站内链接15251项。真实结果与适用范围以各JSON记录为准。
 
 全站生成263个HTML页面（含404，不重复计平台404.html别名），260个允许索引。主内容均为静态HTML；筛选和计算依赖JavaScript。
 
