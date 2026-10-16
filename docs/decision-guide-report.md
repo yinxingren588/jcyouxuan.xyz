@@ -36,3 +36,7 @@
 - 移动端Lighthouse抽查7路由，首页性能99，其余6路由100；无障碍、最佳实践、SEO均100。抽查包含深化后的套餐成本文章与浪网/飞猫摘要页；仅为本地模拟，不代表生产用户数据或排名。
 - 已人工查看桌面摘要、手机摘要、优惠复制区及手机流程图截图，并修正新按钮的文字对比度。
 - 原始记录：qa/decision-guide-pipeline.log、qa/decision-guide-final.log、qa/decision-guide.json、qa/decision-guide-browser.json、qa/lighthouse.json。GitHub源码同步核对见qa/github.json。
+
+## GitHub源码核对
+
+已同步[现有GitHub仓库](https://github.com/yinxingren588/jcyouxuan.xyz)，内容提交为 `85a2e3dc0a9cfda037e11cfee925485b04fa142a`，源码树为 `1cf4a03657e541f1b498d4d6d07bdf3373796c04`。已拉取核对本地与远程源码完全一致；这份证明保留在后续文档提交中。
