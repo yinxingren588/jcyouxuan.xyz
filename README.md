@@ -18,7 +18,7 @@ Cloudflare Pages 构建命令 `npm run build`，输出目录 `dist`。构建不�
 ## 内容维护
 
 - `src/data/airports.ts`：品牌与套餐唯一数据源。
-- `src/content/articles/`：Markdown 内容集合，15 篇初始文章。
+- `src/content/articles/`：Markdown 内容集合：150 篇博客、5 篇教程、5 篇百科。
 - `src/data/pages.ts`：专题、栏目与品牌路由。
 - `src/data/brand-editorial.ts`：29 个品牌的定位、适合与不适合人群、购买决策和交叉比较。
 - `src/data/selection.ts`：六个推荐场景的说明、筛选条件与候选方案。
@@ -31,11 +31,13 @@ Cloudflare Pages 构建命令 `npm run build`，输出目录 `dist`。构建不�
 
 ## 本期功能
 
+博客资讯有 150 篇文章与十个主题，提供静态分页、分类阅读、关键词筛选、筛选地址恢复及相关内容。关闭脚本仍可通过十页目录浏览全部正文；全站搜索、Sitemap、BlogPosting 和来源内链同步生成。文章目录详见 `docs/blog-catalog.csv`，审校说明见 `docs/blog-editorial-review.md`。
+
 推荐和排行支持键盘、点击与触屏下拉导航。推荐中心有六个场景；预算与容量视图支持筛选和主动排序，默认保持站长目录顺序。品牌详情提供清楚的按钮入口、适合与不适合人群、档位预算分析及月用量匹配工具。
 
 对比工具支持搜索、优惠码筛选、2–4 家选择、每列切换套餐、只看不同项、复制带选择与档位的 URL。成本页提供手动倍率计算，稳定性页提供观察方法与 CSV 模板，不发布推测的质量名次。
 
-`npm run qa:features` 验收新增交互；`npm run qa:browser` 检查全站移动端和基础行为。两者需要本地预览运行在 4321，浏览器路径与现有检查脚本一致。
+`npm run qa:blog` 验收文章库交互与无脚本可达性；`npm run audit:blog` 复核150篇数量、来源及重复度；`npm run qa:features` 验收推荐/排行/对比交互；`npm run qa:browser` 检查全站移动端和基础行为。两者需要本地预览运行在 4321，浏览器路径与现有检查脚本一致。
 
 ## 部署与搜索引擎
 

@@ -1,0 +1,88 @@
+---
+import {blogCategories,blogPageSize,readingMinutes,sortBlogs,type Article} from '../data/blog';
+interface Props {articles:Article[];archiveKey?:string}
+const {articles,archiveKey}=Astro.props;
+const blogs=sortBlogs(articles);
+const category=blogCategories.find(c=>c.id===archiveKey);
+const pageNo=category?1:Math.max(1,Number(archiveKey)||1);
+const pool=category?blogs.filter(a=>a.data.category===category.id):blogs;
+const perPage=category?pool.length:blogPageSize;
+const totalPages=Math.ceil(pool.length/perPage);
+const current=pool.slice((pageNo-1)*perPage,pageNo*perPage);
+const pathFor=(n:number)=>n===1?'/blog/':`/blog/page/${n}/`;
+const data=blogs.map(a=>({title:a.data.title,description:a.data.description,url:`/blog/${a.data.slug}/`,category:a.data.category,tags:a.data.tags,minutes:readingMinutes(a.body)}));
+const featured=['choose-a-service','plan-cost','stability-evidence'].map(slug=>blogs.find(a=>a.data.slug===slug)).filter((a):a is Article=>!!a);
+---
+<div class="page-body blog-library" data-blog-library data-default-category={category?.id??''}>
+{!archiveKey&&<div class="blog-intro"><div><p class="eyebrow">THE READING ROOM</p><h2>先找到问题，<br/>再找到答案。</h2><p>从第一次选购到独立排障，按你的任务阅读。<br/>具体步骤、计算示例与判断依据，都在正文里。</p></div><div class="blog-stats"><strong>{blogs.length}<small>篇专题文章</small></strong><strong>{blogCategories.length}<small>个阅读方向</small></strong><span>资料整理 2026.10.16<br/>方法说明 · 官方参考 · 范围透明</span></div></div>}
+<nav class="blog-topics" aria-label="文章主题">
+<a href="/blog/" aria-current={!archiveKey?'page':undefined}><span>全部文章</span><b>{blogs.length}</b></a>
+{blogCategories.map(c=><a href={`/blog/category/${c.id}/`} aria-current={category?.id===c.id?'page':undefined}><span>{c.name}</span><b>{blogs.filter(a=>a.data.category===c.id).length}</b></a>)}
+</nav>
+{!archiveKey&&<section class="blog-start" aria-labelledby="blog-start-title"><div class="section-head"><div><p class="eyebrow">START HERE</p><h2 id="blog-start-title">第一次来，从这三篇开始</h2></div></div><div class="grid three">{featured.map((a,i)=><a class="blog-feature" href={`/blog/${a.data.slug}/`}><span class="blog-step">0{i+1} / {['建立标准','看懂成本','判断证据'][i]}</span><h3>{a.data.title}</h3><span class="text-link">阅读完整方法 →</span></a>)}</div></section>}
+<section aria-labelledby="blog-results-title" class="blog-archive">
+<div class="section-head"><div><p class="eyebrow">EXPLORE THE LIBRARY</p><h2 id="blog-results-title">{category?.name??'文章目录'}</h2><p>{category?.intro??'用关键词找到问题，或沿着专题系统阅读。'}</p></div><a class="text-link" href="/editorial-policy/">编辑与更正标准 ↗</a></div>
+<form class="blog-filter" role="search" aria-label="搜索博客文章" hidden data-blog-filter><label>文章关键词<input type="search" name="q" placeholder="例如：流量、DNS、订阅、会议" autocomplete="off"/></label><label>阅读主题<select name="category"><option value="">所有主题</option>{blogCategories.map(c=><option value={c.id} selected={category?.id===c.id}>{c.name}</option>)}</select></label><button class="button secondary" type="reset">重置筛选</button></form>
+<p class="blog-result-count" role="status" aria-live="polite" data-blog-count>{category?`本专题共 ${pool.length} 篇`:`共 ${blogs.length} 篇 · 第 ${pageNo} / ${totalPages} 页 · 本页 ${current.length} 篇`}</p>
+<div class="grid three blog-results" data-blog-results>{current.map(a=><a class="article-card blog-article" href={`/blog/${a.data.slug}/`}><span class="tag">{blogCategories.find(c=>c.id===a.data.category)?.name}</span><h3>{a.data.title}</h3><p>{a.data.description}</p><div class="blog-card-bottom"><span>约 {readingMinutes(a.body)} 分钟 · 资料与方法</span><span class="blog-read">阅读全文 ↗</span></div></a>)}</div>
+<div class="empty" data-blog-empty hidden><h3>没有找到匹配的文章</h3><p>试试更短的词，例如“导入”“额度”或“播放”，也可以切换阅读主题。</p></div>
+{!category&&<nav class="blog-pagination" aria-label="文章目录分页" data-blog-static-pages>{pageNo>1&&<a href={pathFor(pageNo-1)} rel="prev">← 上一页</a>}{Array.from({length:totalPages},(_,i)=><a href={pathFor(i+1)} aria-current={i+1===pageNo?'page':undefined} aria-label={`第 ${i+1} 页`}>{i+1}</a>)}{pageNo<totalPages&&<a href={pathFor(pageNo+1)} rel="next">下一页 →</a>}</nav>}
+<nav class="blog-pagination" aria-label="筛选结果分页" data-blog-filter-pages hidden></nav>
+<noscript><p class="notice">可以直接打开专题和分页阅读全部文章。关键词筛选需要启用 JavaScript。</p></noscript>
+</section>
+<div class="notice">文章用于帮助你理解与核对需求。涉及产品功能时请核对当前官方说明；价格分析保留报价来源与核实范围。品牌入口与商业关系见<a class="text-link" href="/editorial-policy/">推广披露</a>。</div>
+</div>
+<script type="application/json" data-blog-data set:html={JSON.stringify({articles:data,categories:blogCategories}).replaceAll('<','\\u003c')}/>
+<script type="application/ld+json" set:html={JSON.stringify({'@context':'https://schema.org','@type':'CollectionPage',name:category?`${category.name}文章与实用指南`:`博客资讯 · 第 ${pageNo} 页`,mainEntity:{'@type':'ItemList',itemListElement:current.map((a,i)=>({'@type':'ListItem',position:i+1,name:a.data.title,url:`https://jcyouxuan.xyz/blog/${a.data.slug}/`}))}}).replaceAll('<','\\u003c')}/>
+<script>
+const root=document.querySelector<HTMLElement>('[data-blog-library]');
+if(root){
+ const data=JSON.parse(document.querySelector('[data-blog-data]')!.textContent!);
+ type Entry={title:string;description:string;url:string;category:string;tags:string[];minutes:number};
+ const entries:Entry[]=data.articles;
+ const form=root.querySelector<HTMLFormElement>('[data-blog-filter]')!;
+ const input=form.elements.namedItem('q') as HTMLInputElement;
+ const select=form.elements.namedItem('category') as HTMLSelectElement;
+ const grid=root.querySelector<HTMLElement>('[data-blog-results]')!;
+ const count=root.querySelector<HTMLElement>('[data-blog-count]')!;
+ const empty=root.querySelector<HTMLElement>('[data-blog-empty]')!;
+ const pager=root.querySelector<HTMLElement>('[data-blog-filter-pages]')!;
+ const original={grid:grid.innerHTML,count:count.textContent};
+ const staticPager=root.querySelector<HTMLElement>('[data-blog-static-pages]');
+ let activePage=1;
+ function render(updateURL=true){
+  const q=input.value.trim().toLocaleLowerCase();
+  const chosen=select.value;
+  const active=!!q||chosen!==(root!.dataset.defaultCategory??'');
+  const url=new URL(location.href);
+  if(q)url.searchParams.set('q',input.value.trim());else url.searchParams.delete('q');
+  if(chosen&&chosen!==root!.dataset.defaultCategory)url.searchParams.set('category',chosen);else url.searchParams.delete('category');
+  if(updateURL)history.replaceState(null,'',url);
+  if(!active){grid.innerHTML=original.grid;count.textContent=original.count;empty.hidden=true;pager.hidden=true;if(staticPager)staticPager.hidden=false;return;}
+  const words=q.split(/\s+/).filter(Boolean);
+  const found=entries.filter(a=>(!chosen||a.category===chosen)&&words.every(w=>[a.title,a.description,...a.tags].join(' ').toLocaleLowerCase().includes(w)));
+  const pages=Math.ceil(found.length/15);activePage=Math.max(1,Math.min(activePage,pages||1));
+  grid.replaceChildren();
+  for(const a of found.slice((activePage-1)*15,activePage*15)){
+   const link=document.createElement('a');link.className='article-card blog-article';link.href=a.url;
+   const tag=document.createElement('span');tag.className='tag';tag.textContent=data.categories.find((c:{id:string})=>c.id===a.category)?.name??'';
+   const title=document.createElement('h3');title.textContent=a.title;
+   const desc=document.createElement('p');desc.textContent=a.description;
+   const bottom=document.createElement('div');bottom.className='blog-card-bottom';
+   const minute=document.createElement('span');minute.textContent=`约 ${a.minutes} 分钟 · 资料与方法`;
+   const more=document.createElement('span');more.className='blog-read';more.textContent='阅读全文 ↗';bottom.append(minute,more);
+   link.append(tag,title,desc,bottom);grid.append(link);
+  }
+  count.textContent=`找到 ${found.length} 篇${pages?` · 第 ${activePage} / ${pages} 页`:''}`;
+  empty.hidden=found.length>0;if(staticPager)staticPager.hidden=true;
+  pager.replaceChildren();pager.hidden=pages<=1;
+  for(let n=1;n<=pages;n++){const button=document.createElement('button');button.type='button';button.textContent=String(n);button.setAttribute('aria-label',`筛选结果第 ${n} 页`);if(n===activePage)button.setAttribute('aria-current','page');button.addEventListener('click',()=>{activePage=n;render(false);root!.querySelector('#blog-results-title')!.scrollIntoView({block:'start'});});pager.append(button);}
+ }
+ function fromURL(){const p=new URL(location.href).searchParams;input.value=p.get('q')??'';const cat=p.get('category');select.value=cat&&data.categories.some((c:{id:string})=>c.id===cat)?cat:root!.dataset.defaultCategory??'';activePage=1;render(false);}
+ form.hidden=false;
+ form.addEventListener('submit',e=>{e.preventDefault();activePage=1;render();});
+ input.addEventListener('input',()=>{activePage=1;render();});select.addEventListener('change',()=>{activePage=1;render();});
+ form.addEventListener('reset',e=>{e.preventDefault();input.value='';select.value=root!.dataset.defaultCategory??'';activePage=1;render();});
+ window.addEventListener('popstate',fromURL);fromURL();
+}
+</script>

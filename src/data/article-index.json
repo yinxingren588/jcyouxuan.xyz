@@ -1,58 +1,1803 @@
 [
   {
     "section": "blog",
-    "slug": "ai-access",
-    "title": "AI 服务连接前检查：地区、账户与出口条件",
-    "description": "把 AI 应用的地区支持、账户权限和网络故障分开核对，避免过度承诺。",
+    "slug": "choose-a-service",
+    "title": "机场推荐怎么看：从需求到试用的选择清单",
+    "description": "把任务、设备、预算和可验证证据放进同一张清单，逐步建立适合自己的候选范围。",
     "tags": [
-      "选择方法",
-      "预算",
+      "选购方法",
+      "需求清单",
       "证据"
-    ]
+    ],
+    "category": "choice"
   },
   {
     "section": "blog",
-    "slug": "choose-a-service",
-    "title": "机场推荐怎么看：从需求到试用的选择清单",
-    "description": "用需求、证据、成本与试用四个步骤筛选服务，避免只看促销标语。",
+    "slug": "choice-first-month",
+    "title": "第一次购买机场：首月应该验证哪些事情",
+    "description": "用有限的首月投入核对导入、任务表现、计费和退出恢复，避免把首次成功连接当作长期可靠。",
     "tags": [
-      "选择方法",
-      "预算",
+      "首次购买",
+      "试用",
+      "选购方法"
+    ],
+    "category": "choice"
+  },
+  {
+    "section": "blog",
+    "slug": "choice-device-matrix",
+    "title": "多设备选购前：先做一张兼容性矩阵",
+    "description": "按系统、客户端、导入格式和网络接管范围核对兼容性，避免一个设备成功就推断全家设备都能使用。",
+    "tags": [
+      "设备兼容",
+      "多设备",
+      "选购方法"
+    ],
+    "category": "choice"
+  },
+  {
+    "section": "blog",
+    "slug": "choice-provider-vs-client",
+    "title": "机场服务和代理客户端有什么区别：购买与排障先分清角色",
+    "description": "区分运营方、客户端和目标应用的责任边界，判断应该核对套餐、修复配置还是查目标平台权限。",
+    "tags": [
+      "客户端",
+      "服务边界",
+      "配置订阅"
+    ],
+    "category": "choice"
+  },
+  {
+    "section": "blog",
+    "slug": "choice-subscription-compatibility",
+    "title": "订阅链接能否导入：购买前核对格式而不是文件后缀",
+    "description": "识别订阅地址、网页入口、代理集合和完整配置的不同用途，提前确认客户端需要的格式。",
+    "tags": [
+      "订阅格式",
+      "客户端",
+      "设备兼容"
+    ],
+    "category": "choice"
+  },
+  {
+    "section": "blog",
+    "slug": "choice-lines-evidence",
+    "title": "“专线”和“IEPL”宣传怎么核对：线路证据的层级",
+    "description": "把线路名称、服务承诺和可观察体验分开，明确需要运营方提供哪些能够对应当前套餐的说明。",
+    "tags": [
+      "线路宣传",
+      "证据",
+      "选购方法"
+    ],
+    "category": "choice"
+  },
+  {
+    "section": "blog",
+    "slug": "choice-node-count",
+    "title": "节点越多越好吗：把目录数量换成可用任务覆盖",
+    "description": "从协议兼容、地区需求、重复条目与故障替代路径理解节点列表，避免单凭数量判断套餐价值。",
+    "tags": [
+      "节点数量",
+      "任务覆盖",
+      "选购方法"
+    ],
+    "category": "choice"
+  },
+  {
+    "section": "blog",
+    "slug": "choice-regions-task",
+    "title": "节点地区怎么选：地理名称与应用需求分别核对",
+    "description": "围绕账户政策、业务位置与实际任务选择地区，不把名称、距离或出口检测结果当成完整兼容证明。",
+    "tags": [
+      "节点地区",
+      "应用需求",
+      "选购方法"
+    ],
+    "category": "choice"
+  },
+  {
+    "section": "blog",
+    "slug": "choice-device-concurrency",
+    "title": "设备数、在线 IP 和并发连接：三个限制别混为一谈",
+    "description": "分别核对设备、来源地址与连接数量的计数口径，用自己的使用场景确认套餐规则。",
+    "tags": [
+      "并发限制",
+      "多设备",
+      "套餐条件"
+    ],
+    "category": "choice"
+  },
+  {
+    "section": "blog",
+    "slug": "choice-trial-log",
+    "title": "试用记录怎么写：用一张表保留有用证据",
+    "description": "记录设备、时段、任务、错误和恢复动作，让短期体验可以复盘，避免只有主观好评或单次测速。",
+    "tags": [
+      "试用",
+      "记录方法",
       "证据"
-    ]
+    ],
+    "category": "choice"
+  },
+  {
+    "section": "blog",
+    "slug": "choice-support-questions",
+    "title": "付款前怎么问客服：把模糊宣传变成可核对答复",
+    "description": "用设备、格式、计费与故障支持四类具体问题整理购买条件，保存对应日期和套餐范围。",
+    "tags": [
+      "客服核对",
+      "购买清单",
+      "套餐条件"
+    ],
+    "category": "choice"
+  },
+  {
+    "section": "blog",
+    "slug": "choice-refund-terms",
+    "title": "购买前怎样阅读退款与续费说明：保存条件而不是猜测承诺",
+    "description": "分别记录退款触发条件、申请渠道、续费金额和自动扣款设置，建立可追溯的购买资料。",
+    "tags": [
+      "退款说明",
+      "续费",
+      "购买清单"
+    ],
+    "category": "choice"
+  },
+  {
+    "section": "blog",
+    "slug": "choice-affiliate-evidence",
+    "title": "推广链接下的推荐怎么看：顺序、商业关系与事实证据",
+    "description": "识别推广披露和可验证事实，建立自己的比较口径，避免把推荐位置当成独立性能结论。",
+    "tags": [
+      "推广披露",
+      "证据",
+      "编辑标准"
+    ],
+    "category": "choice"
+  },
+  {
+    "section": "blog",
+    "slug": "choice-source-conflict",
+    "title": "套餐资料互相矛盾怎么办：建立来源冲突记录",
+    "description": "用身份、日期、档位、单位和周期逐项定位差异，保留未知值，避免凭多数票或搜索排名补齐报价。",
+    "tags": [
+      "来源冲突",
+      "套餐条件",
+      "证据"
+    ],
+    "category": "choice"
+  },
+  {
+    "section": "blog",
+    "slug": "choice-switch-provider",
+    "title": "更换机场前的迁移清单：先验证任务，再结束旧方案",
+    "description": "安排配置、关键任务、账单和清理的迁移顺序，降低同时修改多个环节带来的排查困难。",
+    "tags": [
+      "迁移",
+      "选购方法",
+      "配置备份"
+    ],
+    "category": "choice"
   },
   {
     "section": "blog",
     "slug": "plan-cost",
-    "title": "机场套餐怎么算划算：周期、倍率与真实成本",
-    "description": "按统一周期计算流量单价，分清年付总额、流量倍率与不限时方案。",
+    "title": "机场套餐怎么算划算：周期、倍率与实际成本",
+    "description": "按同一币种、周期和单位计算名义成本，并把未用完额度、混合倍率及核价状态放回决策。",
     "tags": [
-      "选择方法",
+      "套餐成本",
       "预算",
-      "证据"
-    ]
+      "流量倍率"
+    ],
+    "category": "budget"
+  },
+  {
+    "section": "blog",
+    "slug": "budget-monthly-annual",
+    "title": "月付和年付怎样比较：折合月价之外还要看哪些条件",
+    "description": "分别核对一次支付金额、额度重置方式与使用不确定性，避免只凭折合月价作长期购买决定。",
+    "tags": [
+      "年付",
+      "月付",
+      "预算"
+    ],
+    "category": "budget"
+  },
+  {
+    "section": "blog",
+    "slug": "budget-reset-date",
+    "title": "流量什么时候重置：购买日、账单日与自然月怎么分",
+    "description": "整理重置时间、时区、续费生效和剩余额度规则，避免把自然月习惯套用到所有套餐。",
+    "tags": [
+      "流量重置",
+      "账单周期",
+      "套餐条件"
+    ],
+    "category": "budget"
+  },
+  {
+    "section": "blog",
+    "slug": "budget-multiplier-mix",
+    "title": "一倍与多倍节点混用：怎样估算真正的额度消耗",
+    "description": "按不同节点的实际用量分别估算扣减，不把未知倍率默认成一倍，也不直接平均标签数字。",
+    "tags": [
+      "流量倍率",
+      "预算",
+      "用量估算"
+    ],
+    "category": "budget"
+  },
+  {
+    "section": "blog",
+    "slug": "budget-gb-gib",
+    "title": "GB 和 GiB 差多少：容量比较前先统一单位",
+    "description": "解释十进制与二进制容量的换算，用明确算例理解容量差异，避免把不同单位的套餐直接排序。",
+    "tags": [
+      "GB",
+      "GiB",
+      "容量单位"
+    ],
+    "category": "budget"
+  },
+  {
+    "section": "blog",
+    "slug": "budget-unused-quota",
+    "title": "套餐流量总用不完：为什么低单价可能让你多花钱",
+    "description": "用实付金额和实际需求复盘浪费，比较小档、短周期与较大套餐的真实支出差异。",
+    "tags": [
+      "预算",
+      "剩余额度",
+      "用量复盘"
+    ],
+    "category": "budget"
+  },
+  {
+    "section": "blog",
+    "slug": "budget-one-time",
+    "title": "不限时流量包适合谁：先问有效期与补充规则",
+    "description": "区分一次性购买、有效期限和容量上限，用间歇使用的情境比较不限时包与月度重置方案。",
+    "tags": [
+      "不限时",
+      "一次性流量",
+      "套餐条件"
+    ],
+    "category": "budget"
+  },
+  {
+    "section": "blog",
+    "slug": "budget-unlimited-fair-use",
+    "title": "不限流量套餐怎么看：限速、用途与公平使用应逐项核对",
+    "description": "用吞吐限制、并发条件和用途范围理解不限流量，不把没有容量分母误算成零成本。",
+    "tags": [
+      "不限流量",
+      "用途限制",
+      "预算"
+    ],
+    "category": "budget"
+  },
+  {
+    "section": "blog",
+    "slug": "budget-coupon-check",
+    "title": "机场优惠码怎么核对：首单、套餐和最终金额分开看",
+    "description": "保存站长指定代码，检查结算变化与适用条件；折扣比例、有效期和续费权益未确认时不自行推算。",
+    "tags": [
+      "优惠码",
+      "结算核对",
+      "预算"
+    ],
+    "category": "budget"
+  },
+  {
+    "section": "blog",
+    "slug": "budget-household-total",
+    "title": "多设备家庭的总预算怎么算：服务、软件和流量分开列",
+    "description": "按同时使用需求拆分订阅、客户端、宽带移动流量和维护投入，避免只看一个套餐价格。",
+    "tags": [
+      "多设备",
+      "家庭预算",
+      "并发限制"
+    ],
+    "category": "budget"
+  },
+  {
+    "section": "blog",
+    "slug": "budget-double-metering",
+    "title": "手机热点与代理额度：两份流量预算怎样分别核对",
+    "description": "在移动网络与代理服务同时参与传输时，分别记录运营商流量和服务额度，避免只看其中一个账本。",
+    "tags": [
+      "移动热点",
+      "双重计量",
+      "预算"
+    ],
+    "category": "budget"
+  },
+  {
+    "section": "blog",
+    "slug": "budget-cloud-sync",
+    "title": "云盘同步为什么容易超出流量预算：首次迁移与日常变更分开算",
+    "description": "识别初次下载、双向同步、重复任务与后台传输，建立云盘相关的额度预估和恢复检查。",
+    "tags": [
+      "云盘同步",
+      "后台流量",
+      "预算"
+    ],
+    "category": "budget"
+  },
+  {
+    "section": "blog",
+    "slug": "budget-upgrade-timing",
+    "title": "流量快用完时怎么决定升级：先核对剩余天数与后台任务",
+    "description": "把必要任务、重置日期、扩容规则和异常消耗放在一起判断，避免只因余额提示就购买更大档。",
+    "tags": [
+      "升级扩容",
+      "流量重置",
+      "预算"
+    ],
+    "category": "budget"
+  },
+  {
+    "section": "blog",
+    "slug": "budget-wavenet-tiers",
+    "title": "浪网为什么有 30 元和 120 元报价：先区分套餐档位",
+    "description": "解释本站浪网参考价的档位差别，保留 70 元档容量冲突，并说明为什么这些数字仍不是当前结算承诺。",
+    "tags": [
+      "浪网",
+      "档位",
+      "价格核对"
+    ],
+    "category": "budget"
+  },
+  {
+    "section": "blog",
+    "slug": "budget-capacity-buffer",
+    "title": "月度流量要留多少余量：用任务波动建立容量区间",
+    "description": "区分日常用量、确定的大任务与不确定余量，用区间规划容量，而不是机械套用固定百分比。",
+    "tags": [
+      "容量规划",
+      "用量波动",
+      "预算"
+    ],
+    "category": "budget"
+  },
+  {
+    "section": "blog",
+    "slug": "client-download-verification",
+    "title": "客户端下载前核验什么：从发布入口到文件完整性",
+    "description": "按项目身份、发布渠道、版本说明与文件校验建立下载检查流程，避免把同名网页当作官方客户端。",
+    "tags": [
+      "安装维护",
+      "发布来源",
+      "完整性核验"
+    ],
+    "category": "clients"
+  },
+  {
+    "section": "blog",
+    "slug": "client-architecture-package",
+    "title": "x64、ARM64 与 Apple 芯片：客户端安装包怎样选",
+    "description": "区分系统位数、处理器架构和安装包格式，用设备信息与发布说明选择匹配版本，减少兼容问题。",
+    "tags": [
+      "安装维护",
+      "设备兼容",
+      "处理器架构"
+    ],
+    "category": "clients"
+  },
+  {
+    "section": "blog",
+    "slug": "client-webview-runtime",
+    "title": "Clash Verge Rev 面板与 WebView2：安装前怎样理解运行环境",
+    "description": "解释 Windows 客户端界面与 WebView2 Runtime 的关系，区分运行环境缺失和代理连接问题。",
+    "tags": [
+      "Windows",
+      "WebView2",
+      "安装维护"
+    ],
+    "category": "clients"
+  },
+  {
+    "section": "blog",
+    "slug": "client-subscription-first-import",
+    "title": "首次导入订阅的验收流程：有节点之后还要检查什么",
+    "description": "把复制链接、导入配置、选择策略与确认流量路径分开验收，避免把导入成功误当成全部可用。",
+    "tags": [
+      "配置订阅",
+      "导入验收",
+      "任务验收"
+    ],
+    "category": "clients"
+  },
+  {
+    "section": "blog",
+    "slug": "client-local-remote-profile",
+    "title": "本地配置与远程订阅怎么选：更新责任和恢复方式的差别",
+    "description": "比较本地文件和远程订阅在内容来源、更新、定制及迁移上的责任，帮助选择可维护的配置方式。",
+    "tags": [
+      "配置订阅",
+      "更新维护",
+      "恢复路径"
+    ],
+    "category": "clients"
+  },
+  {
+    "section": "blog",
+    "slug": "client-subscription-update",
+    "title": "订阅多久更新一次：区分节点刷新、配置刷新与程序升级",
+    "description": "建立订阅更新的节奏和验收记录，解释更新成功时间、节点变化及本地扩展之间的关系。",
+    "tags": [
+      "配置订阅",
+      "更新维护",
+      "个人规则"
+    ],
+    "category": "clients"
+  },
+  {
+    "section": "blog",
+    "slug": "client-subscription-reset",
+    "title": "重置订阅后怎样更新所有设备：一份不泄露令牌的清理清单",
+    "description": "从设备盘点、旧入口替换、缓存备份到重新验收，完成订阅地址重置后的凭据清理。",
+    "tags": [
+      "配置订阅",
+      "订阅重置",
+      "凭据保护"
+    ],
+    "category": "clients"
+  },
+  {
+    "section": "blog",
+    "slug": "client-one-click-import",
+    "title": "一键导入为什么没反应：先理解浏览器到客户端的交接",
+    "description": "说明 URL Scheme 导入的信任边界、关联应用及手动替代流程，避免把唤起失败误判成订阅不可用。",
+    "tags": [
+      "配置订阅",
+      "导入验收",
+      "应用交接"
+    ],
+    "category": "clients"
+  },
+  {
+    "section": "blog",
+    "slug": "client-backup-restore",
+    "title": "客户端配置怎样备份：把订阅、个人规则与本机设置分层保存",
+    "description": "制定可恢复且不公开凭据的备份方案，区分来源配置、个人扩展、策略选择和设备专属设置。",
+    "tags": [
+      "配置备份",
+      "个人规则",
+      "恢复路径"
+    ],
+    "category": "clients"
+  },
+  {
+    "section": "blog",
+    "slug": "client-upgrade-rollback",
+    "title": "客户端升级前后检查清单：版本、扩展与回退怎么安排",
+    "description": "在升级前保存可用状态，升级后检查配置兼容、连接方式和启动项，减少日常使用中断。",
+    "tags": [
+      "版本升级",
+      "配置备份",
+      "恢复路径"
+    ],
+    "category": "clients"
+  },
+  {
+    "section": "blog",
+    "slug": "client-windows-startup",
+    "title": "Windows 客户端开机启动：程序启动与网络就绪要分开验收",
+    "description": "检查 Windows 登录启动项、客户端静默启动和代理恢复状态，避免重复启动与开机断网。",
+    "tags": [
+      "Windows",
+      "启动管理",
+      "任务验收"
+    ],
+    "category": "clients"
+  },
+  {
+    "section": "blog",
+    "slug": "client-mac-login-items",
+    "title": "Mac 登录项与后台服务怎样管理：让客户端启动行为可解释",
+    "description": "区分 Mac 登录时打开、后台活动和网络接管，建立升级后启动项检查及逐项恢复流程。",
+    "tags": [
+      "macOS",
+      "启动管理",
+      "后台服务"
+    ],
+    "category": "clients"
+  },
+  {
+    "section": "blog",
+    "slug": "client-service-permissions",
+    "title": "客户端服务模式需要哪些权限：授权之前先弄清用途",
+    "description": "从界面程序、后台服务和网络接管三层理解权限需求，给出个人设备与受管理设备的授权判断方法。",
+    "tags": [
+      "服务模式",
+      "权限管理",
+      "TUN"
+    ],
+    "category": "clients"
+  },
+  {
+    "section": "blog",
+    "slug": "client-system-proxy-check",
+    "title": "系统代理开关做了什么：Windows 与 Mac 的检查方法",
+    "description": "理解系统代理设置、客户端监听和应用使用代理之间的关系，形成启用与退出后的双向检查流程。",
+    "tags": [
+      "系统代理",
+      "Windows",
+      "macOS"
+    ],
+    "category": "clients"
+  },
+  {
+    "section": "blog",
+    "slug": "client-system-proxy-or-tun",
+    "title": "系统代理还是 TUN：按应用需求选择接管方式",
+    "description": "从应用兼容、权限、内网和恢复成本比较系统代理与 TUN，给出循序启用和验证的决策流程。",
+    "tags": [
+      "系统代理",
+      "TUN",
+      "接管范围"
+    ],
+    "category": "clients"
+  },
+  {
+    "section": "blog",
+    "slug": "client-android-vpn-permission",
+    "title": "Android 首次连接授权怎么看：VPN 图标与实际连接的区别",
+    "description": "解读 Android 的 VPN 连接请求、系统状态和客户端状态，明确授权前检查与连接后的验收步骤。",
+    "tags": [
+      "Android",
+      "连接授权",
+      "任务验收"
+    ],
+    "category": "clients"
+  },
+  {
+    "section": "blog",
+    "slug": "client-android-app-scope",
+    "title": "Android 分应用代理怎样规划：允许列表、排除列表与验证方法",
+    "description": "先定义哪些应用进入连接，再设置分应用范围，并用选中与未选中应用分别验收，避免范围误解。",
+    "tags": [
+      "Android",
+      "分应用代理",
+      "规则范围"
+    ],
+    "category": "clients"
+  },
+  {
+    "section": "blog",
+    "slug": "client-android-always-on",
+    "title": "Android 常开连接与阻止非 VPN 流量：启用前怎样验收",
+    "description": "区分保持服务运行与阻止其他连接的效果，设计重启、断线和网络切换验证，避免意外断网。",
+    "tags": [
+      "Android",
+      "常开连接",
+      "网络恢复"
+    ],
+    "category": "clients"
+  },
+  {
+    "section": "blog",
+    "slug": "client-ios-configuration-profiles",
+    "title": "iPhone 的 VPN 与描述文件怎样辨认：安装前后检查范围",
+    "description": "区分客户端连接授权与系统描述文件，检查来源、包含设置及移除影响，避免误装或误删管理配置。",
+    "tags": [
+      "iOS",
+      "描述文件",
+      "连接授权"
+    ],
+    "category": "clients"
+  },
+  {
+    "section": "blog",
+    "slug": "client-retire-cleanup",
+    "title": "换客户端或卸载前做什么：恢复网络、撤销启动与清理配置",
+    "description": "完成客户端退役的分步验收，检查系统代理、连接配置、启动项和私有备份，保留安全回退路径。",
+    "tags": [
+      "卸载清理",
+      "网络恢复",
+      "启动管理"
+    ],
+    "category": "clients"
+  },
+  {
+    "section": "blog",
+    "slug": "routing-rule-order",
+    "title": "分流规则为什么有顺序：从具体例外到最终兜底的设计方法",
+    "description": "用正反例理解规则优先级，设计精确例外、业务规则和兜底策略，并通过新连接验证实际命中。",
+    "tags": [
+      "规则顺序",
+      "域名规则",
+      "兜底规则"
+    ],
+    "category": "routing"
+  },
+  {
+    "section": "blog",
+    "slug": "routing-domain-matching",
+    "title": "精确域名、后缀与关键字：怎样避免分流规则误伤",
+    "description": "比较域名条件的匹配范围，用包含与排除样例选择最小必要规则，减少关键字和通配符造成的意外命中。",
+    "tags": [
+      "域名规则",
+      "规则顺序",
+      "规则范围"
+    ],
+    "category": "routing"
+  },
+  {
+    "section": "blog",
+    "slug": "routing-process-scope",
+    "title": "按进程分流适合哪些任务：名称、路径与应用更新的边界",
+    "description": "明确进程规则的用途与限制，比较进程名和路径的维护成本，并验证后台组件与升级后的匹配结果。",
+    "tags": [
+      "进程规则",
+      "规则范围",
+      "兼容验证"
+    ],
+    "category": "routing"
+  },
+  {
+    "section": "blog",
+    "slug": "routing-network-port-rules",
+    "title": "TCP、UDP 与端口规则怎样使用：先定义业务再写条件",
+    "description": "解释网络类型与目标端口条件的设计边界，避免把端口当成应用身份，并检查规则组合的影响范围。",
+    "tags": [
+      "TCP",
+      "UDP",
+      "端口规则"
+    ],
+    "category": "routing"
+  },
+  {
+    "section": "blog",
+    "slug": "routing-rule-set-formats",
+    "title": "规则集格式怎么辨认：domain、ipcidr 与 classical 的区别",
+    "description": "从内容类型、文件格式和调用关系检查规则集，避免把域名列表、完整配置和节点订阅混用。",
+    "tags": [
+      "规则集",
+      "数据格式",
+      "配置验收"
+    ],
+    "category": "routing"
+  },
+  {
+    "section": "blog",
+    "slug": "routing-rule-set-updates",
+    "title": "远程规则集如何更新：来源、缓存与下载路径的维护方法",
+    "description": "明确规则集获取与业务连接的不同路径，记录更新时间和内容变化，并设计离线与回退验收。",
+    "tags": [
+      "规则集",
+      "更新维护",
+      "下载路径"
+    ],
+    "category": "routing"
+  },
+  {
+    "section": "blog",
+    "slug": "routing-proxy-provider-design",
+    "title": "代理集合与策略组如何分工：节点来源、筛选和健康检查",
+    "description": "区分节点资源的维护与策略组的选择逻辑，审查集合引用、名称冲突和健康检查责任。",
+    "tags": [
+      "代理集合",
+      "策略组",
+      "健康检查"
+    ],
+    "category": "routing"
+  },
+  {
+    "section": "blog",
+    "slug": "routing-manual-group",
+    "title": "手动策略组为什么仍有价值：明确出口与可重复验证",
+    "description": "用手动组建立固定选择和排错基准，安排有限备选，并检查配置更新后选择是否仍符合预期。",
+    "tags": [
+      "策略组",
+      "手动选择",
+      "任务验收"
+    ],
+    "category": "routing"
+  },
+  {
+    "section": "blog",
+    "slug": "routing-url-test-policy",
+    "title": "自动选择怎样才有用：测试地址、容差与业务验证",
+    "description": "解释 URL 测试策略测量的范围，规划候选与容差，并检查自动切换是否改善真实任务。",
+    "tags": [
+      "策略组",
+      "自动选择",
+      "健康检查"
+    ],
+    "category": "routing"
+  },
+  {
+    "section": "blog",
+    "slug": "routing-fallback-policy",
+    "title": "自动回退如何排主备：顺序、检查与会话中断的预期",
+    "description": "按业务要求安排候选优先级，区分健康检查与完整任务可用，并设计主备切换与恢复测试。",
+    "tags": [
+      "策略组",
+      "自动回退",
+      "会话边界"
+    ],
+    "category": "routing"
+  },
+  {
+    "section": "blog",
+    "slug": "routing-load-balance-boundaries",
+    "title": "负载均衡会让单次下载更快吗：连接分配与会话边界",
+    "description": "区分多个连接的分配与单条连接的吞吐，评估账号会话、出口一致性及多候选维护成本。",
+    "tags": [
+      "策略组",
+      "负载均衡",
+      "会话边界"
+    ],
+    "category": "routing"
+  },
+  {
+    "section": "blog",
+    "slug": "routing-group-reference-graph",
+    "title": "策略组嵌套怎样审查：从业务规则追到最终出口",
+    "description": "检查策略组引用、命名与层级，避免空组、引用断裂和看不清最终出口，建立可维护的组关系图。",
+    "tags": [
+      "策略组",
+      "配置引用",
+      "规则范围"
+    ],
+    "category": "routing"
+  },
+  {
+    "section": "blog",
+    "slug": "routing-dns-resolution-map",
+    "title": "分流中的 DNS 请求去了哪里：画清四类解析路径",
+    "description": "区分应用域名、节点域名、解析服务器域名与直连目标，使用路径记录理解 DNS 与路由的协作。",
+    "tags": [
+      "DNS",
+      "解析路径",
+      "接管范围"
+    ],
+    "category": "routing"
+  },
+  {
+    "section": "blog",
+    "slug": "routing-fake-ip-boundaries",
+    "title": "Fake-IP 与真实地址模式怎么理解：映射、例外和兼容验证",
+    "description": "解释 Fake-IP 是客户端内部映射机制，规划必要例外，区分解析模式、出口地址与业务兼容性。",
+    "tags": [
+      "DNS",
+      "Fake-IP",
+      "兼容验证"
+    ],
+    "category": "routing"
+  },
+  {
+    "section": "blog",
+    "slug": "routing-dns-policy",
+    "title": "按域名指定 DNS 怎样设计：解析策略与业务出口分别验收",
+    "description": "明确域名解析策略的责任，避免与分流策略混淆，并核对内网、节点解析及扩展覆盖带来的影响。",
+    "tags": [
+      "DNS",
+      "解析策略",
+      "域名规则"
+    ],
+    "category": "routing"
+  },
+  {
+    "section": "blog",
+    "slug": "routing-hosts-maintenance",
+    "title": "hosts 固定映射什么时候适用：临时验证、过期风险与撤销方法",
+    "description": "区分客户端 hosts 与系统 hosts，评估固定地址的维护成本，并用限定范围和到期记录避免长期失效。",
+    "tags": [
+      "DNS",
+      "hosts",
+      "配置验收"
+    ],
+    "category": "routing"
+  },
+  {
+    "section": "blog",
+    "slug": "routing-sniffer-scope",
+    "title": "域名嗅探能解决什么：识别线索、目标覆盖与兼容边界",
+    "description": "明确嗅探与解密的区别，按缺失域名的具体连接评估启用范围，并检查覆盖目标和必要例外。",
+    "tags": [
+      "域名嗅探",
+      "接管范围",
+      "兼容验证"
+    ],
+    "category": "routing"
+  },
+  {
+    "section": "blog",
+    "slug": "routing-local-network-exclusions",
+    "title": "局域网访问怎样保留：区分代理规则、路由排除与名称解析",
+    "description": "围绕打印机、路由器和内部业务，分别检查进入客户端、规则直连及系统路由排除的差异。",
+    "tags": [
+      "局域网",
+      "规则范围",
+      "DNS"
+    ],
+    "category": "routing"
+  },
+  {
+    "section": "blog",
+    "slug": "routing-ipv6-scope",
+    "title": "IPv6 设置要检查哪几层：系统、DNS、核心与接管范围",
+    "description": "把 IPv6 接受、AAAA 解析和路由接管分开审查，避免只改一个开关就宣称整个设备路径一致。",
+    "tags": [
+      "IPv6",
+      "DNS",
+      "接管范围"
+    ],
+    "category": "routing"
+  },
+  {
+    "section": "blog",
+    "slug": "routing-change-review",
+    "title": "修改分流配置怎样验收：一项变更、一组对照、一条恢复路径",
+    "description": "建立个人分流变更记录，检查最终配置、正反目标与退出行为，降低规则和扩展叠加造成的维护难度。",
+    "tags": [
+      "配置验收",
+      "恢复路径",
+      "规则范围"
+    ],
+    "category": "routing"
+  },
+  {
+    "section": "blog",
+    "slug": "diagnose-subscription-forbidden",
+    "title": "订阅更新提示 403：先查权限，再查链接",
+    "description": "区分订阅地址的权限拒绝、账户状态与客户端兼容问题，用最少的重试保留有效证据。",
+    "tags": [
+      "订阅更新",
+      "HTTP状态码",
+      "权限"
+    ],
+    "category": "troubleshooting"
+  },
+  {
+    "section": "blog",
+    "slug": "diagnose-connection-timeout",
+    "title": "连接超时怎么查：把等待发生的位置找出来",
+    "description": "从基础网络、连接建立和目标响应三个阶段定位超时，避免无目的地改 DNS 或切换全部设置。",
+    "tags": [
+      "超时",
+      "连接诊断",
+      "错误记录"
+    ],
+    "category": "troubleshooting"
+  },
+  {
+    "section": "blog",
+    "slug": "diagnose-dns-failure",
+    "title": "域名解析失败排查：别把所有打不开都归给 DNS",
+    "description": "识别名称解析错误，比较系统与应用的解析路径，并在保留原配置的前提下验证修复结果。",
+    "tags": [
+      "DNS",
+      "域名解析",
+      "Windows"
+    ],
+    "category": "troubleshooting"
+  },
+  {
+    "section": "blog",
+    "slug": "diagnose-tls-clock",
+    "title": "证书错误与系统时间：不要用关闭验证换取连接",
+    "description": "根据证书错误区分时间偏差、站点证书和网络环境问题，采用可恢复的检查顺序保护账户信息。",
+    "tags": [
+      "TLS",
+      "证书",
+      "系统时间"
+    ],
+    "category": "troubleshooting"
+  },
+  {
+    "section": "blog",
+    "slug": "diagnose-web-app-difference",
+    "title": "浏览器能打开，应用却连不上：检查两条连接路径",
+    "description": "通过代理继承、应用内设置、账户与解析差异定位网页和应用表现不一致的问题。",
+    "tags": [
+      "应用连接",
+      "系统代理",
+      "对照排查"
+    ],
+    "category": "troubleshooting"
+  },
+  {
+    "section": "blog",
+    "slug": "diagnose-ipv6-difference",
+    "title": "同一网站有时快有时卡：怎样排查 IPv4 与 IPv6 差异",
+    "description": "理解双栈连接选择，记录地址族与客户端路径差异，避免用永久关闭 IPv6 掩盖真实故障。",
+    "tags": [
+      "IPv6",
+      "双栈",
+      "连接路径"
+    ],
+    "category": "troubleshooting"
+  },
+  {
+    "section": "blog",
+    "slug": "diagnose-udp-symptoms",
+    "title": "网页正常但语音卡顿：先区分 UDP 路径与实时任务",
+    "description": "从功能症状、协议支持和接入环境检查实时通信问题，避免把网页成功当成所有传输都正常。",
+    "tags": [
+      "UDP",
+      "实时通信",
+      "语音故障"
+    ],
+    "category": "troubleshooting"
+  },
+  {
+    "section": "blog",
+    "slug": "diagnose-mtu-stall",
+    "title": "小网页能开，大文件却停住：何时怀疑 MTU",
+    "description": "用任务大小、传输阶段和路径差异识别 MTU 相关线索，说明为什么不能照抄一个所谓最佳数值。",
+    "tags": [
+      "MTU",
+      "大文件",
+      "传输停顿"
+    ],
+    "category": "troubleshooting"
+  },
+  {
+    "section": "blog",
+    "slug": "diagnose-sleep-resume",
+    "title": "电脑睡眠后连接失效：按恢复顺序检查网络和客户端",
+    "description": "分开检查唤醒后的 Wi-Fi、系统代理与应用旧会话，避免每次故障都重装客户端或重置全部网络。",
+    "tags": [
+      "睡眠唤醒",
+      "Windows",
+      "网络恢复"
+    ],
+    "category": "troubleshooting"
+  },
+  {
+    "section": "blog",
+    "slug": "diagnose-network-switch",
+    "title": "Wi-Fi 切到手机网络就掉线：区分旧连接与新接入",
+    "description": "记录网络切换前后的接入、客户端与应用状态，用短时对照判断需要重新认证还是重建连接。",
+    "tags": [
+      "网络切换",
+      "移动网络",
+      "连接恢复"
+    ],
+    "category": "troubleshooting"
+  },
+  {
+    "section": "blog",
+    "slug": "diagnose-captive-portal",
+    "title": "酒店 Wi-Fi 已连接却不能用：先完成接入认证",
+    "description": "区分公共网络认证与客户端故障，按正规入口接入，并避免在认证异常时忽略 HTTPS 证书提示。",
+    "tags": [
+      "公共Wi-Fi",
+      "接入认证",
+      "iPhone"
+    ],
+    "category": "troubleshooting"
+  },
+  {
+    "section": "blog",
+    "slug": "diagnose-lan-access",
+    "title": "开启客户端后打印机或 NAS 失联：先检查局域网路径",
+    "description": "区分局域网发现、名称解析与路由冲突，按最小范围恢复打印机、NAS 等本地设备访问。",
+    "tags": [
+      "局域网",
+      "路由",
+      "NAS"
+    ],
+    "category": "troubleshooting"
+  },
+  {
+    "section": "blog",
+    "slug": "diagnose-local-port",
+    "title": "客户端提示端口被占用：先找进程，别盲目改数字",
+    "description": "用只读方式检查本地监听端口与进程，处理重复实例和旧设置，并同步验证应用代理地址。",
+    "tags": [
+      "端口冲突",
+      "Windows",
+      "本地代理"
+    ],
+    "category": "troubleshooting"
+  },
+  {
+    "section": "blog",
+    "slug": "diagnose-proxy-restoration",
+    "title": "退出客户端后不能联网：检查残留系统代理",
+    "description": "识别本地代理已停止但系统仍在使用旧入口的情况，按原始设置恢复并核对应用独立配置。",
+    "tags": [
+      "系统代理",
+      "恢复联网",
+      "退出故障"
+    ],
+    "category": "troubleshooting"
+  },
+  {
+    "section": "blog",
+    "slug": "diagnose-cache-state",
+    "title": "只有一个浏览器打不开：怎样区分缓存与连接问题",
+    "description": "通过相同账户和功能的对照识别浏览器状态差异，逐项处理扩展、站点缓存与登录状态。",
+    "tags": [
+      "浏览器缓存",
+      "站点数据",
+      "局部故障"
+    ],
+    "category": "troubleshooting"
+  },
+  {
+    "section": "blog",
+    "slug": "diagnose-rate-limit",
+    "title": "遇到 429 不要连续刷新：识别限流与重试窗口",
+    "description": "从响应状态、请求频率与 Retry-After 提示判断限流，采用有限重试并避免重复提交重要操作。",
+    "tags": [
+      "HTTP429",
+      "限流",
+      "重试"
+    ],
+    "category": "troubleshooting"
+  },
+  {
+    "section": "blog",
+    "slug": "diagnose-gateway-errors",
+    "title": "502 与 504 怎么区分：先定位返回错误的那一层",
+    "description": "识别网关错误的含义，结合目标范围和状态页判断是否需要本地改动，避免将服务器异常误写成线路故障。",
+    "tags": [
+      "HTTP502",
+      "网关错误",
+      "服务状态"
+    ],
+    "category": "troubleshooting"
+  },
+  {
+    "section": "blog",
+    "slug": "diagnose-log-redaction",
+    "title": "排障日志怎么发：保留定位信息，去掉订阅和凭据",
+    "description": "整理最短复现时间窗，识别日志、截图与网络记录中的敏感字段，提供可用且范围适当的支持资料。",
+    "tags": [
+      "日志脱敏",
+      "支持资料",
+      "隐私"
+    ],
+    "category": "troubleshooting"
+  },
+  {
+    "section": "blog",
+    "slug": "diagnose-support-ticket",
+    "title": "向客服报故障该提供什么：一份可定位的工单清单",
+    "description": "用影响范围、时间线和最小复现步骤提交支持工单，让维护方能够区分账户、接入、客户端与目标问题。",
+    "tags": [
+      "故障工单",
+      "复现步骤",
+      "支持沟通"
+    ],
+    "category": "troubleshooting"
+  },
+  {
+    "section": "blog",
+    "slug": "diagnose-config-regression",
+    "title": "更新配置后突然断网：先回退，再找最小变更",
+    "description": "保留旧配置与变更记录，通过分阶段恢复区分配置语法、运行状态和规则变化引起的故障。",
+    "tags": [
+      "配置回退",
+      "TUN",
+      "变更管理"
+    ],
+    "category": "troubleshooting"
   },
   {
     "section": "blog",
     "slug": "stability-evidence",
-    "title": "怎样判断稳定性：一份可复现的观察方法",
-    "description": "记录网络、时段、任务与失败率，区分一次测速和长期稳定性证据。",
+    "title": "怎样判断稳定性：从连续记录到有限结论",
+    "description": "用固定任务、分时段样本和失败记录判断连接表现，公开观察范围，不用最快截图代替稳定性证据。",
     "tags": [
-      "选择方法",
-      "预算",
-      "证据"
-    ]
+      "稳定性",
+      "观察记录",
+      "证据标准"
+    ],
+    "category": "measurement"
+  },
+  {
+    "section": "blog",
+    "slug": "observe-latency-throughput",
+    "title": "延迟低为什么下载仍慢：把往返时间与吞吐量分开测",
+    "description": "区别延迟、吞吐量和文件完成时间，为网页、会议与下载选择对应指标，避免把单个探测数值当作综合体验。",
+    "tags": [
+      "延迟",
+      "吞吐量",
+      "测速方法"
+    ],
+    "category": "measurement"
+  },
+  {
+    "section": "blog",
+    "slug": "observe-packet-loss",
+    "title": "丢包率怎么看：先写清样本数和超时定义",
+    "description": "区分没有回应、往返探测失败与单向丢包，保留探测参数和样本数量，避免凭少量 ping 结果下结论。",
+    "tags": [
+      "丢包",
+      "样本数",
+      "网络观察"
+    ],
+    "category": "measurement"
+  },
+  {
+    "section": "blog",
+    "slug": "observe-jitter-variation",
+    "title": "平均延迟差不多，为什么通话体验不同：看波动",
+    "description": "区分平均时延与时延变化，用连续记录和业务症状观察实时任务，不把不同工具的抖动数字直接混排。",
+    "tags": [
+      "抖动",
+      "时延变化",
+      "实时任务"
+    ],
+    "category": "measurement"
+  },
+  {
+    "section": "blog",
+    "slug": "observe-wifi-wired-control",
+    "title": "测速前先排除 Wi-Fi：有线对照该怎么做",
+    "description": "把本地接入和远端路径分开，用同设备、同任务的有线与无线对照判断无线环境是否影响结果。",
+    "tags": [
+      "Wi-Fi",
+      "有线对照",
+      "本地网络"
+    ],
+    "category": "measurement"
+  },
+  {
+    "section": "blog",
+    "slug": "observe-peak-hours",
+    "title": "晚间表现怎么观察：把时段覆盖写进计划",
+    "description": "按自己的使用时间设计分时段记录，区分忙时差异与日期、目标、设备变化，避免用一次晚间测速给出长期结论。",
+    "tags": [
+      "晚间观察",
+      "时段覆盖",
+      "重复测量"
+    ],
+    "category": "measurement"
+  },
+  {
+    "section": "blog",
+    "slug": "observe-ab-comparison",
+    "title": "两条连接怎样公平比较：交替测试比隔天截图更有用",
+    "description": "在相近时间以相同任务交替比较两条连接，记录顺序和条件，避免时段变化被误当作品牌差异。",
+    "tags": [
+      "对照设计",
+      "交替测试",
+      "品牌比较"
+    ],
+    "category": "measurement"
+  },
+  {
+    "section": "blog",
+    "slug": "observe-task-success",
+    "title": "比测速更贴近日常：怎样定义任务成功率",
+    "description": "为文档、上传和协作写出明确结束条件，区分页面加载、功能完成、取消和未测，避免虚高成功率。",
+    "tags": [
+      "任务成功率",
+      "业务体验",
+      "记录方法"
+    ],
+    "category": "measurement"
+  },
+  {
+    "section": "blog",
+    "slug": "observe-median-tail",
+    "title": "别只报最快值：中位数、尾部和失败要一起看",
+    "description": "用清晰的原始样本解释均值与中位数，保留极慢任务和失败，避免短记录中的百分位制造虚假精度。",
+    "tags": [
+      "中位数",
+      "尾部表现",
+      "数据汇总"
+    ],
+    "category": "measurement"
+  },
+  {
+    "section": "blog",
+    "slug": "observe-control-variables",
+    "title": "网络对比要固定哪些条件：一份控制变量清单",
+    "description": "从设备、接入、任务与工具四层记录比较条件，区分需要固定的因素和需要公开的环境变化。",
+    "tags": [
+      "控制变量",
+      "测量条件",
+      "可复现"
+    ],
+    "category": "measurement"
+  },
+  {
+    "section": "blog",
+    "slug": "observe-test-traffic-cost",
+    "title": "测速也会花流量：先设预算，再决定测多少",
+    "description": "估算测试产生的上传下载量，区分实际传输和套餐扣量，避免连续满速测试耗尽额度并影响正常业务。",
+    "tags": [
+      "测速流量",
+      "套餐预算",
+      "测试负担"
+    ],
+    "category": "measurement"
+  },
+  {
+    "section": "blog",
+    "slug": "observe-capture-limits",
+    "title": "抓包能证明什么：连接元数据与加密内容的边界",
+    "description": "理解主动、被动观察和抓包位置的限制，只收集授权范围内的必要信息，不把看不到内容误写成没有流量。",
+    "tags": [
+      "抓包边界",
+      "元数据",
+      "授权观察"
+    ],
+    "category": "measurement"
+  },
+  {
+    "section": "blog",
+    "slug": "observe-cold-warm-cache",
+    "title": "第一次慢、第二次快：冷启动与缓存要分开记录",
+    "description": "区分首次访问、重复访问与应用启动状态，用一致条件比较任务，不把缓存带来的改善全部算成线路提速。",
+    "tags": [
+      "冷启动",
+      "缓存",
+      "重复访问"
+    ],
+    "category": "measurement"
+  },
+  {
+    "section": "blog",
+    "slug": "observe-single-multi-stream",
+    "title": "单连接与多连接测速：别把不同并发方式直接比大小",
+    "description": "记录传输并发、文件目标和完成时间，解释为什么多连接总量不等于单个应用任务的实际速度。",
+    "tags": [
+      "单连接",
+      "多连接",
+      "吞吐量"
+    ],
+    "category": "measurement"
+  },
+  {
+    "section": "blog",
+    "slug": "observe-upload-direction",
+    "title": "下载快不代表上传顺畅：远程工作要单独观察上行",
+    "description": "为上传、屏幕共享和云同步记录方向、完成条件与后台占用，避免把下载测速当作双向工作能力的证明。",
+    "tags": [
+      "上传",
+      "远程工作",
+      "双向观察"
+    ],
+    "category": "measurement"
+  },
+  {
+    "section": "blog",
+    "slug": "observe-traceroute-limits",
+    "title": "路由跟踪出现星号：为什么不能直接判定中间链路丢包",
+    "description": "理解 tracert 的逐跳回应与可见性限制，结合终点和实际任务解释结果，不凭一行星号给线路定责。",
+    "tags": [
+      "tracert",
+      "路由跟踪",
+      "证据边界"
+    ],
+    "category": "measurement"
+  },
+  {
+    "section": "blog",
+    "slug": "observe-dns-duration",
+    "title": "DNS 查询快慢怎么比：固定域名、缓存和查询方式",
+    "description": "用相同问题与明确缓存状态观察解析时间，区分查询完成、答案内容和实际网页任务，不凭一次数字选解析服务。",
+    "tags": [
+      "DNS计时",
+      "缓存状态",
+      "解析观察"
+    ],
+    "category": "measurement"
+  },
+  {
+    "section": "blog",
+    "slug": "observe-network-waterfall",
+    "title": "网页慢在哪一步：用网络瀑布图区分连接、等待与下载",
+    "description": "阅读浏览器请求的阶段耗时，结合状态码和实际功能判断问题，不把 TTFB 或排队时间直接当作线路延迟。",
+    "tags": [
+      "浏览器诊断",
+      "瀑布图",
+      "网页耗时"
+    ],
+    "category": "measurement"
+  },
+  {
+    "section": "blog",
+    "slug": "observe-sample-confidence",
+    "title": "测试十次都成功能说明什么：小样本结论要收窄",
+    "description": "区分本次观察比例与长期成功概率，检查样本独立性和覆盖偏差，避免用零失败写出永久稳定的保证。",
+    "tags": [
+      "小样本",
+      "不确定性",
+      "成功比例"
+    ],
+    "category": "measurement"
+  },
+  {
+    "section": "blog",
+    "slug": "observe-report-template",
+    "title": "一份专业网络观察报告怎么写：先交代范围，再给结论",
+    "description": "用问题、条件、方法、结果和限制组织观察报告，将公开资料、个人记录与推断分开，保留复核所需信息。",
+    "tags": [
+      "观察报告",
+      "证据分级",
+      "结果表达"
+    ],
+    "category": "measurement"
+  },
+  {
+    "section": "blog",
+    "slug": "privacy-subscription-secrets",
+    "title": "订阅链接为什么要保密：从导入、截图到泄露后的处理",
+    "description": "把订阅地址当作访问凭证管理，说明导入、转换、截图分享的暴露点，以及泄露后如何撤销和验证。",
+    "tags": [
+      "订阅安全",
+      "凭证管理",
+      "隐私"
+    ],
+    "category": "privacy"
+  },
+  {
+    "section": "blog",
+    "slug": "privacy-certificate-warning",
+    "title": "遇到证书警告怎么办：先确认网站身份，再修复连接",
+    "description": "区分时间错误、单站证书异常与网络拦截，给出证书警告的处理顺序，避免为恢复访问而关闭验证。",
+    "tags": [
+      "证书",
+      "HTTPS",
+      "浏览器"
+    ],
+    "category": "privacy"
+  },
+  {
+    "section": "blog",
+    "slug": "privacy-public-wifi",
+    "title": "公共 Wi-Fi 使用网络工具的安全边界：认证页、HTTPS 与设备共享",
+    "description": "围绕酒店、机场和咖啡店网络，建立连接前核验、门户认证、敏感操作与离网清理的实际检查流程。",
+    "tags": [
+      "公共网络",
+      "HTTPS",
+      "设备安全"
+    ],
+    "category": "privacy"
+  },
+  {
+    "section": "blog",
+    "slug": "privacy-log-redaction",
+    "title": "客服让你发日志时怎么脱敏：保留故障证据，去掉访问凭证",
+    "description": "说明网络日志和 HAR 文件可能包含哪些信息，用可复现的最小样例替代整份敏感记录，并检查导出内容。",
+    "tags": [
+      "日志脱敏",
+      "客服工单",
+      "浏览器"
+    ],
+    "category": "privacy"
+  },
+  {
+    "section": "blog",
+    "slug": "privacy-two-factor-recovery",
+    "title": "开启两步验证后如何防止把自己锁在门外：恢复方案先做好",
+    "description": "从备用验证码、可信设备和恢复联系方式入手，建立两步验证的恢复路径，避免换手机或断网后无法登录。",
+    "tags": [
+      "两步验证",
+      "账户恢复",
+      "备份"
+    ],
+    "category": "privacy"
+  },
+  {
+    "section": "blog",
+    "slug": "privacy-browser-permissions",
+    "title": "网站要求定位、通知和摄像头权限：哪些与网络连接无关",
+    "description": "按实际任务审查浏览器站点权限，解释临时授权、定位提示和通知骚扰，并给出授权后的验证与撤销办法。",
+    "tags": [
+      "站点权限",
+      "浏览器",
+      "最小授权"
+    ],
+    "category": "privacy"
+  },
+  {
+    "section": "blog",
+    "slug": "privacy-incognito-boundary",
+    "title": "无痕模式能隐藏什么：本机记录、登录状态与网络可见性的边界",
+    "description": "用三种实际场景解释无痕窗口的用途，区分本机历史、网站身份和网络路径，并说明退出后的检查重点。",
+    "tags": [
+      "无痕模式",
+      "Cookie",
+      "隐私边界"
+    ],
+    "category": "privacy"
+  },
+  {
+    "section": "blog",
+    "slug": "privacy-site-data",
+    "title": "登录循环时要不要清 Cookie：只清目标站点的处理方法",
+    "description": "针对反复跳转登录页、旧账户残留和站点设置异常，说明定向清理浏览数据前的准备及恢复验证方式。",
+    "tags": [
+      "Cookie",
+      "登录故障",
+      "浏览器"
+    ],
+    "category": "privacy"
+  },
+  {
+    "section": "blog",
+    "slug": "privacy-third-party-access",
+    "title": "第三方应用授权怎么检查：登录按钮背后的数据访问范围",
+    "description": "区分第三方登录与数据访问授权，按权限范围、必要性和撤销后的影响，审查不再使用的应用连接。",
+    "tags": [
+      "第三方授权",
+      "账户权限",
+      "数据安全"
+    ],
+    "category": "privacy"
+  },
+  {
+    "section": "blog",
+    "slug": "privacy-device-sessions",
+    "title": "共享电脑和旧手机如何退出账户：设备列表与实际会话要一起检查",
+    "description": "给借用设备、换机和设备遗失场景设计退出流程，说明会话、已下载文件及同步数据不能只靠关闭标签页处理。",
+    "tags": [
+      "设备会话",
+      "共享设备",
+      "账户安全"
+    ],
+    "category": "privacy"
   },
   {
     "section": "blog",
     "slug": "streaming-checklist",
-    "title": "流媒体选择指南：片库、画质与播放验证",
-    "description": "按实际平台、地区和套餐验证播放条件，不以首页可访问替代完整观看测试。",
+    "title": "流媒体选购检查表：内容权限、播放设备和网络要分别确认",
+    "description": "按内容可见、账户权益、设备支持和连续播放四个环节验证流媒体需求，避免把首页能打开误当成完整观看能力。",
     "tags": [
-      "选择方法",
-      "预算",
-      "证据"
-    ]
+      "流媒体",
+      "观看验证",
+      "内容权限"
+    ],
+    "category": "streaming"
+  },
+  {
+    "section": "blog",
+    "slug": "media-data-budget",
+    "title": "看视频一个月需要多少流量：按观看时长和画质计算预算",
+    "description": "以 Netflix 官方用量范围为例，把每日时长、多人设备、下载和线路倍率拆开计算，避免把估算误写成固定消耗。",
+    "tags": [
+      "流量预算",
+      "视频画质",
+      "容量计算"
+    ],
+    "category": "streaming"
+  },
+  {
+    "section": "blog",
+    "slug": "media-adaptive-quality",
+    "title": "视频为什么会自动变模糊：画质自适应与网络故障的区别",
+    "description": "围绕自动画质、手动分辨率和设备支持建立对照，说明清晰度变化何时属于正常调节，何时需要继续排查。",
+    "tags": [
+      "自动画质",
+      "缓冲",
+      "播放设置"
+    ],
+    "category": "streaming"
+  },
+  {
+    "section": "blog",
+    "slug": "media-debug-info",
+    "title": "YouTube 调试信息怎么看：用播放证据排查，而非只看一个速度值",
+    "description": "说明统计信息、分辨率、掉帧与缓冲现象如何配合观察，建立可复现的播放记录，并提醒调试数据的分享边界。",
+    "tags": [
+      "播放诊断",
+      "调试信息",
+      "YouTube"
+    ],
+    "category": "streaming"
+  },
+  {
+    "section": "blog",
+    "slug": "media-hdr-hdmi",
+    "title": "有 4K 网络却没有 HDR：电视、HDMI 和播放链路怎么检查",
+    "description": "把网络传输和显示输出分开，按片源、账户、盒子、HDMI 输入与电视设置逐项核对 HDR 和 4K 问题。",
+    "tags": [
+      "4K",
+      "HDR",
+      "显示链路"
+    ],
+    "category": "streaming"
+  },
+  {
+    "section": "blog",
+    "slug": "media-casting-local-network",
+    "title": "手机能播放却搜不到电视：投屏先检查局域网发现和权限",
+    "description": "针对投屏按钮消失、找不到设备和投屏后播放失败，区分本地设备发现与远端内容获取，给出逐层验证办法。",
+    "tags": [
+      "投屏",
+      "局域网",
+      "电视"
+    ],
+    "category": "streaming"
+  },
+  {
+    "section": "blog",
+    "slug": "media-offline-downloads",
+    "title": "旅行前离线下载怎么准备：下载完成、可播放和未过期要分别验证",
+    "description": "围绕飞机、火车和酒店弱网场景，检查官方离线功能、可用设备、有效期、存储和再次联网后的授权变化。",
+    "tags": [
+      "离线下载",
+      "旅行准备",
+      "内容授权"
+    ],
+    "category": "streaming"
+  },
+  {
+    "section": "blog",
+    "slug": "media-live-delay",
+    "title": "看直播比别人慢几十秒：平台缓冲、播放位置和网络延迟如何区分",
+    "description": "用直播进度与点播缓冲的区别，解释观众端延后和主播端低延迟设置，避免把直播时差全部归因于线路。",
+    "tags": [
+      "直播延迟",
+      "播放位置",
+      "缓冲"
+    ],
+    "category": "streaming"
+  },
+  {
+    "section": "blog",
+    "slug": "media-stutter-or-buffer",
+    "title": "视频卡顿到底是掉帧还是缓冲：先看声音、进度和设备负载",
+    "description": "把转圈等待、画面跳动和音画不同步分开记录，以同内容、同设备的对照判断连接与播放端的排查方向。",
+    "tags": [
+      "播放卡顿",
+      "掉帧",
+      "设备负载"
+    ],
+    "category": "streaming"
+  },
+  {
+    "section": "blog",
+    "slug": "media-device-compatibility",
+    "title": "电脑能看电视不能看：流媒体设备兼容性检查顺序",
+    "description": "按系统、浏览器、应用版本、受保护内容与输出设备检查播放能力，避免把设备不支持误判为网络服务不可用。",
+    "tags": [
+      "设备兼容",
+      "浏览器",
+      "视频格式"
+    ],
+    "category": "streaming"
+  },
+  {
+    "section": "blog",
+    "slug": "ai-access",
+    "title": "AI 工具访问检查：网络可达、账户资格与 API 权限分别确认",
+    "description": "把 AI 使用中的地区支持、登录资格、项目权限和网络问题拆开核查，避免把连接成功等同于产品可用或服务授权。",
+    "tags": [
+      "AI访问",
+      "账户资格",
+      "API"
+    ],
+    "category": "ai"
+  },
+  {
+    "section": "blog",
+    "slug": "ai-error-classification",
+    "title": "API 报错先看什么：认证、请求错误、额度和服务异常的分类",
+    "description": "用状态码、错误类型和请求编号建立 API 排查顺序，说明哪些问题应修改配置，哪些才适合等待或有限重试。",
+    "tags": [
+      "API报错",
+      "故障分类",
+      "开发工具"
+    ],
+    "category": "ai"
+  },
+  {
+    "section": "blog",
+    "slug": "ai-rate-limit-retries",
+    "title": "遇到 API 限速不要连续重发：有上限的等待与重试方案",
+    "description": "区分请求频率、额度和临时过载，用队列、退避、重试次数和任务结果检查，避免重试风暴及重复处理。",
+    "tags": [
+      "限速",
+      "重试策略",
+      "API"
+    ],
+    "category": "ai"
+  },
+  {
+    "section": "blog",
+    "slug": "ai-stream-interruption",
+    "title": "AI 回答写到一半停住：区分流连接中断与任务已经失败",
+    "description": "围绕流式输出的首字、增量事件和完成状态，说明断流后如何保留结果、查询任务及避免重复提交。",
+    "tags": [
+      "流式输出",
+      "断线恢复",
+      "AI任务"
+    ],
+    "category": "ai"
+  },
+  {
+    "section": "blog",
+    "slug": "ai-key-safety",
+    "title": "API 密钥不能发给测速工具：保存、轮换和泄露后的处理",
+    "description": "说明密钥应存放的位置、测试服务的权限边界、泄露后的撤销顺序，以及如何验证新凭证和用量变化。",
+    "tags": [
+      "API密钥",
+      "凭证安全",
+      "开发工具"
+    ],
+    "category": "ai"
+  },
+  {
+    "section": "blog",
+    "slug": "ai-file-upload-checklist",
+    "title": "AI 文件上传失败怎么查：格式、大小、权限和处理阶段分开看",
+    "description": "把文件选择、传输、平台接收与模型解析拆成四步，使用脱敏小样本定位文档上传问题，避免反复上传大文件。",
+    "tags": [
+      "文件上传",
+      "文档处理",
+      "AI任务"
+    ],
+    "category": "ai"
+  },
+  {
+    "section": "blog",
+    "slug": "ai-data-review",
+    "title": "把资料交给 AI 前先查什么：数据用途、保留和最小化输入",
+    "description": "从材料授权和敏感字段入手，区分模型训练、服务记录与应用状态，建立实际可执行的上传前审查清单。",
+    "tags": [
+      "数据处理",
+      "隐私",
+      "材料审查"
+    ],
+    "category": "ai"
+  },
+  {
+    "section": "blog",
+    "slug": "ai-long-task-recovery",
+    "title": "长 AI 任务断线后如何续接：先查状态，再重做未完成部分",
+    "description": "用任务编号、阶段产物和动作核对设计长任务恢复，解释异步执行与浏览器连接的区别，避免重复提交产生额外结果。",
+    "tags": [
+      "长任务",
+      "恢复策略",
+      "结果查询"
+    ],
+    "category": "ai"
+  },
+  {
+    "section": "blog",
+    "slug": "ai-latency-stages",
+    "title": "AI 反应慢该换网络吗：把上传、首字和完整生成分开计时",
+    "description": "建立 AI 任务的分阶段耗时记录，区分连接、输入处理、模型生成与工具调用，避免用总等待时间评价网络服务。",
+    "tags": [
+      "AI耗时",
+      "首字时间",
+      "任务优化"
+    ],
+    "category": "ai"
+  },
+  {
+    "section": "blog",
+    "slug": "ai-support-evidence",
+    "title": "AI 故障工单怎么写：让请求编号、时间和最小样例真正有用",
+    "description": "把 AI 使用问题整理为可复现的支持材料，说明时间、项目环境、请求编号和脱敏样例的作用，以及哪些秘密不应提交。",
+    "tags": [
+      "支持工单",
+      "请求编号",
+      "问题复现"
+    ],
+    "category": "ai"
+  },
+  {
+    "section": "blog",
+    "slug": "work-github-https-ssh",
+    "title": "GitHub 网页能打开却无法拉代码：HTTPS、SSH 和账户权限分别检查",
+    "description": "从远程仓库地址、认证方式与具体失败阶段定位 Git 问题，避免把网页访问成功误当成所有开发连接都可用。",
+    "tags": [
+      "GitHub",
+      "Git连接",
+      "开发流程"
+    ],
+    "category": "workflow"
+  },
+  {
+    "section": "blog",
+    "slug": "work-git-lfs",
+    "title": "代码克隆完成但素材打不开：Git LFS 指针与实际文件的区别",
+    "description": "解释小型指针文件为何不等于素材损坏，按 LFS 支持、对象下载、权限与文件完整性定位大文件获取问题。",
+    "tags": [
+      "Git LFS",
+      "大文件",
+      "开发下载"
+    ],
+    "category": "workflow"
+  },
+  {
+    "section": "blog",
+    "slug": "work-package-registry",
+    "title": "依赖安装失败不要先换全部镜像：确认仓库、凭证与失败包",
+    "description": "以 npm 为例，按 registry 配置层级、包作用域、认证和实际下载地址排查安装问题，并保护日志中的访问令牌。",
+    "tags": [
+      "npm",
+      "依赖安装",
+      "仓库配置"
+    ],
+    "category": "workflow"
+  },
+  {
+    "section": "blog",
+    "slug": "work-container-download",
+    "title": "容器镜像拉取失败如何定位：认证、清单和分层下载分别看",
+    "description": "围绕 Docker 镜像下载的阶段、仓库权限、用量限制与本地存储，建立不依赖反复清缓存的排查顺序。",
+    "tags": [
+      "Docker",
+      "镜像下载",
+      "开发流程"
+    ],
+    "category": "workflow"
+  },
+  {
+    "section": "blog",
+    "slug": "work-meeting-downloads",
+    "title": "开会时下载很快却声音断续：实时通话和批量传输分开安排",
+    "description": "围绕远程会议的上行、连续性、设备负载与后台传输，设计会前检查和问题对照，避免只凭下载峰值判断通话能力。",
+    "tags": [
+      "远程会议",
+      "实时通话",
+      "后台下载"
+    ],
+    "category": "workflow"
+  },
+  {
+    "section": "blog",
+    "slug": "work-cloud-sync",
+    "title": "云盘为什么一直占流量：同步状态、限速和会议安排怎么兼顾",
+    "description": "以 OneDrive 的同步控制为例，区分同步与离线文件状态，安排批量上传并验证远端资料，避免暂停后忘记恢复。",
+    "tags": [
+      "云盘同步",
+      "流量安排",
+      "远程办公"
+    ],
+    "category": "workflow"
+  },
+  {
+    "section": "blog",
+    "slug": "work-download-resume",
+    "title": "大文件下载中断后如何恢复：断点续传不等于文件一定完整",
+    "description": "说明续传的服务端条件、临时链接与文件版本问题，给出恢复前备份部分文件、完成后校验的实际操作顺序。",
+    "tags": [
+      "断点续传",
+      "大文件",
+      "完整性验证"
+    ],
+    "category": "workflow"
+  },
+  {
+    "section": "blog",
+    "slug": "work-corporate-access",
+    "title": "公司资源能登录却不能访问：身份授权与企业网络策略怎么配合检查",
+    "description": "用组织单点登录说明登录身份、资源权限和网络政策的区别，为受管设备上的访问异常建立可交给管理员的记录。",
+    "tags": [
+      "企业访问",
+      "单点登录",
+      "远程办公"
+    ],
+    "category": "workflow"
+  },
+  {
+    "section": "blog",
+    "slug": "work-backup-connection",
+    "title": "远程会议备用连接怎么准备：切换前先保住沟通和资料",
+    "description": "为家宽故障和临时出差设计可执行的会议备援，检查热点流量、登录、设备与会议入口，避免临场反复切换造成更大中断。",
+    "tags": [
+      "备用连接",
+      "会议准备",
+      "连续工作"
+    ],
+    "category": "workflow"
+  },
+  {
+    "section": "blog",
+    "slug": "work-incident-handoff",
+    "title": "网络故障交接记录怎么写：让下一位处理者不用从头猜",
+    "description": "提供目标、范围、时间线、对照和恢复验证的交接结构，说明哪些尝试值得记录，以及如何保护日志与账户资料。",
+    "tags": [
+      "故障交接",
+      "工单记录",
+      "团队协作"
+    ],
+    "category": "workflow"
   },
   {
     "section": "glossary",

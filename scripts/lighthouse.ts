@@ -12,7 +12,7 @@ const chrome = await chromeLauncher.launch({
 });
 try {
   const results = [];
-  for (const route of ["/", "/compare/", "/guides/windows/"]) {
+  for (const route of ["/", "/compare/", "/guides/windows/", "/blog/", "/blog/budget-monthly-annual/"]) {
     const result = await lighthouse("http://127.0.0.1:4321" + route, {
       port: chrome.port,
       output: "json",
@@ -33,7 +33,7 @@ try {
         .map(([key, a]) => ({ id: key, score: a.score, title: a.title })),
     });
     fs.writeFileSync(
-      `docs/qa/lighthouse-${route === "/" ? "home" : route.split("/")[1]}.json`,
+      `docs/qa/lighthouse-${route === "/" ? "home" : route === '/blog/budget-monthly-annual/' ? 'blog-article' : route.split("/")[1]}.json`,
       JSON.stringify(result.lhr, null, 2),
     );
   }
@@ -48,7 +48,7 @@ try {
       ? "PASS"
       : "FAIL",
     scope:
-      "本地 Chrome，移动端模拟，单次运行三条代表路由；不代表生产环境或真实用户 Web Vitals",
+      "本地 Chrome，移动端模拟，五条代表路由含博客栏目与正文；不代表生产环境或真实用户 Web Vitals",
     results,
   });
   if (!results.every(r => r.scores.performance >= 90 && r.scores.seo >= 95 && r.scores.accessibility >= 90 && r.scores['best-practices'] >= 90)) process.exitCode = 1;

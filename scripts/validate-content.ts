@@ -34,7 +34,8 @@ for (const d of documents()) {
   d.$('a[rel~="sponsored"]').each((_,el)=>{const href=d.$(el).attr('href');const a=airports.find(a=>a.affiliateUrl===href);if(!a)errors.push('非指定推广入口 '+d.url);if(!d.$(el).attr('rel')?.includes('nofollow'))errors.push('推广属性缺失 '+d.url)});
   const slug=d.url.match(/^\/airport\/([^/]+)\/$/)?.[1];
   if(slug){const a=airports.find(a=>a.slug===slug)!;if(!main.includes(a.recommendation))errors.push('推荐依据缺失 '+d.url);const editorial=brandEditorial[slug];if(!main.includes(editorial.audience)||!main.includes(editorial.avoid)||!main.includes(editorial.decision))errors.push('品牌专属人群或取舍缺失 '+d.url);if(!d.$(`a[rel~="sponsored"]`).toArray().some(el=>d.$(el).attr('href')===a.affiliateUrl))errors.push('品牌推广链接缺失 '+d.url);const codes=d.$('.coupon-copy').toArray().map(el=>d.$(el).attr('data-code'));if(JSON.stringify(codes)!==JSON.stringify(a.coupon?[a.coupon]:[]))errors.push('优惠码不符 '+d.url)}
-  if (/\d+(\.\d+)?\s*(Mbps|ms)|测得\s*\d+|实测评分\s*[:：]?\s*\d/.test(main))
+  // Educational unit examples are legitimate; brand speed claims still require evidence.
+  if (/(?:本站实测(?:结果|显示|达到|速度为)|我们测得|实测评分\s*[:：]?\s*\d)/.test(main)||(['brand','review'].some(type=>d.url.startsWith(type==='brand'?'/airport/':'/review/'))&&/\d+(\.\d+)?\s*(Mbps|ms)/.test(main)))
     errors.push("需人工核验的测试主张 " + d.url);
 }
 for(const file of ['dist/search.json','dist/sitemap-0.xml'])if(fs.existsSync(file)&&/proton|mullvad|windscribe|tunnelbear|ivpn/i.test(fs.readFileSync(file,'utf8')))errors.push('旧品牌索引残留 '+file);

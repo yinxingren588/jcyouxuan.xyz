@@ -5,8 +5,10 @@ import BrandCard from '../components/BrandCard.astro';
 import BrandTable from '../components/BrandTable.astro';
 import {airports} from '../data/airports';
 import {topics,faqs} from '../data/site';
+import {sortBlogs} from '../data/blog';
 const articles=await getCollection('articles',a=>!a.data.draft);
-const blogs=articles.filter(a=>a.data.section==='blog');
+const blogs=sortBlogs(articles);
+const featuredBlogs=['choose-a-service','plan-cost','stability-evidence'].map(slug=>blogs.find(a=>a.data.slug===slug)!).filter(Boolean);
 const glossary=articles.filter(a=>a.data.section==='glossary');
 ---
 <Layout title="机场推荐与 VPN 选择指南：29 品牌套餐与推荐理由" description="按站长指定顺序整理 29 个机场品牌的套餐参考、独立推荐依据、指定优惠码与推广入口，标注资料来源和核查边界。">
@@ -20,6 +22,6 @@ const glossary=articles.filter(a=>a.data.section==='glossary');
 <section class="section"><div class="wrap"><div class="section-head"><div><p class="eyebrow">EDITORIAL ANALYSIS</p><h2>最新资料评析</h2><p>逐家解释费用与容量的取舍，保留来源冲突与购买前核对项。</p></div><a class="text-link" href="/review/">全部资料评析 ↗</a></div><div class="grid three">{airports.slice(0,3).map(a=><a class="article-card" href={`/review/${a.slug}/`}><span class="tag">资料分析 · 非实测</span><h3>{a.name}：适合谁，购买前还要查什么？</h3><p>{a.disadvantages[0]}。查看方案取舍与证据边界。</p><time datetime="2026-10-16">2026.10.16 · 机场优选</time></a>)}</div></div></section>
 <section class="section"><div class="wrap"><div class="section-head"><div><p class="eyebrow">GET CONNECTED</p><h2>从第一次连接，到自己解决问题</h2></div><a class="text-link" href="/guides/">教程中心 ↗</a></div><div class="grid four">{[['windows','Windows'],['android','Android'],['ios','iOS / iPadOS'],['macos','macOS']].map(([slug,name])=><a class="platform" href={`/guides/${slug}/`}><strong>{name}</strong><small>下载 · 授权 · 连接 · 排查 ↗</small></a>)}</div></div></section>
 <section class="section"><div class="wrap"><div class="section-head"><div><p class="eyebrow">THE BASICS</p><h2>先看懂，再选择</h2></div><a class="text-link" href="/glossary/">知识百科 ↗</a></div><div class="grid three">{glossary.slice(0,3).map(a=><a class="article-card" href={`/glossary/${a.data.slug}/`}><span class="tag">基础知识</span><h3>{a.data.title}</h3><p>{a.data.description}</p></a>)}</div></div></section>
-<section class="section"><div class="wrap"><div class="section-head"><div><p class="eyebrow">LATEST STORIES</p><h2>值得花时间读的选择指南</h2></div><a class="text-link" href="/blog/">全部文章 ↗</a></div><div class="grid three">{blogs.slice(0,3).map(a=><a class="article-card" href={`/blog/${a.data.slug}/`}><time datetime="2026-10-16">2026.10.16 / 选择方法</time><h3>{a.data.title}</h3><p>{a.data.description}</p><span class="text-link">继续阅读 →</span></a>)}</div></div></section>
+<section class="section"><div class="wrap"><div class="section-head"><div><p class="eyebrow">LATEST STORIES</p><h2>150 篇文章，把连接问题讲清楚</h2></div><a class="text-link" href="/blog/">浏览 150 篇文章 ↗</a></div><div class="grid three">{featuredBlogs.map(a=><a class="article-card" href={`/blog/${a.data.slug}/`}><time datetime="2026-10-16">2026.10.16 / 选择方法</time><h3>{a.data.title}</h3><p>{a.data.description}</p><span class="text-link">继续阅读 →</span></a>)}</div></div></section>
 <section class="section"><div class="wrap"><div class="section-head"><div><p class="eyebrow">FREQUENTLY ASKED</p><h2>关于机场推荐与 VPN，你可能还想知道</h2></div></div><div class="faq">{faqs.map(f=><details><summary>{f.q}</summary><p>{f.a}</p></details>)}</div></div></section>
 </Layout>

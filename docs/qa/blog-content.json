@@ -1,0 +1,25 @@
+{
+  "status": "PASS",
+  "articles": 150,
+  "categoryCounts": {
+    "choice": 15,
+    "budget": 15,
+    "clients": 20,
+    "routing": 20,
+    "troubleshooting": 20,
+    "measurement": 20,
+    "privacy": 10,
+    "streaming": 10,
+    "ai": 10,
+    "workflow": 10
+  },
+  "bodyCharacters": 161298,
+  "chineseCharacters": 113185,
+  "shortestChinese": 544,
+  "longestChinese": 951,
+  "sources": 137,
+  "duplicateLongParagraphs": 0,
+  "similarPairs": [],
+  "errors": [],
+  "scope": "结构、来源对应、重复段落、五字符片段相似度、构建及搜索收录检查；不能单独证明编辑质量或外部产品当前状态"
+}

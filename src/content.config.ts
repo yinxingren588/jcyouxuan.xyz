@@ -13,6 +13,8 @@ const articles = defineCollection({
     draft: z.boolean().default(false),
     tags: z.array(z.string()),
     sources: z.array(z.url()).min(1),
+    category: z.enum(['choice','budget','clients','routing','troubleshooting','measurement','privacy','streaming','ai','workflow']).optional(),
+    order: z.number().int().optional(),
   }),
 });
 export const collections = { articles };
