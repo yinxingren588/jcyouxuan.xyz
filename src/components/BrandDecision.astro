@@ -1,0 +1,27 @@
+---
+import type {Airport} from '../data/airports';
+import {brandEditorial} from '../data/brand-editorial';
+import {brandEvidence} from '../data/brand-evidence';
+import {couponStatus} from '../data/coupon-status';
+import CouponStatus from './CouponStatus.astro';
+const {airport:a,analysis=false}=Astro.props as {airport:Airport;analysis?:boolean};
+const editorial=brandEditorial[a.slug],evidence=brandEvidence[a.slug],status=couponStatus(a);
+const monthly=a.plans.filter(p=>p.period==='month'&&p.currency==='CNY');
+const prices=monthly.map(p=>p.price),low=Math.min(...prices),high=Math.max(...prices);
+const range=prices.length?(low===high?`¥${low} / 月`:`¥${low}–¥${high} / 月`):'暂未列价';
+const first=monthly[0];
+---
+<section class="dossier-lead decision-summary" id="overview" data-decision-summary={a.slug} aria-labelledby="decision-heading">
+  <div class="dossier-kicker"><span class="tag">{analysis?'购买决策摘要':'品牌选择摘要'} · {String(a.order).padStart(2,'0')}</span><time datetime={evidence.checkedAt}>资料整理 {evidence.checkedAt}</time></div>
+  <h2 id="decision-heading">{editorial.positioning}</h2>
+  <dl class="decision-grid">
+    <div data-decision-field="audience"><dt><span aria-hidden="true">01</span>适合谁</dt><dd>{editorial.audience}</dd></div>
+    <div data-decision-field="reason"><dt><span aria-hidden="true">02</span>选择理由</dt><dd>{a.advantages[0]}</dd></div>
+    <div data-decision-field="budget"><dt><span aria-hidden="true">03</span>参考预算</dt><dd class="decision-budget dossier-facts"><div><strong>{first?`¥${first.price}/月`:'暂未列价'}</strong><span>{first?`已收录首档 · ${first.trafficGB} ${first.trafficUnit??'GB'} / 月`:'当前服务与历史同名资料关联未确认'}</span><span>{first?`已收录月付范围：${range}`:'不引用历史同名服务报价'}</span></div></dd></div>
+    <div class="decision-priority" data-decision-field="question"><dt><span aria-hidden="true">04</span>优先核对</dt><dd>{evidence.purchaseQuestions[0]}</dd></div>
+  </dl>
+  <div class="decision-coupon"><CouponStatus airport={a}/><p>{status.explanation}</p></div>
+  <details class="decision-avoid"><summary>哪些需求需要先排除疑点</summary><p>{editorial.avoid}</p></details>
+  <div class="decision-actions"><a class="button" href={analysis?'#budget':'#plans'}>查看套餐与预算 ↓</a><a class="button secondary" href="#evidence">核对来源与条件 ↓</a><a class="decision-compare" href={`/compare/?brands=${a.slug}`}>加入品牌对比 →</a></div>
+  <p class="decision-boundary">金额与容量为已收录参考，非完整现行价目；当前在售未确认，未计优惠及倍率。本站含商业推广关系。</p>
+</section>

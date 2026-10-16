@@ -1,0 +1,7 @@
+---
+import type {Airport} from '../data/airports';
+import {couponStatus} from '../data/coupon-status';
+const {airport:a}=Astro.props as {airport:Airport};
+const status=couponStatus(a);
+---
+<span class:list={['coupon-status',`coupon-status--${status.kind}`]} data-coupon-status={status.kind}>{status.label}</span>

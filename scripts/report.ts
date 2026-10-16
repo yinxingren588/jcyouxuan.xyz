@@ -6,18 +6,24 @@ const docs=documents();
 const articles=sourceArticles();
 const read=(name:string)=>{const p=`docs/qa/${name}.json`;return fs.existsSync(p)?JSON.parse(fs.readFileSync(p,'utf8')):{status:'NOT TESTED'};};
 const brandBuild=read('brand-build');
-const pipelineName=fs.existsSync('docs/qa/brand-tdk-pipeline.log')?'brand-tdk-pipeline.log':fs.existsSync('docs/qa/brand-optimization-final-pipeline.log')?'brand-optimization-final-pipeline.log':fs.existsSync('docs/qa/brand-optimization-checks.log')?'brand-optimization-checks.log':fs.existsSync('docs/qa/keyword-focus-pipeline.log')?'keyword-focus-pipeline.log':'pipeline.log';
+const pipelineName=fs.existsSync('docs/qa/decision-guide-pipeline.log')?'decision-guide-pipeline.log':fs.existsSync('docs/qa/brand-tdk-pipeline.log')?'brand-tdk-pipeline.log':fs.existsSync('docs/qa/brand-optimization-final-pipeline.log')?'brand-optimization-final-pipeline.log':fs.existsSync('docs/qa/brand-optimization-checks.log')?'brand-optimization-checks.log':fs.existsSync('docs/qa/keyword-focus-pipeline.log')?'keyword-focus-pipeline.log':'pipeline.log';
 const pipeline=fs.readFileSync('docs/qa/'+pipelineName,'utf8');
 const focus=read('keyword-focus');
 const blog=read('blog-content');const lh=read('lighthouse');
 const indexable=docs.filter(d=>!d.$('meta[name="robots"]').attr('content')?.includes('noindex')).length;
-const checks=['seo','links','content','blog-content','blog-browser','browser','redesign-functional','keyword-focus','keyword-focus-browser','brand-evidence','brand-evidence-browser','brand-tdk','brand-tdk-preview','lighthouse'];
+const checks=['seo','links','content','blog-content','blog-browser','browser','redesign-functional','keyword-focus','keyword-focus-browser','brand-evidence','brand-evidence-browser','brand-tdk','brand-tdk-preview','decision-guide','decision-guide-browser','lighthouse'];
 const categories:Record<string,string>={choice:'选购方法',budget:'套餐与预算',clients:'客户端使用',routing:'分流与配置',troubleshooting:'故障排查',measurement:'体验观察',privacy:'隐私与安全',streaming:'流媒体播放',ai:'AI应用',workflow:'办公与开发'};
 const report=`# 29品牌资料复核、机场推荐与150篇博客验收
 
 交付与整理日期：2026-10-16。
 
-## 本次品牌页TDK
+## 本次选择摘要与核心阅读优化
+
+29品牌详情与29购买分析共58页开头增加四项选择摘要，优惠码状态在摘要、证据、复制区及比较表中一致。原11码分为7个当前未验证、3个来源冲突、1个历史条款截止，另18家未提供原码。历史条款截止不认定代码永久失效，仍无当前优惠确认或券后价。
+
+5篇现有核心文章补充原创五步图、判断表与有前提的假设算例，新增3份空白CSV；文章总数保持150。证书错误来源改用包含日期错误细节的Chrome官方说明，HTTP规范与促销业务边界分别说明。选择专项${read('decision-guide').checks??'未记录'}项、本地专项浏览器${read('decision-guide-browser').checks??'未记录'}项通过，详情见decision-guide-report.md。
+
+## 已完成的品牌页TDK
 
 29家品牌的详情与购买分析共58页，每页Title、Description、Keywords包含自己的完整品牌名。详情摘要补齐原先遗漏的品牌名，58页配置独立关键词；H1与分享信息同步，无其他品牌名串用。专项${read('brand-tdk').checks??'未记录'}项检查通过，本地HTTP实际返回的58页逐一核对通过。完整清单见brand-tdk.csv和brand-tdk-report.md。
 

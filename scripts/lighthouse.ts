@@ -12,7 +12,7 @@ const chrome = await chromeLauncher.launch({
 });
 try {
   const results = [];
-  for (const route of ["/", "/compare/", "/guides/windows/", "/blog/", "/blog/budget-monthly-annual/", "/airport/wavenet/", "/airport/flycat/"]) {
+  for (const route of ["/", "/compare/", "/guides/windows/", "/blog/", "/blog/plan-cost/", "/airport/wavenet/", "/airport/flycat/"]) {
     const result = await lighthouse("http://127.0.0.1:4321" + route, {
       port: chrome.port,
       output: "json",
@@ -33,7 +33,7 @@ try {
         .map(([key, a]) => ({ id: key, score: a.score, title: a.title })),
     });
     fs.writeFileSync(
-      `docs/qa/lighthouse-${route === "/" ? "home" : route === '/blog/budget-monthly-annual/' ? 'blog-article' : route.startsWith('/airport/') ? 'brand-'+route.split('/')[2] : route.split("/")[1]}.json`,
+      `docs/qa/lighthouse-${route === "/" ? "home" : route === '/blog/plan-cost/' ? 'blog-article' : route.startsWith('/airport/') ? 'brand-'+route.split('/')[2] : route.split("/")[1]}.json`,
       JSON.stringify(result.lhr, null, 2),
     );
   }

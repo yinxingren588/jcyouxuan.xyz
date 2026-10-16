@@ -66,3 +66,13 @@ Cloudflare Pages 构建命令 `npm run build`，输出目录 `dist`。构建不�
 ## 品牌页独立TDK
 
 29品牌各有详情与购买分析，共58个独立页面。每页Title、Description与Keywords均包含本品牌名，关键词数组只使用本品牌及对应页面意图；H1、分享标题/描述和独立Canonical同步核对。`npm run audit:brand-tdk`已加入完整QA，结果为`docs/qa/brand-tdk.json`，逐页清单为`docs/brand-tdk.csv`。本地HTTP预览核对记录为`docs/qa/brand-tdk-preview.json`。
+
+## 选择摘要、优惠状态与核心阅读
+
+`BrandDecision.astro`在29品牌详情与29购买分析开头汇总适合人群、来源支持的选择理由、已收录参考预算及优先核对项。无价品牌继续不列价，预算范围不冒充完整现行价目。摘要可以直接跳到各自套餐、证据与对比工具。
+
+`src/data/coupon-status.ts`以显式证据状态维护11个原码：7个当前未验证、3个来源冲突、1个历史条款截止；另18家未提供指定码。摘要、证据区、推广复制区、静态表格和互动对比使用一致状态。历史条款截止不代表代码永久失效，没有自动推算折扣。
+
+5篇现有文章深化：选购方法、套餐成本、优惠核对、稳定性观察、证书与时间错误。每篇有原创HTML/CSS五步图、可执行表格和标注边界的假设示例；新增3份空白CSV，复用现有观察模板。文章总数仍150，阅读时间排除图示HTML标签。官方依据及边界见`docs/research/core-reading-enrichment.md`。
+
+`npm run audit:decisions`已加入完整QA；`npm run qa:decisions`核对真实页面、原码复制、状态一致、下载、五种宽度和无脚本阅读。交付报告为`docs/decision-guide-report.md`。

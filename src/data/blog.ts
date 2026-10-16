@@ -20,7 +20,7 @@ export function sortBlogs(articles:Article[]){
  for(let row=0;row<Math.max(0,...groups.map(g=>g.length));row++)for(const group of groups)if(group[row])result.push(group[row]);
  return [...result,...ordered.filter(a=>!a.data.category)];
 }
-export function readingMinutes(body:string|undefined){return Math.max(2,Math.ceil((body?.replace(/https?:\/\/\S+/g,'').length??0)/350));}
+export function readingMinutes(body:string|undefined){return Math.max(2,Math.ceil((body?.replace(/https?:\/\/\S+/g,'').replace(/<[^>]*>/g,'').length??0)/350));}
 export function blogArchivePages(articles:Article[]){const blogs=sortBlogs(articles);return [
   ...Array.from({length:Math.max(0,Math.ceil(blogs.length/blogPageSize)-1)},(_,i)=>({path:`blog/page/${i+2}`,title:`博客资讯 · 第 ${i+2} 页`,description:`浏览博客资讯第 ${i+2} 页，查看选购、套餐、设备、网络排查及应用场景文章；每篇均附参考资料与适用范围。`,type:'blog',key:String(i+2),parent:'blog'})),
   ...blogCategories.map(c=>({path:`blog/category/${c.id}`,title:`${c.name}文章与实用指南`,description:`${c.intro}集中阅读本专题的操作方法、具体示例和核查清单，按问题继续深入。`,type:'blog',key:c.id,parent:'blog'}))

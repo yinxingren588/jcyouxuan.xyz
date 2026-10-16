@@ -2,7 +2,13 @@
 
 交付与整理日期：2026-10-16。
 
-## 本次品牌页TDK
+## 本次选择摘要与核心阅读优化
+
+29品牌详情与29购买分析共58页开头增加四项选择摘要，优惠码状态在摘要、证据、复制区及比较表中一致。原11码分为7个当前未验证、3个来源冲突、1个历史条款截止，另18家未提供原码。历史条款截止不认定代码永久失效，仍无当前优惠确认或券后价。
+
+5篇现有核心文章补充原创五步图、判断表与有前提的假设算例，新增3份空白CSV；文章总数保持150。证书错误来源改用包含日期错误细节的Chrome官方说明，HTTP规范与促销业务边界分别说明。选择专项857项、本地专项浏览器76项通过，详情见decision-guide-report.md。
+
+## 已完成的品牌页TDK
 
 29家品牌的详情与购买分析共58页，每页Title、Description、Keywords包含自己的完整品牌名。详情摘要补齐原先遗漏的品牌名，58页配置独立关键词；H1与分享信息同步，无其他品牌名串用。专项410项检查通过，本地HTTP实际返回的58页逐一核对通过。完整清单见brand-tdk.csv和brand-tdk-report.md。
 
@@ -31,7 +37,7 @@
 
 博客总计 **150篇**：重写并保留原有5篇地址，新增145篇。另有原有教程5篇、百科5篇，不计入博客150篇；品牌资料与购买分析也单独计算。
 
-正文共约113279个汉字（按汉字字符统计，不包括英文、链接等），161483个正文字符。引用138个来源URL；同一文档的不同URL形式不等于独立文献。文章目录和来源见 blog-catalog.csv 与四份 blog-research-*.md。
+正文共约116580个汉字（按汉字字符统计，不包括英文、链接等），168470个正文字符。引用139个来源URL；同一文档的不同URL形式不等于独立文献。文章目录和来源见 blog-catalog.csv 与四份 blog-research-*.md。
 
 | 主题 | 篇数 |
 |---|---:|
@@ -66,7 +72,7 @@
 |---|---|---|
 | Astro模板与类型 | PASS | qa/brand-build.json |
 | 最终静态构建 | PASS | qa/brand-build.json |
-| 原有逻辑与品牌清单 | 11项通过 | qa/brand-tdk-pipeline.log |
+| 原有逻辑与品牌清单 | 11项通过 | qa/decision-guide-pipeline.log |
 | seo | PASS | qa/seo.json |
 | links | PASS | qa/links.json |
 | content | PASS | qa/content.json |
@@ -80,9 +86,11 @@
 | brand-evidence-browser | PASS | qa/brand-evidence-browser.json |
 | brand-tdk | PASS | qa/brand-tdk.json |
 | brand-tdk-preview | PASS | qa/brand-tdk-preview.json |
+| decision-guide | PASS | qa/decision-guide.json |
+| decision-guide-browser | PASS | qa/decision-guide-browser.json |
 | lighthouse | PASS | qa/lighthouse.json |
 
-博客交互53项、全站基础浏览器284项、原有推荐/排行/对比交互49项；SEO检查263页，站内链接15412项。真实结果与适用范围以各JSON记录为准。
+博客交互53项、全站基础浏览器284项、原有推荐/排行/对比交互49项；SEO检查263页，站内链接15767项。真实结果与适用范围以各JSON记录为准。
 
 全站生成263个HTML页面（含404，不重复计平台404.html别名），260个允许索引。主内容均为静态HTML；筛选和计算依赖JavaScript。
 
@@ -90,11 +98,11 @@
 
 | 路由 | 性能 | 无障碍 | 最佳实践 | SEO |
 |---|---:|---:|---:|---:|
-| / | 100 | 100 | 100 | 100 |
+| / | 99 | 100 | 100 | 100 |
 | /compare/ | 100 | 100 | 100 | 100 |
 | /guides/windows/ | 100 | 100 | 100 | 100 |
-| /blog/ | 99 | 100 | 100 | 100 |
-| /blog/budget-monthly-annual/ | 100 | 100 | 100 | 100 |
+| /blog/ | 100 | 100 | 100 | 100 |
+| /blog/plan-cost/ | 100 | 100 | 100 | 100 |
 | /airport/wavenet/ | 100 | 100 | 100 | 100 |
 | /airport/flycat/ | 100 | 100 | 100 | 100 |
 

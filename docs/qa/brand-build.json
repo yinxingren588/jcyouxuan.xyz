@@ -6,13 +6,13 @@
     "npm run build"
   ],
   "astroDiagnostics": {
-    "files": 58,
+    "files": 63,
     "errors": 0,
     "warnings": 0,
     "hints": 0
   },
   "builtPages": 263,
   "indexablePages": 260,
-  "scope": "Brand-specific TDK final local build and diagnostics. Not production deployment or Bing indexing.",
-  "record": "brand-tdk-pipeline.log"
+  "scope": "Final local decision-summary/coupon-state build and diagnostics, with a checked color-contrast refinement. Not production deployment or Bing indexing.",
+  "record": "decision-guide-final.log"
 }

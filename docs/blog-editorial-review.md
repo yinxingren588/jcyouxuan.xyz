@@ -1,5 +1,11 @@
 # 150 篇博客的选题与审校说明
 
+## 最新核心阅读深化
+
+2026-10-16后续深化choose-a-service、plan-cost、budget-coupon-check、stability-evidence、diagnose-tls-clock五篇原文，增加各自五步图、判断/计算表及有前提的假设示例，新增三份空白CSV并复用观察模板。校正Chrome证书日期错误的精确来源，明确HTTP语义不能证明商家优惠规则，Stripe仅为一种系统机制例证。图示不是品牌实测，未伪造操作截图；博客仍150篇。详情与一手依据映射见decision-guide-report.md及research/core-reading-enrichment.md。
+
+## 初次150篇交付记录
+
 整理日期：2026-10-16。本次将原有 5 篇重写并保留地址，新增 145 篇，博客总计 150 篇；另有原有教程 5 篇、百科 5 篇，内容集合合计 160 篇。品牌档案与购买分析另计，不用它们充当这 150 篇博客。
 
 ## 选题分工
