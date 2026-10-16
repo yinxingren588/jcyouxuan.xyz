@@ -2,9 +2,9 @@
   "status": "PASS",
   "repository": "https://github.com/yinxingren588/jcyouxuan.xyz",
   "branch": "main",
-  "commit": "310694aaa99094643699782927d0d19effd3827b",
-  "tree": "98dd4c12f5ba164bc245afc2dd38ece6edea2b57",
+  "commit": "91ff355dd8c20dd56cd3f92588ffd1f7e3b856ba",
+  "tree": "fae89f163c33247bf5b55219289c1bc0e65c4201",
   "verified": "2026-10-16",
-  "method": "Authorized GitHub connector; source tree equality verified through Git fetch",
-  "scope": "150 blog articles (145 new, 5 rewritten), ten topics, static archives, local search and article reading improvements; 53 blog checks, 284 site browser checks, 49 retained feature checks, 263-page SEO and final content/link audits passed. Website source tree matches the local committed snapshot; this proof is recorded in a follow-up documentation commit."
+  "method": "Authorized GitHub connector; source equality verified through Git fetch",
+  "scope": "Homepage targets 机场推荐 across Title, Description, H1, introduction and navigation; differentiated topic intent; 104 contextual homepage return pages. 29 keyword checks, 9 viewport/flow checks, 284 site browser checks and 49 retained feature checks passed. 263-page SEO, 15251 internal-link checks and 150 blog articles verified. GitHub source stage only; no production deployment, Bing account verification or actual IndexNow submission. Proof recorded in a follow-up documentation commit."
 }
