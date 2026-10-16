@@ -33,7 +33,7 @@
 | Production Build | PASS | docs/qa/pipeline.log |
 | 8 项核心逻辑测试 | PASS | 计费倍率、准入、URL 限制、增量与重试 |
 | 依赖安全检查 | PASS | docs/qa/dependencies.json；当前报告 0 漏洞 |
-| GitHub 推送 | NOT TESTED | 等待实际推送确认 |
+| GitHub 推送 | PASS | f7711b921607c69290cead307d1abcbb7812fae2 |
 | Cloudflare Pages 正式部署 | NOT TESTED | 需要运营者登录、授权仓库与配置 DNS |
 | Bing 验证与真实 IndexNow 提交 | NOT TESTED | 正式域名部署后操作 |
 

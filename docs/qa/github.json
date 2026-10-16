@@ -1,0 +1,8 @@
+{
+  "status": "PASS",
+  "repository": "https://github.com/yinxingren588/jcyouxuan.xyz",
+  "branch": "main",
+  "commit": "f7711b921607c69290cead307d1abcbb7812fae2",
+  "method": "Authorized GitHub connector; source tree verified equal through Git fetch",
+  "scope": "Complete source and QA evidence uploaded; actual IndexNow key excluded from public source"
+}
