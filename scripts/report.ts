@@ -3,62 +3,63 @@ import {documents} from './lib';
 import {airports} from '../src/data/airports';
 const docs=documents();
 const read=(name:string)=>{const p=`docs/qa/${name}.json`;return fs.existsSync(p)?JSON.parse(fs.readFileSync(p,'utf8')):{status:'NOT TESTED'}};
-const names=['seo','links','content','browser','lighthouse','theme'];
-const lh=read('lighthouse');
-const pipeline=fs.existsSync('docs/qa/pipeline.log')?fs.readFileSync('docs/qa/pipeline.log','utf8'):'';
+const pipeline=fs.readFileSync('docs/qa/pipeline.log','utf8');
+const names=['seo','links','content','browser','redesign-functional','lighthouse','theme'];
 const indexable=docs.filter(d=>!d.$('meta[name="robots"]').attr('content')?.includes('noindex')).length;
 const tests=pipeline.match(/(?:# |ℹ )pass (\d+)/)?.[1]??'未记录';
-fs.writeFileSync('docs/final-audit.md',`# 品牌替换与网站验收报告
+const lh=read('lighthouse');
+fs.writeFileSync('docs/final-audit.md',`# 三个栏目与全部品牌内容整改验收
 
-资料查询及本期核验日期：2026-10-16。
+交付与核验日期：2026-10-16。
 
-## 实际交付
+## 本次实际改动
 
-- 只收录站长指定的 29 个品牌，保持原顺序、原始推广地址和 11 个指定优惠码。
-- 每家有单独推荐理由、两项不同表述的资料优点、资料局限、购买前核对项、资料页和选择分析页。
-- 旧品牌从页面、路由、搜索索引和 Sitemap 移除；内容检查会拒绝旧品牌残留。
-- ${docs.length} 个 HTML 页面（含 404；平台兼容的 404.html 别名不重复计数），${indexable} 个允许索引。
-- ${airports.length} 个品牌资料页、${airports.length} 个选择分析页；15 篇教程、指南和百科保留并更新。
-- 保留全屏深色动态背景、暂停与恢复控制、会话内偏好及系统减少动态效果支持。
+- 首页和全部品牌卡片的底部入口改为有填色、边框、箭头、键盘焦点和触屏点击区域的「查看品牌详情」按钮；静态表格也使用按钮入口。
+- 29 个品牌各有单独定位、摘要、适合与不适合人群、套餐取舍；结构化详情页和购买决策页共 58 页均已整改。
+- 品牌详情提供原始周期的套餐表、月用量匹配工具、引用资料、特有局限、指定优惠码与相近预算的交叉比较。GiB 不与 GB 默认为相同单位；同名品牌的历史报价不直接套用。
+- 推荐中心有低预算、专线选购、新手、晚高峰、AI、流媒体六个专题，明确候选筛选规则和检查步骤。AI、专线、播放或稳定性名单只作条件核对，不表示已有性能认证。
+- 排行中心区分站长目录、月付预算、容量比较、成本测算与稳定性核查。支持预算与容量筛选、主动切换排序、成本计算和观察记录 CSV 下载。
+- 对比工具支持搜索、预算与优惠码筛选、2–4 家选择、每列套餐切换、只看不同项、清空、跳转结果和复制可恢复的对比链接；差异视图保留引用来源。
+- 两组下拉导航支持桌面鼠标、键盘和触屏；保留深色动态背景、暂停控制与系统减少动态效果偏好。
+- 品牌范围、站长指定顺序、29 个原始推广地址和 11 个优惠码保留。
 
-## 本期验证结果
+## 验收证据
 
-| 项目 | 状态 | 证据 |
+| 项目 | 结果 | 证据 |
 |---|---|---|
 | Astro / TypeScript | ${pipeline.includes('0 errors')?'PASS':'NOT TESTED'} | docs/qa/pipeline.log |
-| 静态构建 | ${pipeline.includes('[build] Complete!')?'PASS':'NOT TESTED'} | docs/qa/pipeline.log |
-| 核心逻辑与品牌清单测试 | ${tests} 项通过 | docs/qa/pipeline.log |
-| GitHub 源码同步 | ${read('github').status} | docs/qa/github.json，品牌更新提交 ${read('github').commit} |
+| 静态构建 | ${pipeline.includes('[build] Complete!')?'PASS':'NOT TESTED'} | docs/qa/pipeline.log、docs/qa/redesign-build.log |
+| 逻辑与品牌清单 | ${tests} 项通过 | docs/qa/pipeline.log |
 ${names.map(name=>`| ${name} | ${read(name).status} | docs/qa/${name}.json |`).join('\n')}
 
-浏览器检查覆盖新增品牌搜索、29 张品牌卡、11 个复制按钮、实际优惠码复制、准确推广链接、2–4 家比较、移动菜单、FAQ、全部页面移动端溢出和无 JavaScript 正文。
+新增交互检查 ${read('redesign-functional').count??'未记录'} 项；全站基础浏览器检查 ${read('browser').checks??'未记录'} 项。站内链接 ${read('links').checks??'未记录'} 项，SEO ${read('seo').checks??'未记录'} 页。真实结果以各 JSON 为准。
 
-## 资料真实性与商业关系边界
+新增功能脚本为 scripts/features-qa.mjs，通过 npm run qa:features 可在本地预览运行时复查。所有可视页面仍在无 JavaScript 时输出主要正文；互动筛选和计算需要 JavaScript。
 
-- 29 个原始入口可访问，未登录页面的标题或公开品牌配置与名称对应。入口 HTTP 200 不能证明服务可用或性能。
-- 价格为第三方公开资料参考，未注册、登录、付款或核验到账，不是实时结账报价。来源与冲突逐家披露，详见 brand-research.md。
-- 极连云历史 hyperlink 资料与当前入口的关联未确认，未展示旧报价。
-- 优惠码由站长提供，折扣、有效期、新老用户和适用周期尚未核实。未采纳网上其他优惠码或推测折扣。
-- 29 个品牌及顺序由站长指定，存在直接商业推广关系；所有推广链接均有 sponsored / nofollow / noopener / noreferrer 属性和可见披露。
-- 推荐依据为套餐形态分析，无本站速度、稳定性、AI 或流媒体实测；未采用第三方测速冒充本站测试。
-- 稳定性及实际每 GB 成本页面因缺少合格数据设为 noindex，排除 Sitemap。站长推荐顺序可以索引，明确它不是性能排名。
+## 实际规模
 
-## 本地 Lighthouse 记录
+${docs.length} 个 HTML 页面（含 404，平台兼容的 404.html 别名不重复计数），${indexable} 个允许索引；${airports.length} 个品牌详情与 ${airports.length} 个购买决策页，保留 15 篇教程、选择指南与百科。
+
+## 本期 Lighthouse
 
 | 路由 | 性能 | 无障碍 | 最佳实践 | SEO |
 |---|---:|---:|---:|---:|
 ${(lh.results??[]).map((r:any)=>`| ${r.route} | ${r.scores.performance} | ${r.scores.accessibility} | ${r.scores['best-practices']} | ${r.scores.seo} |`).join('\n')}
 
-本地 Chrome 移动模拟。首页与比较页为本轮单次结果；Windows 教程在一次 TBT 波动后使用两个独立浏览器会话复查，三次性能分数为 88、100、100，表内取中位数，全部样本见 docs/qa/lighthouse-guide-repeats.json。原始单次报告保留，不代表生产环境或真实用户 Web Vitals。
+本地 Chrome 移动端模拟，代表路由的测量结果存在环境波动，不代表生产环境或真实用户 Web Vitals。完整原始记录位于 docs/qa/lighthouse-*.json。
 
-## 浪网价格档位展示修正（2026-10-16）
+## 事实与商业关系边界
 
-原页面选取 120 元 / 800GB 高档作为首个参考档，容易误认为入门价。本次补入 30 元 / 150GB 入门档和 70 元 / 400GB 进阶档，默认展示入门档，详情保留 120 元 / 800GB、200 元 / 2000GB。卡片、表格和比较工具显示档位名称。价格仍为第三方参考，70 元档的 400GB / 450GB 来源冲突保留说明。
+- 价格与容量是有引用的第三方参考，未注册、登录、付款或验证到账；不能当作当前结算报价。
+- 29 个品牌与顺序由站长指定，存在直接商业关系。推广链接使用 sponsored / nofollow / noopener / noreferrer，可见位置保留披露。
+- 优惠码不代表已验证折扣或有效期；不补造优惠比例，也不加入其他品牌或其他来源的码。
+- 极连云当前入口与早期 hyperlink 同名资料的关联未确认，暂不列旧价。
+- 浪网保留已更正的 30 元 / 150GB 入门参考档；120 元对应 800GB 高档，70 元档的 400GB / 450GB 来源冲突已说明。
+- 没有本站网络、AI、流媒体或稳定性实测。预算与容量比较不等于质量评分；成本计算使用用户输入的数据，不自动把未知倍率设成 1。
+- 旧品牌在正文、搜索和 Sitemap 的残留校验保留；当前品牌内容完整性、适合人群、局限与决策字段进入内容验证。
 
-本次构建、11 项逻辑测试、99 页 SEO、4,278 项链接检查及 8 项针对性浏览器检查通过，见 docs/qa/wavenet-correction.log 与 docs/qa/wavenet-correction.json。此次未重复 Lighthouse 测量，上表保留前一版本的测量记录。
+## 外部状态
 
-## 尚未完成的外部事项
-
-正式域名 DNS / HTTPS、Cloudflare Pages 正式部署、Bing 账户验证、真实 IndexNow 提交和搜索收录均未在本期完成。源码具备静态部署结构，不宣称已经正式上线。
+源码同步证据见 docs/qa/github.json。Cloudflare 正式部署、DNS / HTTPS、Bing 验证、真实 IndexNow 提交与搜索收录尚未在本次完成，不声称已经正式上线。
 `);
 console.log('docs/final-audit.md written');

@@ -7,37 +7,37 @@ export const site = {
 export const topics = [
   {
     slug: "budget",
-    name: "低预算",
+    name: "平价低预算",
     icon: "¥",
     description: "先看总支出，再比较流量与续费条件。",
   },
   {
     slug: "premium",
-    name: "高端专线",
+    name: "高端专线选购",
     icon: "↗",
     description: "理解线路承诺，核对可追溯的证据。",
   },
   {
     slug: "beginner",
-    name: "新手入门",
+    name: "新手入门选型",
     icon: "⌘",
     description: "从客户端、套餐和小额试用开始。",
   },
   {
     slug: "stable",
-    name: "稳定优先",
+    name: "晚高峰稳定性",
     icon: "≈",
     description: "用多时段记录判断，而非一次测速。",
   },
   {
     slug: "ai",
-    name: "AI 服务",
+    name: "ChatGPT / AI",
     icon: "✳",
     description: "分开检查地区、账户与服务条款。",
   },
   {
     slug: "streaming",
-    name: "流媒体",
+    name: "流媒体 / 4K",
     icon: "▷",
     description: "关注具体片库、画质与实际播放。",
   },

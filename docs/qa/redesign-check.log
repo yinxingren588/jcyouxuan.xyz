@@ -1,0 +1,17 @@
+
+> jcyouxuan@1.0.0 check
+> astro check
+
+15:57:30 [content] Syncing content
+15:57:31 [content] Synced content
+15:57:31 [types] Generated 3.91s
+15:57:31 [check] Getting diagnostics for Astro files in C:\Users\user\Documents\Codex\2026-10-16\files-pasted-by-the-user-antigravity\outputs\jcyouxuan...
+[96msrc/components/RankTable.astro[0m:[93m10[0m:[93m22[0m - [93mwarning[0m[90m ts(6196): [0m'Plan' is declared but never used.
+
+[7m10[0m import type {Airport,Plan} from '../data/airports';
+[7m  [0m [93m                     ~~~~[0m
+
+Result (43 files):
+- 0 errors
+- 0 warnings
+- 1 hint

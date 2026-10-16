@@ -5,7 +5,7 @@
     {
       "route": "/",
       "scores": {
-        "performance": 99,
+        "performance": 91,
         "accessibility": 100,
         "best-practices": 100,
         "seo": 100
@@ -13,18 +13,43 @@
       "failures": [
         {
           "id": "first-contentful-paint",
-          "score": 0.96,
+          "score": 0.92,
           "title": "First Contentful Paint"
         },
         {
+          "id": "largest-contentful-paint",
+          "score": 0.99,
+          "title": "Largest Contentful Paint"
+        },
+        {
           "id": "speed-index",
-          "score": 0.96,
+          "score": 0.99,
           "title": "Speed Index"
         },
         {
+          "id": "total-blocking-time",
+          "score": 0.74,
+          "title": "Total Blocking Time"
+        },
+        {
+          "id": "max-potential-fid",
+          "score": 0.15,
+          "title": "Max Potential First Input Delay"
+        },
+        {
+          "id": "interactive",
+          "score": 0.99,
+          "title": "Time to Interactive"
+        },
+        {
           "id": "mainthread-work-breakdown",
-          "score": 0.5,
+          "score": 0,
           "title": "Minimize main-thread work"
+        },
+        {
+          "id": "label-content-name-mismatch",
+          "score": 0,
+          "title": "Elements with visible text labels do not have matching accessible names."
         },
         {
           "id": "network-dependency-tree-insight",
@@ -49,18 +74,18 @@
       "failures": [
         {
           "id": "first-contentful-paint",
-          "score": 0.99,
+          "score": 0.97,
           "title": "First Contentful Paint"
         },
         {
           "id": "speed-index",
-          "score": 0.99,
+          "score": 0.98,
           "title": "Speed Index"
         },
         {
-          "id": "forced-reflow-insight",
-          "score": 0,
-          "title": "Forced reflow"
+          "id": "mainthread-work-breakdown",
+          "score": 0.5,
+          "title": "Minimize main-thread work"
         },
         {
           "id": "network-dependency-tree-insight",
@@ -85,13 +110,23 @@
       "failures": [
         {
           "id": "first-contentful-paint",
-          "score": 0.99,
+          "score": 0.98,
           "title": "First Contentful Paint"
         },
         {
-          "id": "forced-reflow-insight",
+          "id": "speed-index",
+          "score": 0.98,
+          "title": "Speed Index"
+        },
+        {
+          "id": "max-potential-fid",
+          "score": 0.02,
+          "title": "Max Potential First Input Delay"
+        },
+        {
+          "id": "mainthread-work-breakdown",
           "score": 0,
-          "title": "Forced reflow"
+          "title": "Minimize main-thread work"
         },
         {
           "id": "network-dependency-tree-insight",
@@ -103,8 +138,7 @@
           "score": 0.5,
           "title": "Render-blocking requests"
         }
-      ],
-      "measurement": "三次性能分数中位数；完整分数及波动见 lighthouse-guide-repeats.json"
+      ]
     }
   ]
 }

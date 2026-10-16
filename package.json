@@ -19,7 +19,8 @@
     "indexnow": "tsx scripts/indexnow.ts",
     "report": "tsx scripts/report.ts",
     "qa:browser": "tsx scripts/browser-qa.ts",
-    "qa:lighthouse": "tsx scripts/lighthouse.ts"
+    "qa:lighthouse": "tsx scripts/lighthouse.ts",
+    "qa:features": "node scripts/features-qa.mjs"
   },
   "dependencies": {
     "@astrojs/sitemap": "3.7.4",

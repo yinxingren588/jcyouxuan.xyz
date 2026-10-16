@@ -6,11 +6,11 @@
 > jcyouxuan@1.0.0 check
 > astro check
 
-14:58:18 [content] Syncing content
-14:58:18 [content] Synced content
-14:58:18 [types] Generated 2.14s
-14:58:18 [check] Getting diagnostics for Astro files in C:\Users\user\Documents\Codex\2026-10-16\files-pasted-by-the-user-antigravity\outputs\jcyouxuan...
-Result (33 files):
+16:06:38 [content] Syncing content
+16:06:38 [content] Synced content
+16:06:38 [types] Generated 965ms
+16:06:38 [check] Getting diagnostics for Astro files in C:\Users\user\Documents\Codex\2026-10-16\files-pasted-by-the-user-antigravity\outputs\jcyouxuan...
+Result (43 files):
 - 0 errors
 - 0 warnings
 - 0 hints
@@ -19,142 +19,142 @@ Result (33 files):
 > jcyouxuan@1.0.0 build
 > astro build && tsx scripts/build-manifest.ts
 
-14:58:49 [content] Syncing content
-14:58:49 [content] Synced content
-14:58:49 [types] Generated 1.89s
-14:58:49 [build] output: "static"
-14:58:49 [build] mode: "static"
-14:58:49 [build] directory: C:\Users\user\Documents\Codex\2026-10-16\files-pasted-by-the-user-antigravity\outputs\jcyouxuan\dist\
-14:58:49 [build] Collecting build info...
-14:58:49 [build] ✓ Completed in 2.01s.
-14:58:49 [build] Building static entrypoints...
-14:58:52 [vite] ✓ built in 2.15s
-14:58:52 [vite] ✓ built in 74ms
-14:58:52 [build] Rearranging server assets...
+16:06:54 [content] Syncing content
+16:06:54 [content] Synced content
+16:06:54 [types] Generated 962ms
+16:06:54 [build] output: "static"
+16:06:54 [build] mode: "static"
+16:06:54 [build] directory: C:\Users\user\Documents\Codex\2026-10-16\files-pasted-by-the-user-antigravity\outputs\jcyouxuan\dist\
+16:06:54 [build] Collecting build info...
+16:06:54 [build] ✓ Completed in 1.05s.
+16:06:54 [build] Building static entrypoints...
+16:06:54 [vite] ✓ built in 586ms
+16:06:55 [vite] ✓ built in 55ms
+16:06:55 [build] Rearranging server assets...
 
  generating static routes
-14:58:52   ├─ /search.json (+36ms)
-14:58:52   ├─ /index.html (+22ms)
-14:58:52   ├─ /recommend/index.html (+12ms)
-14:58:52   ├─ /recommend/budget/index.html (+4ms)
-14:58:52   ├─ /recommend/premium/index.html (+5ms)
-14:58:52   ├─ /recommend/beginner/index.html (+3ms)
-14:58:52   ├─ /recommend/stable/index.html (+6ms)
-14:58:52   ├─ /recommend/ai/index.html (+4ms)
-14:58:52   ├─ /recommend/streaming/index.html (+15ms)
-14:58:52   ├─ /ranking/index.html (+26ms)
-14:58:52   ├─ /ranking/overall/index.html (+6ms)
-14:58:52   ├─ /ranking/value/index.html (+12ms)
-14:58:52   ├─ /ranking/budget/index.html (+7ms)
-14:58:52   ├─ /ranking/stable/index.html (+7ms)
-14:58:52   ├─ /ranking/traffic/index.html (+10ms)
-14:58:52   ├─ /airport/index.html (+8ms)
-14:58:52   ├─ /review/index.html (+12ms)
-14:58:52   ├─ /airport/twilight/index.html (+11ms)
-14:58:52   ├─ /review/twilight/index.html (+4ms)
-14:58:52   ├─ /airport/invisible/index.html (+4ms)
-14:58:52   ├─ /review/invisible/index.html (+7ms)
-14:58:52   ├─ /airport/lingdong/index.html (+4ms)
-14:58:52   ├─ /review/lingdong/index.html (+16ms)
-14:58:52   ├─ /airport/laddercloud/index.html (+5ms)
-14:58:52   ├─ /review/laddercloud/index.html (+11ms)
-14:58:52   ├─ /airport/flyv/index.html (+4ms)
-14:58:52   ├─ /review/flyv/index.html (+12ms)
-14:58:52   ├─ /airport/wavenet/index.html (+3ms)
-14:58:52   ├─ /review/wavenet/index.html (+4ms)
-14:58:52   ├─ /airport/flycat/index.html (+10ms)
-14:58:52   ├─ /review/flycat/index.html (+70ms)
-14:58:52   ├─ /airport/dalaocloud/index.html (+3ms)
-14:58:53   ├─ /review/dalaocloud/index.html (+318ms)
-14:58:53   ├─ /airport/breezenet/index.html (+11ms)
-14:58:53   ├─ /review/breezenet/index.html (+3ms)
-14:58:53   ├─ /airport/stardream/index.html (+4ms)
-14:58:53   ├─ /review/stardream/index.html (+7ms)
-14:58:53   ├─ /airport/lightspeed/index.html (+3ms)
-14:58:53   ├─ /review/lightspeed/index.html (+255ms)
-14:58:53   ├─ /airport/v2yun/index.html (+18ms)
-14:58:53   ├─ /review/v2yun/index.html (+42ms)
-14:58:53   ├─ /airport/u1s1/index.html (+21ms)
-14:58:53   ├─ /review/u1s1/index.html (+3ms)
-14:58:53   ├─ /airport/jilian/index.html (+43ms)
-14:58:53   ├─ /review/jilian/index.html (+5ms)
-14:58:53   ├─ /airport/globalcloud/index.html (+3ms)
-14:58:53   ├─ /review/globalcloud/index.html (+10ms)
-14:58:53   ├─ /airport/lightyear/index.html (+3ms)
-14:58:53   ├─ /review/lightyear/index.html (+2ms)
-14:58:53   ├─ /airport/sogoyun/index.html (+2ms)
-14:58:53   ├─ /review/sogoyun/index.html (+6ms)
-14:58:53   ├─ /airport/yuzhou/index.html (+40ms)
-14:58:53   ├─ /review/yuzhou/index.html (+3ms)
-14:58:53   ├─ /airport/2mao/index.html (+4ms)
-14:58:53   ├─ /review/2mao/index.html (+2ms)
-14:58:53   ├─ /airport/1fly/index.html (+4ms)
-14:58:53   ├─ /review/1fly/index.html (+3ms)
-14:58:53   ├─ /airport/edgenova/index.html (+2ms)
-14:58:53   ├─ /review/edgenova/index.html (+7ms)
-14:58:53   ├─ /airport/kosing/index.html (+4ms)
-14:58:53   ├─ /review/kosing/index.html (+2ms)
-14:58:53   ├─ /airport/sujie/index.html (+3ms)
-14:58:53   ├─ /review/sujie/index.html (+2ms)
-14:58:53   ├─ /airport/kuaili/index.html (+12ms)
-14:58:53   ├─ /review/kuaili/index.html (+4ms)
-14:58:53   ├─ /airport/firefly/index.html (+6ms)
-14:58:53   ├─ /review/firefly/index.html (+6ms)
-14:58:53   ├─ /airport/civet/index.html (+5ms)
-14:58:53   ├─ /review/civet/index.html (+10ms)
-14:58:53   ├─ /airport/flashleap/index.html (+5ms)
-14:58:53   ├─ /review/flashleap/index.html (+9ms)
-14:58:53   ├─ /airport/worryfree/index.html (+3ms)
-14:58:53   ├─ /review/worryfree/index.html (+4ms)
-14:58:53   ├─ /airport/kuajie/index.html (+3ms)
-14:58:53   ├─ /review/kuajie/index.html (+6ms)
-14:58:53   ├─ /compare/index.html (+6ms)
-14:58:53   ├─ /guides/index.html (+4ms)
-14:58:53   ├─ /blog/index.html (+11ms)
-14:58:53   ├─ /glossary/index.html (+2ms)
-14:58:53   ├─ /about/index.html (+11ms)
-14:58:53   ├─ /contact/index.html (+2ms)
-14:58:53   ├─ /editorial-policy/index.html (+6ms)
-14:58:53   ├─ /privacy-policy/index.html (+5ms)
-14:58:53   ├─ /disclaimer/index.html (+5ms)
-14:58:53   ├─ /404/index.html (+5ms)
-14:58:53   ├─ /blog/ai-access/index.html (+9ms)
-14:58:53   ├─ /guides/android/index.html (+6ms)
-14:58:54   ├─ /blog/choose-a-service/index.html (+2ms)
-14:58:54   ├─ /glossary/dns/index.html (+7ms)
-14:58:54   ├─ /guides/ios/index.html (+4ms)
-14:58:54   ├─ /glossary/latency-bandwidth/index.html (+2ms)
-14:58:54   ├─ /guides/macos/index.html (+3ms)
-14:58:54   ├─ /blog/plan-cost/index.html (+6ms)
-14:58:54   ├─ /blog/stability-evidence/index.html (+4ms)
-14:58:54   ├─ /blog/streaming-checklist/index.html (+4ms)
-14:58:54   ├─ /glossary/traffic-multiplier/index.html (+11ms)
-14:58:54   ├─ /guides/troubleshooting/index.html (+4ms)
-14:58:54   ├─ /glossary/vpn-vs-proxy/index.html (+3ms)
-14:58:54   ├─ /guides/windows/index.html (+8ms)
-14:58:54   ├─ /glossary/wireguard/index.html (+2ms)
-14:58:54 ✓ Completed in 1.58s.
+16:06:55   ├─ /search.json (+17ms)
+16:06:55   ├─ /index.html (+14ms)
+16:06:55   ├─ /recommend/index.html (+5ms)
+16:06:55   ├─ /recommend/budget/index.html (+5ms)
+16:06:55   ├─ /recommend/premium/index.html (+6ms)
+16:06:55   ├─ /recommend/beginner/index.html (+4ms)
+16:06:55   ├─ /recommend/stable/index.html (+3ms)
+16:06:55   ├─ /recommend/ai/index.html (+5ms)
+16:06:55   ├─ /recommend/streaming/index.html (+3ms)
+16:06:55   ├─ /ranking/index.html (+3ms)
+16:06:55   ├─ /ranking/overall/index.html (+10ms)
+16:06:55   ├─ /ranking/value/index.html (+3ms)
+16:06:55   ├─ /ranking/budget/index.html (+5ms)
+16:06:55   ├─ /ranking/stable/index.html (+4ms)
+16:06:55   ├─ /ranking/traffic/index.html (+6ms)
+16:06:55   ├─ /airport/index.html (+6ms)
+16:06:55   ├─ /review/index.html (+4ms)
+16:06:55   ├─ /airport/twilight/index.html (+5ms)
+16:06:55   ├─ /review/twilight/index.html (+4ms)
+16:06:55   ├─ /airport/invisible/index.html (+3ms)
+16:06:55   ├─ /review/invisible/index.html (+3ms)
+16:06:55   ├─ /airport/lingdong/index.html (+6ms)
+16:06:55   ├─ /review/lingdong/index.html (+3ms)
+16:06:55   ├─ /airport/laddercloud/index.html (+3ms)
+16:06:55   ├─ /review/laddercloud/index.html (+3ms)
+16:06:55   ├─ /airport/flyv/index.html (+9ms)
+16:06:55   ├─ /review/flyv/index.html (+3ms)
+16:06:55   ├─ /airport/wavenet/index.html (+3ms)
+16:06:55   ├─ /review/wavenet/index.html (+2ms)
+16:06:55   ├─ /airport/flycat/index.html (+7ms)
+16:06:55   ├─ /review/flycat/index.html (+2ms)
+16:06:55   ├─ /airport/dalaocloud/index.html (+3ms)
+16:06:55   ├─ /review/dalaocloud/index.html (+3ms)
+16:06:55   ├─ /airport/breezenet/index.html (+3ms)
+16:06:55   ├─ /review/breezenet/index.html (+4ms)
+16:06:55   ├─ /airport/stardream/index.html (+3ms)
+16:06:55   ├─ /review/stardream/index.html (+3ms)
+16:06:55   ├─ /airport/lightspeed/index.html (+3ms)
+16:06:55   ├─ /review/lightspeed/index.html (+3ms)
+16:06:55   ├─ /airport/v2yun/index.html (+3ms)
+16:06:55   ├─ /review/v2yun/index.html (+3ms)
+16:06:55   ├─ /airport/u1s1/index.html (+3ms)
+16:06:55   ├─ /review/u1s1/index.html (+2ms)
+16:06:55   ├─ /airport/jilian/index.html (+2ms)
+16:06:55   ├─ /review/jilian/index.html (+3ms)
+16:06:55   ├─ /airport/globalcloud/index.html (+4ms)
+16:06:55   ├─ /review/globalcloud/index.html (+3ms)
+16:06:55   ├─ /airport/lightyear/index.html (+3ms)
+16:06:55   ├─ /review/lightyear/index.html (+3ms)
+16:06:55   ├─ /airport/sogoyun/index.html (+4ms)
+16:06:55   ├─ /review/sogoyun/index.html (+4ms)
+16:06:55   ├─ /airport/yuzhou/index.html (+3ms)
+16:06:55   ├─ /review/yuzhou/index.html (+3ms)
+16:06:55   ├─ /airport/2mao/index.html (+3ms)
+16:06:55   ├─ /review/2mao/index.html (+4ms)
+16:06:55   ├─ /airport/1fly/index.html (+4ms)
+16:06:55   ├─ /review/1fly/index.html (+3ms)
+16:06:55   ├─ /airport/edgenova/index.html (+2ms)
+16:06:55   ├─ /review/edgenova/index.html (+2ms)
+16:06:55   ├─ /airport/kosing/index.html (+3ms)
+16:06:55   ├─ /review/kosing/index.html (+3ms)
+16:06:55   ├─ /airport/sujie/index.html (+3ms)
+16:06:55   ├─ /review/sujie/index.html (+2ms)
+16:06:55   ├─ /airport/kuaili/index.html (+3ms)
+16:06:55   ├─ /review/kuaili/index.html (+2ms)
+16:06:55   ├─ /airport/firefly/index.html (+3ms)
+16:06:55   ├─ /review/firefly/index.html (+5ms)
+16:06:55   ├─ /airport/civet/index.html (+2ms)
+16:06:55   ├─ /review/civet/index.html (+2ms)
+16:06:55   ├─ /airport/flashleap/index.html (+2ms)
+16:06:55   ├─ /review/flashleap/index.html (+3ms)
+16:06:55   ├─ /airport/worryfree/index.html (+5ms)
+16:06:55   ├─ /review/worryfree/index.html (+3ms)
+16:06:55   ├─ /airport/kuajie/index.html (+3ms)
+16:06:55   ├─ /review/kuajie/index.html (+2ms)
+16:06:55   ├─ /compare/index.html (+5ms)
+16:06:55   ├─ /guides/index.html (+4ms)
+16:06:55   ├─ /blog/index.html (+2ms)
+16:06:55   ├─ /glossary/index.html (+2ms)
+16:06:55   ├─ /about/index.html (+2ms)
+16:06:55   ├─ /contact/index.html (+2ms)
+16:06:55   ├─ /editorial-policy/index.html (+3ms)
+16:06:55   ├─ /privacy-policy/index.html (+4ms)
+16:06:55   ├─ /disclaimer/index.html (+2ms)
+16:06:55   ├─ /404/index.html (+2ms)
+16:06:55   ├─ /blog/ai-access/index.html (+3ms)
+16:06:55   ├─ /guides/android/index.html (+4ms)
+16:06:55   ├─ /blog/choose-a-service/index.html (+5ms)
+16:06:55   ├─ /glossary/dns/index.html (+3ms)
+16:06:55   ├─ /guides/ios/index.html (+3ms)
+16:06:55   ├─ /glossary/latency-bandwidth/index.html (+2ms)
+16:06:55   ├─ /guides/macos/index.html (+3ms)
+16:06:55   ├─ /blog/plan-cost/index.html (+5ms)
+16:06:55   ├─ /blog/stability-evidence/index.html (+3ms)
+16:06:55   ├─ /blog/streaming-checklist/index.html (+3ms)
+16:06:55   ├─ /glossary/traffic-multiplier/index.html (+2ms)
+16:06:55   ├─ /guides/troubleshooting/index.html (+3ms)
+16:06:55   ├─ /glossary/vpn-vs-proxy/index.html (+4ms)
+16:06:55   ├─ /guides/windows/index.html (+3ms)
+16:06:55   ├─ /glossary/wireguard/index.html (+2ms)
+16:06:55 ✓ Completed in 448ms.
 
-14:58:54 [build] ✓ Completed in 4.24s.
-14:58:54 [@astrojs/sitemap] `sitemap-index.xml` created at `dist`
-14:58:54 [build] 99 page(s) built in 6.36s
-14:58:54 [build] Complete!
+16:06:55 [build] ✓ Completed in 1.21s.
+16:06:55 [@astrojs/sitemap] `sitemap-index.xml` created at `dist`
+16:06:55 [build] 99 page(s) built in 2.34s
+16:06:55 [build] Complete!
 Manifest: 96 indexable pages; Cloudflare 404.html created.
 
 > jcyouxuan@1.0.0 test
 > tsx --test scripts/ranking.test.ts scripts/indexnow.test.ts
 
-✔ 拒绝异站、查询参数和不安全 URL (2.2822ms)
-✔ 增量包含新增、修改、删除，不重提未改变页面 (1.1604ms)
-✔ 429 与 5xx 重试，202 是接受通知而非收录 (0.3862ms)
-✔ 永久错误不重试，网络错误最多三次 (0.4975ms)
-✔ 流量倍率按实际可用流量折算 (7.1275ms)
-✔ 不使用未核验或无限流量生成成本 (0.2779ms)
-✔ 年付、一次性与免费不混入付费月度性价比榜 (0.3127ms)
-✔ 当前目录没有免费档，不能沿用旧免费榜 (0.2667ms)
-✔ 未核实倍率不能推算实际流量成本 (0.2083ms)
-✔ 29 品牌名称、顺序、原始推广地址和 11 个优惠码准确对应 (1.4181ms)
-✔ 推荐理由、优点、核对项逐家不同且不冒充已实测 (0.5079ms)
+✔ 拒绝异站、查询参数和不安全 URL (1.7676ms)
+✔ 增量包含新增、修改、删除，不重提未改变页面 (6.7837ms)
+✔ 429 与 5xx 重试，202 是接受通知而非收录 (0.8455ms)
+✔ 永久错误不重试，网络错误最多三次 (2.0344ms)
+✔ 流量倍率按实际可用流量折算 (1.5033ms)
+✔ 不使用未核验或无限流量生成成本 (0.2703ms)
+✔ 年付、一次性与免费不混入付费月度性价比榜 (0.2156ms)
+✔ 当前目录没有免费档，不能沿用旧免费榜 (0.2308ms)
+✔ 未核实倍率不能推算实际流量成本 (0.1732ms)
+✔ 29 品牌名称、顺序、原始推广地址和 11 个优惠码准确对应 (1.1483ms)
+✔ 推荐理由、优点、核对项逐家不同且不冒充已实测 (0.3852ms)
 ℹ tests 11
 ℹ suites 0
 ℹ pass 11
@@ -162,7 +162,7 @@ Manifest: 96 indexable pages; Cloudflare 404.html created.
 ℹ cancelled 0
 ℹ skipped 0
 ℹ todo 0
-ℹ duration_ms 686.4498
+ℹ duration_ms 373.298
 
 > jcyouxuan@1.0.0 audit:seo
 > tsx scripts/audit-seo.ts
@@ -172,7 +172,7 @@ seo {"status":"PASS","checks":99,"errors":[]}
 > jcyouxuan@1.0.0 check:links
 > tsx scripts/check-links.ts
 
-links {"status":"PASS","checks":4278,"errors":[]}
+links {"status":"PASS","checks":5510,"errors":[]}
 
 > jcyouxuan@1.0.0 validate:content
 > tsx scripts/validate-content.ts

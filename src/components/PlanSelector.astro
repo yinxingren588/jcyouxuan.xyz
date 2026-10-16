@@ -1,0 +1,8 @@
+---
+import type {Airport} from '../data/airports';
+const {airport:a}=Astro.props as {airport:Airport};const plans=a.plans;
+---
+{plans.length>0&&<section class="plan-assistant" data-plan-assistant data-plans={JSON.stringify(plans)}><div><span class="eyebrow">FIND YOUR PLAN</span><h3>按你的月用量，查找可核对的档位</h3><p>仅在本页已收录的参考方案中筛选，未计倍率及优惠，不代表当前可以购买。</p></div><form><label>预计每月用量（{plans[0].trafficUnit??'GB'}）<input type="number" name="usage" min="1" max="100000" step="1" placeholder="例如 150" required/></label><button class="button" type="submit">查看匹配档位 →</button></form><p class="plan-result" aria-live="polite">输入自己预计的月用量，比较容量够用的参考月付档。</p></section>}
+<script>
+document.querySelectorAll<HTMLElement>('[data-plan-assistant]').forEach(root=>{const plans=JSON.parse(root.dataset.plans!) as {name:string;price:number;period:string;trafficGB?:number;trafficUnit?:string}[];root.querySelector('form')!.addEventListener('submit',event=>{event.preventDefault();const input=root.querySelector<HTMLInputElement>('input')!;const amount=input.valueAsNumber;const out=root.querySelector<HTMLElement>('.plan-result')!;if(!Number.isFinite(amount)||amount<=0){out.textContent='请填写大于 0 的月用量。';return}const matches=plans.filter(p=>p.period==='month'&&p.trafficGB!==undefined&&p.trafficGB>=amount).sort((p,q)=>p.price-q.price);const p=matches[0];out.textContent=p?`按标称容量筛选，可优先核对「${p.name}」：参考 ¥${p.price}/月，${p.trafficGB} ${p.trafficUnit??'GB'}/月。节点倍率、实际额度与当前价格仍需确认。`:'已收录的参考方案没有覆盖这个用量。请向当前面板核对更高档位、重置包或流量使用规则，不据此认定没有其他套餐。';});});
+</script>

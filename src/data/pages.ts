@@ -1,5 +1,7 @@
 import { topics } from "./site";
 import { airports } from "./airports";
+import {brandEditorial} from "./brand-editorial";
+import {scenarios} from "./selection";
 export interface Page {
   path: string;
   title: string;
@@ -12,26 +14,25 @@ export interface Page {
 export const pages: Page[] = [
   {
     path: "recommend",
-    title: "从你的需求开始选择",
+    title: "机场推荐：按预算与使用场景选择",
     description:
-      "按预算、设备和用途建立候选清单，分清订阅代理机场与商业 VPN，先查证据再试用。",
+      "六个使用专题，结合已收录月付参考档筛选候选，说明预算、容量、设备和任务条件，保留品牌来源与资料局限。",
     type: "recommend",
   },
   ...topics.map((t) => ({
     path: `recommend/${t.slug}`,
-    title: `${t.name}：连接服务选择专题`,
+    title: `${scenarios[t.slug].title}：机场选择指南`,
     description:
-      t.description +
-      " 公开资料、核验问题和相关教程集中整理，不以营销承诺代替实际表现。",
+      scenarios[t.slug].subtitle + " 按明确的参考预算与容量条件列出核对名单，逐项解释选择步骤和资料边界。",
     type: "topic",
     key: t.slug,
     parent: "recommend",
   })),
   {
     path: "ranking",
-    title: "数据榜单与排名依据",
+    title: "机场排行与比较：目录、预算和容量工具",
     description:
-      "查看已核验的公开套餐资料与排名条件；没有实测证据的综合榜、稳定性榜暂不发布名次。",
+      "区分站长推荐目录、月付预算、容量比较、套餐成本测算与稳定性核查，筛选条件与商业关系透明。",
     type: "rankings",
   },
   {
@@ -45,9 +46,9 @@ export const pages: Page[] = [
   },
   {
     path: "ranking/value",
-    title: "每 GB 成本：仅比较可计算数据",
+    title: "机场套餐成本测算：价格、容量与流量倍率",
     description:
-      "按同币种同周期计算流量成本，排除未核实、不限流量与无法折算的套餐。当前没有可发布的付费样本。",
+      "填写已核对的月付金额、容量与倍率，计算预算可用流量和每 GB 成本；年付、一次性包与不限流量分开说明。",
     type: "ranking",
     key: "value",
     noindex: true,
@@ -55,18 +56,18 @@ export const pages: Page[] = [
   },
   {
     path: "ranking/budget",
-    title: "月付预算：29 品牌参考方案比较",
+    title: "机场月付预算比较：按价格与容量筛选",
     description:
-      "按原目录顺序比较选定月付参考档，核对容量与支付周期，不将历史起价作为当前报价。",
+      "按月付预算与容量条件查找各品牌匹配参考档，显示档位名称；支持主动切换参考价格展示方式，不混入性能评分。",
     type: "ranking",
     key: "budget",
     parent: "ranking",
   },
   {
     path: "ranking/stable",
-    title: "稳定性排行榜：测试方法与开放条件",
+    title: "晚高峰稳定性核查：观察流程与记录模板",
     description:
-      "稳定性需要多网络、多时段的可复现记录；本站尚未完成这类测试，暂不开放名次。",
+      "提供多日期、多时段的任务观察流程、记录字段和 CSV 模板。本站没有统一原始测试记录，不发布推测稳定性名次。",
     type: "ranking",
     key: "stable",
     noindex: true,
@@ -74,16 +75,16 @@ export const pages: Page[] = [
   },
   {
     path: "ranking/traffic",
-    title: "月度流量档位：按容量需求选择",
+    title: "机场流量档位比较：按月度用量匹配套餐",
     description:
-      "逐家查看月度容量、扩容取舍和核查项目；套餐为第三方公开资料参考，当前结算待确认。",
+      "按 100GB、300GB 或更高月度容量匹配已收录参考档，分开处理 GB 与 GiB；保留价格、周期及资料状态。",
     type: "ranking",
     key: "quota",
     parent: "ranking",
   },
   {
     path: "airport",
-    title: "品牌资料库：公开事实与核验记录",
+    title: "29 品牌详情：套餐、适合人群与推荐依据",
     description:
       "只收录站长指定的 29 个品牌，按指定顺序展示套餐参考、独立推荐依据、优惠码与推广入口。",
     type: "brands",
@@ -98,15 +99,15 @@ export const pages: Page[] = [
   ...airports.flatMap((a) => [
     {
       path: `airport/${a.slug}`,
-      title: `${a.name} 资料：套餐与公开来源`,
-      description: `${a.name}：${a.focus}。查看套餐参考、推荐原因、指定推广入口、优惠条件核查项和公开来源。`,
+      title: `${a.name} 套餐与选购指南`,
+      description: `${brandEditorial[a.slug].deck} 查看套餐解读、适合人群、优势与局限、指定优惠码及公开来源。`,
       type: "brand",
       key: a.slug,
       parent: "airport",
     },
     {
       path: `review/${a.slug}`,
-      title: `${a.name} 资料分析：适合谁与购买前核对项`,
+      title: `${a.name} 值得选吗？预算与需求取舍`,
       description: `为什么选择 ${a.name}？围绕“${a.focus}”分析费用和容量取舍，保留资料冲突及购买前核对项。`,
       type: "review",
       key: a.slug,
@@ -115,9 +116,9 @@ export const pages: Page[] = [
   ]),
   {
     path: "compare",
-    title: "横向对比：把选择放在同一张表里",
+    title: "机场对比：选择品牌与具体套餐并排核对",
     description:
-      "选择 2–4 家真实品牌，比较价格、流量、成本、设备与待核验项目，所有资料来自统一数据库。",
+      "搜索并选择 2–4 家指定品牌，每列切换具体套餐，比较预算、容量、优点与局限；支持只看不同项和复制当前对比链接。",
     type: "compare",
   },
   {
