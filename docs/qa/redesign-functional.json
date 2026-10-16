@@ -32,7 +32,7 @@
     "plan_switch_updates_capacity": true,
     "comparison_jump_enabled": true,
     "difference_toggle_hides_common": true,
-    "difference_keeps_source_links": true,
+    "difference_keeps_condition_links": true,
     "url_restores_plan": true,
     "share_copies_current_selection": true,
     "four_brand_limit": true,

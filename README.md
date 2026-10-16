@@ -59,7 +59,7 @@ Cloudflare Pages 构建命令 `npm run build`，输出目录 `dist`。构建不�
 
 2026-10-16复核29家，整理73条有来源的观察，涉及61个不同URL（不等于61份独立原始证据）。未取得足以确认当前官方报价的公开价目表，未登录下单；各参考套餐继续保持未核验，不参与实际流量成本排名。详情与购买分析共58页新增专属核对区，11码保持原样，不生成券后价。
 
-`npm run audit:evidence`检查29家覆盖、指定码、当前报价证据、58页可读内容及来源属性，已加入完整QA。`public/brand-verification.csv`为读者可下载核对表，和`docs/brand-verification.csv`保持一致。报告见`docs/brand-optimization-report.md`。
+`npm run audit:evidence`检查29家覆盖、指定码、当前报价证据及58页内容，已加入完整QA。`public/brand-verification.csv`为读者可下载的购买核对表，不含研究来源；`docs/brand-verification.csv`单独保留原始核查记录。此前阶段报告见`docs/brand-optimization-report.md`，最新呈现以`docs/brand-guide-report.md`为准。
 
 按站长最新指示，本轮不操作Cloudflare，不部署域名、不修改DNS、不进行Bing账户验证或实际IndexNow提交；交付范围为本地网站与现有GitHub源码。
 
@@ -76,3 +76,9 @@ Cloudflare Pages 构建命令 `npm run build`，输出目录 `dist`。构建不�
 5篇现有文章深化：选购方法、套餐成本、优惠核对、稳定性观察、证书与时间错误。每篇有原创HTML/CSS五步图、可执行表格和标注边界的假设示例；新增3份空白CSV，复用现有观察模板。文章总数仍150，阅读时间排除图示HTML标签。官方依据及边界见`docs/research/core-reading-enrichment.md`。
 
 `npm run audit:decisions`已加入完整QA；`npm run qa:decisions`核对真实页面、原码复制、状态一致、下载、五种宽度和无脚本阅读。交付报告为`docs/decision-guide-report.md`。
+
+## 品牌原创选购内容与前台呈现
+
+`src/data/brand-guides.ts`维护29家独立摘要、两项套餐说明、假设选购情景和各两条品牌问答。详情页展示情景与问答，分析页展示情景；问答使用原生展开控件，关闭JavaScript仍可阅读。前台品牌页不再显示研究站点署名和引用外链，原始记录保留在`src/data/brand-evidence.json`及`docs/research/`。
+
+`scripts/sync-brand-guide.ts`在构建时同步公开核对表，名称、11个原码及状态直接使用统一数据。`audit:evidence`同时检查公开呈现与内部来源保存；`qa:evidence`验证原码、问答、下载、五种宽度和无脚本阅读。泛用教程中的官方操作文档链接继续保留，品牌资料不伪装成官方核价或本站实测。

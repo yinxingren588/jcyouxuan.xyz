@@ -1,0 +1,106 @@
+
+> jcyouxuan@1.0.0 audit:tdk
+> tsx scripts/audit-tdk.ts
+
+{
+  "status": "AUDITED",
+  "scope": "本地最终构建HTML，非正式域名抓取或Bing关键词表现报告",
+  "keyword": "机场推荐",
+  "pages": 263,
+  "indexable": 260,
+  "missingTitles": 0,
+  "missingDescriptions": 0,
+  "duplicateTitles": [],
+  "duplicateDescriptions": [],
+  "abnormalMetaCounts": [],
+  "withKeywords": 58,
+  "coverage": {
+    "title": 3,
+    "description": 3,
+    "h1": 3,
+    "h2": 1,
+    "main": 103
+  },
+  "home": {
+    "url": "/",
+    "title": "机场推荐：29 家机场套餐对比与选择指南 · 机场优选",
+    "description": "机场推荐与套餐选择指南，整理29个品牌的参考价格、流量额度、推荐理由和11个优惠码，支持按预算与使用场景选购、品牌对比，并说明套餐差异和待核实条件。",
+    "keywords": "",
+    "h1": "机场推荐：看清套餐，按需选择。",
+    "indexable": true,
+    "canonical": "https://jcyouxuan.xyz/",
+    "ogTitleMatches": true,
+    "ogDescriptionMatches": true,
+    "twitterTitleMatches": true,
+    "twitterDescriptionMatches": true,
+    "titleCharacters": 27,
+    "descriptionCharacters": 74,
+    "titleVisualUnits": 48,
+    "exactInTitle": true,
+    "exactInDescription": true,
+    "exactInKeywords": false,
+    "exactInH1": true,
+    "exactInH2": true,
+    "exactInMain": true,
+    "exactInIntro": true,
+    "titleCount": 1,
+    "descriptionCount": 1,
+    "keywordsCount": 0,
+    "h1Count": 1
+  },
+  "primaryCandidates": [
+    {
+      "url": "/",
+      "title": "机场推荐：29 家机场套餐对比与选择指南 · 机场优选"
+    },
+    {
+      "url": "/recommend/beginner/",
+      "title": "新手机场推荐：客户端、设备与短期选购 · 机场优选"
+    },
+    {
+      "url": "/recommend/budget/",
+      "title": "低预算机场推荐：月付预算与流量选择 · 机场优选"
+    }
+  ],
+  "coreAnchorTargets": [
+    {
+      "url": "/",
+      "count": 367,
+      "sourcePages": 262,
+      "examples": [
+        {
+          "source": "/404/",
+          "anchor": "机场推荐首页"
+        },
+        {
+          "source": "/about/",
+          "anchor": "机场推荐首页"
+        },
+        {
+          "source": "/airport/1fly/",
+          "anchor": "机场推荐首页"
+        }
+      ]
+    }
+  ],
+  "longTitleReview": [
+    {
+      "url": "/blog/work-corporate-access/",
+      "title": "公司资源能登录却不能访问：身份授权与企业网络策略怎么配合检查 · 机场优选",
+      "visualUnits": 71
+    },
+    {
+      "url": "/blog/work-github-https-ssh/",
+      "title": "GitHub 网页能打开却无法拉代码：HTTPS、SSH 和账户权限分别检查 · 机场优选",
+      "visualUnits": 71
+    }
+  ],
+  "lengthNotice": "70个宽度单位仅用于编辑抽查，汉字按2、常见拉丁字符按1粗估；不是Bing固定字符或像素上限",
+  "notes": [
+    "不把公共导航重复的关键词统计成正文主攻词。main已排除脚本、导航、面包屑、侧栏及来源列表，但保留正文内链。",
+    "候选页面拥有相同词不等于实际关键词内耗；需结合查询、落地页和表现数据判断。",
+    "缺少meta keywords不按错误处理；不将其作为能否排名的判断依据。"
+  ],
+  "socialMetaMismatches": [],
+  "canonicalMismatches": []
+}

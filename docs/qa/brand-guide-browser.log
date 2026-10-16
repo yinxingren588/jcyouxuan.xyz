@@ -1,0 +1,5 @@
+
+> jcyouxuan@1.0.0 qa:evidence
+> tsx scripts/brand-evidence-browser-qa.ts
+
+{"status":"PASS","checks":146,"errors":[]}

@@ -15,7 +15,7 @@ try{
  await page.locator('.decision-summary').screenshot({path:'docs/qa/decision-summary-desktop.png'});
  await page.getByRole('link',{name:'查看套餐与预算 ↓',exact:true}).click();
  check(new URL(page.url()).hash==='#plans','摘要跳到品牌套餐');
- await page.getByRole('link',{name:'核对来源与条件 ↓',exact:true}).click();
+ await page.getByRole('link',{name:'核对套餐与条件 ↓',exact:true}).click();
  check(new URL(page.url()).hash==='#evidence','摘要跳到来源');
  for(const [slug,state] of [['breezenet','historical-ended'],['flycat','conflicting'],['invisible','conflicting'],['worryfree','conflicting'],['u1s1','unconfirmed'],['jilian','not-provided']]){
   await page.goto(base+'/airport/'+slug+'/');
@@ -35,7 +35,7 @@ try{
  check((await page.locator('[data-decision-field=budget]').innerText()).includes('暂未列价')&&await page.locator('[data-plan-assistant]').count()===0,'无价品牌不伪造预算或匹配');
  await page.goto(base+'/compare/?brands=flycat,breezenet');
  const codeRow=await page.locator('#compare-body tr').nth(3).innerText();
- check(codeRow.includes('来源有冲突')&&codeRow.includes('历史条款截止'),'对比表同步优惠状态');
+ check(codeRow.includes('条款有差异')&&codeRow.includes('历史条款截止'),'对比表同步优惠状态');
  for(const path of articlePaths){
   await page.goto(base+path);
   check(await page.locator('figure.guide-flow').count()===1&&await page.locator('.guide-flow li').count()===5,path+' 原创五步图可见');

@@ -1,0 +1,14 @@
+---
+import type {Airport} from '../data/airports';
+import {brandGuides} from '../data/brand-guides';
+const {airport:a,analysis=false}=Astro.props as {airport:Airport;analysis?:boolean};
+const guide=brandGuides[a.slug];
+---
+<section class="brand-use-case" id="selection-case" data-brand-guide={a.slug} aria-labelledby="case-heading">
+ <span class="eyebrow">APPLY THE DECISION</span>
+ <h2 id="case-heading">{a.name}：怎样把选择理由用到实际需求</h2>
+ <span class="case-label">假设情景 · 用于说明选择方法</span>
+ <p>{guide.scenario}</p>
+ <p class="case-boundary">情景中的用量是示例；价格与额度沿用本页参考，未计优惠及未知倍率，不代表真实用户记录或当前在售承诺。</p>
+</section>
+{!analysis&&<section class="brand-faq" id="questions" aria-labelledby="questions-heading"><h2 id="questions-heading">关于{a.name}，购买前常问的两件事</h2>{guide.faqs.map(faq=><details><summary>{faq.question}</summary><p>{faq.answer}</p></details>)}</section>}

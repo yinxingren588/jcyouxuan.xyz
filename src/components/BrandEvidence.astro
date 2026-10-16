@@ -1,18 +1,21 @@
 ---
 import type {Airport} from '../data/airports';
 import {brandEvidence} from '../data/brand-evidence';
+import {brandGuides} from '../data/brand-guides';
+import {couponStatus} from '../data/coupon-status';
+import {publicBrandText} from '../data/public-brand-text';
 import CouponStatus from './CouponStatus.astro';
 const {airport:a}=Astro.props as {airport:Airport};
-const evidence=brandEvidence[a.slug];
+const evidence=brandEvidence[a.slug],guide=brandGuides[a.slug];
 ---
 <section class="brand-evidence" id="evidence" data-evidence={a.slug} aria-labelledby="evidence-heading">
-  <div class="evidence-heading"><div><span class="eyebrow">SOURCE CHECK</span><h2 id="evidence-heading">本次资料核对：哪些可以确认</h2></div><time datetime={evidence.checkedAt}>{evidence.checkedAt}</time></div>
-  <p class="evidence-summary">{evidence.summary}</p>
+  <div class="evidence-heading"><div><span class="eyebrow">PLAN & CONDITIONS</span><h2 id="evidence-heading">{a.name}的套餐要点与使用条件</h2></div><time datetime={evidence.checkedAt}>{evidence.checkedAt}</time></div>
+  <p class="evidence-summary">{guide.summary}</p>
   <dl class="evidence-status"><div><dt>当前报价</dt><dd>未取得当前官方在售价目表</dd></div><div><dt>指定优惠码</dt><dd><CouponStatus airport={a}/></dd></div></dl>
-  <details class="entry-check"><summary>查看本次入口检查与服务归属</summary><p>{evidence.entryStatus}</p><p>{evidence.identity}</p><p>未读取到页面内容，只能说明本次检查未取得资料，不能据此判断服务停运或所有用户均无法访问。</p></details>
-  {evidence.findings.length>0&&<div class="evidence-findings">{evidence.findings.map(finding=><div class="evidence-finding"><span>{finding.kind==='official-public'?'指定入口读取结果 · 未核验报价':'第三方资料 · 非当前成交凭证'}</span><h3>{finding.topic}</h3><p>{finding.text}</p><a href={finding.url} target="_blank" rel={finding.url===a.affiliateUrl?'sponsored nofollow noopener noreferrer':'noopener noreferrer'}>查看依据 · {new URL(finding.url).hostname} ↗</a></div>)}</div>}
-  {evidence.conflicts.length>0&&<div class="evidence-conflicts"><h3>需要保留的差异与缺口</h3><ul>{evidence.conflicts.map(text=><li>{text}</li>)}</ul></div>}
-  {a.coupon&&<div class="evidence-coupon"><h3>优惠码 {a.coupon} 的核对结果</h3><p>{evidence.coupon.terms}</p></div>}
-  <div class="evidence-questions"><h3>向当前面板确认这几件事，再决定是否购买</h3><ol>{evidence.purchaseQuestions.map(text=><li>{text}</li>)}</ol></div>
-  <p class="evidence-boundary">查询日期仅表示本次资料检查。下方预算分析以引用的参考档位成立为前提；未登录核价、未付款，也未开展网络或应用实测。</p>
+  <details class="entry-check"><summary>查看核对范围与当前限制</summary><p>保留站长指定入口；服务归属、当前结算、设备权限及退款条款尚需在目标面板逐项确认。同名页面不能自动视为同一服务。</p><p>未取得当前价目不表示服务停运；套餐额度也不能证明速度、稳定性或目标应用可用性。</p></details>
+  <div class="evidence-findings">{guide.facts.map(([title,text])=><div class="evidence-finding"><h3>{title}</h3><p>{text}</p></div>)}</div>
+  {evidence.conflicts.length>0&&<div class="evidence-conflicts"><h3>付款前仍需澄清的条件</h3><ul>{evidence.conflicts.map(text=><li>{publicBrandText(text)}</li>)}</ul></div>}
+  {a.coupon&&<div class="evidence-coupon"><h3>优惠码 {a.coupon} 的适用边界</h3><p>{couponStatus(a).explanation}</p></div>}
+  <div class="evidence-questions"><h3>向当前面板确认这几件事，再决定是否购买</h3><ol>{evidence.purchaseQuestions.map(text=><li>{publicBrandText(text)}</li>)}</ol></div>
+  <p class="evidence-boundary">日期表示资料整理时间。预算分析以参考档位成立为前提；未登录核价、未付款，也未开展网络或应用实测。</p>
 </section>

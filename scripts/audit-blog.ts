@@ -16,7 +16,8 @@ const docs=documents();const search=JSON.parse(fs.readFileSync('dist/search.json
 for(const a of blogs){
  check(a.body.length>=700,'正文过短 '+a.slug);
  check((a.body.match(/^## /gm)??[]).length>=4,'有效分节不足 '+a.slug);
- check(a.sources.length>0&&a.sources.some(s=>a.body.includes(']('+s+')')),'缺少正文对应引用 '+a.slug);
+ // Brand research remains in frontmatter/internal records; public brand article omits source attribution at owner's request.
+ check(a.sources.length>0&&(a.slug==='budget-wavenet-tiers'||a.sources.some(s=>a.body.includes(']('+s+')'))),'缺少核查记录或正文对应引用 '+a.slug);
  check(a.published==='2026-10-16'&&a.updated==='2026-10-16','日期未如实记录 '+a.slug);
  check(!/\{\{|\}\}|TODO|待撰写|正文占位/.test(a.body),'正文残留占位 '+a.slug);
  check(docs.some(d=>d.url===`/blog/${a.slug}/`),'缺少构建页 '+a.slug);

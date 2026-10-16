@@ -149,7 +149,7 @@ export const pages: Page[] = [
     path: "about",
     title: "关于机场优选",
     description:
-      "了解本站的内容范围与资料边界：来源透明、公开修订，不虚构团队与实测经历。",
+      "了解本站的内容范围与资料边界：条件明确、公开修订，不虚构团队与实测经历。",
     type: "legal",
     key: "about",
   },
@@ -165,7 +165,7 @@ export const pages: Page[] = [
     path: "editorial-policy",
     title: "编辑政策与推荐标准",
     description:
-      "公开资料来源、实测门槛、排名规则、更新机制与商业合作披露，区分事实和编辑判断。",
+      "说明资料范围、实测门槛、排名规则、更新机制与商业合作披露，区分事实和编辑判断。",
     type: "legal",
     key: "editorial",
   },

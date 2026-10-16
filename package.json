@@ -8,7 +8,7 @@
   },
   "scripts": {
     "dev": "astro dev --host 127.0.0.1",
-    "build": "tsx scripts/sync-article-index.ts && astro build && tsx scripts/build-manifest.ts",
+    "build": "tsx scripts/sync-article-index.ts && tsx scripts/sync-brand-guide.ts && astro build && tsx scripts/build-manifest.ts",
     "preview": "astro preview --host 127.0.0.1",
     "check": "astro check",
     "audit:seo": "tsx scripts/audit-seo.ts",

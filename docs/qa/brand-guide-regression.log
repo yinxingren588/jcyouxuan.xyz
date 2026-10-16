@@ -1,0 +1,20 @@
+
+> jcyouxuan@1.0.0 audit:evidence
+> tsx scripts/audit-brand-evidence.ts
+
+brand-evidence {"status":"PASS","checks":733,"errors":[]}
+
+> jcyouxuan@1.0.0 audit:seo
+> tsx scripts/audit-seo.ts
+
+seo {"status":"PASS","checks":263,"errors":[]}
+
+> jcyouxuan@1.0.0 check:links
+> tsx scripts/check-links.ts
+
+links {"status":"PASS","checks":15855,"errors":[]}
+
+> jcyouxuan@1.0.0 audit:brand-tdk
+> tsx scripts/audit-brand-tdk.ts
+
+{"status":"PASS","brands":29,"pages":58,"checks":410,"errors":[]}

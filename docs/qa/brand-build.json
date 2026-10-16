@@ -6,13 +6,13 @@
     "npm run build"
   ],
   "astroDiagnostics": {
-    "files": 63,
+    "files": 67,
     "errors": 0,
     "warnings": 0,
     "hints": 0
   },
   "builtPages": 263,
   "indexablePages": 260,
-  "scope": "Final local decision-summary/coupon-state build and diagnostics, with a checked color-contrast refinement. Not production deployment or Bing indexing.",
-  "record": "decision-guide-final.log"
+  "scope": "Final local original-brand-guide build and diagnostics. Public brand presentation omits research attribution; internal provenance retained. Not production deployment or Bing indexing.",
+  "record": "brand-guide-final.log"
 }

@@ -6,7 +6,7 @@ const docs=documents();
 const articles=sourceArticles();
 const read=(name:string)=>{const p=`docs/qa/${name}.json`;return fs.existsSync(p)?JSON.parse(fs.readFileSync(p,'utf8')):{status:'NOT TESTED'};};
 const brandBuild=read('brand-build');
-const pipelineName=fs.existsSync('docs/qa/decision-guide-pipeline.log')?'decision-guide-pipeline.log':fs.existsSync('docs/qa/brand-tdk-pipeline.log')?'brand-tdk-pipeline.log':fs.existsSync('docs/qa/brand-optimization-final-pipeline.log')?'brand-optimization-final-pipeline.log':fs.existsSync('docs/qa/brand-optimization-checks.log')?'brand-optimization-checks.log':fs.existsSync('docs/qa/keyword-focus-pipeline.log')?'keyword-focus-pipeline.log':'pipeline.log';
+const pipelineName=fs.existsSync('docs/qa/brand-guide-pipeline.log')?'brand-guide-pipeline.log':fs.existsSync('docs/qa/decision-guide-pipeline.log')?'decision-guide-pipeline.log':fs.existsSync('docs/qa/brand-tdk-pipeline.log')?'brand-tdk-pipeline.log':fs.existsSync('docs/qa/brand-optimization-final-pipeline.log')?'brand-optimization-final-pipeline.log':fs.existsSync('docs/qa/brand-optimization-checks.log')?'brand-optimization-checks.log':fs.existsSync('docs/qa/keyword-focus-pipeline.log')?'keyword-focus-pipeline.log':'pipeline.log';
 const pipeline=fs.readFileSync('docs/qa/'+pipelineName,'utf8');
 const focus=read('keyword-focus');
 const blog=read('blog-content');const lh=read('lighthouse');
@@ -18,6 +18,8 @@ const report=`# 29品牌资料复核、机场推荐与150篇博客验收
 交付与整理日期：2026-10-16。
 
 ## 本次选择摘要与核心阅读优化
+
+最新一轮按站长要求调整29品牌资料呈现：58页以原创套餐要点取代来源卡片，新增29个独立假设情景和58项品牌问答；原始来源与核查留在维护记录，公开下载表仅含购买相关字段。浪网价格文章保留入门30元150GB与高档120元800GB区别，并重写预算、单位和周期说明。当前官方报价确认数仍为0，未开展实测。详情见brand-guide-report.md；下述此前阶段描述若涉及公开引用展示，以本段及新报告为准。
 
 29品牌详情与29购买分析共58页开头增加四项选择摘要，优惠码状态在摘要、证据、复制区及比较表中一致。原11码分为7个当前未验证、3个来源冲突、1个历史条款截止，另18家未提供原码。历史条款截止不认定代码永久失效，仍无当前优惠确认或券后价。
 
