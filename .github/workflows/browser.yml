@@ -1,0 +1,26 @@
+name: Browser and Lighthouse audit
+on: workflow_dispatch
+permissions:
+  contents: read
+jobs:
+  browser:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 24
+          cache: npm
+      - run: npm ci
+      - run: npm run build
+      - run: npx playwright install --with-deps chromium
+      - run: |
+          npm run preview -- --port 4321 &
+          node --input-type=module -e "for(let n=0;n<60;n++){try{if((await fetch('http://127.0.0.1:4321/')).ok)process.exit(0)}catch{}await new Promise(r=>setTimeout(r,1000))}process.exit(1)"
+      - run: npx tsx scripts/browser-qa.ts
+      - run: npx tsx scripts/lighthouse.ts
+      - uses: actions/upload-artifact@v4
+        if: always()
+        with:
+          name: browser-evidence
+          path: docs/qa

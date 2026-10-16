@@ -1,0 +1,156 @@
+[
+  {
+    "section": "guides",
+    "slug": "windows",
+    "title": "Windows VPN 使用指南：下载、连接与排查",
+    "description": "Windows 新手从官方下载到连接验证的完整流程，说明授权、网络冲突与常见排查顺序。",
+    "tags": [
+      "新手",
+      "客户端",
+      "Windows"
+    ]
+  },
+  {
+    "section": "guides",
+    "slug": "android",
+    "title": "Android VPN 使用指南：下载、连接与排查",
+    "description": "Android 新手从官方下载到连接验证的完整流程，说明授权、网络冲突与常见排查顺序。",
+    "tags": [
+      "新手",
+      "客户端",
+      "Android"
+    ]
+  },
+  {
+    "section": "guides",
+    "slug": "ios",
+    "title": "iOS / iPadOS VPN 使用指南：下载、连接与排查",
+    "description": "iOS / iPadOS 新手从官方下载到连接验证的完整流程，说明授权、网络冲突与常见排查顺序。",
+    "tags": [
+      "新手",
+      "客户端",
+      "iOS / iPadOS"
+    ]
+  },
+  {
+    "section": "guides",
+    "slug": "macos",
+    "title": "macOS VPN 使用指南：下载、连接与排查",
+    "description": "macOS 新手从官方下载到连接验证的完整流程，说明授权、网络冲突与常见排查顺序。",
+    "tags": [
+      "新手",
+      "客户端",
+      "macOS"
+    ]
+  },
+  {
+    "section": "guides",
+    "slug": "troubleshooting",
+    "title": "连接失败怎么排查：从基础网络到客户端日志",
+    "description": "用单变量排查法定位 VPN 与代理连接问题，记录可复现信息并保护账户凭据。",
+    "tags": [
+      "排查",
+      "客户端"
+    ]
+  },
+  {
+    "section": "blog",
+    "slug": "choose-a-service",
+    "title": "机场推荐怎么看：从需求到试用的选择清单",
+    "description": "用需求、证据、成本与试用四个步骤筛选服务，避免只看促销标语。",
+    "tags": [
+      "选择方法",
+      "预算",
+      "证据"
+    ]
+  },
+  {
+    "section": "blog",
+    "slug": "plan-cost",
+    "title": "机场套餐怎么算划算：周期、倍率与真实成本",
+    "description": "按统一周期计算流量单价，分清年付总额、流量倍率与不限时方案。",
+    "tags": [
+      "选择方法",
+      "预算",
+      "证据"
+    ]
+  },
+  {
+    "section": "blog",
+    "slug": "stability-evidence",
+    "title": "怎样判断稳定性：一份可复现的观察方法",
+    "description": "记录网络、时段、任务与失败率，区分一次测速和长期稳定性证据。",
+    "tags": [
+      "选择方法",
+      "预算",
+      "证据"
+    ]
+  },
+  {
+    "section": "blog",
+    "slug": "ai-access",
+    "title": "AI 服务连接前检查：地区、账户与出口条件",
+    "description": "把 AI 应用的地区支持、账户权限和网络故障分开核对，避免过度承诺。",
+    "tags": [
+      "选择方法",
+      "预算",
+      "证据"
+    ]
+  },
+  {
+    "section": "blog",
+    "slug": "streaming-checklist",
+    "title": "流媒体选择指南：片库、画质与播放验证",
+    "description": "按实际平台、地区和套餐验证播放条件，不以首页可访问替代完整观看测试。",
+    "tags": [
+      "选择方法",
+      "预算",
+      "证据"
+    ]
+  },
+  {
+    "section": "glossary",
+    "slug": "vpn-vs-proxy",
+    "title": "VPN 与代理订阅有什么区别",
+    "description": "VPN、代理与中文语境“机场”的基本区别，以及客户端兼容性判断。",
+    "tags": [
+      "基础知识"
+    ]
+  },
+  {
+    "section": "glossary",
+    "slug": "traffic-multiplier",
+    "title": "流量倍率是什么意思",
+    "description": "用可用流量与计费倍率解释套餐成本，避免只比较标称额度。",
+    "tags": [
+      "基础知识"
+    ]
+  },
+  {
+    "section": "glossary",
+    "slug": "latency-bandwidth",
+    "title": "延迟与带宽的区别",
+    "description": "解释响应时间、传输能力与实际任务体验，理解单次测速的局限。",
+    "tags": [
+      "基础知识"
+    ]
+  },
+  {
+    "section": "glossary",
+    "slug": "dns",
+    "title": "DNS 是什么：解析与网络故障",
+    "description": "DNS 如何把域名映射到地址，以及解析失败为什么不等于服务停止。",
+    "tags": [
+      "基础知识"
+    ]
+  },
+  {
+    "section": "glossary",
+    "slug": "wireguard",
+    "title": "WireGuard 是什么：协议与服务的边界",
+    "description": "理解 WireGuard 协议、客户端和 VPN 服务商的不同角色。",
+    "tags": [
+      "基础知识"
+    ]
+  }
+]

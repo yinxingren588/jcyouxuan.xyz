@@ -1,0 +1,129 @@
+
+> jcyouxuan@1.0.0 qa
+> npm run check && npm run build && npm run test && npm run audit:seo && npm run check:links && npm run validate:content
+
+
+> jcyouxuan@1.0.0 check
+> astro check
+
+14:00:55 [content] Syncing content
+14:00:55 [content] Synced content
+14:00:55 [types] Generated 984ms
+14:00:55 [check] Getting diagnostics for Astro files in C:\Users\user\Documents\Codex\2026-10-16\files-pasted-by-the-user-antigravity\outputs\jcyouxuan...
+Result (30 files): 
+- 0 errors
+- 0 warnings
+- 0 hints
+
+
+> jcyouxuan@1.0.0 build
+> astro build && tsx scripts/build-manifest.ts
+
+14:01:11 [content] Syncing content
+14:01:11 [content] Synced content
+14:01:11 [types] Generated 949ms
+14:01:11 [build] output: "static"
+14:01:11 [build] mode: "static"
+14:01:11 [build] directory: C:\Users\user\Documents\Codex\2026-10-16\files-pasted-by-the-user-antigravity\outputs\jcyouxuan\dist\
+14:01:11 [build] Collecting build info...
+14:01:11 [build] ✓ Completed in 1.04s.
+14:01:11 [build] Building static entrypoints...
+14:01:12 [vite] ✓ built in 465ms
+14:01:12 [vite] ✓ built in 32ms
+14:01:12 [build] Rearranging server assets...
+
+ generating static routes 
+14:01:12   ├─ /search.json (+14ms) 
+14:01:12   ├─ /index.html (+11ms) 
+14:01:12   ├─ /recommend/index.html (+5ms) 
+14:01:12   ├─ /recommend/budget/index.html (+3ms) 
+14:01:12   ├─ /recommend/premium/index.html (+3ms) 
+14:01:12   ├─ /recommend/beginner/index.html (+3ms) 
+14:01:12   ├─ /recommend/stable/index.html (+3ms) 
+14:01:12   ├─ /recommend/ai/index.html (+3ms) 
+14:01:12   ├─ /recommend/streaming/index.html (+3ms) 
+14:01:12   ├─ /ranking/index.html (+4ms) 
+14:01:12   ├─ /ranking/overall/index.html (+6ms) 
+14:01:12   ├─ /ranking/value/index.html (+2ms) 
+14:01:12   ├─ /ranking/budget/index.html (+21ms) 
+14:01:12   ├─ /ranking/stable/index.html (+2ms) 
+14:01:12   ├─ /ranking/free-quota/index.html (+3ms) 
+14:01:12   ├─ /airport/index.html (+5ms) 
+14:01:12   ├─ /review/index.html (+2ms) 
+14:01:12   ├─ /airport/proton-vpn/index.html (+3ms) 
+14:01:12   ├─ /review/proton-vpn/index.html (+2ms) 
+14:01:12   ├─ /airport/mullvad/index.html (+2ms) 
+14:01:12   ├─ /review/mullvad/index.html (+3ms) 
+14:01:12   ├─ /airport/windscribe/index.html (+4ms) 
+14:01:12   ├─ /review/windscribe/index.html (+4ms) 
+14:01:12   ├─ /airport/tunnelbear/index.html (+3ms) 
+14:01:12   ├─ /review/tunnelbear/index.html (+2ms) 
+14:01:12   ├─ /airport/ivpn/index.html (+2ms) 
+14:01:12   ├─ /review/ivpn/index.html (+4ms) 
+14:01:12   ├─ /compare/index.html (+3ms) 
+14:01:12   ├─ /guides/index.html (+3ms) 
+14:01:12   ├─ /blog/index.html (+3ms) 
+14:01:12   ├─ /glossary/index.html (+5ms) 
+14:01:12   ├─ /about/index.html (+3ms) 
+14:01:12   ├─ /contact/index.html (+3ms) 
+14:01:12   ├─ /editorial-policy/index.html (+3ms) 
+14:01:12   ├─ /privacy-policy/index.html (+2ms) 
+14:01:12   ├─ /disclaimer/index.html (+5ms) 
+14:01:12   ├─ /404/index.html (+3ms) 
+14:01:12   ├─ /blog/ai-access/index.html (+3ms) 
+14:01:12   ├─ /guides/android/index.html (+3ms) 
+14:01:12   ├─ /blog/choose-a-service/index.html (+2ms) 
+14:01:12   ├─ /glossary/dns/index.html (+2ms) 
+14:01:12   ├─ /guides/ios/index.html (+9ms) 
+14:01:12   ├─ /glossary/latency-bandwidth/index.html (+2ms) 
+14:01:12   ├─ /guides/macos/index.html (+2ms) 
+14:01:12   ├─ /blog/plan-cost/index.html (+6ms) 
+14:01:12   ├─ /blog/stability-evidence/index.html (+4ms) 
+14:01:12   ├─ /blog/streaming-checklist/index.html (+2ms) 
+14:01:12   ├─ /glossary/traffic-multiplier/index.html (+2ms) 
+14:01:12   ├─ /guides/troubleshooting/index.html (+2ms) 
+14:01:12   ├─ /glossary/vpn-vs-proxy/index.html (+3ms) 
+14:01:12   ├─ /guides/windows/index.html (+3ms) 
+14:01:12   ├─ /glossary/wireguard/index.html (+2ms) 
+14:01:12 ✓ Completed in 260ms.
+
+14:01:12 [build] ✓ Completed in 852ms.
+14:01:12 [@astrojs/sitemap] `sitemap-index.xml` created at `dist`
+14:01:12 [build] 51 page(s) built in 1.93s
+14:01:12 [build] Complete!
+Manifest: 47 indexable pages; Cloudflare 404.html created.
+
+> jcyouxuan@1.0.0 test
+> tsx --test scripts/ranking.test.ts scripts/indexnow.test.ts
+
+✔ 拒绝异站、查询参数和不安全 URL (2.8283ms)
+✔ 增量包含新增、修改、删除，不重提未改变页面 (2.3026ms)
+✔ 429 与 5xx 重试，202 是接受通知而非收录 (0.3557ms)
+✔ 永久错误不重试，网络错误最多三次 (0.7624ms)
+✔ 流量倍率按实际可用流量折算 (1.0382ms)
+✔ 不使用未核验或无限流量生成成本 (0.2466ms)
+✔ 年付、一次性与免费不混入付费月度性价比榜 (0.9035ms)
+✔ 只按免费基础额度排序，不把条件升级混入 (0.3176ms)
+ℹ tests 8
+ℹ suites 0
+ℹ pass 8
+ℹ fail 0
+ℹ cancelled 0
+ℹ skipped 0
+ℹ todo 0
+ℹ duration_ms 235.6613
+
+> jcyouxuan@1.0.0 audit:seo
+> tsx scripts/audit-seo.ts
+
+seo {"status":"PASS","checks":51,"errors":[]}
+
+> jcyouxuan@1.0.0 check:links
+> tsx scripts/check-links.ts
+
+links {"status":"PASS","checks":1976,"errors":[]}
+
+> jcyouxuan@1.0.0 validate:content
+> tsx scripts/validate-content.ts
+
+content {"status":"PASS","checks":20,"errors":[]}

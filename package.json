@@ -1,0 +1,39 @@
+{
+  "name": "jcyouxuan",
+  "version": "1.0.0",
+  "private": true,
+  "type": "module",
+  "engines": {
+    "node": ">=22.22.0"
+  },
+  "scripts": {
+    "dev": "astro dev --host 127.0.0.1",
+    "build": "astro build && tsx scripts/build-manifest.ts",
+    "preview": "astro preview --host 127.0.0.1",
+    "check": "astro check",
+    "audit:seo": "tsx scripts/audit-seo.ts",
+    "check:links": "tsx scripts/check-links.ts",
+    "validate:content": "tsx scripts/validate-content.ts",
+    "test": "tsx --test scripts/ranking.test.ts scripts/indexnow.test.ts",
+    "qa": "npm run check && npm run build && npm run test && npm run audit:seo && npm run check:links && npm run validate:content",
+    "indexnow": "tsx scripts/indexnow.ts",
+    "report": "tsx scripts/report.ts",
+    "qa:browser": "tsx scripts/browser-qa.ts",
+    "qa:lighthouse": "tsx scripts/lighthouse.ts"
+  },
+  "dependencies": {
+    "@astrojs/sitemap": "3.7.4",
+    "@tailwindcss/vite": "4.3.3",
+    "astro": "7.4.0",
+    "tailwindcss": "4.3.3"
+  },
+  "devDependencies": {
+    "@astrojs/check": "0.9.10",
+    "@playwright/test": "1.64.1",
+    "@types/node": "26.6.5",
+    "cheerio": "1.2.0",
+    "lighthouse": "13.5.0",
+    "tsx": "4.23.15",
+    "typescript": "6.0.3"
+  }
+}

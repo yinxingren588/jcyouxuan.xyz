@@ -1,0 +1,5 @@
+---
+import {price,traffic,type Airport} from '../data/airports';
+const {airport:a}=Astro.props as {airport:Airport};const p=a.plans[0];
+---
+<article class="card"><div class="brand-head"><span class="brand-icon" style={`--brand:${a.color}`} aria-hidden="true">{a.name[0]}</span><div><h3>{a.name}</h3><span class="badge">商业 VPN · 官方资料，未实测</span></div></div><p>{a.description}</p><div class="stats"><div><strong>{p.currency} {p.price}</strong><small>{p.period==='month'?'月度方案':'年付方案'} · {price(p)}</small></div><div><strong>{p.unlimited?'∞':p.trafficGB??'—'}</strong><small>{traffic(p)}</small></div></div><p>适合：{a.suitableFor.join(' / ')}</p><ul><li>{a.advantages[0]}</li><li>注意：{a.disadvantages[0]}</li><li>线路类型：尚未核实</li></ul><a class="detail" href={`/airport/${a.slug}/`}><span>查看资料与来源</span><span aria-hidden="true">↗</span></a></article>

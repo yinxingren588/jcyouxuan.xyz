@@ -1,0 +1,94 @@
+{
+  "status": "PASS",
+  "scope": "本地 Chrome，移动端模拟，单次运行三条代表路由；不代表生产环境或真实用户 Web Vitals",
+  "results": [
+    {
+      "route": "/",
+      "scores": {
+        "performance": 100,
+        "accessibility": 100,
+        "best-practices": 100,
+        "seo": 100
+      },
+      "failures": [
+        {
+          "id": "first-contentful-paint",
+          "score": 0.98,
+          "title": "First Contentful Paint"
+        },
+        {
+          "id": "speed-index",
+          "score": 0.99,
+          "title": "Speed Index"
+        },
+        {
+          "id": "label-content-name-mismatch",
+          "score": 0,
+          "title": "Elements with visible text labels do not have matching accessible names."
+        },
+        {
+          "id": "network-dependency-tree-insight",
+          "score": 0,
+          "title": "Network dependency tree"
+        },
+        {
+          "id": "render-blocking-insight",
+          "score": 0.5,
+          "title": "Render-blocking requests"
+        }
+      ]
+    },
+    {
+      "route": "/compare/",
+      "scores": {
+        "performance": 100,
+        "accessibility": 100,
+        "best-practices": 100,
+        "seo": 100
+      },
+      "failures": [
+        {
+          "id": "label-content-name-mismatch",
+          "score": 0,
+          "title": "Elements with visible text labels do not have matching accessible names."
+        },
+        {
+          "id": "network-dependency-tree-insight",
+          "score": 0,
+          "title": "Network dependency tree"
+        },
+        {
+          "id": "render-blocking-insight",
+          "score": 0.5,
+          "title": "Render-blocking requests"
+        }
+      ]
+    },
+    {
+      "route": "/guides/windows/",
+      "scores": {
+        "performance": 100,
+        "accessibility": 100,
+        "best-practices": 100,
+        "seo": 100
+      },
+      "failures": [
+        {
+          "id": "label-content-name-mismatch",
+          "score": 0,
+          "title": "Elements with visible text labels do not have matching accessible names."
+        },
+        {
+          "id": "network-dependency-tree-insight",
+          "score": 0,
+          "title": "Network dependency tree"
+        },
+        {
+          "id": "render-blocking-insight",
+          "score": 0.5,
+          "title": "Render-blocking requests"
+        }
+      ]
+    }
+  ]
+}

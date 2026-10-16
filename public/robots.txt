@@ -1,0 +1,3 @@
+User-agent: *
+Allow: /
+Sitemap: https://jcyouxuan.xyz/sitemap-index.xml

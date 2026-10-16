@@ -1,0 +1,6 @@
+---
+import {airports,price,traffic,type Airport} from '../data/airports';
+interface Props {items?:Airport[]}
+const {items=airports}=Astro.props;
+---
+<div class="table-scroll" tabindex="0" role="region" aria-label="品牌方案比较表，可横向滚动"><table><caption class="sr-only">已整理品牌公开方案，非质量排名</caption><thead><tr><th scope="col">品牌</th><th scope="col">参考方案</th><th scope="col">流量</th><th scope="col">适合人群</th><th scope="col">资料状态</th><th scope="col">了解更多</th></tr></thead><tbody>{items.map(a=><tr><td><strong>{a.name}</strong></td><td>{price(a.plans[0])}</td><td>{traffic(a.plans[0])}</td><td>{a.suitableFor[0]}</td><td>官方资料 · 未实测</td><td><a href={`/airport/${a.slug}/`}>资料详情 ↗</a></td></tr>)}</tbody></table></div>
